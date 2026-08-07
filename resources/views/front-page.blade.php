@@ -19,5 +19,7 @@
 
     @include('home.gatherings-section')
 
+    @include('home.location')
+
   @endwhile
 @endsection
