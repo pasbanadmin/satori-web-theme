@@ -11,32 +11,43 @@
   --brand-sand: #efe4d0;
   --brand-gold: #BCA169;
   --brand-muted: #6f6a5c;
+  --brand-ink: #16100c;
   --font-body: "Jost", "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   --font-heading: "Cormorant Garamond", Georgia, serif;
 }
 
-html {
+@theme {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-sand: var(--brand-sand);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-muted: var(--brand-muted);
+}
+
+@layer base {
+  html {
     scroll-behavior: smooth;
-}
+  }
 
-body {
-  font-family: var(--font-body);
-  color: var(--brand-ink);
-  background-color: #f7f3eb;
-  line-height: 1.7;
-}
+  body {
+    font-family: var(--font-body);
+    color: var(--brand-ink);
+    background-color: #f7f3eb;
+    line-height: 1.7;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  color: var(--brand-primary);
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--brand-primary);
+  }
 
-a {
-  color: var(--brand-gold);
-  text-decoration: none;
+  a {
+    color: var(--brand-gold);
+    text-decoration: none;
+  }
 }
