@@ -186,3 +186,42 @@ gsap.registerPlugin(ScrollTrigger);
     },
   });
 })();
+
+(() => {
+  const section = document.querySelector('[data-gatherings]');
+
+  if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const image = section.querySelector('[data-gatherings-image]');
+  const items = section.querySelectorAll('[data-gatherings-item]');
+
+  gsap.fromTo(
+    image,
+    { scale: 1.1 },
+    {
+      scale: 1.25,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+      },
+    }
+  );
+
+  gsap.from(items, {
+    autoAlpha: 0,
+    y: 40,
+    duration: 1,
+    stagger: 0.12,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: section,
+      start: 'top 65%',
+      once: true,
+    },
+  });
+})();

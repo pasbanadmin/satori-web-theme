@@ -17,5 +17,7 @@
 
     @include('home.experiences-section')
 
+    @include('home.gatherings-section')
+
   @endwhile
 @endsection
