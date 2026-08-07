@@ -1,0 +1,8 @@
+/*
+ * Keep editor styles lightweight to avoid overriding the WordPress admin UI.
+ * Add any editor-specific rules here instead of importing the full Tailwind
+ * stylesheet into the block editor.
+ */
+.editor-styles-wrapper {
+  font-family: inherit;
+}
