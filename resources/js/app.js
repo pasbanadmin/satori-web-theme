@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+import { Keyboard } from 'swiper/modules';
+import 'swiper/css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -130,4 +133,56 @@ gsap.registerPlugin(ScrollTrigger);
       },
       '-=0.4'
     );
+})();
+
+(() => {
+  const reveals = document.querySelectorAll('[data-reveal]');
+
+  if (!reveals.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  reveals.forEach((el) => {
+    gsap.from(el, {
+      autoAlpha: 0,
+      y: 40,
+      duration: 0.9,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 80%',
+        once: true,
+      },
+    });
+  });
+})();
+
+(() => {
+  const swiperEl = document.querySelector('[data-experiences-swiper]');
+
+  if (!swiperEl) {
+    return;
+  }
+
+  new Swiper(swiperEl, {
+    modules: [Keyboard],
+    slidesPerView: 1.15,
+    spaceBetween: 24,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2.4,
+      },
+      1440: {
+        slidesPerView: 3,
+      },
+    },
+  });
 })();

@@ -13,5 +13,9 @@
 
     @include('home.the-homes')
 
+    @include('home.dining-wellness')
+
+    @include('home.experiences-section')
+
   @endwhile
 @endsection
