@@ -72,9 +72,31 @@ gsap.registerPlugin(ScrollTrigger);
     return;
   }
 
-  const lines = section.querySelectorAll('[data-line]');
   const divider = section.querySelector('[data-divider]');
   const paragraph = section.querySelector('[data-paragraph]');
+  const words = [];
+
+  section.querySelectorAll('[data-line]').forEach((line) => {
+    const fragment = document.createDocumentFragment();
+
+    line.textContent
+      .split(/\s+/)
+      .filter(Boolean)
+      .forEach((word) => {
+        const mask = document.createElement('span');
+        mask.className = 'reveal-mask';
+
+        const inner = document.createElement('span');
+        inner.className = 'reveal-word';
+        inner.textContent = `${word} `;
+
+        mask.appendChild(inner);
+        fragment.appendChild(mask);
+      });
+
+    line.replaceChildren(fragment);
+    words.push(...line.querySelectorAll('.reveal-word'));
+  });
 
   gsap
     .timeline({
@@ -84,11 +106,11 @@ gsap.registerPlugin(ScrollTrigger);
         once: true,
       },
     })
-    .from(lines, {
+    .from(words, {
+      yPercent: 110,
       autoAlpha: 0,
-      y: 40,
-      duration: 1,
-      stagger: 0.15,
+      duration: 0.8,
+      stagger: 0.03,
       ease: 'power3.out',
     })
     .from(divider, {

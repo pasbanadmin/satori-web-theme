@@ -9,7 +9,7 @@
 @endphp
 
 <section class="bg-[#f7f3eb] py-24 lg:py-36" data-opening-statement>
-  <div class="mx-auto w-full max-w-4xl px-5 text-center sm:px-8 lg:px-16">
+  <div class="mx-auto w-full max-w-5xl px-5 text-center sm:px-8 lg:px-16">
     <h2 class="font-heading text-3xl font-light leading-tight text-brand-ink sm:text-4xl lg:text-5xl">
       @foreach ($statementLines as $line)
         <span class="block" data-line>{{ $line }}</span>

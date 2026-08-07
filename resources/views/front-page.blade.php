@@ -11,5 +11,7 @@
 
     @include('home.opening-statement')
 
+    @include('home.the-homes')
+
   @endwhile
 @endsection

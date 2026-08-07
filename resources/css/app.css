@@ -51,3 +51,16 @@
     text-decoration: none;
   }
 }
+
+@layer components {
+  .reveal-mask {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+  .reveal-word {
+    display: inline-block;
+    white-space: pre;
+  }
+}
