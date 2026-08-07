@@ -9,5 +9,7 @@
 
     @include('home.hero')
 
+    @include('home.opening-statement')
+
   @endwhile
 @endsection

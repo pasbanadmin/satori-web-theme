@@ -1,3 +1,8 @@
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 (() => {
   const header = document.querySelector('[data-header]');
 
@@ -54,4 +59,53 @@
       }
     });
   }
+})();
+
+(() => {
+  const section = document.querySelector('[data-opening-statement]');
+
+  if (!section) {
+    return;
+  }
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const lines = section.querySelectorAll('[data-line]');
+  const divider = section.querySelector('[data-divider]');
+  const paragraph = section.querySelector('[data-paragraph]');
+
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 75%',
+        once: true,
+      },
+    })
+    .from(lines, {
+      autoAlpha: 0,
+      y: 40,
+      duration: 1,
+      stagger: 0.15,
+      ease: 'power3.out',
+    })
+    .from(divider, {
+      autoAlpha: 0,
+      scaleX: 0,
+      transformOrigin: 'center center',
+      duration: 0.8,
+      ease: 'power3.inOut',
+    })
+    .from(
+      paragraph,
+      {
+        autoAlpha: 0,
+        y: 24,
+        duration: 0.9,
+        ease: 'power3.out',
+      },
+      '-=0.4'
+    );
 })();
