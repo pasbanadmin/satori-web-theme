@@ -38,22 +38,22 @@
   ];
 @endphp
 
-<section id="experiences" class="bg-[#f7f3eb] pb-24 lg:pb-36">
+<section id="experiences" class="bg-[#f7f3eb] pb-24">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="mb-14 text-center lg:mb-20" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
         {{ __('Experiences', 'sage') }}
       </p>
 
-      <h2 class="mx-auto mt-4 max-w-3xl font-heading text-4xl font-light leading-tight text-brand-ink sm:text-5xl">
+      <h2 class="mx-auto mt-4 max-w-3xl font-heading text-4xl font-light leading-tight text-brand-ink">
         {{ __('Do everything. Or nothing at all.', 'sage') }}
       </h2>
 
-      <p class="mx-auto mt-5 max-w-2xl text-base leading-7 text-brand-muted sm:text-lg">
+      <p class="mx-auto mt-5 max-w-2xl text-base leading-7 text-brand-muted sm:text-[16px]">
         {{ __('From slow sunsets over the lake to late-night conversations by the fire, every moment here is optional. Choose your own pace — or lose it entirely.', 'sage') }}
       </p>
 
-      <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-8 py-4 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="#experiences">
+      <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="#experiences">
         {{ __('Explore Experiences', 'sage') }}
         <span aria-hidden="true">→</span>
       </a>

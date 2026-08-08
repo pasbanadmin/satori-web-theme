@@ -11,20 +11,20 @@
   <div class="absolute inset-0 z-10 flex items-center">
     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
       <div class="max-w-4xl">
-        <h1 class="max-w-3xl text-5xl font-light leading-none text-brand-sand sm:text-6xl lg:text-7xl">
+        <h1 class="max-w-3xl text-5xl font-light leading-none text-brand-sand sm:text-6xl">
           {{ __('Luxury, stillness, and space to return to yourself.', 'sage') }}
         </h1>
 
-        <p class="mt-7 max-w-2xl text-base leading-8 text-brand-sand sm:text-lg">
+        <p class="mt-7 max-w-2xl text-base leading-8 text-brand-sand sm:text-[16px]">
           {{ __('Set above Mulshi Lake and held by the quiet rhythms of the Sahyadris, Satori is a private retreat of fourteen homes where nature, design and thoughtful hospitality come together in balance.', 'sage') }}
         </p>
 
         <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a class="inline-flex items-center justify-center rounded-full bg-brand-sand px-8 py-4 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary" href="#book">
+          <a class="inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary" href="#book">
             {{ __('Book Your Stay', 'sage') }}
           </a>
 
-          <a class="inline-flex items-center justify-center rounded-full border-2 border-brand-sand bg-brand-primary/30 px-8 py-4 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-sand backdrop-blur-sm transition-colors duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary" href="#stay">
+          <a class="inline-flex items-center justify-center rounded-full border-2 border-brand-sand bg-brand-primary/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-sand backdrop-blur-sm transition-colors duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary" href="#stay">
             {{ __('Explore the Homes', 'sage') }}
           </a>
         </div>

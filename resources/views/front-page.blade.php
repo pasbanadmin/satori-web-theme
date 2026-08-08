@@ -7,6 +7,8 @@
 @section('content')
   @while(have_posts()) @php(the_post())
 
+    @include('home.announcement-marquee')
+
     @include('home.hero')
 
     @include('home.opening-statement')

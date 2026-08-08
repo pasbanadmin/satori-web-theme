@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Keyboard } from 'swiper/modules';
+import { Autoplay, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -165,10 +165,17 @@ gsap.registerPlugin(ScrollTrigger);
   }
 
   new Swiper(swiperEl, {
-    modules: [Keyboard],
+    modules: [Autoplay, Keyboard],
     slidesPerView: 1.15,
     spaceBetween: 24,
     grabCursor: true,
+    autoplay: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ? false
+      : {
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
     keyboard: {
       enabled: true,
       onlyInViewport: true,

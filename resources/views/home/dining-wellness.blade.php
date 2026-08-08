@@ -23,14 +23,14 @@
   ];
 @endphp
 
-<section id="dining-wellness" class="bg-[#f7f3eb] pb-24 lg:pb-36">
+<section id="dining-wellness" class="bg-[#f7f3eb] pb-24">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="mb-20 text-left lg:mb-28" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
         {{ __('Dining & Wellness', 'sage') }}
       </p>
 
-      <h2 class="mt-4 max-w-4xl font-heading text-4xl font-light leading-tight text-brand-ink sm:text-5xl">
+      <h2 class="mt-4 max-w-4xl font-heading text-4xl font-light leading-tight text-brand-ink">
         {{ __('Sustained by the estate, restored by the land.', 'sage') }}
       </h2>
     </div>
@@ -51,11 +51,11 @@
             {{ $block['heading'] }}
           </h3>
 
-          <p class="mt-6 max-w-lg text-base leading-8 text-brand-muted sm:text-lg">
+          <p class="mt-6 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
             {{ $block['copy'] }}
           </p>
 
-          <a class="mt-9 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-8 py-4 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="{{ $block['anchor'] }}">
+          <a class="mt-9 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="{{ $block['anchor'] }}">
             {{ $block['cta'] }}
             <span aria-hidden="true">→</span>
           </a>
