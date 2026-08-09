@@ -23,5 +23,7 @@
 
     @include('home.location')
 
+    @include('home.closing-section')
+
   @endwhile
 @endsection

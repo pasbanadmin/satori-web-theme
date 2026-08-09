@@ -232,3 +232,44 @@ gsap.registerPlugin(ScrollTrigger);
     },
   });
 })();
+
+(() => {
+  const section = document.querySelector('[data-stays-hero]');
+
+  if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const image = section.querySelector('[data-stays-hero-image]');
+  const items = section.querySelectorAll('[data-stays-hero-item]');
+
+  if (image) {
+    gsap.fromTo(
+      image,
+      { scale: 1.15 },
+      {
+        scale: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+        },
+      }
+    );
+  }
+
+  gsap.from(items, {
+    autoAlpha: 0,
+    y: 48,
+    duration: 1.1,
+    stagger: 0.15,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: section,
+      start: 'top 70%',
+      once: true,
+    },
+  });
+})();

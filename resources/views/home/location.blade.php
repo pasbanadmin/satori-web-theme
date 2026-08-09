@@ -32,11 +32,11 @@
           {{ __('Location', 'sage') }}
         </p>
 
-        <h2 class="mt-4 font-heading text-4xl font-light leading-tight text-brand-ink sm:text-5xl">
+        <h2 class="mt-4 font-heading text-4xl font-light leading-tight text-brand-ink">
           {{ __('Close enough to reach. Far enough to matter.', 'sage') }}
         </h2>
 
-        <p class="mt-6 max-w-lg text-base leading-8 text-brand-muted sm:text-lg">
+        <p class="mt-6 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
           {{ __('Set above Mulshi Lake in the Sahyadri foothills, Satori sits within easy reach of the city and a world away from it — held by forest, water, and a slower sense of time.', 'sage') }}
         </p>
 

@@ -59,8 +59,12 @@
 }
 
 .marquee-track {
-  animation: marquee 25s linear infinite;
+  animation: marquee 60s linear infinite;
   will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
