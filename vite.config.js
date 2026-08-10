@@ -44,7 +44,8 @@ export default defineConfig({
     origin: 'http://localhost:5173',
     cors: {
       origin: [
-        'http://satori.local',
+        'http://satori-web.local',
+        'https://satori-web.local',
         // Add any other origins that need to access the Vite dev server
       ],
       credentials: true,

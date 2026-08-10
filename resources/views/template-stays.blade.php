@@ -13,6 +13,7 @@
       $stays = [
         [
           'name' => __('Orchard Cottages', 'sage'),
+          'slug' => 'orchard-cottages',
           'description' => __('Low among the fruit trees, a short walk from the gardens and the kitchen.', 'sage'),
           'bedrooms' => 1,
           'sleeps' => 2,
@@ -26,6 +27,7 @@
         ],
         [
           'name' => __('Canopy Suites', 'sage'),
+          'slug' => 'canopy-suites',
           'description' => __('An elevated hideaway above the fruit garden, with the lake beyond.', 'sage'),
           'bedrooms' => 1,
           'sleeps' => 2,
@@ -39,6 +41,7 @@
         ],
         [
           'name' => __('Aves', 'sage'),
+          'slug' => 'aves',
           'description' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
           'bedrooms' => 1,
           'sleeps' => 2,
@@ -52,6 +55,7 @@
         ],
         [
           'name' => __('Woodhouse', 'sage'),
+          'slug' => 'woodhouse',
           'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
           'bedrooms' => 2,
           'sleeps' => 4,
@@ -65,6 +69,7 @@
         ],
         [
           'name' => __('Perch I', 'sage'),
+          'slug' => 'perch-i',
           'description' => __('One of the estate\'s largest homes, with long views over Mulshi Lake.', 'sage'),
           'bedrooms' => 3,
           'sleeps' => 7,
@@ -78,6 +83,7 @@
         ],
         [
           'name' => __('Perch II', 'sage'),
+          'slug' => 'perch-ii',
           'description' => __('One of the estate\'s largest homes, with long views over Mulshi Lake.', 'sage'),
           'bedrooms' => 3,
           'sleeps' => 6,
@@ -91,6 +97,7 @@
         ],
         [
           'name' => __('Hornbill', 'sage'),
+          'slug' => 'hornbill',
           'description' => __('The signature villa. The best seat on the estate.', 'sage'),
           'bedrooms' => 2,
           'sleeps' => 4,
@@ -116,6 +123,12 @@
         'image' => $estateImage,
         'cta' => __('Enquire About the Estate', 'sage'),
       ];
+
+      $stayUrls = [];
+
+      foreach ($stays as $stay) {
+          $stayUrls[$stay['name']] = \App\stay_url($stay['slug']);
+      }
   @endphp
 
   @while(have_posts())
