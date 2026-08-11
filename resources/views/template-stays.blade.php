@@ -32,11 +32,7 @@
           'offset' => '',
           'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
           'gallery' => [
-            $gallerySlide($stayImageA, 'object-center'),
-            $gallerySlide($stayImageB, 'object-top'),
-            $gallerySlide($stayImageA, 'object-bottom'),
-            $gallerySlide($stayImageB, 'object-center'),
-            $gallerySlide($stayImageA, 'object-top'),
+            '/wp-content/uploads/2026/08/Orchard-Cottages-—-estate-path.webp',
           ],
         ],
         [
@@ -53,11 +49,7 @@
           'offset' => 'lg:mt-24',
           'ratio' => 'aspect-[4/5]',
           'gallery' => [
-            $gallerySlide($stayImageB, 'object-top'),
-            $gallerySlide($stayImageA, 'object-center'),
-            $gallerySlide($stayImageB, 'object-bottom'),
-            $gallerySlide($stayImageA, 'object-top'),
-            $gallerySlide($stayImageB, 'object-center'),
+           '/wp-content/uploads/2026/08/Canopy-Suites-—-estate-verandah.webp',
           ],
         ],
         [
@@ -74,11 +66,7 @@
           'offset' => '',
           'ratio' => 'aspect-[4/5]',
           'gallery' => [
-            $gallerySlide($stayImageA, 'object-bottom'),
-            $gallerySlide($stayImageB, 'object-center'),
-            $gallerySlide($stayImageA, 'object-top'),
-            $gallerySlide($stayImageB, 'object-top'),
-            $gallerySlide($stayImageA, 'object-center'),
+            '/wp-content/uploads/2026/08/Aves-—-home-aves.webp',
           ],
         ],
         [
@@ -95,11 +83,7 @@
           'offset' => 'lg:mt-24',
           'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
           'gallery' => [
-            $gallerySlide($stayImageB, 'object-center'),
-            $gallerySlide($stayImageA, 'object-center'),
-            $gallerySlide($stayImageB, 'object-top'),
-            $gallerySlide($stayImageA, 'object-bottom'),
-            $gallerySlide($stayImageB, 'object-center'),
+            '/wp-content/uploads/2026/08/Woodhouse-—-home-woodhouse.webp',
           ],
         ],
         [
@@ -116,11 +100,7 @@
           'offset' => '',
           'ratio' => 'aspect-[4/5]',
           'gallery' => [
-            $gallerySlide($stayImageA, 'object-top'),
-            $gallerySlide($stayImageB, 'object-center'),
-            $gallerySlide($stayImageA, 'object-center'),
-            $gallerySlide($stayImageB, 'object-top'),
-            $gallerySlide($stayImageA, 'object-bottom'),
+           '/wp-content/uploads/2026/08/Perch-—-home-perch.webp',
           ],
         ],
         [
@@ -137,11 +117,7 @@
           'offset' => 'lg:mt-24',
           'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
           'gallery' => [
-            $gallerySlide($stayImageB, 'object-bottom'),
-            $gallerySlide($stayImageA, 'object-center'),
-            $gallerySlide($stayImageB, 'object-center'),
-            $gallerySlide($stayImageA, 'object-bottom'),
-            $gallerySlide($stayImageB, 'object-top'),
+           '/wp-content/uploads/2026/08/Page-hero-—-home-woodhouse.webp',
           ],
         ],
         [
@@ -158,11 +134,7 @@
           'offset' => '',
           'ratio' => 'aspect-[4/3] lg:aspect-[21/10]',
           'gallery' => [
-            $gallerySlide($stayImageA, 'object-center'),
-            $gallerySlide($stayImageB, 'object-top'),
-            $gallerySlide($stayImageA, 'object-bottom'),
-            $gallerySlide($stayImageB, 'object-center'),
-            $gallerySlide($stayImageA, 'object-top'),
+            'http://satori-web.local/wp-content/uploads/2026/08/Hornbill-—-home-hornbill.webp'
           ],
         ],
       ];
@@ -176,7 +148,7 @@
         'bedrooms' => 20,
         'sleeps' => 40,
         'setting' => __('Fourteen Homes', 'sage'),
-        'image' => $estateImage,
+        'image' => '$estateImage',
         'cta' => __('Enquire About the Estate', 'sage'),
       ];
 
@@ -395,27 +367,36 @@
 
             <article class="group grid min-h-[calc(100svh-7.5rem)] snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] {{ $loop->last ? 'border-b' : '' }}">
               <div class="relative aspect-[4/3] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto {{ $isFlipped ? 'lg:order-last' : '' }}" data-reveal>
-                <div class="swiper h-full w-full" data-stay-gallery-swiper>
-                  <div class="swiper-wrapper">
-                    @foreach ($stay['gallery'] as $slide)
-                      <div class="swiper-slide">
-                        <img class="h-full w-full object-cover {{ $slide['position'] }}" src="{{ $slide['src'] }}" alt="{{ $stay['name'] }}">
-                      </div>
-                    @endforeach
+                @if (count($stay['gallery']) > 1)
+                  <div class="swiper h-full w-full" data-stay-gallery-swiper>
+                    <div class="swiper-wrapper">
+                      @foreach ($stay['gallery'] as $slide)
+                        @php $slide = is_string($slide) ? ['src' => $slide, 'position' => $stay['position']] : $slide; @endphp
+                        <div class="swiper-slide">
+                          <img class="h-full w-full object-cover {{ $slide['position'] }}" src="{{ $slide['src'] }}" alt="{{ $stay['name'] }}">
+                        </div>
+                      @endforeach
+                    </div>
+
+                    <div class="swiper-pagination" data-stay-gallery-pagination></div>
+
+                    <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+                      <button class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary" type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+                      </button>
+
+                      <button class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary" type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+                      </button>
+                    </div>
                   </div>
-
-                  <div class="swiper-pagination" data-stay-gallery-pagination></div>
-
-                  <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
-                    <button class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary" type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
-                    </button>
-
-                    <button class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary" type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
-                    </button>
-                  </div>
-                </div>
+                @else
+                  @php
+                    $slide = $stay['gallery'][0] ?? ['src' => $stay['image'], 'position' => $stay['position']];
+                    $slide = is_string($slide) ? ['src' => $slide, 'position' => $stay['position']] : $slide;
+                  @endphp
+                  <img class="absolute inset-0 h-full w-full object-cover {{ $slide['position'] }}" src="{{ $slide['src'] }}" alt="{{ $stay['name'] }}">
+                @endif
               </div>
 
               <div class="flex flex-col justify-center bg-brand-sand px-6 py-6 sm:px-8 lg:col-span-11 lg:px-12 lg:py-4 {{ $isFlipped ? 'lg:order-first lg:border-r' : 'lg:border-l' }} lg:border-brand-ink/10" data-reveal>
@@ -458,7 +439,7 @@
                     </div>
 
                     <button
-                      class="mt-2 inline-flex items-center gap-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-ink"
+                      class="mt-2 inline-flex items-center gap-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-ink cursor-pointer"
                       type="button" data-read-more-toggle data-open-label="{{ __('Read More', 'sage') }}"
                       data-close-label="{{ __('Read Less', 'sage') }}" aria-expanded="false">
                       <span data-read-more-label>{{ __('Read More', 'sage') }}</span>
@@ -514,44 +495,36 @@
 
     <section id="estate" class="mt-14 bg-brand-primary text-brand-sand">
       <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
-        <div class="grid overflow-hidden lg:grid-cols-2">
-          <div class="group relative aspect-[4/3] overflow-hidden lg:aspect-auto lg:min-h-[34rem]" data-reveal>
-            <img class="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" src="{{ $estate['image'] }}" alt="{{ $estate['name'] }}">
+        <div class="flex flex-col items-center py-24 text-center" data-reveal>
+          <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
+            {{ $estate['eyebrow'] }}
+          </p>
 
-            <div class="absolute inset-0 bg-brand-primary/30"></div>
+          <h2 class="mt-4 max-w-2xl font-heading text-4xl font-light leading-tight text-brand-sand">
+            {{ $estate['heading'] }}
+          </h2>
+
+          <p class="mt-6 max-w-2xl text-base leading-8 text-brand-sand/85 sm:text-[16px]">
+            {{ $estate['description'] }}
+          </p>
+
+          <div class="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-t border-brand-sand/15 pt-8 text-[0.7rem] uppercase tracking-[0.25em] text-brand-sand/85">
+            <span>{{ sprintf(__('%d Homes', 'sage'), $estate['homes']) }}</span>
+            <span aria-hidden="true">·</span>
+            <span>{{ sprintf(__('%d Bedrooms', 'sage'), $estate['bedrooms']) }}</span>
+            <span aria-hidden="true">·</span>
+            <span>{{ sprintf(__('Sleeps %d', 'sage'), $estate['sleeps']) }}</span>
           </div>
 
-          <div class="flex flex-col justify-center py-24" data-reveal>
-            <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-              {{ $estate['eyebrow'] }}
+          <div class="mt-9 flex flex-wrap items-center justify-center gap-6">
+            <a class="inline-flex items-center gap-2 rounded-full border border-brand-gold px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary" href="#book">
+              {{ $estate['cta'] }}
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <p class="text-[0.75rem] uppercase tracking-[0.2em] text-brand-sand/70">
+              {{ __('On enquiry', 'sage') }}
             </p>
-
-            <h2 class="mt-4 max-w-xl font-heading text-4xl font-light leading-tight text-brand-sand">
-              {{ $estate['heading'] }}
-            </h2>
-
-            <p class="mt-6 max-w-lg text-base leading-8 text-brand-sand/85 sm:text-[16px]">
-              {{ $estate['description'] }}
-            </p>
-
-            <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-brand-sand/15 pt-8 text-[0.7rem] uppercase tracking-[0.25em] text-brand-sand/85">
-              <span>{{ sprintf(__('%d Homes', 'sage'), $estate['homes']) }}</span>
-              <span aria-hidden="true">·</span>
-              <span>{{ sprintf(__('%d Bedrooms', 'sage'), $estate['bedrooms']) }}</span>
-              <span aria-hidden="true">·</span>
-              <span>{{ sprintf(__('Sleeps %d', 'sage'), $estate['sleeps']) }}</span>
-            </div>
-
-            <div class="mt-9 flex flex-wrap items-center gap-6">
-              <a class="inline-flex items-center gap-2 rounded-full border border-brand-gold px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary" href="#book">
-                {{ $estate['cta'] }}
-                <span aria-hidden="true">→</span>
-              </a>
-
-              <p class="text-[0.75rem] uppercase tracking-[0.2em] text-brand-sand/70">
-                {{ __('On enquiry', 'sage') }}
-              </p>
-            </div>
           </div>
         </div>
       </div>

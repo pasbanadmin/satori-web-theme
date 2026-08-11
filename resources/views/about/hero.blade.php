@@ -1,12 +1,12 @@
 @php
-  $heroImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+  $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-home-woodhouse.webp';
   $heroAlt = __('The Satori estate above Mulshi Lake', 'sage');
 @endphp
 
 <section class="relative flex min-h-screen items-center overflow-hidden bg-brand-primary text-brand-sand" data-satoriway-hero>
   <img class="absolute inset-0 h-full w-full object-cover" src="{{ $heroImage }}" alt="{{ $heroAlt }}" data-satoriway-image>
 
-  <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/90 via-brand-primary/40 to-brand-primary/20"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/60 to-brand-primary/35"></div>
 
   <div class="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16" data-satoriway-item>
     <div class="flex items-center gap-4">
