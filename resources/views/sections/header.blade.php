@@ -15,7 +15,7 @@
   <div class="relative z-50 mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-8 px-5 sm:px-8 ">
     <a class="font-heading text-2xl font-light uppercase tracking-[0.28em] text-brand-ink transition-colors duration-300 hover:text-brand-gold"
       href="{{ home_url('/') }}" aria-label="{{ $siteName }}">
-      <img class="h-10 w-auto" src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="{{ $siteName }}">
+      <img class="h-30 w-auto" src="/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp" alt="{{ $siteName }}">
     </a>
 
     <nav class="hidden lg:block" aria-label="{{ __('Primary navigation', 'sage') }}">
