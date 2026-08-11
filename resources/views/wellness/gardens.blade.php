@@ -1,5 +1,5 @@
 @php
-  $gardenImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+  $gardenImage = '/wp-content/uploads/2026/08/Nakshatra-garden-—-farm-walk.webp';
 @endphp
 
 <section class="bg-brand-primary text-brand-sand py-14 lg:py-20">

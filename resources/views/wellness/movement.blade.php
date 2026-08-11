@@ -1,5 +1,5 @@
 @php
-  $movementImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+  $movementImage = '/wp-content/uploads/2026/08/Sunrise-yoga-—-wellness-meditation.webp';
 
   $activities = [
     [
@@ -33,7 +33,7 @@
 <section class="bg-[#f7f3eb] py-14 lg:py-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
-    <div class="mb-10 lg:mb-14" data-reveal>
+    <div class="mb-7 lg:mb-10" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
         {{ __('Movement', 'sage') }}
       </p>
