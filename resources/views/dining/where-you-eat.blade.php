@@ -4,25 +4,25 @@
       'title' => __('In The Nest', 'sage'),
       'description' => __('The communal table, indoors or on the verandah. Where the estate naturally gathers.', 'sage'),
       'tag' => __('Communal Dining', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Where-you-eat-—-In-The-Nest-—-the-nest.webp',
     ],
     [
       'title' => __('Chef\'s Table in the Fields', 'sage'),
       'description' => __('A long table laid out among the growing beds, for one seating, weather permitting.', 'sage'),
       'tag' => __('Farm Dining', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Where-you-eat-—-The-Chefs-Table-in-the-fields-—-farm-harvest.webp',
     ],
     [
       'title' => __('On Your Verandah', 'sage'),
       'description' => __('Every home can be served privately, at any meal, without stepping off your own property.', 'sage'),
       'tag' => __('Private Dining', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Where-you-eat-—-On-your-verandah-—-estate-verandah.webp',
     ],
     [
       'title' => __('By the Water', 'sage'),
       'description' => __('Picnic hampers, sunset setups and al fresco barbecues arranged on request.', 'sage'),
       'tag' => __('Lakeside', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Where-you-eat-—-By-the-water-—-lake-picnic.webp',
     ],
   ];
 @endphp

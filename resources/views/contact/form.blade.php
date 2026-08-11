@@ -1,4 +1,4 @@
-<section class="bg-white  py-0 lg:py-16">
+<section class="bg-white">
   <div class="mx-auto w-full max-w-7xl">
     <div class="grid lg:grid-cols-2 min-h-[80vh]">
 

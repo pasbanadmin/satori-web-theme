@@ -1,11 +1,11 @@
 @php
-  $heroImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+  $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-wellness-yoga.webp';
   $heroAlt = __('The garden spa at Satori, Mulshi', 'sage');
 @endphp
 
 <section class="relative flex min-h-[calc(100vh-7rem)] items-end overflow-hidden bg-brand-primary text-brand-sand"
   data-wellness-hero>
-  <img class="absolute inset-0 h-full w-full object-cover" src="{{ $heroImage }}" alt="{{ $heroAlt }}">
+  <img class="absolute inset-0 h-full w-full object-cover object-bottom" src="{{ $heroImage }}" alt="{{ $heroAlt }}">
 
   <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/85 via-brand-primary/50 to-transparent"></div>
 
