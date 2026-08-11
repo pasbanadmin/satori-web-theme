@@ -10,6 +10,13 @@
       $heroAlt = __('Private homes above Mulshi Lake at Satori', 'sage');
       $estateImage = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
 
+      $stayImageA = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+      $stayImageB = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
+
+      $gallerySlide = function ($src, $position = 'object-center') {
+          return ['src' => $src, 'position' => $position];
+      };
+
       $stays = [
         [
           'name' => __('Orchard Cottages', 'sage'),
@@ -24,6 +31,13 @@
           'span' => 'lg:col-span-7',
           'offset' => '',
           'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
+          'gallery' => [
+            $gallerySlide($stayImageA, 'object-center'),
+            $gallerySlide($stayImageB, 'object-top'),
+            $gallerySlide($stayImageA, 'object-bottom'),
+            $gallerySlide($stayImageB, 'object-center'),
+            $gallerySlide($stayImageA, 'object-top'),
+          ],
         ],
         [
           'name' => __('Canopy Suites', 'sage'),
@@ -38,6 +52,13 @@
           'span' => 'lg:col-span-5',
           'offset' => 'lg:mt-24',
           'ratio' => 'aspect-[4/5]',
+          'gallery' => [
+            $gallerySlide($stayImageB, 'object-top'),
+            $gallerySlide($stayImageA, 'object-center'),
+            $gallerySlide($stayImageB, 'object-bottom'),
+            $gallerySlide($stayImageA, 'object-top'),
+            $gallerySlide($stayImageB, 'object-center'),
+          ],
         ],
         [
           'name' => __('Aves', 'sage'),
@@ -52,6 +73,13 @@
           'span' => 'lg:col-span-5',
           'offset' => '',
           'ratio' => 'aspect-[4/5]',
+          'gallery' => [
+            $gallerySlide($stayImageA, 'object-bottom'),
+            $gallerySlide($stayImageB, 'object-center'),
+            $gallerySlide($stayImageA, 'object-top'),
+            $gallerySlide($stayImageB, 'object-top'),
+            $gallerySlide($stayImageA, 'object-center'),
+          ],
         ],
         [
           'name' => __('Woodhouse', 'sage'),
@@ -66,6 +94,13 @@
           'span' => 'lg:col-span-7',
           'offset' => 'lg:mt-24',
           'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
+          'gallery' => [
+            $gallerySlide($stayImageB, 'object-center'),
+            $gallerySlide($stayImageA, 'object-center'),
+            $gallerySlide($stayImageB, 'object-top'),
+            $gallerySlide($stayImageA, 'object-bottom'),
+            $gallerySlide($stayImageB, 'object-center'),
+          ],
         ],
         [
           'name' => __('Perch I', 'sage'),
@@ -80,6 +115,13 @@
           'span' => 'lg:col-span-5',
           'offset' => '',
           'ratio' => 'aspect-[4/5]',
+          'gallery' => [
+            $gallerySlide($stayImageA, 'object-top'),
+            $gallerySlide($stayImageB, 'object-center'),
+            $gallerySlide($stayImageA, 'object-center'),
+            $gallerySlide($stayImageB, 'object-top'),
+            $gallerySlide($stayImageA, 'object-bottom'),
+          ],
         ],
         [
           'name' => __('Perch II', 'sage'),
@@ -94,6 +136,13 @@
           'span' => 'lg:col-span-7',
           'offset' => 'lg:mt-24',
           'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
+          'gallery' => [
+            $gallerySlide($stayImageB, 'object-bottom'),
+            $gallerySlide($stayImageA, 'object-center'),
+            $gallerySlide($stayImageB, 'object-center'),
+            $gallerySlide($stayImageA, 'object-bottom'),
+            $gallerySlide($stayImageB, 'object-top'),
+          ],
         ],
         [
           'name' => __('Hornbill', 'sage'),
@@ -108,6 +157,13 @@
           'span' => 'lg:col-span-12',
           'offset' => '',
           'ratio' => 'aspect-[4/3] lg:aspect-[21/10]',
+          'gallery' => [
+            $gallerySlide($stayImageA, 'object-center'),
+            $gallerySlide($stayImageB, 'object-top'),
+            $gallerySlide($stayImageA, 'object-bottom'),
+            $gallerySlide($stayImageB, 'object-center'),
+            $gallerySlide($stayImageA, 'object-top'),
+          ],
         ],
       ];
 
@@ -167,7 +223,7 @@
       </div>
     </section>
 
-    <section class="bg-[#f7f3eb] py-24">
+    <section class="bg-[#f7f3eb] py-14">
       <div class="mx-auto w-full max-w-5xl px-5 sm:px-8 lg:px-16">
         <p class="text-center text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold" data-reveal>
           {{ __('The Stays', 'sage') }}
@@ -189,9 +245,9 @@
       </div>
     </section>
 
-    <section id="stay" class="bg-[#f7f3eb] pb-24">
+    <section id="stay" class="bg-[#f7f3eb] snap-y scroll-mt-16">
       <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
-        <div class="mb-20 text-left lg:mb-24" data-reveal>
+        <div class="flex min-h-[45vh] snap-start scroll-mt-16 flex-col justify-center text-left" data-reveal>
           <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
             {{ __('Choose Your Home', 'sage') }}
           </p>
@@ -200,8 +256,9 @@
             {{ __('Seven ways to stay.', 'sage') }}
           </h2>
         </div>
+      </div>
 
-        @php
+      @php
           $chapters = [
             __('Orchard Cottages', 'sage') => [
               'category' => __('Cat 1', 'sage'),
@@ -324,26 +381,53 @@
           ];
         @endphp
 
-        <div class="space-y-14 lg:space-y-16">
+        <div class="mx-auto max-w-[1152px] space-y-14 px-5 sm:px-8 lg:px-16">
           @foreach ($stays as $stay)
             @php
               $chapter = $chapters[$stay['name']];
               $isFlipped = $loop->index % 2 === 1;
+              $idealFor = $chapter['idealFor'] ?? '';
+              $idealNeedle = __('Ideal for', 'sage');
+              $idealForBody = str_starts_with($idealFor, $idealNeedle)
+                  ? trim(substr($idealFor, strlen($idealNeedle)))
+                  : '';
             @endphp
 
-            <article class="group grid items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] {{ $loop->last ? 'border-b' : '' }}">
+            <article class="group grid min-h-[calc(100svh-7.5rem)] snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] {{ $loop->last ? 'border-b' : '' }}">
               <div class="relative aspect-[4/3] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto {{ $isFlipped ? 'lg:order-last' : '' }}" data-reveal>
-                <img class="absolute inset-0 h-full w-full object-cover {{ $stay['position'] }} transition-transform duration-[1200ms] ease-out group-hover:scale-105" src="{{ $stay['image'] }}" alt="{{ $stay['name'] }}">
+                <div class="swiper h-full w-full" data-stay-gallery-swiper>
+                  <div class="swiper-wrapper">
+                    @foreach ($stay['gallery'] as $slide)
+                      <div class="swiper-slide">
+                        <img class="h-full w-full object-cover {{ $slide['position'] }}" src="{{ $slide['src'] }}" alt="{{ $stay['name'] }}">
+                      </div>
+                    @endforeach
+                  </div>
+
+                  <div class="swiper-pagination" data-stay-gallery-pagination></div>
+
+                  <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+                    <button class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary" type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
+                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+                    </button>
+
+                    <button class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary" type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
+                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+                    </button>
+                  </div>
+                </div>
               </div>
 
-              <div class="flex flex-col justify-center bg-brand-sand px-6 py-10 sm:px-8 sm:py-12 lg:col-span-11 lg:px-10 lg:py-10 {{ $isFlipped ? 'lg:order-first lg:border-r' : 'lg:border-l' }} lg:border-brand-ink/10" data-reveal>
+              <div class="flex flex-col justify-center bg-brand-sand px-6 py-6 sm:px-8 lg:col-span-11 lg:px-12 lg:py-4 {{ $isFlipped ? 'lg:order-first lg:border-r' : 'lg:border-l' }} lg:border-brand-ink/10" data-reveal>
                 <div class="flex items-start justify-between gap-6">
-                  <div>
-                    <p class="font-heading text-lg font-light text-brand-gold/70">
+                  <div class="flex items-baseline gap-3">
+                    <span class="font-heading text-xl font-light leading-none text-brand-gold/80">
                       {{ sprintf('%02d', $loop->iteration) }}
-                    </p>
+                    </span>
 
-                    <p class="mt-3 text-[0.7rem] uppercase tracking-[0.25em] text-brand-gold">
+                    <span class="hidden h-px w-8 bg-brand-gold/50 sm:block" aria-hidden="true"></span>
+
+                    <p class="text-[0.7rem] uppercase tracking-[0.25em] text-brand-gold">
                       {{ $chapter['category'] }}
                     </p>
                   </div>
@@ -353,37 +437,49 @@
                   </p>
                 </div>
 
-                <h3 class="mt-4 font-heading text-3xl font-light leading-tight text-brand-ink">
+                <h3 class="mt-2 font-heading text-2xl font-light leading-tight text-brand-ink lg:text-3xl">
                   {{ $stay['name'] }}
                 </h3>
 
-                <p class="mt-3 font-heading text-xl font-light leading-snug text-brand-ink">
+                <p class="mt-1 font-heading text-lg font-light leading-snug text-brand-ink lg:text-xl">
                   {{ $chapter['headline'] }}
                 </p>
 
-                <div class="mt-5 h-px w-16 bg-brand-gold" aria-hidden="true"></div>
+                <div class="mt-3 h-px w-16 bg-brand-gold" aria-hidden="true"></div>
 
                 @if (!empty($chapter['description']))
-                  @foreach ($chapter['description'] as $paragraph)
-                    <p class="{{ $loop->first ? 'mt-5' : 'mt-3' }} text-sm leading-7 text-brand-muted sm:text-[16px] lg:text-sm">
-                      {{ $paragraph }}
-                    </p>
-                  @endforeach
+                  <div data-read-more>
+                    <div class="line-clamp-3" data-read-more-clamp>
+                      @foreach ($chapter['description'] as $paragraph)
+                        <p class="{{ $loop->first ? 'mt-3' : 'mt-2' }} text-sm leading-6 text-brand-muted sm:text-[16px] lg:text-sm lg:leading-5">
+                          {{ $paragraph }}
+                        </p>
+                      @endforeach
+                    </div>
+
+                    <button
+                      class="mt-2 inline-flex items-center gap-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-ink"
+                      type="button" data-read-more-toggle data-open-label="{{ __('Read More', 'sage') }}"
+                      data-close-label="{{ __('Read Less', 'sage') }}" aria-expanded="false">
+                      <span data-read-more-label>{{ __('Read More', 'sage') }}</span>
+                      <span aria-hidden="true" data-read-more-caret>&darr;</span>
+                    </button>
+                  </div>
                 @else
-                  <p class="mt-5 text-sm leading-7 text-brand-muted sm:text-[16px] lg:text-sm">
+                  <p class="mt-3 text-sm leading-6 text-brand-muted sm:text-[16px] lg:text-sm lg:leading-5">
                     {{ $stay['description'] }}
                   </p>
                 @endif
 
-                <div class="mt-5 grid grid-cols-3 border-y border-brand-ink/10 py-4 text-center">
-                  <div class="border-r border-brand-ink/10 px-3">
+                <div class="mt-3 grid grid-cols-3 divide-x divide-brand-ink/10 border-y border-brand-ink/10 py-2.5 text-center">
+                  <div class="px-3">
                     <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-muted">{{ __('Bedrooms', 'sage') }}</p>
-                    <p class="mt-1 font-heading text-2xl font-light text-brand-ink">{{ $stay['bedrooms'] }}</p>
+                    <p class="mt-1 font-heading text-xl font-light text-brand-ink lg:text-2xl">{{ $stay['bedrooms'] }}</p>
                   </div>
 
-                  <div class="border-r border-brand-ink/10 px-3">
+                  <div class="px-3">
                     <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-muted">{{ __('Sleeps', 'sage') }}</p>
-                    <p class="mt-1 font-heading text-2xl font-light text-brand-ink">{{ $stay['sleeps'] }}</p>
+                    <p class="mt-1 font-heading text-xl font-light text-brand-ink lg:text-2xl">{{ $stay['sleeps'] }}</p>
                   </div>
 
                   <div class="px-3">
@@ -392,31 +488,31 @@
                   </div>
                 </div>
 
-                <p class="mt-4 text-sm leading-6 text-brand-muted">
-                  {{ $chapter['idealFor'] }}
+                <p class="mt-2.5 text-sm leading-5 text-brand-muted">
+                  <span class="text-[0.65rem] uppercase tracking-[0.2em] text-brand-gold">{{ __('Ideal for', 'sage') }}</span>
+                  <span>{{ $idealForBody ? ' ' . $idealForBody : ' ' . $idealFor }}</span>
                 </p>
 
-                <ul class="mt-4 grid gap-x-6 gap-y-2 border-t border-brand-ink/10 pt-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <ul class="mt-3 grid gap-x-6 gap-y-1.5 border-t border-brand-ink/10 pt-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                   @foreach ($chapter['features'] as $feature)
-                    <li class="flex items-start gap-3 text-sm leading-6 text-brand-ink">
-                      <span class="mt-2 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold" aria-hidden="true"></span>
+                    <li class="flex items-start gap-3 text-sm leading-5 text-brand-ink">
+                      <span class="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-[1px] bg-brand-gold" aria-hidden="true"></span>
                       <span>{{ $feature }}</span>
                     </li>
                   @endforeach
                 </ul>
 
-                <a class="mt-6 inline-flex items-center gap-2 self-start text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-ink" href="#book">
+                <a class="mt-3 inline-flex items-center justify-center gap-2 self-start rounded-full border border-brand-ink/25 px-4 py-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-ink transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold" href="{{ $stayUrls[$stay['name']] }}">
                   {{ $chapter['cta'] ?? __('Enquire', 'sage') }}
                   <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5" aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </article>
           @endforeach
-        </div>
       </div>
     </section>
 
-    <section id="estate" class="bg-brand-primary text-brand-sand">
+    <section id="estate" class="mt-14 bg-brand-primary text-brand-sand">
       <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
         <div class="grid overflow-hidden lg:grid-cols-2">
           <div class="group relative aspect-[4/3] overflow-hidden lg:aspect-auto lg:min-h-[34rem]" data-reveal>
