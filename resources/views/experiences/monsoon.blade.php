@@ -1,5 +1,5 @@
 @php
-  $monsoonImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+  $monsoonImage = '/wp-content/uploads/2026/08/Monsoon-band-—-lake-shore.webp';
   $monsoonAlt = __('The Sahyadris in the monsoon, green and full of rain', 'sage');
 @endphp
 

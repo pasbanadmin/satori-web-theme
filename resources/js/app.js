@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Autoplay, Keyboard, Mousewheel } from 'swiper/modules';
+import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -195,40 +195,6 @@ gsap.registerPlugin(ScrollTrigger);
 })();
 
 (() => {
-  const swiperEl = document.querySelector('[data-together-swiper]');
-
-  if (!swiperEl) {
-    return;
-  }
-
-  new Swiper(swiperEl, {
-    modules: [Keyboard, Mousewheel],
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    grabCursor: true,
-    freeMode: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 4,
-      },
-    },
-  });
-})();
-
-(() => {
   const section = document.querySelector('[data-gatherings]');
 
   if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -346,6 +312,73 @@ gsap.registerPlugin(ScrollTrigger);
         trigger: section,
         start: 'top 70%',
         once: true,
+      },
+    });
+  });
+})();
+
+(() => {
+  const wrappers = document.querySelectorAll('[data-read-more]');
+
+  if (!wrappers.length) {
+    return;
+  }
+
+  wrappers.forEach((wrapper) => {
+    const clamp = wrapper.querySelector('[data-read-more-clamp]');
+    const toggle = wrapper.querySelector('[data-read-more-toggle]');
+    const label = wrapper.querySelector('[data-read-more-label]');
+    const caret = wrapper.querySelector('[data-read-more-caret]');
+
+    if (!clamp || !toggle) {
+      return;
+    }
+
+    toggle.addEventListener('click', () => {
+      const isOpen = clamp.classList.toggle('line-clamp-none');
+
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (label) {
+        label.textContent = isOpen ? toggle.dataset.closeLabel : toggle.dataset.openLabel;
+      }
+
+      if (caret) {
+        caret.textContent = isOpen ? '\u2191' : '\u2193';
+      }
+    });
+  });
+})();
+
+(() => {
+  const swipers = document.querySelectorAll('[data-stay-gallery-swiper]');
+
+  if (!swipers.length) {
+    return;
+  }
+
+  swipers.forEach((el) => {
+    new Swiper(el, {
+      modules: [Keyboard, Mousewheel, Navigation, Pagination],
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      speed: 700,
+      grabCursor: true,
+      pagination: {
+        el: el.querySelector('[data-stay-gallery-pagination]'),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: el.querySelector('[data-stay-gallery-next]'),
+        prevEl: el.querySelector('[data-stay-gallery-prev]'),
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+      mousewheel: {
+        forceToAxis: true,
       },
     });
   });
