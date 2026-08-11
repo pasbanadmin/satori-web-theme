@@ -395,3 +395,48 @@ gsap.registerPlugin(ScrollTrigger);
     }
   });
 })();
+
+(() => {
+  const counters = document.querySelectorAll('[data-counter]');
+
+  if (!counters.length) {
+    return;
+  }
+
+  counters.forEach((counter) => {
+    const target = parseInt(counter.dataset.counterTarget || '200', 10);
+    const valueEl = counter.querySelector('[data-counter-value]');
+
+    if (!valueEl) {
+      return;
+    }
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      valueEl.textContent = target;
+      return;
+    }
+
+    ScrollTrigger.create({
+      trigger: counter,
+      start: 'top 85%',
+      once: true,
+      onEnter: () => {
+        const obj = { val: 0 };
+        valueEl.textContent = '0';
+
+        gsap.to(obj, {
+          val: target,
+          duration: 1.8,
+          ease: 'power2.out',
+          onUpdate: () => {
+            valueEl.textContent = Math.floor(obj.val);
+          },
+          onComplete: () => {
+            valueEl.textContent = target;
+          },
+        });
+      },
+    });
+  });
+})();
+

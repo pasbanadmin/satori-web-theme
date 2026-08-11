@@ -1,11 +1,12 @@
 @php
   $headerNavItems = [
-    ['label' => __('Stay', 'sage'), 'url' => '#stay'],
-    ['label' => __('Dining', 'sage'), 'url' => '#dining'],
-    ['label' => __('Wellness', 'sage'), 'url' => '#wellness'],
-    ['label' => __('Experiences', 'sage'), 'url' => '#experiences'],
-    ['label' => __('Gatherings', 'sage'), 'url' => '#gatherings'],
-    ['label' => __('The Satori Way', 'sage'), 'url' => '#satori-way'],
+    ['label' => __('Stay', 'sage'), 'url' => '/stay'],
+    ['label' => __('Dining', 'sage'), 'url' => '/dining'],
+    ['label' => __('Wellness', 'sage'), 'url' => '/wellness'],
+    ['label' => __('Experiences', 'sage'), 'url' => '/experiences'],
+    ['label' => __('Gatherings', 'sage'), 'url' => '/gatherings'],
+    ['label' => __('The Satori Way', 'sage'), 'url' => '/the-satori-way'],
+    ['label' => __('Contact', 'sage'), 'url' => '/contact-us'],
   ];
 @endphp
 
@@ -15,11 +16,11 @@
   <div class="relative z-50 mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-8 px-5 sm:px-8 ">
     <a class="font-heading text-2xl font-light uppercase tracking-[0.28em] text-brand-ink transition-colors duration-300 hover:text-brand-gold"
       href="{{ home_url('/') }}" aria-label="{{ $siteName }}">
-      <img class="h-30 w-auto" src="/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp" alt="{{ $siteName }}">
+      <img class="h-8 w-auto" src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="{{ $siteName }}">
     </a>
 
     <nav class="hidden lg:block" aria-label="{{ __('Primary navigation', 'sage') }}">
-      <ul class="flex items-center gap-7 xl:gap-9">
+      <ul class="flex items-center gap-6">
         @foreach ($headerNavItems as $item)
           <li>
             <a class="text-[0.75rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:text-brand-gold"

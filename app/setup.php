@@ -51,6 +51,13 @@ add_filter('theme_file_path', function ($path, $file) {
 add_filter('should_load_separate_core_block_assets', '__return_false');
 
 /**
+ * Output global JS variables in head.
+ */
+add_action('wp_head', function () {
+    echo '<script>window.ajaxurl = "' . esc_url(admin_url('admin-ajax.php')) . '";</script>' . "\n";
+});
+
+/**
  * Register the initial theme setup.
  *
  * @return void
