@@ -36,7 +36,6 @@
           src="{{ $gardenImage }}"
           alt="{{ __('The Nakshatra garden at Satori — planted to the twenty-seven lunar constellations', 'sage') }}"
           loading="lazy">
-        <div class="absolute inset-0 bg-brand-primary/20"></div>
       </div>
 
       {{-- Right: 2×2 descriptors --}}
