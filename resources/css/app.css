@@ -64,7 +64,8 @@
   will-change: transform;
 }
 
-.marquee-track:hover {
+.marquee-track:hover,
+section:hover > .marquee-track {
   animation-play-state: paused;
 }
 
