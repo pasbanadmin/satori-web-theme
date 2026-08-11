@@ -1,5 +1,5 @@
 @php
-  $heroImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+  $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-cycling.webp';
   $heroAlt = __('A quiet morning over the Satori estate', 'sage');
 @endphp
 

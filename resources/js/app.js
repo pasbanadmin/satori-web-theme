@@ -195,40 +195,6 @@ gsap.registerPlugin(ScrollTrigger);
 })();
 
 (() => {
-  const swiperEl = document.querySelector('[data-together-swiper]');
-
-  if (!swiperEl) {
-    return;
-  }
-
-  new Swiper(swiperEl, {
-    modules: [Keyboard, Mousewheel],
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    grabCursor: true,
-    freeMode: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 4,
-      },
-    },
-  });
-})();
-
-(() => {
   const section = document.querySelector('[data-gatherings]');
 
   if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
