@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Autoplay, Keyboard } from 'swiper/modules';
+import { Autoplay, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -195,6 +195,40 @@ gsap.registerPlugin(ScrollTrigger);
 })();
 
 (() => {
+  const swiperEl = document.querySelector('[data-together-swiper]');
+
+  if (!swiperEl) {
+    return;
+  }
+
+  new Swiper(swiperEl, {
+    modules: [Keyboard, Mousewheel],
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    grabCursor: true,
+    freeMode: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
+    },
+  });
+})();
+
+(() => {
   const section = document.querySelector('[data-gatherings]');
 
   if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -230,5 +264,134 @@ gsap.registerPlugin(ScrollTrigger);
       start: 'top 65%',
       once: true,
     },
+  });
+})();
+
+(() => {
+  const section = document.querySelector('[data-stays-hero]');
+
+  if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const image = section.querySelector('[data-stays-hero-image]');
+  const items = section.querySelectorAll('[data-stays-hero-item]');
+
+  if (image) {
+    gsap.fromTo(
+      image,
+      { scale: 1.15 },
+      {
+        scale: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+        },
+      }
+    );
+  }
+
+  gsap.from(items, {
+    autoAlpha: 0,
+    y: 48,
+    duration: 1.1,
+    stagger: 0.15,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: section,
+      start: 'top 70%',
+      once: true,
+    },
+  });
+})();
+
+(() => {
+  const sections = document.querySelectorAll('[data-satoriway-hero], [data-satoriway-wellness]');
+
+  if (!sections.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  sections.forEach((section) => {
+    const image = section.querySelector('[data-satoriway-image]');
+    const items = section.querySelectorAll('[data-satoriway-item]');
+
+    if (image) {
+      gsap.fromTo(
+        image,
+        { scale: 1.15 },
+        {
+          scale: 1,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+          },
+        }
+      );
+    }
+
+    gsap.from(items, {
+      autoAlpha: 0,
+      y: 48,
+      duration: 1.1,
+      stagger: 0.15,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 70%',
+        once: true,
+      },
+    });
+  });
+})();
+
+(() => {
+  const sections = document.querySelectorAll('[data-experiences-hero], [data-experiences-parallax]');
+
+  if (!sections.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  sections.forEach((section) => {
+    const image = section.querySelector('[data-experiences-image]');
+    const items = section.querySelectorAll('[data-experiences-item]');
+
+    if (image) {
+      gsap.fromTo(
+        image,
+        { scale: 1.15 },
+        {
+          scale: 1,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+          },
+        }
+      );
+    }
+
+    if (items.length) {
+      gsap.from(items, {
+        autoAlpha: 0,
+        y: 48,
+        duration: 1.1,
+        stagger: 0.15,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
   });
 })();

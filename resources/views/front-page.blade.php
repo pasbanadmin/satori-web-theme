@@ -5,23 +5,21 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php(the_post())
+  @include('home.announcement-marquee')
 
-    @include('home.announcement-marquee')
+  @include('home.hero')
 
-    @include('home.hero')
+  @include('home.opening-statement')
 
-    @include('home.opening-statement')
+  @include('home.the-homes')
 
-    @include('home.the-homes')
+  @include('home.dining-wellness')
 
-    @include('home.dining-wellness')
+  @include('home.experiences-section')
 
-    @include('home.experiences-section')
+  @include('home.gatherings-section')
 
-    @include('home.gatherings-section')
+  @include('home.location')
 
-    @include('home.location')
-
-  @endwhile
+  @include('home.closing-section')
 @endsection

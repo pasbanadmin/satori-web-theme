@@ -21,7 +21,7 @@
     </h2>
 
     <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-brand-sand/85 sm:text-lg" data-gatherings-item>
-      {{ __('Fourteen homes, one estate, and no one else around. Weddings, retreats, reunions and milestones — the whole of Satori becomes yours, exactly as you imagine it.', 'sage') }}
+      {{ __('Fourteen homes. Twenty bedrooms. Up to forty guests, one estate, no other names in the register. Satori takes buyouts for weddings, milestone celebrations, family reunions and offsites that deserve better than a ballroom.', 'sage') }}
     </p>
 
     <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-gold px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary" href="#gatherings" data-gatherings-item>

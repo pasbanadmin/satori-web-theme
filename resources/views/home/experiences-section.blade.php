@@ -50,7 +50,8 @@
       </h2>
 
       <p class="mx-auto mt-5 max-w-2xl text-base leading-7 text-brand-muted sm:text-[16px]">
-        {{ __('From slow sunsets over the lake to late-night conversations by the fire, every moment here is optional. Choose your own pace — or lose it entirely.', 'sage') }}
+        {{ __('Cycle the estate. Pluck fruit in season. Picnic by the water. Play pickleball or lose an afternoon to the pool. Gather at the bonfire as the hills fall silent and the sky opens.Nothing here is compulsory. That is rather the point.
+', 'sage') }}
       </p>
 
       <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="#experiences">

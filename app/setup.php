@@ -124,6 +124,36 @@ add_action('after_setup_theme', function () {
 }, 20);
 
 /**
+ * Register the "stay" custom post type.
+ *
+ * Each stay on the estate is a `stay` post rendered by `single-stay.blade.php`.
+ *
+ * @return void
+ */
+add_action('init', function () {
+    register_post_type('stay', [
+        'labels' => [
+            'name' => __('Stays', 'sage'),
+            'singular_name' => __('Stay', 'sage'),
+            'add_new_item' => __('Add New Stay', 'sage'),
+            'edit_item' => __('Edit Stay', 'sage'),
+            'new_item' => __('New Stay', 'sage'),
+            'view_item' => __('View Stay', 'sage'),
+            'search_items' => __('Search Stays', 'sage'),
+            'not_found' => __('No stays found', 'sage'),
+        ],
+        'public' => true,
+        'has_archive' => false,
+        'publicly_queryable' => true,
+        'show_in_rest' => true,
+        'menu_icon' => 'dashicons-admin-home',
+        'menu_position' => 20,
+        'supports' => ['title', 'editor', 'thumbnail', 'excerpt', 'revisions'],
+        'rewrite' => ['slug' => 'stay', 'with_front' => false],
+    ]);
+});
+
+/**
  * Register the theme sidebars.
  *
  * @return void
