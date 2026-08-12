@@ -6,12 +6,9 @@ Template Name: Stays
 
 @section('content')
   @php
-    $heroImage = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
+    $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-home-woodhouse.webp';
     $heroAlt = __('Private homes above Mulshi Lake at Satori', 'sage');
     $estateImage = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
-
-    $stayImageA = '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp';
-    $stayImageB = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
 
     $gallerySlide = function ($src, $position = 'object-center') {
       return ['src' => $src, 'position' => $position];
