@@ -34,7 +34,7 @@
       </div> -->
 
       <div>
-        <img src="http://satori.local/wp-content/uploads/2026/08/estate-path.webp"
+        <img src="/wp-content/uploads/2026/08/estate-path.webp"
           alt="{{ __('Estate path through the trees at Satori', 'sage') }}" class="aspect-square" />
       </div>
       <div data-reveal>
