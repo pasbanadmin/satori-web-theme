@@ -1,6 +1,6 @@
 @php
   $headerNavItems = [
-    ['label' => __('Stay', 'sage'), 'url' => '/stay'],
+    ['label' => __('Stays', 'sage'), 'url' => '/stays'],
     ['label' => __('Dining', 'sage'), 'url' => '/dining'],
     ['label' => __('Wellness', 'sage'), 'url' => '/wellness'],
     ['label' => __('Experiences', 'sage'), 'url' => '/experiences'],
@@ -10,20 +10,59 @@
   ];
 @endphp
 
-<header
-  class="group sticky top-0 z-50 w-full bg-brand-sand transition-all duration-300 [.is-scrolled&]:border-b [.is-scrolled&]:border-brand-gold/30"
-  data-header>
-  <div class="relative z-50 mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-8 px-5 sm:px-8 ">
-    <a class="font-heading text-2xl font-light uppercase tracking-[0.28em] text-brand-ink transition-colors duration-300 hover:text-brand-gold"
+<header class="group fixed top-0 left-0 right-0 z-50 w-full text-brand-sand transition-all duration-300" data-header>
+
+  {{-- Announcement Marquee (only on front page, hidden after scroll) --}}
+  @if (is_front_page())
+    @php
+      $announcementItems = [
+        ['label' => __('Book Your Stay', 'sage'), 'url' => home_url('/contact-us')],
+        ['label' => __('Satori opens 1 October 2026', 'sage'), 'url' => null],
+        ['label' => __('Reservations now open', 'sage'), 'url' => null],
+      ];
+    @endphp
+    <div
+      class="overflow-hidden bg-brand-gold py-1 transition-all duration-300 [.is-scrolled&]:h-0 [.is-scrolled&]:py-0 [.is-scrolled&]:overflow-hidden"
+      data-header-marquee>
+      <div class="marquee-track flex w-max items-center">
+        @for ($i = 0; $i < 2; $i++)
+          <div class="flex shrink-0 items-center" @if ($i > 0) aria-hidden="true" @endif>
+            @for ($j = 0; $j < 4; $j++)
+              @foreach ($announcementItems as $item)
+                @if ($item['url'])
+                  <a class="text-[11px] font-medium uppercase tracking-[0.2em] text-white/90 transition-colors duration-300 hover:text-brand-ink mx-10 underline"
+                    href="{{ $item['url'] }}">
+                    {{ $item['label'] }}
+                  </a>
+                @else
+                  <span class="text-[11px] font-medium uppercase tracking-[0.2em] text-white/90 mx-10">
+                    {{ $item['label'] }}
+                  </span>
+                @endif
+                @if (!$loop->last)
+                  <span class="mx-10 text-brand-primary/50" aria-hidden="true">✦</span>
+                @endif
+              @endforeach
+            @endfor
+          </div>
+        @endfor
+      </div>
+    </div>
+  @endif
+
+  {{-- Main Nav Bar --}}
+  <div
+    class="relative z-50 mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-8 px-5 sm:px-8 transition-all duration-300 [.is-scrolled&]:h-16">
+    <a class="font-heading text-2xl font-light uppercase tracking-[0.28em] transition-colors duration-300 hover:text-brand-gold"
       href="{{ home_url('/') }}" aria-label="{{ $siteName }}">
-      <img class="h-8 w-auto" src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="{{ $siteName }}">
+      <img class="h-8 w-auto" src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="{{ $siteName }}" data-header-logo>
     </a>
 
-    <nav class="hidden lg:block" aria-label="{{ __('Primary navigation', 'sage') }}">
+    <nav class="hidden lg:block" aria-label="{{ __('Primary navigation', 'sage') }}" data-desktop-nav>
       <ul class="flex items-center gap-6">
         @foreach ($headerNavItems as $item)
           <li>
-            <a class="text-[0.75rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:text-brand-gold"
+            <a class="text-[0.75rem] uppercase tracking-[0.2em] transition-colors duration-300 hover:text-brand-gold"
               href="{{ $item['url'] }}">
               {{ $item['label'] }}
             </a>
@@ -33,13 +72,13 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <a class="hidden items-center justify-center rounded-full border border-brand-gold px-5 py-2 text-sm uppercase text-brand-gold transition-colors tracking-[0.02em] duration-300 hover:bg-brand-gold hover:text-white sm:inline-flex"
-        href="#book">
+      <a class="hidden items-center justify-center rounded-full border px-5 py-2 text-sm uppercase tracking-[0.02em] transition-all duration-300 sm:inline-flex"
+        href="{{ home_url('/contact-us') }}" data-header-book-cta>
         {{ __('Book Your Stay', 'sage') }}
       </a>
 
       <button
-        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-ink/30 text-brand-ink transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold lg:hidden"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-current transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold lg:hidden"
         type="button" aria-expanded="false" data-header-toggle data-open-label="{{ __('Open menu', 'sage') }}"
         data-close-label="{{ __('Close menu', 'sage') }}">
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -52,12 +91,20 @@
   </div>
 
   <nav
-    class="fixed inset-0 z-40 flex translate-y-4 flex-col justify-center bg-brand-primary px-8 opacity-0 transition-all duration-300 lg:hidden group-[.is-menu-open]:translate-y-0 group-[.is-menu-open]:opacity-100"
+    class="fixed inset-0 z-60 flex translate-y-4 flex-col justify-center bg-brand-primary px-8 opacity-0 invisible pointer-events-none transition-all duration-300 lg:hidden group-[.is-menu-open]:translate-y-0 group-[.is-menu-open]:opacity-100 group-[.is-menu-open]:visible group-[.is-menu-open]:pointer-events-auto"
     aria-label="{{ __('Mobile navigation', 'sage') }}" data-header-nav>
+    <!-- close button -->
+    <button class="absolute top-5 right-5 text-brand-sand" type="button" data-header-toggle>
+      <svg class="size-7 rounded-full p-1 bg-brand-sand/10 text-brand-sand" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"></path>
+      </svg>
+      <span class="sr-only">{{ __('Close menu', 'sage') }}</span>
+    </button>
     <ul class="w-full">
       @foreach ($headerNavItems as $item)
         <li>
-          <a class="block border-b border-brand-sand/10 py-5 font-heading text-3xl font-light text-brand-sand transition-colors duration-300 hover:text-brand-gold"
+          <a class="block border-b border-brand-sand/10 py-4 font-heading text-2xl font-light text-brand-sand transition-colors duration-300 hover:text-brand-gold"
             href="{{ $item['url'] }}">
             {{ $item['label'] }}
           </a>
@@ -65,8 +112,8 @@
       @endforeach
     </ul>
 
-    <a class="mt-12 inline-flex items-center justify-center rounded-full bg-brand-gold px-6 py-3 text-sm uppercase tracking-[0.02em] text-brand-primary transition-colors duration-300 hover:bg-brand-sand hover:text-white"
-      href="#book">
+    <a class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-gold px-6 py-3 text-sm uppercase tracking-[0.02em] text-brand-primary transition-colors duration-300 hover:bg-brand-sand hover:text-white"
+      href="{{ home_url('/contact-us') }}">
       {{ __('Book Your Stay', 'sage') }}
     </a>
   </nav>

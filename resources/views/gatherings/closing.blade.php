@@ -15,7 +15,7 @@
     </p>
 
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4" data-reveal>
-      <a href="{{ home_url('/book') }}"
+      <a href="{{ home_url('/contact-us/#enquire-form') }}"
         class="inline-flex items-center justify-center rounded-full bg-brand-gold text-brand-primary px-8 py-3.5 text-[0.8125rem] uppercase tracking-[0.2em] font-medium transition-colors duration-300 hover:bg-brand-primary hover:text-brand-sand">
         {{ __('Enquire About a Buyout', 'sage') }}
       </a>

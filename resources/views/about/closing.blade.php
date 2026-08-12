@@ -16,7 +16,8 @@
       <span class="h-px w-16 bg-brand-ink/15"></span>
     </div>
 
-    <a class="inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-7 py-3.5 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="#book" data-reveal>
+    <a class="inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-7 py-3.5 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
+      href="{{ home_url('/contact-us') }}" data-reveal>
       {{ __('Book Your Stay', 'sage') }}
       <span aria-hidden="true">→</span>
     </a>

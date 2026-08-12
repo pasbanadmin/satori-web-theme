@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
     return;
   }
 
-  const toggle = header.querySelector('[data-header-toggle]');
+  const toggles = header.querySelectorAll('[data-header-toggle]');
   const nav = header.querySelector('[data-header-nav]');
 
   const updateScrollState = () => {
@@ -32,22 +32,25 @@ gsap.registerPlugin(ScrollTrigger);
 
   updateScrollState();
 
-  if (toggle && nav) {
+  if (toggles.length && nav) {
     const setMenu = (open) => {
-      const toggleLabel = toggle.querySelector('.sr-only');
+      // Update aria-expanded and label on the primary toggle (hamburger)
+      toggles.forEach((toggle) => {
+        const toggleLabel = toggle.querySelector('.sr-only');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (toggleLabel) {
+          toggleLabel.textContent = open ? toggle.dataset.closeLabel ?? 'Close menu' : toggle.dataset.openLabel ?? 'Open menu';
+        }
+      });
 
       header.classList.toggle('is-menu-open', open);
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-
-      if (toggleLabel) {
-        toggleLabel.textContent = open ? toggle.dataset.closeLabel : toggle.dataset.openLabel;
-      }
-
       document.documentElement.style.overflow = open ? 'hidden' : '';
     };
 
-    toggle.addEventListener('click', () => {
-      setMenu(!header.classList.contains('is-menu-open'));
+    toggles.forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        setMenu(!header.classList.contains('is-menu-open'));
+      });
     });
 
     nav.addEventListener('click', (event) => {
@@ -234,56 +237,17 @@ gsap.registerPlugin(ScrollTrigger);
 })();
 
 (() => {
-  const section = document.querySelector('[data-stays-hero]');
-
-  if (!section || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    return;
-  }
-
-  const image = section.querySelector('[data-stays-hero-image]');
-  const items = section.querySelectorAll('[data-stays-hero-item]');
-
-  if (image) {
-    gsap.fromTo(
-      image,
-      { scale: 1.15 },
-      {
-        scale: 1,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      }
-    );
-  }
-
-  gsap.from(items, {
-    autoAlpha: 0,
-    y: 48,
-    duration: 1.1,
-    stagger: 0.15,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: section,
-      start: 'top 70%',
-      once: true,
-    },
-  });
-})();
-
-(() => {
-  const sections = document.querySelectorAll('[data-satoriway-hero], [data-satoriway-wellness]');
+  const sections = document.querySelectorAll(
+    '[data-stays-hero], [data-experiences-hero], [data-satoriway-hero], [data-satoriway-wellness], [data-experiences-parallax], [data-dining-hero], [data-wellness-hero], [data-gatherings-hero], [data-contact-hero]'
+  );
 
   if (!sections.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     return;
   }
 
   sections.forEach((section) => {
-    const image = section.querySelector('[data-satoriway-image]');
-    const items = section.querySelectorAll('[data-satoriway-item]');
+    const image = section.querySelector('[data-stays-hero-image], [data-satoriway-image], [data-experiences-image], [data-hero-image], img');
+    const items = section.querySelectorAll('[data-stays-hero-item], [data-satoriway-item], [data-experiences-item], [data-hero-item]');
 
     if (image) {
       gsap.fromTo(
@@ -302,18 +266,20 @@ gsap.registerPlugin(ScrollTrigger);
       );
     }
 
-    gsap.from(items, {
-      autoAlpha: 0,
-      y: 48,
-      duration: 1.1,
-      stagger: 0.15,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: section,
-        start: 'top 70%',
-        once: true,
-      },
-    });
+    if (items.length) {
+      gsap.from(items, {
+        autoAlpha: 0,
+        y: 48,
+        duration: 1.1,
+        stagger: 0.15,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
   });
 })();
 
@@ -385,51 +351,6 @@ gsap.registerPlugin(ScrollTrigger);
 })();
 
 (() => {
-  const sections = document.querySelectorAll('[data-experiences-hero], [data-experiences-parallax]');
-
-  if (!sections.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    return;
-  }
-
-  sections.forEach((section) => {
-    const image = section.querySelector('[data-experiences-image]');
-    const items = section.querySelectorAll('[data-experiences-item]');
-
-    if (image) {
-      gsap.fromTo(
-        image,
-        { scale: 1.15 },
-        {
-          scale: 1,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true,
-          },
-        }
-      );
-    }
-
-    if (items.length) {
-      gsap.from(items, {
-        autoAlpha: 0,
-        y: 48,
-        duration: 1.1,
-        stagger: 0.15,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 70%',
-          once: true,
-        },
-      });
-    }
-  });
-})();
-
-(() => {
   const counters = document.querySelectorAll('[data-counter]');
 
   if (!counters.length) {
@@ -472,4 +393,29 @@ gsap.registerPlugin(ScrollTrigger);
     });
   });
 })();
+
+(() => {
+  const container = document.querySelector('[data-hero-swiper]');
+  if (!container) return;
+
+  const paginationEl = container.querySelector('[data-hero-pagination]');
+
+  new Swiper(container, {
+    modules: [Autoplay, Pagination, Keyboard],
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: paginationEl,
+      clickable: true,
+    },
+  });
+})();
+
 

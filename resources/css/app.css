@@ -112,3 +112,72 @@ section:hover > .marquee-track {
   width: 1.5rem;
   background: #efe4d0;
 }
+
+
+/* Header scroll transitions */
+[data-header] {
+  background-color: transparent;
+  color: var(--brand-sand);
+}
+
+[data-header] [data-desktop-nav] a {
+  color: var(--brand-sand);
+}
+
+[data-header] [data-header-logo] {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+/* Marquee collapse on scroll */
+[data-header-marquee] {
+  max-height: 2rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  overflow: hidden;
+}
+
+[data-header].is-scrolled [data-header-marquee] {
+  max-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Nav bar becomes solid on scroll */
+[data-header].is-scrolled {
+  background-color: var(--brand-sand);
+  color: var(--brand-primary);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(188, 161, 105, 0.3);
+}
+
+[data-header].is-scrolled [data-desktop-nav] a {
+  color: var(--brand-primary);
+}
+
+[data-header].is-scrolled [data-header-logo] {
+  filter: none;
+}
+
+/* Book CTA: white by default, gold on scroll */
+[data-header-book-cta] {
+  border-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-header-book-cta]:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+[data-header].is-scrolled [data-header-book-cta] {
+  border-color: var(--brand-gold);
+  color: var(--brand-gold);
+}
+
+[data-header].is-scrolled [data-header-book-cta]:hover {
+  background-color: var(--brand-gold);
+  color: #ffffff;
+}
+
+

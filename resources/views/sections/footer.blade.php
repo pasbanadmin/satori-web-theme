@@ -1,45 +1,18 @@
 @php
-  $footerColumns = [
-    [
-      'heading' => __('Stay', 'sage'),
-      'items' => [
-        ['label' => __('All Homes', 'sage'), 'url' => '#stay'],
-        ['label' => __('Orchard Cottages', 'sage'), 'url' => '#stay'],
-        ['label' => __('Canopy Suites', 'sage'), 'url' => '#stay'],
-        ['label' => __('Aves', 'sage'), 'url' => '#stay'],
-        ['label' => __('Woodhouse', 'sage'), 'url' => '#stay'],
-        ['label' => __('Perch', 'sage'), 'url' => '#stay'],
-        ['label' => __('Hornbill', 'sage'), 'url' => '#stay'],
-        ['label' => __('The Estate', 'sage'), 'url' => '#stay'],
-      ],
-    ],
-    [
-      'heading' => __('The Estate', 'sage'),
-      'items' => [
-        ['label' => __('Dining', 'sage'), 'url' => '#dining'],
-        ['label' => __('Wellness & Spa', 'sage'), 'url' => '#wellness'],
-        ['label' => __('Experiences', 'sage'), 'url' => '#experiences'],
-        ['label' => __('Gatherings', 'sage'), 'url' => '#gatherings'],
-        ['label' => __('The Satori Way', 'sage'), 'url' => '#satori-way'],
-      ],
-    ],
-    [
-      'heading' => __('Plan', 'sage'),
-      'items' => [
-        ['label' => __('Book Your Stay', 'sage'), 'url' => '#book'],
-        ['label' => __('Enquire', 'sage'), 'url' => '#book'],
-        ['label' => __('Getting Here', 'sage'), 'url' => '#location'],
-        ['label' => __('FAQ', 'sage'), 'url' => '#'],
-        ['label' => __('+91 00000 00000', 'sage'), 'url' => 'tel:+910000000000'],
-        ['label' => __('reservations@satori.com', 'sage'), 'url' => 'mailto:reservations@satori.com'],
-      ],
-    ],
+  $navLinks = [
+    ['label' => __('Stays', 'sage'), 'url' => home_url('/stays')],
+    ['label' => __('Dining', 'sage'), 'url' => home_url('/dining')],
+    ['label' => __('Wellness & Spa', 'sage'), 'url' => home_url('/wellness')],
+    ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences')],
+    ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings')],
+    ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way')],
+    ['label' => __('Contact Us', 'sage'), 'url' => home_url('/contact-us')],
   ];
 
   $footerLegalItems = [
-    ['label' => __('Privacy Policy', 'sage'), 'url' => '#'],
-    ['label' => __('Terms', 'sage'), 'url' => '#'],
-    ['label' => __('Cancellation Policy', 'sage'), 'url' => '#'],
+    ['label' => __('Privacy Policy', 'sage'), 'url' => home_url('/privacy-policy')],
+    ['label' => __('Terms of Stay', 'sage'), 'url' => home_url('/terms')],
+    ['label' => __('Cancellation Policy', 'sage'), 'url' => home_url('/cancellation-policy')],
   ];
 @endphp
 
@@ -47,67 +20,101 @@
   <div class="h-px w-full bg-gradient-to-r from-transparent via-brand-gold/60 to-transparent" aria-hidden="true"></div>
 
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
-    <div class="py-20 lg:py-28">
-      <div class="mt-0 grid gap-12 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1.4fr] lg:gap-12 xl:gap-16">
-        @foreach ($footerColumns as $column)
-          <nav aria-label="{{ $column['heading'] }}">
-            <p class="mb-6 text-[0.75rem] uppercase tracking-[0.28em] text-brand-gold">
-              {{ $column['heading'] }}
-            </p>
+    <div class="py-10 lg:py-14">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 items-start">
 
-            <ul class="space-y-3.5">
-              @foreach ($column['items'] as $item)
-                <li>
-                  <a class="relative inline-block text-sm text-brand-sand/70 transition-colors duration-300 hover:text-brand-gold after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-brand-gold after:transition-all after:duration-300 hover:after:w-full" href="{{ $item['url'] }}">
-                    {{ $item['label'] }}
-                  </a>
-                </li>
-              @endforeach
-            </ul>
-          </nav>
-        @endforeach
-
-        <div class="mt-1">
-          <p class="text-[0.75rem] uppercase tracking-[0.28em] text-brand-gold">
-            {{ __('Newsletter', 'sage') }}
+        {{-- Brand / Estate Info --}}
+        <div>
+          <a href="{{ home_url('/') }}"
+            class="inline-block mb-3 font-heading text-2xl font-light uppercase tracking-[0.15em] text-brand-sand transition-colors duration-300 hover:text-brand-gold">
+            {{ __('Satori, Mulshi', 'sage') }}
+          </a>
+          <p class="max-w-xs text-sm leading-6 text-brand-sand/70">
+            {{ __('A private estate of fourteen homes set across the hills and waters of Mulshi.', 'sage') }}
           </p>
 
-          <p class="mt-6 max-w-xs text-sm leading-6 text-brand-sand/70">
-            {{ __('Notes from the estate — what’s growing, what’s changing, and when to come. A few times a year, never more.', 'sage') }}
-          </p>
+          {{-- Social Icons --}}
+          <div class="mt-5 flex items-center gap-4">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
+              aria-label="{{ __('Satori on Instagram', 'sage') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"
+                aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
 
-          <form class="mt-8" action="#" method="post">
-            <label class="sr-only" for="footer-email">{{ __('Email address', 'sage') }}</label>
-
-            <input
-              class="w-full border-b border-brand-sand/30 bg-transparent py-3 text-sm text-brand-sand placeholder:text-brand-sand/40 focus:border-brand-gold focus:outline-none focus:ring-1 focus:ring-brand-gold/50"
-              type="email"
-              name="email"
-              id="footer-email"
-              autocomplete="email"
-              placeholder="{{ __('Your email address', 'sage') }}"
-              required
-            >
-
-            <button class="group mt-6 inline-flex items-center gap-2 text-[0.75rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:text-brand-sand" type="submit">
-              {{ __('Subscribe', 'sage') }}
-              <span class="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
-            </button>
-          </form>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
+              aria-label="{{ __('Satori on Facebook', 'sage') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5"
+                aria-hidden="true">
+                <path
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+            </a>
+          </div>
         </div>
+
+        {{-- Navigation Links --}}
+        <div>
+          <p class="mb-4 text-[0.75rem] uppercase tracking-[0.28em] text-brand-gold">
+            {{ __('Navigation', 'sage') }}
+          </p>
+          <ul class="grid grid-cols-2 gap-y-2.5 gap-x-4" role="list">
+            @foreach ($navLinks as $item)
+              <li>
+                <a class="text-xs uppercase tracking-[0.18em] text-brand-sand/70 transition-colors duration-300 hover:text-brand-gold"
+                  href="{{ $item['url'] }}">
+                  {{ $item['label'] }}
+                </a>
+              </li>
+            @endforeach
+          </ul>
+        </div>
+
+        {{-- Contact Info --}}
+        <div>
+          <p class="mb-4 text-[0.75rem] uppercase tracking-[0.28em] text-brand-gold">
+            {{ __('Estate & Enquiries', 'sage') }}
+          </p>
+          <ul class="space-y-2 text-xs leading-6 text-brand-sand/70" role="list">
+            <li>{{ __('Satori Estate, Mulshi, Pune District', 'sage') }}</li>
+            <li>
+              <a href="tel:+919999999999" class="hover:text-brand-gold transition-colors duration-300">
+                +91 99999 99999
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@satori.in" class="hover:text-brand-gold transition-colors duration-300">
+                hello@satori.in
+              </a>
+            </li>
+            <li>
+              <a href="{{ home_url('/contact-us/#enquire-form') }}"
+                class="text-brand-sand/70 underline-offset-4 transition-colors duration-300 hover:text-brand-gold underline">
+                {{ __('Enquire Now', 'sage') }}
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
-    <div class="pointer-events-none select-none" aria-hidden="true">
-      <p class="whitespace-nowrap text-center font-heading text-[18vw] font-light leading-[0.7] tracking-tight text-brand-sand/[0.08] lg:text-[10rem]">
-        SATORI
-      </p>
-    </div>
-
-    <div class="flex flex-col gap-3 border-t border-brand-sand/5 py-7 text-[0.6875rem] uppercase tracking-[0.18em] text-brand-sand/40 sm:flex-row sm:items-center sm:justify-between">
-      <p>
-        &copy; {{ date('Y') }} {{ __('Satori Living Pvt Ltd', 'sage') }}
-      </p>
+    {{-- Bottom Bar --}}
+    <div
+      class="flex flex-col gap-3 border-t border-brand-sand/10 py-6 text-[0.6875rem] uppercase tracking-[0.18em] text-brand-sand/40 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <p>
+          &copy; {{ date('Y') }} {{ __('Satori Living Pvt Ltd', 'sage') }}
+        </p>
+        <span aria-hidden="true">·</span>
+        <p>
+          {{ __('Managed by Pasban — The Gatekeeper', 'sage') }}
+        </p>
+      </div>
 
       <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
         @foreach ($footerLegalItems as $item)
@@ -115,12 +122,6 @@
             {{ $item['label'] }}
           </a>
         @endforeach
-
-        <span aria-hidden="true">·</span>
-
-        <p>
-          {{ __('Managed by Pasban — The Gatekeeper', 'sage') }}
-        </p>
       </div>
     </div>
   </div>

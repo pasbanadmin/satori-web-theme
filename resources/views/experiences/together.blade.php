@@ -2,7 +2,7 @@
   $togetherImage = '/wp-content/uploads/2026/08/Together-—-space-to-enjoy-space-to-bond-—-pool-infinity.webp';
 @endphp
 
-<section class="bg-[#f7f3eb] pb-24">
+<section class="bg-[#f7f3eb] pb-14 lg:pb-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
       <div data-reveal>
@@ -26,7 +26,8 @@
       </div>
 
       <div class="group relative overflow-hidden" data-reveal>
-        <img class="aspect-[4/3] w-full object-cover" src="{{ $togetherImage }}" alt="{{ __('Shared moments at Satori', 'sage') }}">
+        <img class="aspect-[4/3] w-full object-cover" src="{{ $togetherImage }}"
+          alt="{{ __('Shared moments at Satori', 'sage') }}">
       </div>
     </div>
   </div>

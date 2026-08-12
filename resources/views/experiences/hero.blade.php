@@ -3,24 +3,27 @@
   $heroAlt = __('A quiet morning over the Satori estate', 'sage');
 @endphp
 
-<section class="relative flex min-h-screen items-center justify-center overflow-hidden bg-brand-primary text-brand-sand" data-experiences-hero>
+<section class="relative flex min-h-[calc(100vh-7rem)] items-end overflow-hidden bg-brand-primary text-brand-sand" data-experiences-hero>
   <img class="absolute inset-0 h-full w-full object-cover" src="{{ $heroImage }}" alt="{{ $heroAlt }}" data-experiences-image>
 
-  <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/90 via-brand-primary/35 to-brand-primary/20"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/85 via-brand-primary/50 to-transparent"></div>
 
-  <div class="relative z-10 mx-auto w-full max-w-4xl px-5 py-32 text-center sm:px-8" data-experiences-item>
-    <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-      {{ __('Experiences', 'sage') }}
-    </p>
-
-    <span class="mx-auto mt-6 block h-px w-12 bg-brand-gold" aria-hidden="true"></span>
-
-    <h1 class="mt-10 font-heading text-5xl font-light leading-none text-brand-sand sm:text-6xl">
-      {{ __('Gentle rituals, shared moments, and the luxury of unhurried time.', 'sage') }}
+  <div class="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16 pb-14 lg:pb-20" data-experiences-item>
+    <h1 class="mt-4 font-heading text-5xl font-light leading-none text-brand-sand sm:text-6xl lg:text-7xl">
+      {{ __('EXPERIENCES', 'sage') }}
     </h1>
 
-    <p class="mt-12 text-[0.6875rem] uppercase tracking-[0.25em] text-brand-sand/70">
-      {{ __('A day at Satori', 'sage') }}
-    </p>
+    <div class="mt-4 flex items-center gap-8">
+      <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading">
+        {{ __('Gentle rituals, shared moments, and the luxury of unhurried time.', 'sage') }}
+      </p>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 right-0 z-10 hidden items-center gap-3 pr-8 pb-10 lg:flex" data-experiences-item aria-hidden="true">
+    <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
+    <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/60">
+      {{ __('Scroll', 'sage') }}
+    </span>
   </div>
 </section>

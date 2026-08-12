@@ -1,5 +1,5 @@
 @php
-  $natureImage = '/wp-content/uploads/2026/08/farm-walk-scaled.webp';
+  $natureImage = '/wp-content/uploads/2026/08/Experiences-rail-—-Farm-Walks-—-farm-walk.webp';
   $natureAlt = __('The landscape of the Satori estate, gardens and open sky', 'sage');
 @endphp
 
@@ -8,7 +8,6 @@
     <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
       <div class="lg:order-1 lg:py-4" data-reveal>
         <div class="flex items-baseline gap-4">
-          <span class="font-heading text-3xl font-light leading-none text-brand-gold/60">02</span>
 
           <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
             {{ __('Rooted in Nature', 'sage') }}
@@ -29,7 +28,9 @@
       </div>
 
       <div class="group relative overflow-hidden lg:order-2" data-reveal>
-        <img class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" src="{{ $natureImage }}" alt="{{ $natureAlt }}">
+        <img
+          class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          src="{{ $natureImage }}" alt="{{ $natureAlt }}">
         <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/35 via-transparent to-transparent"></div>
       </div>
     </div>

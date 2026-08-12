@@ -26,7 +26,7 @@
       <div class="mx-auto mt-6 h-px w-20 bg-brand-gold/60" aria-hidden="true"></div>
 
       <p class="mx-auto mt-6 max-w-lg text-base leading-7 text-brand-sand/75 sm:text-[16px]">
-        {{ __('The page you are looking for doesn\'t exist or may have moved. Let us help you find your way back to the estate.', 'sage') }}
+        {{ __('TThis page doesn’t exist, but the estate does. Let us point you back.', 'sage') }}
       </p>
 
       {{-- CTA Buttons --}}

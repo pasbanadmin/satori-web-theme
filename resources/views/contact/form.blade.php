@@ -1,9 +1,9 @@
-<section class="bg-white">
+<section id="enquire-form" class="bg-white scroll-mt-16">
   <div class="mx-auto w-full max-w-7xl">
-    <div class="grid lg:grid-cols-2 min-h-[80vh]">
+    <div class="grid lg:grid-cols-12 min-h-[80vh]">
 
-      {{-- ── LEFT: Contact info + map ── --}}
-      <div class="flex flex-col bg-brand-sand border-r border-brand-ink/10 px-6 py-14 sm:px-10 lg:px-14 lg:py-20"
+      {{-- ── LEFT: Contact info + map (4 cols) ── --}}
+      <div class="flex flex-col bg-brand-sand border-r border-brand-ink/10 px-6 py-14 sm:px-10 lg:col-span-4 lg:px-10 lg:py-20"
         data-reveal>
 
         <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
@@ -29,7 +29,7 @@
             </span>
             <div>
               <p class="text-base font-medium text-brand-ink">{{ __('Address', 'sage') }}</p>
-              <p class="mt-1 text-base leading-6 text-brand-muted">
+              <p class="mt-1 text-sm leading-6 text-brand-muted">
                 {{ __('Satori Estate, Mulshi, Pune District, Maharashtra — India', 'sage') }}
               </p>
             </div>
@@ -63,47 +63,37 @@
             <div>
               <p class="text-base font-medium text-brand-ink">{{ __('Email', 'sage') }}</p>
               <a href="mailto:hello@satori.in"
-                class="mt-1 text-base text-brand-muted hover:text-brand-gold transition-colors duration-300">
+                class="mt-1 text-sm text-brand-muted hover:text-brand-gold transition-colors duration-300">
                 hello@satori.in
               </a>
-            </div>
-          </li>
-
-          <li class="flex gap-4 border-t border-brand-ink/10 py-5">
-            <span class="shrink-0 w-5 text-brand-gold mt-0.5" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-4 h-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-            </span>
-            <div>
-              <p class="text-base font-medium text-brand-ink">{{ __('Response Time', 'sage') }}</p>
-              <p class="mt-1 text-base leading-6 text-brand-muted">
-                {{ __('We respond to all enquiries within 24 hours.', 'sage') }}
-              </p>
             </div>
           </li>
         </ul>
 
       </div>
 
-      {{-- ── RIGHT: Contact form ── --}}
-      <div class="px-6 py-14 sm:px-10 lg:px-14 lg:py-20 bg-[#f7f3eb]" data-reveal>
+      {{-- ── RIGHT: 8-field Enquiry Form (8 cols) ── --}}
+      <div class="px-6 py-14 sm:px-10 lg:col-span-8 lg:px-14 lg:py-20 bg-[#f7f3eb]" data-reveal>
 
         <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
           {{ __('Enquiry', 'sage') }}
         </p>
 
         <h2 class="mt-4 font-heading text-3xl font-light leading-snug text-brand-ink">
-          {{ __('Tell us what you have in mind', 'sage') }}
+          {{ __('Enquire about your stay', 'sage') }}
         </h2>
+
+        <p class="mt-3 text-base leading-7 text-brand-muted max-w-2xl">
+          {{ __('Tell us how you would like to experience the estate, and we will shape the stay around your pace, your people and your dates.', 'sage') }}
+        </p>
 
         <div class="mt-6 h-px w-16 bg-brand-gold" aria-hidden="true"></div>
 
-        {{-- Success message --}}
-        <div id="contact-success" class="hidden mt-8 border border-brand-gold/30 bg-brand-gold/8 px-5 py-4 rounded-sm">
-          <p class="text-sm font-medium text-brand-ink">{{ __('Thank you — we will be in touch shortly.', 'sage') }}</p>
+        {{-- Success confirmation message --}}
+        <div id="contact-success" class="hidden mt-8 border border-brand-gold/40 bg-brand-sand p-6 rounded-sm">
+          <p class="text-base leading-7 text-brand-ink font-medium">
+            {{ __('Thank you. We have your enquiry and someone from the team will be in touch within one working day. If it is urgent, call us on +91 99999 99999.', 'sage') }}
+          </p>
         </div>
 
         {{-- Error message --}}
@@ -114,11 +104,11 @@
         <form id="contact-form" novalidate class="mt-8 space-y-6">
           <input type="hidden" name="nonce" value="{{ wp_create_nonce('satori_contact_nonce') }}">
 
-          {{-- Name + Email --}}
+          {{-- Field 1 & 2: Name + Email --}}
           <div class="grid gap-6 sm:grid-cols-2">
             <div>
               <label for="contact-name" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-                {{ __('Full Name', 'sage') }} <span class="text-brand-gold" aria-hidden="true">*</span>
+                {{ __('Name', 'sage') }} <span class="text-brand-gold" aria-hidden="true">*</span>
               </label>
               <input type="text" id="contact-name" name="name" autocomplete="name" required
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-gold transition-colors duration-200"
@@ -128,7 +118,7 @@
 
             <div>
               <label for="contact-email" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-                {{ __('Email Address', 'sage') }} <span class="text-brand-gold" aria-hidden="true">*</span>
+                {{ __('Email', 'sage') }} <span class="text-brand-gold" aria-hidden="true">*</span>
               </label>
               <input type="email" id="contact-email" name="email" autocomplete="email" required
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-gold transition-colors duration-200"
@@ -137,7 +127,7 @@
             </div>
           </div>
 
-          {{-- Phone + Guests --}}
+          {{-- Field 3 & 4: Phone + Guests --}}
           <div class="grid gap-6 sm:grid-cols-2">
             <div>
               <label for="contact-phone" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
@@ -150,7 +140,7 @@
 
             <div>
               <label for="contact-guests" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-                {{ __('No. of Guests', 'sage') }}
+                {{ __('Number of guests', 'sage') }}
               </label>
               <input type="text" id="contact-guests" name="guests"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-gold transition-colors duration-200"
@@ -158,44 +148,67 @@
             </div>
           </div>
 
-          {{-- Dates + Subject --}}
-          <div class="grid gap-6 sm:grid-cols-2">
-            <div>
-              <label for="contact-dates" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-                {{ __('Preferred Dates', 'sage') }}
-              </label>
+          {{-- Field 5: Preferred dates --}}
+          <div>
+            <label for="contact-dates" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
+              {{ __('Preferred dates (from / to)', 'sage') }}
+            </label>
+            <div class="flex flex-col sm:flex-row gap-3">
               <input type="text" id="contact-dates" name="dates"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-gold transition-colors duration-200"
-                placeholder="{{ __('e.g. Oct 10–13', 'sage') }}">
+                placeholder="{{ __('e.g. Oct 10–13 or flexible', 'sage') }}">
+              <label class="inline-flex items-center gap-2 px-3 py-3 bg-white border border-brand-ink/15 shrink-0 cursor-pointer">
+                <input type="checkbox" name="flexible_dates" value="1" class="accent-brand-gold">
+                <span class="text-xs uppercase tracking-wider text-brand-ink">{{ __('Dates are flexible', 'sage') }}</span>
+              </label>
+            </div>
+          </div>
+
+          {{-- Field 6 & 7: What are you planning? + Preferred Home --}}
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div>
+              <label for="contact-planning" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
+                {{ __('What are you planning?', 'sage') }}
+              </label>
+              <select id="contact-planning" name="planning"
+                class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
+                <option value="">{{ __('Select option…', 'sage') }}</option>
+                <option value="Leisure stay">{{ __('Leisure stay', 'sage') }}</option>
+                <option value="Celebration or wedding">{{ __('Celebration or wedding', 'sage') }}</option>
+                <option value="Offsite or team retreat">{{ __('Offsite or team retreat', 'sage') }}</option>
+                <option value="Hosted retreat">{{ __('Hosted retreat', 'sage') }}</option>
+                <option value="Not sure yet">{{ __('Not sure yet', 'sage') }}</option>
+              </select>
             </div>
 
             <div>
-              <label for="contact-subject" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-                {{ __('Nature of Enquiry', 'sage') }}
+              <label for="contact-preferred-home" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
+                {{ __('Preferred home (optional)', 'sage') }}
               </label>
-              <select id="contact-subject" name="subject"
+              <select id="contact-preferred-home" name="preferred_home"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
-                <option value="">{{ __('Select one…', 'sage') }}</option>
-                <option value="{{ __('Stay Enquiry', 'sage') }}">{{ __('Stay Enquiry', 'sage') }}</option>
-                <option value="{{ __('Estate Buyout / Gathering', 'sage') }}">
-                  {{ __('Estate Buyout / Gathering', 'sage') }}
-                </option>
-                <option value="{{ __('Wellness & Spa', 'sage') }}">{{ __('Wellness & Spa', 'sage') }}</option>
-                <option value="{{ __('Hosted Retreat', 'sage') }}">{{ __('Hosted Retreat', 'sage') }}</option>
-                <option value="{{ __('General Enquiry', 'sage') }}">{{ __('General Enquiry', 'sage') }}</option>
+                <option value="">{{ __('Select home…', 'sage') }}</option>
+                <option value="Orchard Cottages">{{ __('Orchard Cottages', 'sage') }}</option>
+                <option value="Canopy Suites">{{ __('Canopy Suites', 'sage') }}</option>
+                <option value="Aves">{{ __('Aves', 'sage') }}</option>
+                <option value="Woodhouse">{{ __('Woodhouse', 'sage') }}</option>
+                <option value="Perch I">{{ __('Perch I', 'sage') }}</option>
+                <option value="Perch II">{{ __('Perch II', 'sage') }}</option>
+                <option value="Hornbill">{{ __('Hornbill', 'sage') }}</option>
+                <option value="The Full Estate">{{ __('The full estate', 'sage') }}</option>
+                <option value="Help me choose">{{ __('Help me choose', 'sage') }}</option>
               </select>
             </div>
           </div>
 
-          {{-- Message --}}
+          {{-- Field 8: Anything we should know? --}}
           <div>
-            <label for="contact-message" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-              {{ __('Your Message', 'sage') }} <span class="text-brand-gold" aria-hidden="true">*</span>
+            <label for="contact-notes" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
+              {{ __('Anything we should know?', 'sage') }}
             </label>
-            <textarea id="contact-message" name="message" rows="5" required
+            <textarea id="contact-notes" name="notes" rows="4"
               class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-gold transition-colors duration-200 resize-none"
-              placeholder="{{ __('Tell us a little about what you\'re planning…', 'sage') }}"></textarea>
-            <p class="field-error hidden mt-1 text-xs text-red-600" data-field="message"></p>
+              placeholder="{{ __('Dietary needs, accessibility, special occasion…', 'sage') }}"></textarea>
           </div>
 
           {{-- Submit --}}
@@ -209,9 +222,6 @@
                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
               </svg>
             </button>
-            <p class="mt-4 text-[0.65rem] uppercase tracking-[0.15em] text-brand-muted/60">
-              {{ __('We respond to all enquiries within 24 hours.', 'sage') }}
-            </p>
           </div>
 
         </form>

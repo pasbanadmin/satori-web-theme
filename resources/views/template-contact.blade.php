@@ -7,5 +7,9 @@ Template Name: Contact Us
 @section('content')
   @include('contact.hero')
 
+  @include('contact.paths')
+
   @include('contact.form')
+
+  @include('contact.closing')
 @endsection

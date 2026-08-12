@@ -1,19 +1,11 @@
-@php
-  $wellnessImage = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
-  $wellnessAlt = __('The quiet atmosphere of the Satori estate', 'sage');
-@endphp
-
-<section class="relative flex min-h-[32rem] items-center overflow-hidden bg-brand-primary text-brand-sand lg:min-h-[40rem]" data-satoriway-wellness>
-  <div class="absolute inset-0">
-    <img class="h-full w-full object-cover" src="{{ $wellnessImage }}" alt="{{ $wellnessAlt }}" data-satoriway-image>
-  </div>
+<section
+  class="relative flex min-h-[32rem] items-center overflow-hidden bg-brand-primary text-brand-sand lg:min-h-[40rem]"
+  data-satoriway-wellness>
 
   <div class="absolute inset-0 bg-brand-primary/70"></div>
 
   <div class="relative z-10 mx-auto w-full max-w-3xl px-5 py-16 text-center sm:px-8">
     <div class="flex items-center justify-center gap-4" data-satoriway-item>
-      <span class="font-heading text-2xl font-light leading-none text-brand-gold/70">03</span>
-      <span class="h-px w-10 bg-brand-gold" aria-hidden="true"></span>
 
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
         {{ __('Wellness as a Way of Being', 'sage') }}
@@ -34,7 +26,8 @@
 
     <div class="mx-auto mt-8 h-px w-12 bg-brand-gold" data-satoriway-item aria-hidden="true"></div>
 
-    <p class="mx-auto mt-8 max-w-2xl font-heading text-3xl font-light leading-tight text-brand-gold sm:text-4xl" data-satoriway-item>
+    <p class="mx-auto mt-8 max-w-2xl font-heading text-3xl font-light leading-tight text-brand-gold sm:text-4xl"
+      data-satoriway-item>
       {{ __('The goal is not optimisation. It is alignment.', 'sage') }}
     </p>
   </div>

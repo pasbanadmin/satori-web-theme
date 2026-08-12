@@ -1,4 +1,4 @@
-<section class="bg-[#f7f3eb] py-24" data-opening-statement>
+<section class="bg-[#f7f3eb] y-14 lg:py-20" data-opening-statement>
   <div class="mx-auto w-full max-w-4xl px-5 text-center sm:px-8">
     <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
       {{ __('Experiences', 'sage') }}
@@ -16,6 +16,6 @@
       </p>
     </div>
 
-    <div class="mx-auto my-12 h-px w-full max-w-[16rem] bg-brand-gold" data-divider></div>
+    <div class="mx-auto mt-12 h-px w-full max-w-[16rem] bg-brand-gold" data-divider></div>
   </div>
 </section>
