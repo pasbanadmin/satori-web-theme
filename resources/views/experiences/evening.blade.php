@@ -3,11 +3,13 @@
   $eveningAlt = __('The lake at Satori at day\'s end', 'sage');
 @endphp
 
-<section class="bg-[#f7f3eb] pb-24">
+<section class="bg-[#f7f3eb] py-14 lg:py-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
       <div class="group relative overflow-hidden" data-reveal>
-        <img class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" src="{{ $eveningImage }}" alt="{{ $eveningAlt }}">
+        <img
+          class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          src="{{ $eveningImage }}" alt="{{ $eveningAlt }}">
       </div>
 
       <div data-reveal>

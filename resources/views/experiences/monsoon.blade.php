@@ -3,12 +3,9 @@
   $monsoonAlt = __('The Sahyadris in the monsoon, green and full of rain', 'sage');
 @endphp
 
-<section
-  id="monsoon"
+<section id="monsoon"
   class="relative flex min-h-screen items-center overflow-hidden bg-brand-primary bg-cover bg-center bg-scroll text-brand-sand md:bg-fixed"
-  style="background-image: url('{{ $monsoonImage }}');"
-  aria-label="{{ $monsoonAlt }}"
->
+  style="background-image: url('{{ $monsoonImage }}');" aria-label="{{ $monsoonAlt }}">
   <div class="absolute inset-0 bg-brand-primary/65"></div>
 
   <div class="relative z-10 mx-auto w-full max-w-4xl px-5 py-28 text-center sm:px-8" data-reveal>
@@ -28,7 +25,8 @@
       {{ __('The verandahs were built for this. So was the monsoon rate.', 'sage') }}
     </p>
 
-    <a class="mt-12 inline-flex items-center justify-center gap-2 rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary" href="#monsoon" data-reveal>
+    <a class="mt-12 inline-flex items-center justify-center gap-2 rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
+      href="{{ home_url('/stays') }}" data-reveal>
       {{ __('See Monsoon Stays', 'sage') }}
       <span aria-hidden="true">→</span>
     </a>

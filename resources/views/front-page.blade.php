@@ -5,8 +5,6 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('home.announcement-marquee')
-
   @include('home.hero')
 
   @include('home.opening-statement')

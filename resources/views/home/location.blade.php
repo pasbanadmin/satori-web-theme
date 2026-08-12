@@ -8,15 +8,21 @@
 
 <section id="location" class="bg-[#f7f3eb] py-24">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
-    <div class="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
-      <div class="relative overflow-hidden rounded-md border border-brand-ink/10 bg-brand-sand" data-reveal>
-        <svg class="block h-auto w-full" viewBox="0 0 600 480" role="img" aria-label="{{ __('Stylised map of the Satori estate above Mulshi Lake', 'sage') }}">
-          <path d="M 60 90 C 160 40, 300 60, 380 130 C 460 200, 520 300, 540 420" fill="none" stroke="#16100c" stroke-opacity="0.06" stroke-width="1.5" />
-          <path d="M 40 160 C 150 110, 320 130, 420 220 C 500 290, 560 380, 570 440" fill="none" stroke="#16100c" stroke-opacity="0.06" stroke-width="1.5" />
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <!-- <div class="relative overflow-hidden rounded-md border border-brand-ink/10 bg-brand-sand" data-reveal>
+        <svg class="block h-auto w-full" viewBox="0 0 600 480" role="img"
+          aria-label="{{ __('Stylised map of the Satori estate above Mulshi Lake', 'sage') }}">
+          <path d="M 60 90 C 160 40, 300 60, 380 130 C 460 200, 520 300, 540 420" fill="none" stroke="#16100c"
+            stroke-opacity="0.06" stroke-width="1.5" />
+          <path d="M 40 160 C 150 110, 320 130, 420 220 C 500 290, 560 380, 570 440" fill="none" stroke="#16100c"
+            stroke-opacity="0.06" stroke-width="1.5" />
 
-          <path d="M 400 250 C 470 220, 560 250, 575 310 C 590 375, 540 430, 470 440 C 400 450, 355 395, 375 330 C 385 290, 360 270, 400 250 Z" fill="#16100c" fill-opacity="0.08" />
+          <path
+            d="M 400 250 C 470 220, 560 250, 575 310 C 590 375, 540 430, 470 440 C 400 450, 355 395, 375 330 C 385 290, 360 270, 400 250 Z"
+            fill="#16100c" fill-opacity="0.08" />
 
-          <path d="M 10 470 C 120 450, 220 390, 330 350 C 400 325, 470 330, 555 360" fill="none" stroke="#16100c" stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 9" />
+          <path d="M 10 470 C 120 450, 220 390, 330 350 C 400 325, 470 330, 555 360" fill="none" stroke="#16100c"
+            stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 9" />
 
           <circle cx="330" cy="350" r="26" fill="#efe4d0" stroke="#16100c" stroke-opacity="0.15" stroke-width="1" />
           <circle cx="330" cy="350" r="10" fill="#BCA169" />
@@ -25,8 +31,12 @@
         <p class="absolute bottom-4 right-5 text-[0.65rem] uppercase tracking-[0.3em] text-brand-muted">
           {{ __('Mulshi, Maharashtra', 'sage') }}
         </p>
-      </div>
+      </div> -->
 
+      <div>
+        <img src="http://satori.local/wp-content/uploads/2026/08/estate-path.webp"
+          alt="{{ __('Estate path through the trees at Satori', 'sage') }}" class="aspect-square" />
+      </div>
       <div data-reveal>
         <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
           {{ __('Location', 'sage') }}
@@ -53,11 +63,11 @@
             </div>
           @endforeach
         </div>
-
+        <!-- 
         <a class="mt-12 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="#location">
           {{ __('Getting Here', 'sage') }}
           <span aria-hidden="true">→</span>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>

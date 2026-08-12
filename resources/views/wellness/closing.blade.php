@@ -18,7 +18,7 @@
         {{ __('With the land, with the pace, and with whatever you actually came here to recover from.', 'sage') }}
       </p>
 
-      <a href="{{ home_url('/book') }}"
+      <a href="{{ home_url('/contact-us') }}"
         class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-sand px-8 py-3.5 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold"
         data-reveal>
         {{ __('Book Your Stay', 'sage') }}

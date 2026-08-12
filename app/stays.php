@@ -17,7 +17,7 @@
 
 namespace App;
 
-require_once __DIR__.'/stays-data.php';
+require_once __DIR__ . '/stays-data.php';
 
 use WP_Post;
 
@@ -87,13 +87,13 @@ function stay_data($postId = null)
     }
 
     $gallery = array_map(
-        fn ($item) => $image($item, ''),
+        fn($item) => $image($item, ''),
         $list($get('satori_gallery'), [])
     );
     $gallery = array_values(array_filter($gallery));
 
     if (empty($gallery)) {
-        $gallery = array_map(fn ($item) => $item['src'], $default['gallery']);
+        $gallery = array_map(fn($item) => $item['src'], $default['gallery']);
     }
 
     $name = $default['name'] ?: get_the_title($postId);
@@ -132,7 +132,7 @@ function stay_data($postId = null)
  */
 function stay_url($slug)
 {
-    if (! $slug) {
+    if (!$slug) {
         return home_url('/');
     }
 
@@ -142,7 +142,7 @@ function stay_url($slug)
         return get_permalink($post);
     }
 
-    return home_url('/stay/'.$slug.'/');
+    return home_url('/stays/' . $slug . '/');
 }
 
 /**
@@ -158,7 +158,7 @@ function stay_all_stays_url()
         'number' => 1,
     ]);
 
-    if (! empty($pages)) {
+    if (!empty($pages)) {
         return get_permalink($pages[0]);
     }
 

@@ -3,11 +3,12 @@
   $waterLightAlt = __('The lake and changing light at Satori', 'sage');
 @endphp
 
-<section class="bg-[#f7f3eb] pb-24">
+<section class="bg-[#f7f3eb] pb-14 lg:pb-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
       <div class="group relative overflow-hidden" data-experiences-parallax data-reveal>
-        <img class="aspect-[4/3] w-full object-cover" src="{{ $waterLightImage }}" alt="{{ $waterLightAlt }}" data-experiences-image>
+        <img class="aspect-[4/3] w-full object-cover" src="{{ $waterLightImage }}" alt="{{ $waterLightAlt }}"
+          data-experiences-image>
       </div>
 
       <div data-reveal>

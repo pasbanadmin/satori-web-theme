@@ -3,42 +3,42 @@
     [
       'name' => __('Lake & Sunset', 'sage'),
       'line' => __("Golden hour from the water's edge.", 'sage'),
-      'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Lake-Sunset-—-lake-picnic.webp',
       'position' => 'object-center',
       'alt' => __('Sunset over the lake at Satori', 'sage'),
     ],
     [
       'name' => __('Farm Walks', 'sage'),
       'line' => __('Morning trails through the working estate.', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Farm-Walks-—-farm-walk.webp',
       'position' => 'object-top',
       'alt' => __('Farm walk across the Satori estate', 'sage'),
     ],
     [
       'name' => __('Bonfire & Stargazing', 'sage'),
       'line' => __('Fire, silence, and a sky full of light.', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Bonfire-Stargazing-—-bonfire-night.webp',
       'position' => 'object-bottom',
       'alt' => __('Bonfire and stargazing night at Satori', 'sage'),
     ],
     [
       'name' => __('Pool & Games', 'sage'),
       'line' => __('Unhurried afternoons by the water.', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Pool-Games-—-games-pickleball.webp',
       'position' => 'object-center',
       'alt' => __('Pool and games at Satori', 'sage'),
     ],
     [
       'name' => __("Chef's Table", 'sage'),
       'line' => __('A long dinner cooked over open fire.', 'sage'),
-      'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
+      'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Chefs-Table-—-dining-chefs-table.webp',
       'position' => 'object-bottom',
       'alt' => __("Chef's table dinner at Satori", 'sage'),
     ],
   ];
 @endphp
 
-<section id="experiences" class="bg-[#f7f3eb] pb-24">
+<section id="experiences" class="bg-[#f7f3eb] pb-14 lg:pb-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="mb-14 text-center lg:mb-20" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
@@ -54,7 +54,8 @@
 ', 'sage') }}
       </p>
 
-      <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand" href="#experiences">
+      <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
+        href="{{ home_url('/experiences') }}">
         {{ __('Explore Experiences', 'sage') }}
         <span aria-hidden="true">→</span>
       </a>
@@ -65,7 +66,9 @@
     <div class="swiper-wrapper items-stretch">
       @foreach ($experiences as $experience)
         <article class="group swiper-slide flex aspect-[4/3] h-auto overflow-hidden bg-brand-primary">
-          <img class="absolute inset-0 h-full w-full object-cover {{ $experience['position'] }} transition-transform duration-[1200ms] ease-out group-hover:scale-105" src="{{ $experience['image'] }}" alt="{{ $experience['alt'] }}">
+          <img
+            class="absolute inset-0 h-full w-full object-cover {{ $experience['position'] }} transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+            src="{{ $experience['image'] }}" alt="{{ $experience['alt'] }}">
 
           <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/75 via-brand-primary/15 to-transparent"></div>
 
@@ -78,9 +81,11 @@
               {{ $experience['line'] }}
             </p>
 
-            <a class="mt-6 inline-flex items-center gap-2 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-sand" href="#experiences">
+            <a class="mt-6 inline-flex items-center gap-2 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-sand"
+              href="{{ home_url('/experiences') }}">
               {{ __('Discover', 'sage') }}
-              <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5" aria-hidden="true">→</span>
+              <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
+                aria-hidden="true">→</span>
             </a>
           </div>
         </article>

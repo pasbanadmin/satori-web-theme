@@ -19,7 +19,7 @@
             {{ __('Full-board and half-board plans can be added at the time of booking, and are the easier choice for longer stays — there is nowhere else to eat for some distance, and frankly nowhere you would rather.', 'sage') }}
           </p>
 
-          <a href="{{ home_url('/book') }}"
+          <a href="{{ home_url('/contact-us') }}"
             class="mt-8 inline-flex items-center gap-2 rounded-full border border-brand-gold px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary group">
             {{ __('Ask About Meal Plans', 'sage') }}
             <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
@@ -66,7 +66,7 @@
         {{ __('Tell us when you are coming and we will take care of the rest.', 'sage') }}
       </p>
 
-      <a href="{{ home_url('/book') }}"
+      <a href="{{ home_url('/contact-us') }}"
         class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
         data-reveal>
         {{ __('Book Your Stay', 'sage') }}
