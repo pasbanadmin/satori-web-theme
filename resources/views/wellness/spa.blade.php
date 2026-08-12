@@ -58,7 +58,7 @@
           </ul>
 
           <div class="mt-6 pt-6 border-t border-brand-sand/10">
-            <a href="{{ home_url('/book') }}"
+            <a href="{{ home_url('/contact-us/#enquire-form') }}"
               class="inline-flex items-center gap-2 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold hover:text-brand-sand transition-colors duration-300 group">
               {{ __('View Treatments', 'sage') }}
               <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"

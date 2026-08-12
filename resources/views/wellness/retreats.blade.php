@@ -9,7 +9,8 @@
           <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
             {{ __('Hosted Retreats', 'sage') }}
           </p>
-          <span class="rounded-full border border-brand-gold/30 bg-brand-gold/10 px-3 py-0.5 text-[0.6rem] uppercase tracking-wider text-brand-gold">
+          <span
+            class="rounded-full border border-brand-gold/30 bg-brand-gold/10 px-3 py-0.5 text-[0.6rem] uppercase tracking-wider text-brand-gold">
             {{ __('By arrangement', 'sage') }}
           </span>
         </div>
@@ -27,12 +28,11 @@
 
       {{-- Right: CTA --}}
       <div class="shrink-0">
-        <a
-          href="{{ home_url('/book') }}"
-          class="inline-flex items-center gap-2 rounded-full border border-brand-ink/25 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold group whitespace-nowrap"
-        >
+        <a href="{{ home_url('/contact-us/#enquire-form') }}"
+          class="inline-flex items-center gap-2 rounded-full border border-brand-ink/25 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold group whitespace-nowrap">
           {{ __('Enquire About Hosting', 'sage') }}
-          <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5" aria-hidden="true">→</span>
+          <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
+            aria-hidden="true">→</span>
         </a>
       </div>
 
