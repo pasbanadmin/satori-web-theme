@@ -1,7 +1,7 @@
 @php
   $specs = [
     [
-      'label' => __('Private Homes', 'sage'),
+      'label' => __('Private Stays', 'sage'),
       'is_numeric' => true,
       'target' => 14,
       'prefix' => '',

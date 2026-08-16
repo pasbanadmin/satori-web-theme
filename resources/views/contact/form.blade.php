@@ -84,7 +84,7 @@
         </h2>
 
         <p class="mt-3 text-base leading-7 text-brand-muted max-w-2xl">
-          {{ __('Tell us how you would like to experience the estate, and we will shape the stay around your pace, your people and your dates.', 'sage') }}
+          {{ __('Tell us what you have in mind, and we will put the stay together around your dates, your group, and how you like things .', 'sage') }}
         </p>
 
         <div class="mt-6 h-px w-16 bg-brand-gold" aria-hidden="true"></div>
@@ -183,13 +183,13 @@
 
             <div>
               <label for="contact-preferred-home" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
-                {{ __('Preferred home (optional)', 'sage') }}
+                {{ __('Preferred stay (optional)', 'sage') }}
               </label>
-              <select id="contact-preferred-home" name="preferred_home"
+              <select id="contact-preferred-home" name="preferred_stay"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
-                <option value="">{{ __('Select home…', 'sage') }}</option>
-                <option value="Orchard Cottages">{{ __('Orchard Cottages', 'sage') }}</option>
-                <option value="Canopy Suites">{{ __('Canopy Suites', 'sage') }}</option>
+                <option value="">{{ __('Select stay…', 'sage') }}</option>
+                <option value="Garden View Cottages">{{ __('Garden View Cottages', 'sage') }}</option>
+                <option value="Junior Suites (Lake View)">{{ __('Junior Suites (Lake View)', 'sage') }}</option>
                 <option value="Aves">{{ __('Aves', 'sage') }}</option>
                 <option value="Woodhouse">{{ __('Woodhouse', 'sage') }}</option>
                 <option value="Perch I">{{ __('Perch I', 'sage') }}</option>

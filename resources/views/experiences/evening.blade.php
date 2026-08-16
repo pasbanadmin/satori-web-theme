@@ -20,7 +20,7 @@
         </p>
 
         <h2 class="mt-5 font-heading text-3xl font-light leading-tight text-brand-ink sm:text-4xl">
-          {{ __('Bonfire, stars, and the return to quiet', 'sage') }}
+          {{ __('Bonfire, stars, and the night settling in', 'sage') }}
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
@@ -28,7 +28,7 @@
         </p>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('This is the hour for slower dinners, warm conversation, and the sense that the day has asked nothing of you except that you were present for it.', 'sage') }}
+          {{ __('This is the hour for slower dinners, warm conversation, and the sense that the day asked nothing of you.', 'sage') }}
         </p>
       </div>
     </div>

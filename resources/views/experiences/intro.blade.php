@@ -8,11 +8,11 @@
 
     <div class="mt-14" data-paragraph>
       <p class="mx-auto max-w-3xl font-heading text-2xl font-light leading-normal text-brand-ink sm:text-3xl">
-        {{ __('Experiences at Satori are not designed to fill a schedule. They exist to deepen the feeling of being here.', 'sage') }}
+        {{ __('Experiences at Satori are not designed to fill a schedule. They exist because the place lends itself to them.', 'sage') }}
       </p>
 
       <p class="mx-auto mt-8 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-        {{ __('Some are quiet and inward. Some invite movement. Some are best shared. All of them are shaped by the land, the lake and the slower emotional pace of the estate — and every one of them is optional.', 'sage') }}
+        {{ __('Some are quiet. Some invite movement. Some are best shared. All of them are shaped by the land, the lake and the pace of the estate — and every one of them is optional.', 'sage') }}
       </p>
     </div>
 

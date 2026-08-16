@@ -72,7 +72,7 @@ function stays_defaults()
 
     return [
         'orchard-cottages' => array_merge($base(
-            __('Orchard Cottages', 'sage'),
+            __('Garden View Cottages', 'sage'),
             __('Garden Homes', 'sage'),
             __('Wake up inside the garden that feeds the estate.', 'sage'),
             __('Three private cottages set low among Satori’s fruit trees and vegetable beds, each opening onto its own verandah.', 'sage'),
@@ -117,7 +117,7 @@ function stays_defaults()
         ), ['slug' => 'orchard-cottages']),
 
         'canopy-suites' => array_merge($base(
-            __('Canopy Suites', 'sage'),
+            __('Junior Suites (Lake View)', 'sage'),
             __('Canopy Homes', 'sage'),
             __('An elevated hideaway above the fruit garden, with the lake beyond.', 'sage'),
             __('Four suites raised into the canopy, high enough to look out across the tops of the fruit trees to Mulshi Lake and the hills behind it.', 'sage'),

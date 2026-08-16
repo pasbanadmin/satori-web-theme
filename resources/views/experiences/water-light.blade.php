@@ -23,7 +23,7 @@
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Picnics by the water. Sunset viewpoints. Long afternoons by the pool. The lake is not simply scenic — it changes the atmosphere of a day. It opens space, softens thought, and gives every gathering a more reflective quality.', 'sage') }}
+          {{ __('Picnics by the water. Sunset viewpoints. Long afternoons by the pool. The lake is not simply scenic — it changes the feel of a day. It opens up the view, quiets things down, and gives every gathering a different quality.', 'sage') }}
         </p>
       </div>
     </div>

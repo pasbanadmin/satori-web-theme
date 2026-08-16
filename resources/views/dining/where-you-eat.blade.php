@@ -14,7 +14,7 @@
     ],
     [
       'title' => __('On Your Verandah', 'sage'),
-      'description' => __('Every home can be served privately, at any meal, without stepping off your own property.', 'sage'),
+      'description' => __('Every stay can be served privately, at any meal, without stepping off your own verandah.', 'sage'),
       'tag' => __('Private Dining', 'sage'),
       'image' => '/wp-content/uploads/2026/08/Where-you-eat-—-On-your-verandah-—-estate-verandah.webp',
     ],

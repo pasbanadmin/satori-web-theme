@@ -53,28 +53,6 @@
   }
 }
 
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee-track {
-  animation: marquee 60s linear infinite;
-  will-change: transform;
-}
-
-.marquee-track:hover,
-section:hover > .marquee-track {
-  animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
-}
-
 @layer components {
   .reveal-mask {
     display: inline-block;
@@ -127,19 +105,6 @@ section:hover > .marquee-track {
 [data-header] [data-header-logo] {
   filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
-}
-
-/* Marquee collapse on scroll */
-[data-header-marquee] {
-  max-height: 2rem;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  overflow: hidden;
-}
-
-[data-header].is-scrolled [data-header-marquee] {
-  max-height: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 }
 
 /* Nav bar becomes solid on scroll */

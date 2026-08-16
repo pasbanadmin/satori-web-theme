@@ -29,11 +29,11 @@
         </p>
 
         <p class="mt-5 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('It is found in proportion, privacy, material warmth, attentive hospitality, and the ease with which the estate allows you to settle in. In lake-facing verandahs, beautifully appointed interiors, quiet corners for reading, generous rooms, and the sense that everything has been designed to support the exhale rather than the spectacle.', 'sage') }}
+          {{ __('It is found in proportion, privacy, material warmth, attentive hospitality, and the ease with which the estate allows you to settle in. In lake-facing verandahs, well-made interiors, quiet corners for reading, generous rooms, and the sense that everything has been designed for comfort, not show.', 'sage') }}
         </p>
 
         <p class="mt-5 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Red-oxide flooring, curated artefacts, natural textures and Mediterranean-inspired bathrooms give the estate a visual language that feels timeless, worldly and grounded all at once.', 'sage') }}
+          {{ __('Red-oxide flooring, collected artefacts, natural textures and Mediterranean-inspired bathrooms give the estate a look that feels timeless, travelled and grounded all at once.', 'sage') }}
         </p>
       </div>
     </div>

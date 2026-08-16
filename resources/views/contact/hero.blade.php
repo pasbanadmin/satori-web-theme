@@ -11,7 +11,7 @@
 
   <div class="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16 pb-12 lg:pb-16" data-hero-item>
     <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-      {{ __('Book Your Retreat', 'sage') }}
+      {{ __('Book Your Stay', 'sage') }}
     </p>
     <h1 class="mt-4 font-heading text-4xl font-light leading-tight text-brand-sand sm:text-5xl lg:text-6xl">
       {{ __('Begin planning your time at Satori.', 'sage') }}

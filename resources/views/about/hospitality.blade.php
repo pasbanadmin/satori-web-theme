@@ -30,7 +30,7 @@
         </p>
 
         <p class="mt-5 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('This is hospitality that makes room for comfort, celebration, stillness and spontaneity in equal measure.', 'sage') }}
+          {{ __('This is hospitality that makes room for comfort, celebration, quiet and spontaneity in equal measure.', 'sage') }}
         </p>
       </div>
     </div>

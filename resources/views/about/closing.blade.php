@@ -7,7 +7,7 @@
     <span class="mx-auto mt-5 block h-px w-12 bg-brand-gold" data-reveal aria-hidden="true"></span>
 
     <blockquote class="mt-10 font-heading text-2xl font-light leading-tight text-brand-ink sm:text-3xl" data-reveal>
-      {{ __('At its heart, Satori is a place to feel restored without being rushed, held without being managed, and renewed without having to explain why you needed to leave in the first place.', 'sage') }}
+      {{ __('Satori is a place to feel rested without being rushed, looked after without being managed, and ready to go back without having to explain why you left.', 'sage') }}
     </blockquote>
 
     <div class="mx-auto my-12 flex items-center justify-center gap-4" data-reveal aria-hidden="true">

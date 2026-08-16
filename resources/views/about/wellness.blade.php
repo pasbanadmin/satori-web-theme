@@ -8,7 +8,7 @@
     <div class="flex items-center justify-center gap-4" data-satoriway-item>
 
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-        {{ __('Wellness as a Way of Being', 'sage') }}
+        {{ __('WELLNESS WITHOUT A PROGRAMME', 'sage') }}
       </p>
     </div>
 
@@ -17,18 +17,18 @@
     </h2>
 
     <p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-brand-sand/85 sm:text-lg" data-satoriway-item>
-      {{ __('We believe wellness does not always need instruction. Sometimes it needs atmosphere.', 'sage') }}
+      {{ __('Wellness does not always need instruction. Sometimes it needs the right setting.', 'sage') }}
     </p>
 
     <p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-brand-sand/85 sm:text-lg" data-satoriway-item>
-      {{ __('At Satori it is held in the quality of the silence, the beauty of the surroundings, the nourishment of the food, the possibility of movement, and the freedom to choose your own pace. Your retreat might look like yoga and long walks. Or a poolside afternoon and an early night. Or uninterrupted time with the people who matter most.', 'sage') }}
+      {{ __('At Satori it is held in the quality of the silence, the beauty of the surroundings, the nourishment of the food, the possibility of movement, and the freedom to choose your own pace. Your stay might look like yoga and long walks. Or a poolside afternoon and an early night. Or uninterrupted time with the people who matter most.', 'sage') }}
     </p>
 
     <div class="mx-auto mt-8 h-px w-12 bg-brand-gold" data-satoriway-item aria-hidden="true"></div>
 
     <p class="mx-auto mt-8 max-w-2xl font-heading text-3xl font-light leading-tight text-brand-gold sm:text-4xl"
       data-satoriway-item>
-      {{ __('The goal is not optimisation. It is alignment.', 'sage') }}
+      {{ __('The goal is not optimisation. It is rest that actually lasts.', 'sage') }}
     </p>
   </div>
 </section>

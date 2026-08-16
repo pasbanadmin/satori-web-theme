@@ -19,11 +19,11 @@
         </h3>
 
         <p class="mt-5 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('The lake, the hills, the gardens, the farms, the changing light and the breeze moving through the estate shape the emotional texture of a stay here.', 'sage') }}
+          {{ __('The lake, the hills, the gardens, the farms, the changing light and the breeze moving through the estate shape how a stay here feels.', 'sage') }}
         </p>
 
         <p class="mt-5 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Walk the grounds and you move through herbs, flowers, fruit trees, medicinal plants and open sky. With more than two hundred species of flora across the property, Satori reads less like a landscaped resort and more like a living sanctuary. Stay still long enough and the place begins to slow you down.', 'sage') }}
+          {{ __('Walk the grounds and you move through herbs, flowers, fruit trees, medicinal plants and open sky. With more than two hundred species of flora across the property, Satori reads less like a landscaped resort and more like land that has been tended,not styled. Stay still long enough and the pace finds you.', 'sage') }}
         </p>
       </div>
 
