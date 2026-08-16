@@ -11,7 +11,7 @@
     <div class="mx-auto mt-8 h-px w-16 bg-brand-gold" aria-hidden="true" data-reveal></div>
 
     <p class="mx-auto mt-6 max-w-md text-base leading-7 text-secondary" data-reveal>
-      {{ __('Fourteen homes. Twenty bedrooms. Forty guests. The gates close behind you.', 'sage') }}
+      {{ __('Fourteen stays. Twenty bedrooms. Forty guests. The gates close behind you.', 'sage') }}
     </p>
 
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4" data-reveal>

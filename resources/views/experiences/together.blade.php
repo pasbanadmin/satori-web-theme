@@ -13,7 +13,7 @@
         </p>
 
         <h2 class="mt-5 font-heading text-3xl font-light leading-tight text-brand-ink sm:text-4xl">
-          {{ __('Space to enjoy, space to bond', 'sage') }}
+          {{ __('Space to play, space to sit', 'sage') }}
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">

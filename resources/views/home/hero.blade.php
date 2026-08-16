@@ -64,7 +64,7 @@
 
             <a class="w-max inline-flex items-center justify-center rounded-full border-2 border-brand-sand bg-brand-primary/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-sand backdrop-blur-sm transition-colors duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary"
               href="#stay">
-              {{ __('Explore the Homes', 'sage') }}
+              {{ __('Explore Satori', 'sage') }}
             </a>
           </div>
         </div>

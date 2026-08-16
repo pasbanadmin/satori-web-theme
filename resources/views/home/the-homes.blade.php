@@ -1,7 +1,7 @@
 @php
   $homes = [
     [
-      'name' => __('Orchard Cottages', 'sage'),
+      'name' => __('Garden View Cottages', 'sage'),
       'description' => __('Garden-set cottages among the fruit trees. ', 'sage'),
       'sleeps' => 2,
       'price' => 42000,
@@ -9,7 +9,7 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Canopy Suites', 'sage'),
+      'name' => __('Junior Suites (Lake View)', 'sage'),
       'description' => __('Elevated suites above the orchard, facing the lake. ', 'sage'),
       'sleeps' => 2,
       'price' => 38000,
@@ -39,15 +39,15 @@
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="mb-12 text-left lg:mb-14">
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-        {{ __('The Homes', 'sage') }}
+        {{ __('The Stays', 'sage') }}
       </p>
 
       <h2 class="mt-4 font-heading text-4xl font-light leading-tight text-brand-ink sm:text-4xl">
-        {{ __('Fourteen homes. No two alike.', 'sage') }}
+        {{ __('Fourteen stays. No two alike.', 'sage') }}
       </h2>
 
       <p class="mt-5 max-w-3xl text-base leading-7 text-brand-muted sm:text-[16px]">
-        {{ __('Satori is not a single building with corridors. It is a collection of fourteen private homes set across the estate — some low among the fruit trees, some raised into the canopy, some standing alone above the water. Each has its own verandah, its own outlook, and its own way of slowing you down.', 'sage') }}
+        {{ __('Satori is not a single building with corridors. It is a collection of fourteen private stays set across the estate — some low among the fruit trees, some raised into the canopy, some standing alone above the water. Each has its own verandah, its own view, and its own rhythm.', 'sage') }}
       </p>
     </div>
 
@@ -95,7 +95,7 @@
     <div class="mt-10 text-center lg:mt-14">
       <a class="inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
         href="{{ home_url('/stays') }}">
-        {{ __('See All Homes', 'sage') }}
+        {{ __('See All Stays', 'sage') }}
         <span aria-hidden="true">→</span>
       </a>
     </div>

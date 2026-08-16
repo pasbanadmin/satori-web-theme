@@ -7,7 +7,7 @@
     <div class="mx-auto mt-6 h-px w-16 bg-brand-gold/60" aria-hidden="true"></div>
 
     <p class="mx-auto mt-10 max-w-3xl font-heading text-2xl font-light leading-relaxed text-brand-sand sm:text-3xl lg:text-4xl">
-      {{ __('The most memorable stays are rarely the busiest ones. They are the ones that leave you feeling more present, more rested and more connected than before.', 'sage') }}
+      {{ __('The most memorable stays are rarely the busiest ones. They are the ones that leave you feeling more settled, more rested and glad you came.', 'sage') }}
     </p>
 
     <p class="mt-8 font-heading text-xl font-light italic text-brand-gold">

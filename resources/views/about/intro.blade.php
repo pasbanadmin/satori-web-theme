@@ -8,11 +8,11 @@
 
     <div class="mt-10" data-paragraph>
       <p class="mx-auto max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-        {{ __('Satori is named for a moment of awakening. Not a dramatic transformation, but a subtle return. A clearer breath. A quieter mind. A deeper awareness of where you are and how you feel within it.', 'sage') }}
+        {{ __('Satori is named for a moment of awakening. Not a dramatic shift, but a subtle return. A clearer breath. A quieter mind. A deeper sense of where you are.', 'sage') }}
       </p>
 
       <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-        {{ __('That idea sits at the heart of the retreat. Satori was not built as a place of escape alone, but as an environment that helps people come back into relationship with themselves, with nature, and with one another.', 'sage') }}
+        {{ __('That idea sits at the heart of the place. Satori was not built as a place of escape alone, but as an environment that helps people brings you closer to the land around you and the people you came with.', 'sage') }}
       </p>
     </div>
 

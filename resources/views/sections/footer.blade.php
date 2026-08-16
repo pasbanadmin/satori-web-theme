@@ -30,7 +30,7 @@
             {{ __('Satori, Mulshi', 'sage') }}
           </a>
           <p class="max-w-xs text-sm leading-6 text-brand-sand/70">
-            {{ __('A private estate of fourteen homes set across the hills and waters of Mulshi.', 'sage') }}
+            {{ __('A private estate of fourteen stays set across the hills and waters of Mulshi.', 'sage') }}
           </p>
 
           {{-- Social Icons --}}

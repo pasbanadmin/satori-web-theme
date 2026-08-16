@@ -9,13 +9,13 @@
       <h2 class="mt-6 font-heading text-4xl font-light leading-tight text-brand-sand sm:text-5xl lg:text-6xl"
         data-reveal>
         {{ __('The goal here is not optimisation.', 'sage') }}
-        <span class="">{{ __('It is alignment.', 'sage') }}</span>
+        <span class="">{{ __('It is rest.', 'sage') }}</span>
       </h2>
 
       <div class="mx-auto mt-10 h-px w-16 bg-brand-gold/50" aria-hidden="true" data-reveal></div>
 
       <p class="mx-auto mt-8 max-w-md text-base leading-8 text-brand-sand/60" data-reveal>
-        {{ __('With the land, with the pace, and with whatever you actually came here to recover from.', 'sage') }}
+        {{ __('With the land, with the pace, and with whatever you actually came here to step away from.', 'sage') }}
       </p>
 
       <a href="{{ home_url('/contact-us') }}"

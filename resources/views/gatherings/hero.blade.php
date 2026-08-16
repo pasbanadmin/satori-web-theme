@@ -16,7 +16,7 @@
 
     <div class="mt-4 flex items-center gap-8">
       <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading">
-        {{ __('Fourteen homes. Twenty bedrooms. Forty guests. One estate.', 'sage') }}
+        {{ __('Fourteen stays. Twenty bedrooms. Forty guests. One estate.', 'sage') }}
       </p>
     </div>
   </div>

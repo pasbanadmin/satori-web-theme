@@ -16,7 +16,7 @@ Template Name: Stays
 
     $stays = [
       [
-        'name' => __('Orchard Cottages', 'sage'),
+        'name' => __('Garden View Cottages', 'sage'),
         'ota_name' => __('Garden View Cottage', 'sage'),
         'category' => '1',
         'slug' => 'orchard-cottages',
@@ -36,7 +36,7 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Canopy Suites', 'sage'),
+        'name' => __('Junior Suites (Lake View)', 'sage'),
         'ota_name' => __('Junior Suite (Lake View)', 'sage'),
         'category' => '2',
         'slug' => 'canopy-suites',
@@ -100,7 +100,7 @@ Template Name: Stays
         'ota_name' => __('Perch 1', 'sage'),
         'category' => '3',
         'slug' => 'perch-i',
-        'description' => __('One of the estate\'s largest homes, with long views over Mulshi Lake.', 'sage'),
+        'description' => __('One of the estate\'s largest stays, with long views over Mulshi Lake.', 'sage'),
         'units' => 1,
         'bedrooms' => '3 + extra bed',
         'sleeps' => '6–7',
@@ -120,7 +120,7 @@ Template Name: Stays
         'ota_name' => __('Perch 2', 'sage'),
         'category' => '3',
         'slug' => 'perch-ii',
-        'description' => __('One of the estate\'s largest homes, with long views over Mulshi Lake.', 'sage'),
+        'description' => __('One of the estate\'s largest stays, with long views over Mulshi Lake.', 'sage'),
         'units' => 1,
         'bedrooms' => '3',
         'sleeps' => '6',
@@ -163,9 +163,9 @@ Template Name: Stays
       'category' => '—',
       'eyebrow' => __('Full Buyout', 'sage'),
       'heading' => __('The whole place. No other names in the register.', 'sage'),
-      'description' => __('Satori can be taken in its entirety - all fourteen homes, twenty bedrooms and every shared space, for up to forty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
+      'description' => __('Satori can be taken in its entirety - all fourteen stays, twenty bedrooms and every shared space, for up to forty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
       'units' => 14,
-      'homes' => 14,
+      'stays' => 14,
       'bedrooms' => '20',
       'sleeps' => '40',
       'setting' => __('Entire property', 'sage'),
@@ -199,7 +199,7 @@ Template Name: Stays
 
         <div class="mt-4 flex items-center gap-8">
           <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading">
-            {{ __('Fourteen private homes across a lakeside estate.', 'sage') }}
+            {{ __('Fourteen private stays across a lakeside estate.', 'sage') }}
           </p>
         </div>
       </div>
@@ -220,17 +220,17 @@ Template Name: Stays
         </p>
 
         <h2 class="mt-6 text-center font-heading text-4xl font-light leading-tight text-brand-ink" data-reveal>
-          {{ __('Fourteen homes. No two alike.', 'sage') }}
+          {{ __('Fourteen Stays. No two alike.', 'sage') }}
         </h2>
 
         <div class="mx-auto my-10 h-px w-full max-w-[16rem] bg-brand-gold" data-reveal></div>
 
         <p class="mx-auto max-w-2xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
-          {{ __('Satori is not a single building with corridors. It is a collection of fourteen private homes set across the estate — some low among the fruit trees, some raised into the canopy, some standing alone above the water. Each has its own verandah, its own outlook, and its own way of slowing you down.', 'sage') }}
+          {{ __('Satori is not a single building with corridors. It is a collection of fourteen private stays set across the estate — some low among the fruit trees, some raised into the canopy, some standing alone above the water. Each has its own verandah, its own view, and its own rhythm.', 'sage') }}
         </p>
 
         <p class="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
-          {{ __('Choose a garden cottage among the fruit trees, a suite lifted into the canopy, a home wrapped in the woods, or a villa standing alone above the water.', 'sage') }}
+          {{ __('Choose a garden cottage among the fruit trees, a suite lifted into the canopy, a place wrapped in the woods, or a villa standing alone above the water.', 'sage') }}
         </p>
       </div>
     </section>
@@ -239,7 +239,7 @@ Template Name: Stays
       <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
         <div class="flex py-12 snap-start scroll-mt-16 flex-col justify-center text-left" data-reveal>
           <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-            {{ __('Choose Your Home', 'sage') }}
+            {{ __('Choose Your Stay', 'sage') }}
           </p>
 
           <h2 class="mt-4 max-w-3xl font-heading text-4xl font-light leading-tight text-brand-ink">
@@ -250,13 +250,13 @@ Template Name: Stays
 
       @php
         $chapters = [
-          __('Orchard Cottages', 'sage') => [
+          __('Garden View Cottages', 'sage') => [
             'category' => __('Cat 1', 'sage'),
             'meta' => __('Three cottages · One bedroom each · Sleeps 2', 'sage'),
             'headline' => __('Wake up inside the garden that feeds the estate.', 'sage'),
             'description' => [
               __('The Orchard Cottages sit low among Satori’s fruit trees and vegetable beds, on the farmland side of the estate where the mornings smell of wet earth and citrus leaf. Three private cottages, each with its own verandah opening directly onto the growing beds — close enough that the herbs on your breakfast plate were cut a few steps from where you slept.', 'sage'),
-              __('They are the most intimate homes at Satori, and deliberately so. What they trade in scale they return in immediacy: birdsong at close range, the gardeners moving through the rows at first light, fruit ripening within reach of the verandah rail. For couples and solo travellers who want the estate at its most unguarded, this is the truest way in.', 'sage'),
+              __('They are the most intimate stays at Satori, and deliberately so. What they trade in scale they return in immediacy: birdsong at close range, the gardeners moving through the rows at first light, fruit ripening within reach of the verandah rail. For couples and solo travellers who want the estate at its quietest, this is where to start.', 'sage'),
             ],
             'idealFor' => __('Ideal for couples, solo travellers, and guests arriving at Satori for the first time.', 'sage'),
             'features' => [
@@ -266,22 +266,22 @@ Template Name: Stays
               __('Full access to the pool, The Nest, spa and all estate experiences', 'sage'),
             ],
           ],
-          __('Canopy Suites', 'sage') => [
+          __('Junior Suites (Lake View)', 'sage') => [
             'category' => __('Cat 2', 'sage'),
             'meta' => __('Four suites - One bedroom each - Sleeps 2', 'sage'),
             'headline' => __('An elevated hideaway above the fruit garden, with the lake beyond.', 'sage'),
             'description' => [
               __('The Canopy Suites are raised above the same orchard the cottages sit within - high enough that you look out across the tops of the fruit trees to Mulshi Lake and the hills behind it. The garden is still directly below you; the view is simply longer.', 'sage'),
-              __('Inside, the suites are more generous and more finished: a larger bed, a deeper verandah, a bathroom that invites you to linger. They are made for guests who want the seclusion of a private home with the outlook of a lakeside one - morning light coming in over the canopy, evenings spent watching the water change colour without leaving your own verandah.', 'sage'),
+              __('Inside, the suites are more generous and more finished: a larger bed, a deeper verandah, a bathroom you won\'t want to rush out of. They are made for guests who want seclusion with a lake view - morning light coming in over the canopy, evenings spent watching the water change colour from your own verandah.', 'sage'),
             ],
-            'idealFor' => __('Ideal for couples, honeymooners, and longer stays where the room itself becomes part of the retreat.', 'sage'),
+            'idealFor' => __('Ideal for couples, honeymooners, and longer stays where the room itself sets the tone.', 'sage'),
             'features' => [
               __('One bedroom, sleeps two', 'sage'),
               __('Elevated position with lake and hill views', 'sage'),
               __('Deep private verandah above the orchard', 'sage'),
               __('Enhanced bathroom and in-room comforts', 'sage'),
             ],
-            'cta' => __('View Canopy Suites', 'sage'),
+            'cta' => __('View Junior Suites (Lake View)', 'sage'),
           ],
           __('Aves', 'sage') => [
             'category' => __('Cat 2', 'sage'),
@@ -289,9 +289,9 @@ Template Name: Stays
             'headline' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
             'description' => [
               __('Aves brings together Falcon, Macaw and Toucan - three single-bedroom cottages tucked into their own pockets of the estate. Each has a wraparound verandah and its own angle on the gardens and farms, positioned so that you can spend a whole day without seeing another guest, and then walk five minutes to dinner and be among everyone.', 'sage'),
-              __('They are the quietest homes on the property. Guests who book Aves tend to rebook Aves.', 'sage'),
+              __('They are the quietest stays on the property. Guests who book Aves tend to rebook Aves.', 'sage'),
             ],
-            'idealFor' => __('Ideal for couples, writers and readers, solo retreats, and anyone whose idea of luxury is being left alone.', 'sage'),
+            'idealFor' => __('Ideal for couples, writers and readers, solo retreats, and anyone who values being left alone.', 'sage'),
             'features' => [
               __('One bedroom, sleeps two', 'sage'),
               __('Wraparound verandah', 'sage'),
@@ -302,7 +302,7 @@ Template Name: Stays
           ],
           __('Woodhouse', 'sage') => [
             'category' => __('Cat 3', 'sage'),
-            'meta' => __('One home - Two bedrooms - Sleeps 4', 'sage'),
+            'meta' => __('One stay - Two bedrooms - Sleeps 4', 'sage'),
             'headline' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
             'description' => [
               __('Woodhouse is built in the spirit of a machan - raised, timber-framed, and open to the air on the side that faces the lawns and the lake. The shared verandah runs the length of it, and it is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
@@ -320,7 +320,7 @@ Template Name: Stays
           __('Perch I', 'sage') => [
             'category' => __('Cat 3', 'sage'),
             'meta' => __('Two residences - Three bedrooms each - Sleeps 6-7', 'sage'),
-            'headline' => __('The estate\'s largest homes, and its longest views.', 'sage'),
+            'headline' => __('The estate\'s largest stays, and its longest views.', 'sage'),
             'description' => [
               __('Perch I is one of Satori\'s three-bedroom residences, set high with commanding views over Mulshi Lake and the ranges beyond. Generous shared living areas, wide outdoor terraces and three private bedrooms make it the natural choice when a group wants to stay together as one household rather than scatter across the estate.', 'sage'),
               __('Perch I carries an additional bed, taking it to seven guests - useful for families travelling with children or a group that refuses to split.', 'sage'),
@@ -337,7 +337,7 @@ Template Name: Stays
           __('Perch II', 'sage') => [
             'category' => __('Cat 3', 'sage'),
             'meta' => __('Two residences - Three bedrooms each - Sleeps 6-7', 'sage'),
-            'headline' => __('The estate\'s largest homes, and its longest views.', 'sage'),
+            'headline' => __('The estate\'s largest stays, and its longest views.', 'sage'),
             'description' => [
               __('Perch II is one of Satori\'s three-bedroom residences, set high with commanding views over Mulshi Lake and the ranges beyond. Generous shared living areas, wide outdoor terraces and three private bedrooms make it the natural choice when a group wants to stay together as one household rather than scatter across the estate.', 'sage'),
               __('Perch II sleeps six guests and can be booked alongside Perch I when a larger group wants the same long views and shared sense of place.', 'sage'),
@@ -356,7 +356,7 @@ Template Name: Stays
             'meta' => __('One villa - Two bedrooms - Sleeps 4', 'sage'),
             'headline' => __('The signature villa. The best seat on the estate.', 'sage'),
             'description' => [
-              __('Hornbill is Satori at its most complete. Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy. It is the only home here where the water is present from the moment you wake to the moment the light goes.', 'sage'),
+              __('Hornbill is Satori at its most complete. Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy. It is the only place here where the water is present from the moment you wake to the moment the light goes.', 'sage'),
               __('It is priced as the estate\'s premier address because that is what it is. Guests take Hornbill when the stay itself is the occasion - an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
             ],
             'idealFor' => __('Ideal for couples marking something, two couples travelling well, and guests for whom the view is the point.', 'sage'),
@@ -564,7 +564,7 @@ Template Name: Stays
           </p>
 
           <h2 class="mt-4 max-w-3xl font-heading text-4xl font-light leading-tight text-brand-ink">
-            {{ __('Find the home that matches your rhythm.', 'sage') }}
+            {{ __('Find the stay that fits.', 'sage') }}
           </h2>
         </div>
 
@@ -707,11 +707,11 @@ Template Name: Stays
         </p>
 
         <h2 class="mt-5 font-heading text-4xl font-light leading-tight text-brand-sand" data-reveal>
-          {{ __('The right home is waiting.', 'sage') }}
+          {{ __('The right stay is here.', 'sage') }}
         </h2>
 
         <p class="mx-auto mt-6 max-w-xl text-base leading-8 text-brand-sand/85" data-reveal>
-          {{ __('Tell us who is coming and when, and we will help you choose the home that fits your stay.', 'sage') }}
+          {{ __('Tell us who is coming and when, and we will help you find the right fit.', 'sage') }}
         </p>
 
         <a class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"

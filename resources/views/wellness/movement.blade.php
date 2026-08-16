@@ -41,7 +41,7 @@
         {{ __('Yoga, walking, water', 'sage') }}
       </h2>
       <p class="mt-4 font-heading text-brand-ink leading-tight text-base lg:text-lg">
-        {{ __('Movement here is not about intensity. It is about re-entering the body through beauty, air and rhythm.', 'sage') }}
+        {{ __('Movement here is not about intensity. It is about being outdoors - the air, the views, the pace of the place.', 'sage') }}
       </p>
     </div>
 

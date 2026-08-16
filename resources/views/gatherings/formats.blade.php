@@ -13,7 +13,7 @@
     [
       'number' => '03',
       'title' => __('Family reunions', 'sage'),
-      'body' => __('Because the homes differ in scale, three generations can be housed properly rather than issued identical rooms.', 'sage'),
+      'body' => __('Because the stays differ in scale, three generations can be housed properly rather than issued identical rooms.', 'sage'),
     ],
     [
       'number' => '04',

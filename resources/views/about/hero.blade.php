@@ -17,7 +17,7 @@
 
     <div class="mt-4 flex items-center gap-8">
       <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading">
-        {{ __('A place for quiet luxury and inner connection.', 'sage') }}
+        {{ __('A place that values quiet over display.', 'sage') }}
       </p>
     </div>
   </div>

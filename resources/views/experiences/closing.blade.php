@@ -8,7 +8,7 @@
 
     <p class="mx-auto mt-14 max-w-3xl font-heading text-2xl font-light leading-tight text-brand-ink sm:text-3xl"
       data-reveal>
-      {{ __('Every experience at Satori is designed to feel optional, natural and restorative. You can do very little here and still leave feeling that something meaningful shifted.', 'sage') }}
+      {{ __('Every experience at Satori is optional. You can do very little here and still leave feeling like the time was well spent.', 'sage') }}
     </p>
   </div>
 </section>

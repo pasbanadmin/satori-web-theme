@@ -11,10 +11,10 @@
             {{ __('Direct Booking', 'sage') }}
           </p>
           <h2 class="mt-3 font-heading text-3xl font-light leading-snug text-brand-ink">
-            {{ __('Book a home', 'sage') }}
+            {{ __('Book a stay', 'sage') }}
           </h2>
           <p class="mt-4 text-base leading-7 text-brand-muted">
-            {{ __('Choose your dates, pick your home, confirm in a minute. Direct rates are the best available.', 'sage') }}
+            {{ __('Choose your dates, pick your stay, confirm in a minute. Direct rates are the best available.', 'sage') }}
           </p>
         </div>
 
@@ -36,7 +36,7 @@
             {{ __('Enquire about the estate', 'sage') }}
           </h2>
           <p class="mt-4 text-base leading-7 text-brand-muted">
-            {{ __('For buyouts, weddings, reunions, offsites and hosted retreats. We will call you back the same day.', 'sage') }}
+            {{ __('For buyouts, weddings, reunions, offsites and hosted group stays. We will call you back the same day.', 'sage') }}
           </p>
         </div>
 
@@ -80,7 +80,7 @@
             </svg>
           </div>
           <h4 class="font-heading text-lg font-light text-brand-ink">
-            {{ __('First choice of homes', 'sage') }}
+            {{ __('First choice of stays', 'sage') }}
           </h4>
         </div>
 
