@@ -6,7 +6,7 @@ Template Name: Stays
 
 @section('content')
   @php
-    $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-home-woodhouse.webp';
+    $heroImage = '/wp-content/uploads/2026/08/stay-hero-image.webp';
     $heroAlt = __('Private homes above Mulshi Lake at Satori', 'sage');
     $estateImage = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
 
@@ -66,13 +66,18 @@ Template Name: Stays
         'sleeps' => '2 each',
         'setting' => __('Secluded, garden-edged', 'sage'),
         'price' => 35000,
-        'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
+        'image' => '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
         'position' => 'object-bottom',
         'span' => 'lg:col-span-5',
         'offset' => '',
         'ratio' => 'aspect-[4/5]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Aves-—-home-aves.webp',
+          '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
+          '/wp-content/uploads/2026/08/Cottages-and-the-Sahyadri-hills.webp',
+          '/wp-content/uploads/2026/08/Bedroom-12-—-bed-and-garden-doors.webp',
+          '/wp-content/uploads/2026/08/Bedroom-10-—-bed-under-the-beamed-ceiling.webp',
+          '/wp-content/uploads/2026/08/Aves-—-cottage-lit-at-dusk.webp',
+          '/wp-content/uploads/2026/08/26_202309051441007901-8b93e724-cb2d-4bf1-9e19-12024a69006c.webp'
         ],
       ],
       [
@@ -92,7 +97,18 @@ Template Name: Stays
         'offset' => 'lg:mt-24',
         'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Woodhouse-—-home-woodhouse.webp',
+          '/wp-content/uploads/2026/08/Bedroom-01-—-timber-walls-hill-view.webp',
+          '/wp-content/uploads/2026/08/Bedroom-02-—-bed-facing-the-windows.webp',
+          '/wp-content/uploads/2026/08/Bedroom-03-—-bedroom-opening-to-the-deck.webp',
+          '/wp-content/uploads/2026/08/Bedroom-04-—-corner-bedroom.webp',
+          '/wp-content/uploads/2026/08/Bedroom-05-—-bedroom-and-writing-desk.webp',
+          '/wp-content/uploads/2026/08/Suite-01-—-living-area-and-bed.webp',
+          '/wp-content/uploads/2026/08/Suite-02-—-sitting-room.webp',
+          '/wp-content/uploads/2026/08/Suite-03-—-blue-sofa-and-hill-view.webp',
+          '/wp-content/uploads/2026/08/Suite-04-—-lounge-seating.webp',
+          '/wp-content/uploads/2026/08/Suite-05-—-lounge-corner.webp',
+          '/wp-content/uploads/2026/08/Suite-06-—-long-blue-sofa.webp',
+          '/wp-content/uploads/2026/08/Woodhouse-—-timber-house-on-stilts-daylight.webp'
         ],
       ],
       [
@@ -106,12 +122,16 @@ Template Name: Stays
         'sleeps' => '6–7',
         'setting' => __('Elevated, commanding lake views', 'sage'),
         'price' => 40000,
-        'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
         'position' => 'object-top',
         'span' => 'lg:col-span-5',
         'offset' => '',
         'ratio' => 'aspect-[4/5]',
         'gallery' => [
+          '/wp-content/uploads/2026/08/Bedroom-01-—-four-poster-glass-walls-lake-view.webp',
+          '/wp-content/uploads/2026/08/Bedroom-02-—-four-poster-opening-to-the-terrace.webp',
+          '/wp-content/uploads/2026/08/Bedroom-03-—-canopy-bed-and-hills.webp',
+          '/wp-content/uploads/2026/08/Bedroom-04-—-bed-facing-the-valley.webp',
+          '/wp-content/uploads/2026/08/Bedroom-05-—-bedroom-seen-from-the-terrace.webp',
           '/wp-content/uploads/2026/08/Perch-—-home-perch.webp',
         ],
       ],
@@ -126,15 +146,21 @@ Template Name: Stays
         'sleeps' => '6',
         'setting' => __('Elevated, commanding lake views', 'sage'),
         'price' => 45000,
-        'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
         'position' => 'object-bottom',
         'span' => 'lg:col-span-7',
         'offset' => 'lg:mt-24',
         'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
         'gallery' => [
+          '/wp-content/uploads/2026/08/Bedroom-06-—-corner-windows.webp',
+          '/wp-content/uploads/2026/08/Bedroom-07-—-bed-and-picture-window.webp',
+          '/wp-content/uploads/2026/08/Bedroom-08-—-bedroom-in-morning-light.webp',
+          '/wp-content/uploads/2026/08/Living-02-—-lounge-and-hill-view.webp',
+          '/wp-content/uploads/2026/08/Perch-—-three-storey-elevation-daylight.webp',
           '/wp-content/uploads/2026/08/Page-hero-—-home-woodhouse.webp',
         ],
       ],
+
+
       [
         'name' => __('Hornbill', 'sage'),
         'ota_name' => __('Hornbill', 'sage'),
@@ -152,7 +178,14 @@ Template Name: Stays
         'offset' => '',
         'ratio' => 'aspect-[4/3] lg:aspect-[21/10]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Hornbill-—-home-hornbill.webp'
+          '/wp-content/uploads/2026/08/Hornbill-—-timber-house-lit-at-dusk.webp',
+          '/wp-content/uploads/2026/08/Living-01-—-double-height-sitting-room.webp',
+          '/wp-content/uploads/2026/08/Bedroom-02-—-four-poster-white-linen.webp',
+          '/wp-content/uploads/2026/08/Living-03-—-sitting-room-and-mezzanine.webp',
+          '/wp-content/uploads/2026/08/Bedroom-03-—-twin-four-posters.webp',
+          '/wp-content/uploads/2026/08/Bedroom-04-—-twin-beds-timber-ceiling.webp',
+          '/wp-content/uploads/2026/08/Bedroom-06-—-twin-beds-corner-room.webp',
+          '/wp-content/uploads/2026/08/Bedroom-08-—-four-poster-and-kilim.webp'
         ],
       ],
     ];
@@ -187,7 +220,7 @@ Template Name: Stays
 
     <section class="relative flex min-h-[calc(100vh-7rem)] items-end overflow-hidden bg-brand-primary text-brand-sand"
       data-stays-hero>
-      <img class="absolute inset-0 h-full w-full object-cover" src="{{ $heroImage }}" alt="{{ $heroAlt }}"
+      <img class="absolute inset-0 h-full w-full object-cover object-bottom" src="{{ $heroImage }}" alt="{{ $heroAlt }}"
         data-stays-hero-image>
 
       <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/85 via-brand-primary/50 to-transparent"></div>
@@ -381,26 +414,33 @@ Template Name: Stays
             $idealForBody = str_starts_with($idealFor, $idealNeedle)
               ? trim(substr($idealFor, strlen($idealNeedle)))
               : '';
+
+            $galleryList = [];
+            if (!empty($stay['gallery'])) {
+              $galleryList = is_array($stay['gallery']) ? $stay['gallery'] : [$stay['gallery']];
+            } elseif (!empty($stay['image'])) {
+              $galleryList = is_array($stay['image']) ? $stay['image'] : [$stay['image']];
+            }
           @endphp
 
           <article
-            class="group grid min-h-[calc(100svh-7.5rem)] snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] {{ $loop->last ? 'border-b' : '' }}">
+            class="group grid snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:min-h-[calc(100svh-7.5rem)] lg:grid-cols-[repeat(20,minmax(0,1fr))] {{ $loop->last ? 'border-b' : '' }}">
             <div
-              class="relative aspect-[4/3] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto {{ $isFlipped ? 'lg:order-last' : '' }}"
+              class="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto {{ $isFlipped ? 'lg:order-last' : '' }}"
               data-reveal>
-              @if (count($stay['gallery']) > 1)
+              @if (count($galleryList) > 1)
                 <div class="swiper h-full w-full" data-stay-gallery-swiper>
                   <div class="swiper-wrapper">
-                    @foreach ($stay['gallery'] as $slide)
+                    @foreach ($galleryList as $slide)
                       @php $slide = is_string($slide) ? ['src' => $slide, 'position' => $stay['position']] : $slide; @endphp
-                      <div class="swiper-slide">
-                        <img class="h-full w-full object-cover {{ $slide['position'] }}" src="{{ $slide['src'] }}"
-                          alt="{{ $stay['name'] }}">
+                      <div class="swiper-slide h-full w-full">
+                        <img class="h-full w-full object-cover {{ $slide['position'] ?? $stay['position'] }}"
+                          src="{{ $slide['src'] ?? $slide }}" alt="{{ $stay['name'] }}">
                       </div>
                     @endforeach
                   </div>
 
-                  <div class="swiper-pagination" data-stay-gallery-pagination></div>
+                  <div class="swiper-pagination !bottom-4" data-stay-gallery-pagination></div>
 
                   <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
                     <button
@@ -424,11 +464,11 @@ Template Name: Stays
                 </div>
               @else
                 @php
-                  $slide = $stay['gallery'][0] ?? ['src' => $stay['image'], 'position' => $stay['position']];
-                  $slide = is_string($slide) ? ['src' => $slide, 'position' => $stay['position']] : $slide;
+                  $single = $galleryList[0] ?? $stay['image'];
+                  $src = is_array($single) ? ($single['src'] ?? '') : $single;
+                  $pos = is_array($single) ? ($single['position'] ?? $stay['position']) : $stay['position'];
                 @endphp
-                <img class="absolute inset-0 h-full w-full object-cover {{ $slide['position'] }}" src="{{ $slide['src'] }}"
-                  alt="{{ $stay['name'] }}">
+                <img class="absolute inset-0 h-full w-full object-cover {{ $pos }}" src="{{ $src }}" alt="{{ $stay['name'] }}">
               @endif
             </div>
 

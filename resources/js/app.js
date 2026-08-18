@@ -395,26 +395,28 @@ gsap.registerPlugin(ScrollTrigger);
 })();
 
 (() => {
-  const container = document.querySelector('[data-hero-swiper]');
-  if (!container) return;
+  const gallerySwipers = document.querySelectorAll('[data-stay-gallery-swiper]');
+  if (!gallerySwipers.length) return;
 
-  const paginationEl = container.querySelector('[data-hero-pagination]');
+  gallerySwipers.forEach((swiperEl) => {
+    const prevBtn = swiperEl.querySelector('[data-stay-gallery-prev]');
+    const nextBtn = swiperEl.querySelector('[data-stay-gallery-next]');
+    const paginationEl = swiperEl.querySelector('[data-stay-gallery-pagination]');
 
-  new Swiper(container, {
-    modules: [Autoplay, Pagination, Keyboard],
-    loop: true,
-    speed: 1000,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    keyboard: {
-      enabled: true,
-    },
-    pagination: {
-      el: paginationEl,
-      clickable: true,
-    },
+    new Swiper(swiperEl, {
+      modules: [Navigation, Pagination, Keyboard],
+      loop: true,
+      speed: 600,
+      keyboard: { enabled: true },
+      navigation: {
+        prevEl: prevBtn,
+        nextEl: nextBtn,
+      },
+      pagination: {
+        el: paginationEl,
+        clickable: true,
+      },
+    });
   });
 })();
 
