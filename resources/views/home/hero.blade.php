@@ -28,7 +28,8 @@
   $posterImage = '/wp-content/uploads/2026/08/01-Woodhouse-at-dusk-—-the-signature-shot.webp';
 @endphp
 
-<section class="relative min-h-screen lg:h-screen overflow-hidden bg-brand-primary text-brand-sand flex flex-col justify-end">
+<section
+  class="relative min-h-screen lg:h-screen overflow-hidden bg-brand-primary text-brand-sand flex flex-col justify-end">
   {{-- Hero Slider (Commented out for now)
   <div class="swiper absolute inset-0 h-full w-full" data-hero-swiper>
     <div class="swiper-wrapper h-full w-full">
@@ -58,7 +59,8 @@
     <div class="absolute inset-0 bg-brand-primary/60 z-2"></div>
   </div>
 
-  {{-- Content Container: Dynamic height fit for content on mobile with top/bottom padding, fullscreen flex-end on desktop --}}
+  {{-- Content Container: Dynamic height fit for content on mobile with top/bottom padding, fullscreen flex-end on
+  desktop --}}
   <div class="relative z-20 w-full pt-32 pb-16 lg:pt-0 lg:pb-20">
     <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
       <div class="max-w-4xl">
@@ -67,16 +69,16 @@
         </h1>
 
         <p class="mt-7 max-w-2xl text-base lg:leading-8 leading-6 text-brand-sand sm:text-[16px]">
-          {{ __('Set above Mulshi Lake and held by the quiet rhythms of the Sahyadris, Satori is a private retreat of fourteen homes where nature, design and thoughtful hospitality come together in balance.', 'sage') }}
+          {{ __('Set above Mulshi Lake and held by the quiet rhythms of the Sahyadris, Satori is a private retreat of fourteen stays where nature, design and thoughtful hospitality come together in balance.', 'sage') }}
         </p>
 
-        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a class="w-max inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
+        <div class="mt-10 flex flex-col lg:gap-4 gap-2 flex-row">
+          <a class="w-max inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 lg:text-[0.8125rem] text-[10px] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
             href="{{ home_url('/contact-us') }}">
             {{ __('Book Your Stay', 'sage') }}
           </a>
 
-          <a class="w-max inline-flex items-center justify-center rounded-full border-2 border-brand-sand bg-brand-primary/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-sand backdrop-blur-sm transition-colors duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary"
+          <a class="w-max inline-flex items-center justify-center rounded-full border-2 border-brand-sand bg-brand-primary/30 px-6 py-3 lg:text-[0.8125rem] text-[10px] uppercase tracking-[0.2em] text-brand-sand backdrop-blur-sm transition-colors duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary"
             href="#stay">
             {{ __('Explore Satori', 'sage') }}
           </a>

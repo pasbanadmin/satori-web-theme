@@ -5,7 +5,7 @@
     __('Satori belongs to the second kind.', 'sage'),
   ];
 
-  $statementParagraph = __('Spread across a working estate overlooking Mulshi Lake, Satori is built for people seeking more than a weekend away. For couples in search of quiet intimacy. For families wanting unhurried time together. For friends gathering with meaning. And for anyone ready to step away from noise and back into presence.', 'sage');
+  $statementParagraph = __('Spread across a serene estate overlooking Mulshi Lake, Satori is designed for those seeking more than a weekend away. It is for couples in search of quiet intimacy, families wanting unhurried time together, friends gathering with meaning, and individuals ready to step away from noise and back into presence.', 'sage');
 @endphp
 
 <section class="bg-[#f7f3eb] py-24" data-opening-statement>

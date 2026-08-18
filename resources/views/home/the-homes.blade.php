@@ -1,28 +1,28 @@
 @php
   $homes = [
     [
-      'name' => __('Garden View Cottages', 'sage'),
-      'description' => __('Garden-set cottages among the fruit trees. ', 'sage'),
-      'sleeps' => 2,
-      'price' => 42000,
-      'image' => '/wp-content/uploads/2026/08/Orchard-Cottages-—-estate-path.webp',
-      'position' => 'object-center',
-    ],
-    [
-      'name' => __('Junior Suites (Lake View)', 'sage'),
-      'description' => __('Elevated suites above the orchard, facing the lake. ', 'sage'),
-      'sleeps' => 2,
-      'price' => 38000,
-      'image' => '/wp-content/uploads/2026/08/Canopy-Suites-—-estate-verandah.webp',
-      'position' => 'object-center',
-    ],
-    [
       'name' => __('Aves', 'sage'),
-      'description' => __('Three secluded cottages named for birds.', 'sage'),
+      'description' => __('Three intimate one-bedroom cottages opening out to the gardens and farms.', 'sage'),
       'sleeps' => 2,
       'price' => 35000,
       'image' => '/wp-content/uploads/2026/08/Aves-—-home-aves.webp',
       'position' => 'object-bottom',
+    ],
+    [
+      'name' => __('Woodhouse', 'sage'),
+      'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
+      'sleeps' => 4,
+      'price' => 42000,
+      'image' => '/wp-content/uploads/2026/08/Woodhouse-%E2%80%94-timber-house-on-stilts-daylight.webp',
+      'position' => 'object-center',
+    ],
+    [
+      'name' => __('Perch', 'sage'),
+      'description' => __('The estate\'s largest stays, and its longest views.', 'sage'),
+      'sleeps' => 6,
+      'price' => 38000,
+      'image' => '/wp-content/uploads/2026/08/Perch-—-three-storey-elevation-daylight.webp',
+      'position' => 'object-center',
     ],
     [
       'name' => __('Hornbill ', 'sage'),
@@ -47,7 +47,7 @@
       </h2>
 
       <p class="mt-5 max-w-3xl text-base leading-7 text-brand-muted sm:text-[16px]">
-        {{ __('Satori is not a single building with corridors. It is a collection of fourteen private stays set across the estate — some low among the fruit trees, some raised into the canopy, some standing alone above the water. Each has its own verandah, its own view, and its own rhythm.', 'sage') }}
+        {{ __('Satori is not a single stay, but a collection of beautifully imagined spaces across the estate. Each one offers its own rhythm, character, and relationship with the landscape.', 'sage') }}
       </p>
     </div>
 
