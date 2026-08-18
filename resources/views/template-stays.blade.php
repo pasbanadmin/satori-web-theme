@@ -443,7 +443,7 @@ Template Name: Stays
 
                   <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
                     <button
-                      class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
+                      class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
                       type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
                       <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -452,7 +452,7 @@ Template Name: Stays
                     </button>
 
                     <button
-                      class="flex h-9 w-9 items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
+                      class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
                       type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
                       <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
