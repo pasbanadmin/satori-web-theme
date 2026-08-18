@@ -258,12 +258,12 @@ Template Name: Stays
 
         <div class="mx-auto my-10 h-px w-full max-w-[16rem] bg-brand-gold" data-reveal></div>
 
-        <p class="mx-auto max-w-2xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
-          {{ __('Satori is not a single building with corridors. It is a collection of fourteen private stays set across the estate — some low among the fruit trees, some raised into the canopy, some standing alone above the water. Each has its own verandah, its own view, and its own rhythm.', 'sage') }}
+        <p class="mx-auto max-w-xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
+          {{ __('Satori brings together a collection of villas and cottages across a beautifully layered estate in Mulshi. ', 'sage') }}
         </p>
 
         <p class="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
-          {{ __('Choose a garden cottage among the fruit trees, a suite lifted into the canopy, a place wrapped in the woods, or a villa standing alone above the water.', 'sage') }}
+          {{ __('What unites them all is a sense of quiet luxury, thoughtful design, and a relationship with nature that feels immediate and immersive. Across the collection, Satori can be experienced through live bookable options, including a fuller estate-scale stay for larger private gatherings.', 'sage') }}
         </p>
       </div>
     </section>
