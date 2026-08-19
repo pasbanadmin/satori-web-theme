@@ -20,7 +20,8 @@
         </div>
 
         <div class="mt-8 pt-6 border-t border-brand-ink/10">
-          <a href="#book"
+          <a href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+            target="_blank" rel="noopener noreferrer"
             class="inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-7 py-3.5 text-xs uppercase tracking-[0.2em] font-medium text-brand-primary transition-colors duration-300 hover:bg-brand-primary hover:text-brand-sand">
             {{ __('Check Availability', 'sage') }}
             <span aria-hidden="true">→</span>

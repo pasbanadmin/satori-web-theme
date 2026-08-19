@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="absolute bottom-0 right-0 z-10 hidden items-center gap-3 pr-8 pb-10 lg:flex" data-hero-item aria-hidden="true">
+  <div class="absolute bottom-0 right-20 z-10 hidden items-center gap-3 pb-10 lg:flex" data-hero-item aria-hidden="true">
     <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
     <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/60">
       {{ __('Scroll', 'sage') }}

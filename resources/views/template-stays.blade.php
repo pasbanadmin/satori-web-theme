@@ -237,13 +237,13 @@ Template Name: Stays
         </div>
       </div>
 
-      <div class="absolute bottom-0 right-0 z-10 hidden items-center gap-3 pr-8 pb-10 lg:flex" data-stays-hero-item
-        aria-hidden="true">
-        <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
-        <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/60">
-          {{ __('Scroll', 'sage') }}
-        </span>
-      </div>
+        <div class="absolute bottom-0 right-20 z-10 hidden items-center gap-3 pb-10 lg:flex"
+          aria-hidden="true">
+          <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
+          <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/60">
+            {{ __('Scroll', 'sage') }}
+          </span>
+        </div>
     </section>
 
     <section class="bg-[#f7f3eb] py-14">
@@ -545,8 +545,9 @@ Template Name: Stays
               </ul>
 
               <a class="mt-8 inline-flex items-center justify-center gap-2 self-start rounded-full border border-brand-ink/25 px-4 py-1.5 text-[0.75rem] uppercase text-brand-ink transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold"
-                href="{{ home_url('/contact-us/#enquire-form') }}">
-                {{ __('Send an Enquiry', 'sage') }}
+                href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+                target="_blank" rel="noopener noreferrer">
+                {{ __('Check Availability', 'sage') }}
                 <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
                   aria-hidden="true">&rarr;</span>
               </a>
@@ -754,7 +755,8 @@ Template Name: Stays
         </p>
 
         <a class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
-          href="{{ home_url('/contact-us') }}" data-reveal>
+          href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+          target="_blank" rel="noopener noreferrer" data-reveal>
           {{ __('Book Your Stay', 'sage') }}
         </a>
       </div>

@@ -20,7 +20,7 @@
       <img class="h-8 w-auto" src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="{{ $siteName }}" data-header-logo>
     </a>
 
-    <nav class="hidden lg:block" aria-label="{{ __('Primary navigation', 'sage') }}" data-desktop-nav>
+    <nav class="hidden min-[1150px]:block" aria-label="{{ __('Primary navigation', 'sage') }}" data-desktop-nav>
       <ul class="flex items-center gap-6">
         @foreach ($headerNavItems as $item)
           <li>
@@ -35,12 +35,13 @@
 
     <div class="flex items-center gap-3">
       <a class="hidden items-center justify-center rounded-full border px-5 py-2 text-sm uppercase tracking-[0.02em] transition-all duration-300 sm:inline-flex"
-        href="{{ home_url('/contact-us') }}" data-header-book-cta>
+        href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+        target="_blank" rel="noopener noreferrer" data-header-book-cta>
         {{ __('Book Your Stay', 'sage') }}
       </a>
 
       <button
-        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-current transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold lg:hidden"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-current transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold min-[1150px]:hidden"
         type="button" aria-expanded="false" data-header-toggle data-open-label="{{ __('Open menu', 'sage') }}"
         data-close-label="{{ __('Close menu', 'sage') }}">
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -53,7 +54,7 @@
   </div>
 
   <nav
-    class="fixed inset-0 z-60 flex translate-y-4 flex-col justify-center bg-brand-primary px-8 opacity-0 invisible pointer-events-none transition-all duration-300 lg:hidden group-[.is-menu-open]:translate-y-0 group-[.is-menu-open]:opacity-100 group-[.is-menu-open]:visible group-[.is-menu-open]:pointer-events-auto"
+    class="fixed inset-0 z-60 flex translate-y-4 flex-col justify-center bg-brand-primary px-8 opacity-0 invisible pointer-events-none transition-all duration-300 min-[1150px]:hidden group-[.is-menu-open]:translate-y-0 group-[.is-menu-open]:opacity-100 group-[.is-menu-open]:visible group-[.is-menu-open]:pointer-events-auto"
     aria-label="{{ __('Mobile navigation', 'sage') }}" data-header-nav>
     <!-- close button -->
     <button class="absolute top-5 right-5 text-brand-sand" type="button" data-header-toggle>
@@ -75,7 +76,8 @@
     </ul>
 
     <a class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-gold px-6 py-3 text-sm uppercase tracking-[0.02em] text-brand-primary transition-colors duration-300 hover:bg-brand-sand hover:text-white"
-      href="{{ home_url('/contact-us') }}">
+      href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+      target="_blank" rel="noopener noreferrer">
       {{ __('Book Your Stay', 'sage') }}
     </a>
   </nav>

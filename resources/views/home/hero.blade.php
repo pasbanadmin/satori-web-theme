@@ -74,7 +74,8 @@
 
         <div class="mt-10 flex flex-col lg:gap-4 gap-2 flex-row">
           <a class="w-max inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 lg:text-[0.8125rem] text-[10px] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
-            href="{{ home_url('/contact-us') }}">
+            href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+            target="_blank" rel="noopener noreferrer">
             {{ __('Book Your Stay', 'sage') }}
           </a>
 
@@ -88,7 +89,7 @@
   </div>
 
   {{-- Scroll Indicator --}}
-  <div class="absolute bottom-0 right-0 z-30 hidden items-center gap-3 pr-8 pb-10 lg:flex" aria-hidden="true">
+  <div class="absolute bottom-0 right-20 z-30 hidden items-center gap-3 pb-10 lg:flex" aria-hidden="true">
     <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
     <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/70 font-medium">
       {{ __('Scroll', 'sage') }}

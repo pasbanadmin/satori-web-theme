@@ -30,6 +30,7 @@
       @endif
 
       @include('sections.footer')
+      @include('partials.whatsapp-widget')
     </div>
 
     @php(do_action('get_footer'))

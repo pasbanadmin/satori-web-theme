@@ -17,7 +17,8 @@
     </div>
 
     <a class="inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-7 py-3.5 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
-      href="{{ home_url('/contact-us') }}" data-reveal>
+      href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+      target="_blank" rel="noopener noreferrer" data-reveal>
       {{ __('Book Your Stay', 'sage') }}
       <span aria-hidden="true">→</span>
     </a>
