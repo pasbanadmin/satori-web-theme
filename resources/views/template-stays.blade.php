@@ -6,7 +6,7 @@ Template Name: Stays
 
 @section('content')
   @php
-    $heroImage = '/wp-content/uploads/2026/08/stay-hero-image.webp';
+    $heroImage = '/wp-content/uploads/2026/08/28-Movie-Night-and-Bonfire-on-the-Lawn-1.webp';
     $heroAlt = __('Private homes above Mulshi Lake at Satori', 'sage');
     $estateImage = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
 
@@ -237,33 +237,20 @@ Template Name: Stays
         </div>
       </div>
 
-        <div class="absolute bottom-0 right-20 z-10 hidden items-center gap-3 pb-10 lg:flex"
-          aria-hidden="true">
-          <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
-          <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/60">
-            {{ __('Scroll', 'sage') }}
-          </span>
-        </div>
+      <div class="absolute bottom-0 right-20 z-10 hidden items-center gap-3 pb-10 lg:flex" aria-hidden="true">
+        <span class="block h-12 w-px bg-gradient-to-b from-brand-gold to-transparent"></span>
+        <span class="text-[0.65rem] uppercase tracking-[0.3em] text-brand-sand/60">
+          {{ __('Scroll', 'sage') }}
+        </span>
+      </div>
     </section>
 
-    <section class="bg-[#f7f3eb] py-14">
+    <section class="bg-[#f7f3eb] py-10">
       <div class="mx-auto w-full max-w-5xl px-5 sm:px-8 lg:px-16">
-        <p class="text-center text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold" data-reveal>
-          {{ __('The Stays', 'sage') }}
-        </p>
-
-        <h2 class="mt-6 text-center font-heading text-4xl font-light leading-tight text-brand-ink" data-reveal>
-          {{ __('Fourteen Stays. No two alike.', 'sage') }}
-        </h2>
-
-        <div class="mx-auto my-10 h-px w-full max-w-[16rem] bg-brand-gold" data-reveal></div>
+        <div class="mx-auto my-10 h-px w-full max-w-[16rem] bg-brand-gold"></div>
 
         <p class="mx-auto max-w-xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
-          {{ __('Satori brings together a collection of villas and cottages across a beautifully layered estate in Mulshi. ', 'sage') }}
-        </p>
-
-        <p class="mx-auto mt-6 max-w-2xl text-center text-base leading-8 text-brand-muted sm:text-[16px]" data-reveal>
-          {{ __('What unites them all is a sense of quiet luxury, thoughtful design, and a relationship with nature that feels immediate and immersive. Across the collection, Satori can be experienced through live bookable options, including a fuller estate-scale stay for larger private gatherings.', 'sage') }}
+          {{ __('Satori brings together a collection of villas and cottages across a beautifully layered estate in Mulshi. What unites them all is a sense of quiet luxury, thoughtful design, and a relationship with nature that feels immediate and immersive. Across the collection, Satori can be experienced through live bookable options, including a fuller estate-scale stay for larger private gatherings.', 'sage') }}
         </p>
       </div>
     </section>
