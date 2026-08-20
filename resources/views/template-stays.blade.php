@@ -245,7 +245,7 @@ Template Name: Stays
       </div>
     </section>
 
-    <section class="bg-[#f7f3eb] py-10">
+    <section class="bg-[#f7f3eb] lg:py-10 py-5">
       <div class="mx-auto w-full max-w-5xl px-5 sm:px-8 lg:px-16">
         <div class="mx-auto my-10 h-px w-full max-w-[16rem] bg-brand-gold"></div>
 
