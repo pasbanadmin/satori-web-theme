@@ -82,13 +82,13 @@
           <ul class="space-y-2 text-xs leading-6 text-brand-sand/70" role="list">
             <li>{{ __('Satori Estate, Mulshi, Pune District', 'sage') }}</li>
             <li>
-              <a href="tel:+919999999999" class="hover:text-brand-gold transition-colors duration-300">
-                +91 99999 99999
+              <a href="tel:+919218177261" class="hover:text-brand-gold transition-colors duration-300">
+                +91 92181 77261
               </a>
             </li>
             <li>
-              <a href="mailto:hello@satori.in" class="hover:text-brand-gold transition-colors duration-300">
-                hello@satori.in
+              <a href="mailto:satori.reservations@pasban.co" class="hover:text-brand-gold transition-colors duration-300">
+                satori.reservations@pasban.co
               </a>
             </li>
             <li>

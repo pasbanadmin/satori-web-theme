@@ -7,6 +7,25 @@
     @php(wp_head())
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "Resort",
+      "name": "Satori, Mulshi",
+      "description": "A private estate of fourteen stays set across the hills and waters of Mulshi.",
+      "url": "{{ home_url('/') }}",
+      "email": "satori.reservations@pasban.co",
+      "telephone": "+919218177261",
+      "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "Satori Estate",
+        "addressLocality": "Mulshi",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
   </head>
 
   <body @php(body_class())>

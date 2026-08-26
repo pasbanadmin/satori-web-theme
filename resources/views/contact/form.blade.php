@@ -45,9 +45,9 @@
             </span>
             <div>
               <p class="text-base font-medium text-brand-ink">{{ __('Phone', 'sage') }}</p>
-              <a href="tel:+919999999999"
+              <a href="tel:+919218177261"
                 class="mt-1 text-sm text-brand-muted hover:text-brand-gold transition-colors duration-300">
-                +91 99999 99999
+                +91 92181 77261
               </a>
             </div>
           </li>
@@ -62,9 +62,9 @@
             </span>
             <div>
               <p class="text-base font-medium text-brand-ink">{{ __('Email', 'sage') }}</p>
-              <a href="mailto:hello@satori.in"
+              <a href="mailto:satori.reservations@pasban.co"
                 class="mt-1 text-sm text-brand-muted hover:text-brand-gold transition-colors duration-300">
-                hello@satori.in
+                satori.reservations@pasban.co
               </a>
             </div>
           </li>
@@ -92,7 +92,7 @@
         {{-- Success confirmation message --}}
         <div id="contact-success" class="hidden mt-8 border border-brand-gold/40 bg-brand-sand p-6 rounded-sm">
           <p class="text-base leading-7 text-brand-ink font-medium">
-            {{ __('Thank you. We have your enquiry and someone from the team will be in touch within one working day. If it is urgent, call us on +91 99999 99999.', 'sage') }}
+            {{ __('Thank you. We have your enquiry and someone from the team will be in touch within one working day. If it is urgent, call us on +91 92181 77261.', 'sage') }}
           </p>
         </div>
 
