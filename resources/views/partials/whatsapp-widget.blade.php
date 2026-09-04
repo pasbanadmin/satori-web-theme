@@ -3,7 +3,7 @@
   $waMessage = rawurlencode("Hello {$siteTitle}, I'd like to make an inquiry.");
 @endphp
 
-<a href="https://wa.me/919218177261?text={{ $waMessage }}" target="_blank" rel="noopener noreferrer"
+<a href="https://wa.me/918076510462?text={{ $waMessage }}" target="_blank" rel="noopener noreferrer"
   class="fixed bottom-4 lg:bottom-6 lg:right-6 right-4 z-50 transition-transform duration-300 hover:scale-110 focus:outline-none"
   aria-label="Chat on WhatsApp">
   <svg class="md:w-14 w-12 md:h-14 h-12" width="56" height="56" viewBox="0 0 48 48" fill="none"

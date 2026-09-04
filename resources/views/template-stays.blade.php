@@ -561,8 +561,10 @@ Template Name: Stays
 
           <div
             class="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-t border-brand-sand/15 pt-8 text-[0.7rem] uppercase tracking-[0.25em] text-brand-sand/85">
-            <span>{{ sprintf(__('%d Homes', 'sage'), $estate['homes']) }}</span>
-            <span aria-hidden="true">·</span>
+            @if(array_key_exists('homes', $estate))
+              <span>{{ sprintf(__('%d Homes', 'sage'), $estate['homes']) }}</span>
+              <span aria-hidden="true">·</span>
+            @endif
             <span>{{ sprintf(__('%d Bedrooms', 'sage'), $estate['bedrooms']) }}</span>
             <span aria-hidden="true">·</span>
             <span>{{ sprintf(__('Sleeps %d', 'sage'), $estate['sleeps']) }}</span>
