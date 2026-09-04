@@ -168,10 +168,10 @@
                         <span class="text-xs self-center">½</span>
                       @endif
                     </div>
-                    <span
-                      class="text-xs font-semibold tracking-wider text-brand-ink/80 bg-brand-sand/60 px-2.5 py-0.5 rounded-full whitespace-nowrap">
-                      {{ $review['rating'] }} / 5
-                    </span>
+                    <!-- <span
+                        class="text-xs font-semibold tracking-wider text-brand-ink/80 bg-brand-sand/60 px-2.5 py-0.5 rounded-full whitespace-nowrap">
+                        {{ $review['rating'] }} / 5
+                      </span> -->
                   </div>
                 </div>
 
