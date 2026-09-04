@@ -17,6 +17,8 @@
 
   @include('home.gatherings-section')
 
+  @include('home.reviews-section')
+
   @include('home.location')
 
   @include('home.closing-section')

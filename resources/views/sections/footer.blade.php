@@ -35,7 +35,7 @@
 
           {{-- Social Icons --}}
           <div class="mt-5 flex items-center gap-4">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/satorimulshi/" target="_blank" rel="noopener noreferrer"
               class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
               aria-label="{{ __('Satori on Instagram', 'sage') }}">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"
@@ -45,8 +45,8 @@
               </svg>
             </a>
 
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-              class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
+            <a href="https://www.facebook.com/people/SatoriMulshi/61575644977898/" target="_blank"
+              rel="noopener noreferrer" class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
               aria-label="{{ __('Satori on Facebook', 'sage') }}">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5"
                 aria-hidden="true">
@@ -87,7 +87,8 @@
               </a>
             </li>
             <li>
-              <a href="mailto:satori.reservations@pasban.co" class="hover:text-brand-gold transition-colors duration-300">
+              <a href="mailto:satori.reservations@pasban.co"
+                class="hover:text-brand-gold transition-colors duration-300">
                 satori.reservations@pasban.co
               </a>
             </li>
