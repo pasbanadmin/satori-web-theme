@@ -420,4 +420,60 @@ gsap.registerPlugin(ScrollTrigger);
   });
 })();
 
+(() => {
+  const swiperEl = document.querySelector('[data-reviews-swiper]');
+
+  if (!swiperEl) {
+    return;
+  }
+
+  const section = swiperEl.closest('[data-reviews-section]');
+  const prevBtn = section?.querySelector('[data-reviews-prev]');
+  const nextBtn = section?.querySelector('[data-reviews-next]');
+  const paginationEl = section?.querySelector('[data-reviews-pagination]');
+
+  new Swiper(swiperEl, {
+    modules: [Autoplay, Keyboard, Navigation, Pagination],
+    slidesPerView: 1.1,
+    spaceBetween: 12,
+    grabCursor: true,
+    loop: true,
+    speed: 700,
+    autoplay: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ? false
+      : {
+          delay: 5000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+    navigation: {
+      nextEl: nextBtn,
+      prevEl: prevBtn,
+    },
+    pagination: {
+      el: paginationEl,
+      clickable: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1.5,
+        spaceBetween: 16,
+      },
+      1024: {
+        slidesPerView: 1.8,
+        spaceBetween: 16,
+      },
+      1280: {
+        slidesPerView: 2.2,
+        spaceBetween: 16,
+      },
+    },
+  });
+})();
+
+
 

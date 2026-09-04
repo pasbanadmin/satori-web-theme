@@ -91,6 +91,23 @@
   background: #efe4d0;
 }
 
+[data-reviews-section] .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 0.25rem !important;
+  border-radius: 9999px;
+  background: rgba(22, 16, 12, 0.2);
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+[data-reviews-section] .swiper-pagination-bullet-active {
+  width: 1.75rem;
+  border-radius: 9999px;
+  background: #BCA169;
+}
+
 
 /* Header scroll transitions */
 [data-header] {
