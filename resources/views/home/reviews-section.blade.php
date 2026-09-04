@@ -94,7 +94,7 @@
 <section id="reviews" class="relative overflow-hidden bg-[#f7f3eb] pt-16 lg:pt-20" data-reviews-section>
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <!-- Header -->
-    <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end mb-10 lg:mb-16" data-reveal>
+    <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end mb-0 lg:mb-16" data-reveal>
       <div>
         <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
           {{ __('Guest Experiences', 'sage') }}
@@ -111,7 +111,7 @@
 
       <!-- Rating Trust Badge & Nav Buttons -->
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-        <div
+        <!-- <div
           class="flex items-center gap-3 rounded-full border border-brand-ink/15 bg-brand-sand/40 px-4 py-2 sm:px-5 sm:py-2.5 backdrop-blur-sm">
           <div class="flex text-brand-gold text-sm tracking-wider">
             ★★★★★
@@ -120,7 +120,7 @@
           <span class="font-heading text-base sm:text-lg font-medium text-brand-ink">5.0 / 5</span>
           <span class="text-xs uppercase tracking-wider text-brand-muted">· {{ count($reviews) }}
             {{ __('Verified Reviews', 'sage') }}</span>
-        </div>
+        </div> -->
 
         <!-- Custom Navigation Buttons (hidden on mobile) -->
         <div class="hidden sm:flex items-center gap-3">
