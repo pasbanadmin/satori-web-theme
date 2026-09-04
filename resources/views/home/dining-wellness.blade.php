@@ -14,7 +14,7 @@
       'label' => __('Wellness & Spa', 'sage'),
       'heading' => __('A spa in a garden, not a basement.', 'sage'),
       'copy' => __('Satori’s spa block sits within the estate’s planted grounds, open to green on every side. Therapies draw on Ayurvedic and classical techniques, delivered without ceremony or upsell. Beyond the treatment rooms, wellness here is simply the shape of the day — yoga at sunrise, a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.
-          ', 'sage'),
+                        ', 'sage'),
       'cta' => __('Discover Wellness', 'sage'),
       'anchor' => '/wellness',
       'image' => '/wp-content/uploads/2026/08/Wellness-split-section-—-wellness-yoga.webp',
@@ -37,7 +37,7 @@
     </div>
 
     @foreach ($blocks as $index => $block)
-      <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
+      <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20 pb-12 {{ $index === 0 ? 'lg:pt-0' : 'pt-12' }}">
         <div class="group relative overflow-hidden {{ $block['reverse'] ? 'lg:order-2' : '' }}" data-reveal>
           <img
             class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
