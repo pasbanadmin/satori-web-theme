@@ -27,7 +27,7 @@
         <div>
           <a href="{{ home_url('/') }}"
             class="inline-block mb-3 font-heading text-2xl font-light uppercase tracking-[0.15em] text-brand-sand transition-colors duration-300 hover:text-brand-gold">
-            {{ __('Satori, Mulshi', 'sage') }}
+            <img src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="Satori Logo" class="h-8 w-auto brightness-0 invert">
           </a>
           <p class="max-w-xs text-sm leading-6 text-brand-sand/70">
             {{ __('A private estate of fourteen stays set across the hills and waters of Mulshi.', 'sage') }}

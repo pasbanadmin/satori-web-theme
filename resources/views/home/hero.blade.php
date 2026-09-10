@@ -25,7 +25,7 @@
       'alt' => __('Satori retreat hero image 6', 'sage'),
     ]
   ];
-  $posterImage = '/wp-content/uploads/2026/08/01-Woodhouse-at-dusk-—-the-signature-shot.webp';
+  $posterImage = '/wp-content/uploads/2026/09/satori-hero-aerial-1920.webp';
 @endphp
 
 <section

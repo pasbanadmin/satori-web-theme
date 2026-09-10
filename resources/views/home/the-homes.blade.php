@@ -13,7 +13,7 @@
       'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
       'sleeps' => 4,
       'price' => 42000,
-      'image' => '/wp-content/uploads/2026/08/Woodhouse-%E2%80%94-timber-house-on-stilts-daylight.webp',
+      'image' => '/wp-content/uploads/2026/09/01-hero-dusk-on-stilts.webp',
       'position' => 'object-center',
     ],
     [
@@ -21,7 +21,7 @@
       'description' => __('The estate\'s largest stays, and its longest views.', 'sage'),
       'sleeps' => 6,
       'price' => 38000,
-      'image' => '/wp-content/uploads/2026/08/Perch-—-three-storey-elevation-daylight.webp',
+      'image' => '/wp-content/uploads/2026/09/01-hero-terrace-lake.webp',
       'position' => 'object-center',
     ],
     [
@@ -29,7 +29,7 @@
       'description' => __('The signature lakeside villa', 'sage'),
       'sleeps' => 4,
       'price' => 52000,
-      'image' => '/wp-content/uploads/2026/08/Hornbill-—-home-hornbill.webp',
+      'image' => '/wp-content/uploads/2026/09/02-exterior-dusk-lit.webp',
       'position' => 'object-top',
     ],
   ];

@@ -97,18 +97,18 @@ Template Name: Stays
         'offset' => 'lg:mt-24',
         'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Woodhouse-%E2%80%94-timber-house-on-stilts-daylight.webp',
-          '/wp-content/uploads/2026/08/Bedroom-01-—-timber-walls-hill-view.webp',
-          '/wp-content/uploads/2026/08/Bedroom-02-—-bed-facing-the-windows.webp',
-          '/wp-content/uploads/2026/08/Bedroom-03-—-bedroom-opening-to-the-deck.webp',
-          '/wp-content/uploads/2026/08/Bedroom-04-—-corner-bedroom.webp',
-          '/wp-content/uploads/2026/08/Bedroom-05-—-bedroom-and-writing-desk.webp',
-          '/wp-content/uploads/2026/08/Suite-01-—-living-area-and-bed.webp',
-          '/wp-content/uploads/2026/08/Suite-02-—-sitting-room.webp',
-          '/wp-content/uploads/2026/08/Suite-03-—-blue-sofa-and-hill-view.webp',
-          '/wp-content/uploads/2026/08/Suite-04-—-lounge-seating.webp',
-          '/wp-content/uploads/2026/08/Suite-05-—-lounge-corner.webp',
-          '/wp-content/uploads/2026/08/Suite-06-—-long-blue-sofa.webp'
+          '/wp-content/uploads/2026/09/01-hero-dusk-on-stilts.webp',
+          '/wp-content/uploads/2026/09/02-verandah-lake-ranges.webp',
+          '/wp-content/uploads/2026/09/03-exterior-from-lawns.webp',
+          '/wp-content/uploads/2026/09/04-living-heart.webp',
+          '/wp-content/uploads/2026/09/05-principal-bedroom.webp',
+          '/wp-content/uploads/2026/09/06-verandah-swing-sahyadris.webp',
+          '/wp-content/uploads/2026/09/07-second-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/08-bathroom-timber-stone.webp',
+          '/wp-content/uploads/2026/09/09-machan-undercroft.webp',
+          '/wp-content/uploads/2026/09/10-verandah-dining-lake.webp',
+          '/wp-content/uploads/2026/09/11-living-second.webp',
+          '/wp-content/uploads/2026/09/12-exterior-blue-hour.webp'
         ],
       ],
       [
@@ -127,13 +127,15 @@ Template Name: Stays
         'offset' => '',
         'ratio' => 'aspect-[4/5]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Perch-—-three-storey-elevation-daylight.webp',
-          '/wp-content/uploads/2026/08/Bedroom-01-—-four-poster-glass-walls-lake-view.webp',
-          '/wp-content/uploads/2026/08/Bedroom-02-—-four-poster-opening-to-the-terrace.webp',
-          '/wp-content/uploads/2026/08/Bedroom-03-—-canopy-bed-and-hills.webp',
-          '/wp-content/uploads/2026/08/Bedroom-04-—-bed-facing-the-valley.webp',
-          '/wp-content/uploads/2026/08/Bedroom-05-—-bedroom-seen-from-the-terrace.webp',
-          '/wp-content/uploads/2026/08/Perch-—-home-perch.webp',
+          '/wp-content/uploads/2026/09/01-hero-terrace-lake.webp',
+          '/wp-content/uploads/2026/09/02.webp',
+          '/wp-content/uploads/2026/09/04-living-doors-to-terrace.webp',
+          '/wp-content/uploads/2026/09/05-principal-bedroom-lake.webp',
+          '/wp-content/uploads/2026/09/06-terrace-panorama.webp',
+          '/wp-content/uploads/2026/09/07-dining-table-set.webp',
+          '/wp-content/uploads/2026/09/08-second-bedroom.webp',
+          '/wp-content/uploads/2026/09/09-terrace-seating.webp',
+          '/wp-content/uploads/2026/09/10-third-bedroom.webp'
         ],
       ],
       [
@@ -152,15 +154,19 @@ Template Name: Stays
         'offset' => 'lg:mt-24',
         'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Perch-—-three-storey-elevation-daylight.webp',
-          '/wp-content/uploads/2026/08/Bedroom-06-—-corner-windows.webp',
-          '/wp-content/uploads/2026/08/Bedroom-07-—-bed-and-picture-window.webp',
-          '/wp-content/uploads/2026/08/Bedroom-08-—-bedroom-in-morning-light.webp',
-          '/wp-content/uploads/2026/08/Living-02-—-lounge-and-hill-view.webp'
+          '/wp-content/uploads/2026/09/01-hero-terrace-lake-1.webp',
+          '/wp-content/uploads/2026/09/02-principal-bedroom-lake.webp',
+          '/wp-content/uploads/2026/09/04-living-doors-to-terrace-1.webp',
+          '/wp-content/uploads/2026/09/05-terrace-dining.webp',
+          '/wp-content/uploads/2026/09/06-bathroom-freestanding-tub.webp',
+          '/wp-content/uploads/2026/09/07-second-bedroom.webp',
+          '/wp-content/uploads/2026/09/08-dining-laid.webp',
+          '/wp-content/uploads/2026/09/09-third-bedroom.webp',
+          '/wp-content/uploads/2026/09/10-bathroom-two.webp',
+          '/wp-content/uploads/2026/09/11-bathroom-three.webp',
+          '/wp-content/uploads/2026/09/12-exterior-dusk.webp'
         ],
       ],
-
-
       [
         'name' => __('Hornbill', 'sage'),
         'ota_name' => __('Hornbill', 'sage'),
@@ -178,14 +184,18 @@ Template Name: Stays
         'offset' => '',
         'ratio' => 'aspect-[4/3] lg:aspect-[21/10]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Hornbill-—-timber-house-lit-at-dusk.webp',
-          '/wp-content/uploads/2026/08/Living-01-—-double-height-sitting-room.webp',
-          '/wp-content/uploads/2026/08/Bedroom-02-—-four-poster-white-linen.webp',
-          '/wp-content/uploads/2026/08/Living-03-—-sitting-room-and-mezzanine.webp',
-          '/wp-content/uploads/2026/08/Bedroom-03-—-twin-four-posters.webp',
-          '/wp-content/uploads/2026/08/Bedroom-04-—-twin-beds-timber-ceiling.webp',
-          '/wp-content/uploads/2026/08/Bedroom-06-—-twin-beds-corner-room.webp',
-          '/wp-content/uploads/2026/08/Bedroom-08-—-four-poster-and-kilim.webp'
+          '/wp-content/uploads/2026/09/01-hero-verandah-lake.webp',
+          '/wp-content/uploads/2026/09/02-exterior-dusk-lit.webp',
+          '/wp-content/uploads/2026/09/03-first-light-lake.webp',
+          '/wp-content/uploads/2026/09/04-outdoor-bar-night.webp',
+          '/wp-content/uploads/2026/09/05-verandah-dining-lake.webp',
+          '/wp-content/uploads/2026/09/06-principal-bedroom.webp',
+          '/wp-content/uploads/2026/09/07-bathroom-mediterranean.webp',
+          '/wp-content/uploads/2026/09/08-exterior-roof.webp',
+          '/wp-content/uploads/2026/09/09-verandah-daylight.webp',
+          '/wp-content/uploads/2026/09/10-second-bedroom.webp',
+          '/wp-content/uploads/2026/09/11-shower-second-bath.webp',
+          '/wp-content/uploads/2026/09/12-arrival-steps-dusk.webp'
         ],
       ],
     ];
