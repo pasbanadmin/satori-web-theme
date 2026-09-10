@@ -301,7 +301,8 @@ gsap.registerPlugin(ScrollTrigger);
     }
 
     toggle.addEventListener('click', () => {
-      const isOpen = clamp.classList.toggle('line-clamp-none');
+      const isOpen = clamp.classList.toggle('is-expanded');
+      clamp.classList.toggle('line-clamp-none', isOpen);
 
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
@@ -311,6 +312,49 @@ gsap.registerPlugin(ScrollTrigger);
 
       if (caret) {
         caret.textContent = isOpen ? '\u2191' : '\u2193';
+      }
+
+      if (window.ScrollTrigger) {
+        window.ScrollTrigger.refresh();
+      }
+    });
+  });
+})();
+
+(() => {
+  const stayCards = document.querySelectorAll('[data-stay-card]');
+
+  if (!stayCards.length) {
+    return;
+  }
+
+  stayCards.forEach((card) => {
+    const toggleBtn = card.querySelector('[data-stay-drawer-toggle]');
+    const label = card.querySelector('[data-stay-drawer-label]');
+
+    if (!toggleBtn) {
+      return;
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = card.classList.toggle('is-open');
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (label) {
+        label.textContent = isOpen
+          ? (toggleBtn.dataset.closeLabel || 'Hide Details')
+          : (toggleBtn.dataset.openLabel || 'Discover Details');
+      }
+
+      if (!isOpen) {
+        const scrollable = card.querySelector('[data-stay-scrollable]');
+        if (scrollable) {
+          scrollable.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+
+      if (window.ScrollTrigger) {
+        window.ScrollTrigger.refresh();
       }
     });
   });

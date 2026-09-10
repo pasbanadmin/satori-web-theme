@@ -279,123 +279,191 @@ Template Name: Stays
       </div>
 
       @php
+        $defaultIncluded = [
+          __('Estate breakfast every morning', 'sage'),
+          __('Welcome drink on arrival', 'sage'),
+          __('Access to pool, lawns, games and estate walks', 'sage'),
+          __('Tea and coffee in the room', 'sage'),
+        ];
+
         $chapters = [
           __('Garden View Cottages', 'sage') => [
-            'category' => __('Cat 1', 'sage'),
-            'meta' => __('Three cottages · One bedroom each · Sleeps 2', 'sage'),
-            'headline' => __('Wake up inside the garden that feeds the estate.', 'sage'),
-            'description' => [
-              __('The Orchard Cottages sit low among Satori’s fruit trees and vegetable beds, on the farmland side of the estate where the mornings smell of wet earth and citrus leaf. Three private cottages, each with its own verandah opening directly onto the growing beds — close enough that the herbs on your breakfast plate were cut a few steps from where you slept.', 'sage'),
-              __('They are the most intimate stays at Satori, and deliberately so. What they trade in scale they return in immediacy: birdsong at close range, the gardeners moving through the rows at first light, fruit ripening within reach of the verandah rail. For couples and solo travellers who want the estate at its quietest, this is where to start.', 'sage'),
+            'eyebrow' => __('GARDEN COTTAGES · ONE BEDROOM · SLEEPS 2 + 2 CHILDREN', 'sage'),
+            'hook' => __('The gardens at your door, the pool a short walk away.', 'sage'),
+            'paragraphs' => [
+              __('The Garden View Cottages sit at ground level among the planted beds, each one a single bedroom with its own verandah opening straight onto lawn and flower borders. They are the simplest way to stay at Satori: a comfortable room, a garden to step into, and the whole estate within a few minutes\' walk.', 'sage'),
+              __('They are built for guests who will spend their days out on the estate and want somewhere calm and uncomplicated to come back to, and for families who need a second bed for children without taking a full villa.', 'sage'),
             ],
-            'idealFor' => __('Ideal for couples, solo travellers, and guests arriving at Satori for the first time.', 'sage'),
-            'features' => [
-              __('One bedroom, sleeps two', 'sage'),
-              __('Private garden verandah', 'sage'),
-              __('Opens onto the working orchard and vegetable beds', 'sage'),
-              __('Full access to the pool, The Nest, spa and all estate experiences', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft]', 'sage'),
+              'bedrooms' => '1',
+              'bathrooms' => '1',
+              'sleeps' => __('2 adults + 2 children', 'sage'),
+              'view' => __('Gardens', 'sage'),
             ],
+            'layout' => [
+              __('One en-suite bedroom', 'sage'),
+              __('Private verandah opening onto the gardens', 'sage'),
+              __('Extra bedding for two children on request', 'sage'),
+              __('Ground level, no steps', 'sage'),
+            ],
+            'view' => __('Flower borders, the herb and medicinal beds, and the estate\'s trees; the most planted outlook on the property.', 'sage'),
+            'idealFor' => __('Young families, couples on a shorter stay, and guests who want the estate rather than the room to be the point.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('Junior Suites (Lake View)', 'sage') => [
-            'category' => __('Cat 2', 'sage'),
-            'meta' => __('Four suites - One bedroom each - Sleeps 2', 'sage'),
-            'headline' => __('An elevated hideaway above the fruit garden, with the lake beyond.', 'sage'),
-            'description' => [
-              __('The Canopy Suites are raised above the same orchard the cottages sit within - high enough that you look out across the tops of the fruit trees to Mulshi Lake and the hills behind it. The garden is still directly below you; the view is simply longer.', 'sage'),
-              __('Inside, the suites are more generous and more finished: a larger bed, a deeper verandah, a bathroom you won\'t want to rush out of. They are made for guests who want seclusion with a lake view - morning light coming in over the canopy, evenings spent watching the water change colour from your own verandah.', 'sage'),
+            'eyebrow' => __('LAKE-VIEW SUITES · ONE BEDROOM · SLEEPS 2 + 2 CHILDREN', 'sage'),
+            'hook' => __('The lake in the window, without taking a whole villa.', 'sage'),
+            'paragraphs' => [
+              __('The Junior Suites are Satori\'s newest rooms: a generous bedroom with a sitting area and a private balcony, positioned so the view runs straight out over Mulshi Lake to the hills beyond. They carry the same finish as the estate\'s villas, red-oxide floors, natural textures, Mediterranean-inspired bathrooms, in a room-sized stay.', 'sage'),
+              __('They suit couples who want the lake view that Hornbill is known for, at a gentler scale and price, and small families who want to be close to the water.', 'sage'),
             ],
-            'idealFor' => __('Ideal for couples, honeymooners, and longer stays where the room itself sets the tone.', 'sage'),
-            'features' => [
-              __('One bedroom, sleeps two', 'sage'),
-              __('Elevated position with lake and hill views', 'sage'),
-              __('Deep private verandah above the orchard', 'sage'),
-              __('Enhanced bathroom and in-room comforts', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft]', 'sage'),
+              'bedrooms' => '1',
+              'bathrooms' => '1',
+              'sleeps' => __('2 adults + 2 children', 'sage'),
+              'view' => __('Lake', 'sage'),
             ],
-            'cta' => __('View Junior Suites (Lake View)', 'sage'),
+            'layout' => [
+              __('One en-suite bedroom with sitting area', 'sage'),
+              __('Private balcony facing the lake', 'sage'),
+              __('Extra bedding for two children on request', 'sage'),
+              __('Tea and coffee station in the room', 'sage'),
+            ],
+            'view' => __('Mulshi Lake and the Sahyadri ridgeline, from the bed and the balcony.', 'sage'),
+            'idealFor' => __('Couples who want the water in view, and small families who want the lake without a villa\'s footprint.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('Aves', 'sage') => [
-            'category' => __('Cat 2', 'sage'),
-            'meta' => __('Three cottages - Falcon, Macaw, Toucan - One bedroom each - Sleeps 2', 'sage'),
-            'headline' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
-            'description' => [
-              __('Aves brings together Falcon, Macaw and Toucan - three single-bedroom cottages tucked into their own pockets of the estate. Each has a wraparound verandah and its own angle on the gardens and farms, positioned so that you can spend a whole day without seeing another guest, and then walk five minutes to dinner and be among everyone.', 'sage'),
+            'eyebrow' => __('GARDEN COTTAGES · ONE BEDROOM EACH · SLEEPS 2 EACH', 'sage'),
+            'hook' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
+            'paragraphs' => [
+              __('Aves brings together Falcon, Macaw and Toucan: three single-bedroom cottages tucked into their own pockets of the estate. Each has a wraparound verandah and its own angle on the gardens and farms, positioned so you can spend a whole day without seeing another guest, then walk five minutes to dinner and be among everyone.', 'sage'),
               __('They are the quietest stays on the property. Guests who book Aves tend to rebook Aves.', 'sage'),
             ],
-            'idealFor' => __('Ideal for couples, writers and readers, solo retreats, and anyone who values being left alone.', 'sage'),
-            'features' => [
-              __('One bedroom, sleeps two', 'sage'),
-              __('Wraparound verandah', 'sage'),
-              __('Maximum seclusion, minimum distance to The Nest', 'sage'),
-              __('Garden and farm outlooks', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft] per cottage', 'sage'),
+              'bedrooms' => __('1 per cottage (3 cottages)', 'sage'),
+              'bathrooms' => '1',
+              'sleeps' => __('2 each', 'sage'),
+              'view' => __('Gardens and farm', 'sage'),
             ],
-            'cta' => __('View Aves', 'sage'),
+            'layout' => [
+              __('One en-suite bedroom', 'sage'),
+              __('Wraparound private verandah', 'sage'),
+              __('Garden-edged, secluded setting', 'sage'),
+              __('Three cottages: Falcon, Macaw, Toucan', 'sage'),
+            ],
+            'view' => __('Gardens, orchards and the working farm; the greenest outlook on the estate.', 'sage'),
+            'idealFor' => __('Couples, writers and readers, solo retreats, and anyone who values being left alone.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('Woodhouse', 'sage') => [
-            'category' => __('Cat 3', 'sage'),
-            'meta' => __('One stay - Two bedrooms - Sleeps 4', 'sage'),
-            'headline' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
-            'description' => [
-              __('Woodhouse is built in the spirit of a machan - raised, timber-framed, and open to the air on the side that faces the lawns and the lake. The shared verandah runs the length of it, and it is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
-              __('Two bedrooms sit either side of a shared living heart, which makes it work equally for two couples travelling together or a family of four who want to be near each other without being on top of each other.', 'sage'),
+            'eyebrow' => __('MACHAN STAY · TWO BEDROOMS · SLEEPS 4', 'sage'),
+            'hook' => __('Timber-warm, raised, and the most atmospheric address on the estate.', 'sage'),
+            'paragraphs' => [
+              __('Woodhouse is built in the spirit of a machan: raised, timber-framed, and open to the air on the side that faces the lawns and the lake. Two bedrooms sit either side of a shared living space, and a long verandah runs the length of the building.', 'sage'),
+              __('It is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
             ],
-            'idealFor' => __('Ideal for two couples, small families, and guests who want warmth and texture over polish.', 'sage'),
-            'features' => [
-              __('Two bedrooms, sleeps four', 'sage'),
-              __('Long shared verandah facing the lawns and lake', 'sage'),
-              __('Timber-led, machan-inspired architecture', 'sage'),
-              __('Especially good in the monsoon', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft]', 'sage'),
+              'bedrooms' => '2',
+              'bathrooms' => '2',
+              'sleeps' => '4',
+              'view' => __('Lawns and lake', 'sage'),
             ],
-            'cta' => __('View Woodhouse', 'sage'),
+            'layout' => [
+              __('Two en-suite bedrooms', 'sage'),
+              __('Shared living space between the bedrooms', 'sage'),
+              __('Long covered verandah facing the lawns and lake', 'sage'),
+              __('Raised, timber-led architecture', 'sage'),
+            ],
+            'view' => __('Across the lawns to the lake, framed by timber and trees.', 'sage'),
+            'idealFor' => __('Two couples, small families, and guests who want warmth and texture over polish. Especially good in the monsoon.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('Perch I', 'sage') => [
-            'category' => __('Cat 3', 'sage'),
-            'meta' => __('Two residences - Four bedrooms each - Sleeps 8', 'sage'),
-            'headline' => __('The estate\'s largest stays, and its longest views.', 'sage'),
-            'description' => [
-              __('Perch I is one of Satori\'s four-bedroom residences, set high with commanding views over Mulshi Lake and the ranges beyond. Generous shared living areas, wide outdoor terraces and four private bedrooms make it the natural choice when a group wants to stay together as one household rather than scatter across the estate.', 'sage'),
+            'eyebrow' => __('LAKE RESIDENCE · FOUR BEDROOMS · SLEEPS 8', 'sage'),
+            'hook' => __('The estate\'s largest stay, and its longest views.', 'sage'),
+            'paragraphs' => [
+              __('Perch I is Satori\'s four-bedroom residence, set high on the estate with an expansive, uninterrupted view over Mulshi Lake and the ranges beyond. A full living room, a kitchenette and wide outdoor terraces sit between the bedrooms, so a group can stay together as one household rather than scatter across the estate.', 'sage'),
+              __('It is the natural choice for families and groups of friends who want to cook a little, sit together a lot, and wake up to the lake.', 'sage'),
             ],
-            'idealFor' => __('Ideal for families, groups of friends, milestone celebrations, and small offsites.', 'sage'),
-            'features' => [
-              __('Four bedrooms, sleeps up to eight', 'sage'),
-              __('Wide terraces with uninterrupted lake and hill views', 'sage'),
-              __('Generous shared living and dining areas', 'sage'),
-              __('Can be booked with Perch II for larger parties', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft]', 'sage'),
+              'bedrooms' => '4',
+              'bathrooms' => '4',
+              'sleeps' => '8',
+              'view' => __('Elevated, panoramic lake', 'sage'),
             ],
-            'cta' => __('View Perch', 'sage'),
+            'layout' => [
+              __('Four en-suite bedrooms', 'sage'),
+              __('Large shared living room', 'sage'),
+              __('Kitchenette with fridge, kettle and basics', 'sage'),
+              __('Dining area for eight', 'sage'),
+              __('Wide terraces facing the lake and hills', 'sage'),
+            ],
+            'view' => __('Elevated and expansive: the whole of Mulshi Lake and the Sahyadri ridgeline from the terrace and the living room.', 'sage'),
+            'idealFor' => __('Families, groups of friends, milestone celebrations and small offsites. Book with Perch II for larger parties.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('Perch II', 'sage') => [
-            'category' => __('Cat 3', 'sage'),
-            'meta' => __('Two residences - Three bedrooms each - Sleeps 6-7', 'sage'),
-            'headline' => __('The estate\'s largest stays, and its longest views.', 'sage'),
-            'description' => [
-              __('Perch II is one of Satori\'s three-bedroom residences, set high with commanding views over Mulshi Lake and the ranges beyond. Generous shared living areas, wide outdoor terraces and three private bedrooms make it the natural choice when a group wants to stay together as one household rather than scatter across the estate.', 'sage'),
-              __('Perch II sleeps six guests and can be booked alongside Perch I when a larger group wants the same long views and shared sense of place.', 'sage'),
+            'eyebrow' => __('LAKE RESIDENCE · THREE BEDROOMS · SLEEPS 6', 'sage'),
+            'hook' => __('The same long views, one bedroom fewer.', 'sage'),
+            'paragraphs' => [
+              __('Perch II is Satori\'s three-bedroom residence, set high on the estate beside Perch I with the same expansive view over Mulshi Lake. It has its own living room, a kitchenette and wide outdoor terraces, and works as one comfortable household for a family or a group of six.', 'sage'),
+              __('Perch II can be booked alongside Perch I when a larger group wants the same long views and shared sense of place.', 'sage'),
             ],
-            'idealFor' => __('Ideal for families, groups of friends, milestone celebrations, and small offsites.', 'sage'),
-            'features' => [
-              __('Three bedrooms, sleeps six', 'sage'),
-              __('Wide terraces with uninterrupted lake and hill views', 'sage'),
-              __('Generous shared living and dining areas', 'sage'),
-              __('Can be booked with Perch I for larger parties', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft]', 'sage'),
+              'bedrooms' => '3',
+              'bathrooms' => '3',
+              'sleeps' => '6',
+              'view' => __('Elevated, panoramic lake', 'sage'),
             ],
-            'cta' => __('View Perch', 'sage'),
+            'layout' => [
+              __('Three en-suite bedrooms', 'sage'),
+              __('Shared living room', 'sage'),
+              __('Kitchenette with fridge, kettle and basics', 'sage'),
+              __('Dining area', 'sage'),
+              __('Wide terraces facing the lake and hills', 'sage'),
+            ],
+            'view' => __('Elevated and expansive: Mulshi Lake and the ranges beyond, from the terrace and the living room.', 'sage'),
+            'idealFor' => __('Families, friends travelling together, and groups who want to be near each other without being on top of each other.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('Hornbill', 'sage') => [
-            'category' => __('Cat 4', 'sage'),
-            'meta' => __('One villa - Two bedrooms - Sleeps 4', 'sage'),
-            'headline' => __('The signature villa. The best seat on the estate.', 'sage'),
-            'description' => [
-              __('Hornbill is Satori at its most complete. Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy. It is the only place here where the water is present from the moment you wake to the moment the light goes.', 'sage'),
-              __('It is priced as the estate\'s premier address because that is what it is. Guests take Hornbill when the stay itself is the occasion - an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
+            'eyebrow' => __('THE SIGNATURE VILLA · TWO BEDROOMS · SLEEPS 4', 'sage'),
+            'hook' => __('The best seat on the estate.', 'sage'),
+            'paragraphs' => [
+              __('Hornbill is Satori at its most complete: two bedrooms, a private lounge, a pantry, indoor and outdoor living, its own outdoor bar, and a position that gives it the lake in full and near-total privacy. It is the only stay where the water is present from the moment you wake to the moment the light goes.', 'sage'),
+              __('Guests take Hornbill when the stay itself is the occasion: an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
             ],
-            'idealFor' => __('Ideal for couples marking something, two couples travelling well, and guests for whom the view is the point.', 'sage'),
-            'features' => [
-              __('Two bedrooms, sleeps four', 'sage'),
-              __('Private outdoor bar and generous outdoor living', 'sage'),
-              __('The estate\'s most direct and uninterrupted lake frontage', 'sage'),
-              __('Highest specification on the property', 'sage'),
+            'specs' => [
+              'size' => __('[___ sq ft]', 'sage'),
+              'bedrooms' => '2',
+              'bathrooms' => '2',
+              'sleeps' => '4',
+              'view' => __('Direct lake frontage', 'sage'),
             ],
-            'cta' => __('View Hornbill', 'sage'),
+            'layout' => [
+              __('Two en-suite bedrooms', 'sage'),
+              __('Attached private lounge', 'sage'),
+              __('Pantry with tea, coffee and fridge', 'sage'),
+              __('Private outdoor bar and deck', 'sage'),
+              __('Wraparound verandah facing the lake', 'sage'),
+            ],
+            'view' => __('The estate\'s most direct and uninterrupted lake frontage, from every room.', 'sage'),
+            'idealFor' => __('Couples marking something, two couples travelling well, and guests for whom the view is the point.', 'sage'),
+            'included' => $defaultIncluded,
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
         ];
       @endphp
@@ -405,11 +473,6 @@ Template Name: Stays
           @php
             $chapter = $chapters[$stay['name']];
             $isFlipped = $loop->index % 2 === 1;
-            $idealFor = $chapter['idealFor'] ?? '';
-            $idealNeedle = __('Ideal for', 'sage');
-            $idealForBody = str_starts_with($idealFor, $idealNeedle)
-              ? trim(substr($idealFor, strlen($idealNeedle)))
-              : '';
 
             $galleryList = [];
             if (!empty($stay['gallery'])) {
@@ -420,9 +483,10 @@ Template Name: Stays
           @endphp
 
           <article
-            class="group grid snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:min-h-[calc(100svh-7.5rem)] lg:grid-cols-[repeat(20,minmax(0,1fr))] {{ $loop->last ? 'border-b' : '' }}">
+            data-stay-card
+            class="group/card grid snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] lg:h-[600px] lg:max-h-[600px] {{ $loop->last ? 'border-b' : '' }}">
             <div
-              class="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto {{ $isFlipped ? 'lg:order-last' : '' }}"
+              class="relative w-full aspect-[4/3] max-h-[600px] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto lg:h-full lg:max-h-[600px] {{ $isFlipped ? 'lg:order-last' : '' }}"
               data-reveal>
               @if (count($galleryList) > 1)
                 <div class="swiper h-full w-full" data-stay-gallery-swiper>
@@ -469,85 +533,146 @@ Template Name: Stays
             </div>
 
             <div
-              class="flex flex-col justify-center bg-brand-sand px-6 py-6 sm:px-8 lg:col-span-11 lg:px-12 lg:py-4 {{ $isFlipped ? 'lg:order-first lg:border-r' : 'lg:border-l' }} lg:border-brand-ink/10"
+              data-stay-scrollable
+              class="flex flex-col justify-center group-[.is-open]/card:justify-start bg-brand-sand px-6 py-8 sm:px-8 lg:col-span-11 lg:px-10 lg:py-8 lg:h-full lg:max-h-[600px] lg:overflow-y-auto stay-scrollable {{ $isFlipped ? 'lg:order-first lg:border-r' : 'lg:border-l' }} lg:border-brand-ink/10"
               data-reveal>
-              <p class="text-[0.65rem] uppercase leading-5 tracking-[0.18em] text-brand-muted">
-                {{ $chapter['meta'] ?? (sprintf(_n('%d Bedroom', '%d Bedrooms', $stay['bedrooms'], 'sage'), $stay['bedrooms']) . ' · ' . sprintf(__('Sleeps %d', 'sage'), $stay['sleeps'])) }}
+              {{-- 1. Eyebrow: category · bedrooms · sleeps --}}
+              <p class="text-[0.68rem] uppercase leading-5 tracking-[0.22em] text-brand-muted font-medium">
+                {{ $chapter['eyebrow'] }}
               </p>
 
-              <h3 class="mt-2 font-heading text-2xl font-light leading-tight text-brand-ink lg:text-3xl">
+              {{-- 2. Name + Hook --}}
+              <h3 class="mt-2 font-heading text-3xl sm:text-4xl lg:text-[2.6rem] font-light leading-tight text-brand-ink">
                 {{ $stay['name'] }}
               </h3>
 
-              <p class="mt-1 font-heading text-lg font-light leading-snug text-brand-ink lg:text-xl">
-                {{ $chapter['headline'] }}
+              <p class="mt-1.5 font-heading text-base sm:text-lg font-light leading-snug text-brand-gold italic">
+                {{ $chapter['hook'] }}
               </p>
 
+              {{-- 3. Two Paragraphs with Read More --}}
+              <div class="mt-3.5 space-y-2 text-sm leading-relaxed text-brand-muted sm:text-[15px]" data-read-more>
+                <div class="line-clamp-3 transition-all duration-300" data-read-more-clamp>
+                  @foreach ($chapter['paragraphs'] as $paragraph)
+                    <p class="{{ $loop->first ? '' : 'mt-2' }}">{{ $paragraph }}</p>
+                  @endforeach
+                </div>
 
-
-              @if (!empty($chapter['description']))
-                <div data-read-more>
-                  <div class="line-clamp-3" data-read-more-clamp>
-                    @foreach ($chapter['description'] as $paragraph)
-                      <p
-                        class="{{ $loop->first ? 'mt-3' : 'mt-2' }} text-sm leading-6 text-brand-muted sm:text-[16px] lg:text-sm lg:leading-5">
-                        {{ $paragraph }}
-                      </p>
-                    @endforeach
-                  </div>
-
+                @if (count($chapter['paragraphs']) > 1 || strlen($chapter['paragraphs'][0] ?? '') > 180)
                   <button
-                    class="mt-2 cursor-pointer text-sm text-brand-muted underline underline-offset-4 transition-colors duration-300 hover:text-brand-ink"
+                    class="mt-1 inline-flex cursor-pointer items-center gap-1 text-xs font-medium uppercase tracking-wider text-brand-gold underline underline-offset-4 transition-colors duration-300 hover:text-brand-ink"
                     type="button" data-read-more-toggle data-open-label="{{ __('Read more', 'sage') }}"
                     data-close-label="{{ __('Read less', 'sage') }}" aria-expanded="false">
                     <span data-read-more-label>{{ __('Read more', 'sage') }}</span>
                   </button>
-                </div>
-              @else
-                <p class="mt-3 text-sm leading-6 text-brand-muted sm:text-[16px] lg:text-sm lg:leading-5">
-                  {{ $stay['description'] }}
-                </p>
-              @endif
+                @endif
+              </div>
 
-              <div class="mt-3 grid grid-cols-3 divide-x divide-brand-ink/10 border-y border-brand-ink/10 py-2.5 text-center">
-                <div class="px-3">
-                  <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-muted">{{ __('Bedrooms', 'sage') }}</p>
-                  <p class="mt-1 font-heading text-xl font-light text-brand-ink lg:text-2xl">{{ $stay['bedrooms'] }}</p>
-                </div>
+              {{-- 4. Spec Strip: Bedrooms · Bathrooms · Sleeps · View (Size hidden for now) --}}
+              <div class="mt-5 border-y border-brand-ink/10 py-3">
+                <div class="grid grid-cols-4 divide-x divide-brand-ink/10 text-center">
+                  <div class="px-1 sm:px-2">
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('Bedrooms', 'sage') }}</p>
+                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">{{ $chapter['specs']['bedrooms'] }}</p>
+                  </div>
 
-                <div class="px-3">
-                  <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-muted">{{ __('Sleeps', 'sage') }}</p>
-                  <p class="mt-1 font-heading text-xl font-light text-brand-ink lg:text-2xl">{{ $stay['sleeps'] }}</p>
-                </div>
+                  <div class="px-1 sm:px-2">
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('Bathrooms', 'sage') }}</p>
+                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">{{ $chapter['specs']['bathrooms'] }}</p>
+                  </div>
 
-                <div class="px-3">
-                  <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-muted">{{ __('Setting', 'sage') }}</p>
-                  <p class="mt-1 text-sm leading-5 text-brand-ink">{{ $stay['setting'] }}</p>
+                  <div class="px-1 sm:px-2">
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('Sleeps', 'sage') }}</p>
+                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">{{ $chapter['specs']['sleeps'] }}</p>
+                  </div>
+
+                  <div class="px-1 sm:px-2">
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('View', 'sage') }}</p>
+                    <p class="mt-1 text-[11px] leading-snug font-light text-brand-ink sm:text-sm">{{ $chapter['specs']['view'] }}</p>
+                  </div>
                 </div>
               </div>
 
-              <p class="mt-2.5 text-sm leading-5 text-brand-muted">
-                <span class="text-[0.65rem] uppercase tracking-[0.2em] text-brand-gold">{{ __('Ideal for', 'sage') }}</span>
-                <span>{{ $idealForBody ? ' ' . $idealForBody : ' ' . $idealFor }}</span>
-              </p>
+              {{-- Action Bar: Check Availability & Discover Details --}}
+              <div class="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
+                <a class="group inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/25 bg-transparent px-6 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary font-medium shadow-sm"
+                  href="{{ $chapter['booking_url'] ?? 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms' }}"
+                  target="_blank" rel="noopener noreferrer">
+                  <span>{{ __('Check Availability', 'sage') }}</span>
+                  <span class="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                </a>
 
-              <ul
-                class="mt-3 grid gap-x-6 gap-y-1.5 border-t border-brand-ink/10 pt-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-                @foreach ($chapter['features'] as $feature)
-                  <li class="flex items-start gap-3 text-sm leading-5 text-brand-ink">
-                    <span class="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-[1px] bg-brand-gold" aria-hidden="true"></span>
-                    <span>{{ $feature }}</span>
-                  </li>
-                @endforeach
-              </ul>
+                <button
+                  class="inline-flex cursor-pointer items-center gap-2 rounded-full border border-brand-ink/20 bg-brand-ink/[0.03] px-5 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-gold hover:bg-brand-sand hover:text-brand-gold font-medium"
+                  type="button"
+                  data-stay-drawer-toggle
+                  data-open-label="{{ __('Discover Details', 'sage') }}"
+                  data-close-label="{{ __('Hide Details', 'sage') }}"
+                  aria-expanded="false">
+                  <span data-stay-drawer-label>{{ __('Discover Details', 'sage') }}</span>
+                  <svg data-stay-drawer-chevron class="h-3.5 w-3.5 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </div>
 
-              <a class="mt-8 inline-flex items-center justify-center gap-2 self-start rounded-full border border-brand-ink/25 px-4 py-1.5 text-[0.75rem] uppercase text-brand-ink transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold"
-                href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
-                target="_blank" rel="noopener noreferrer">
-                {{ __('Check Availability', 'sage') }}
-                <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
-                  aria-hidden="true">&rarr;</span>
-              </a>
+              {{-- Expandable Drawer with Layout, Included, The View, and Ideal For --}}
+              <div class="grid" data-stay-drawer>
+                <div class="min-h-0">
+                  <div class="mt-6 rounded-lg border border-brand-ink/10 bg-brand-primary/[0.025] p-5 sm:p-6 mb-4">
+                    <div class="grid gap-6 sm:grid-cols-2">
+                      {{-- The Layout --}}
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="h-1.5 w-1.5 rounded-full bg-brand-gold"></span>
+                          <p class="text-[0.68rem] uppercase tracking-[0.2em] text-brand-gold font-medium">
+                            {{ __('The Layout', 'sage') }}
+                          </p>
+                        </div>
+                        <ul class="mt-3 space-y-2 text-xs sm:text-[13px] text-brand-ink/90">
+                          @foreach ($chapter['layout'] as $bullet)
+                            <li class="flex items-start gap-2.5">
+                              <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80" aria-hidden="true"></span>
+                              <span class="leading-relaxed">{{ $bullet }}</span>
+                            </li>
+                          @endforeach
+                        </ul>
+                      </div>
+
+                      {{-- Included --}}
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="h-1.5 w-1.5 rounded-full bg-brand-gold"></span>
+                          <p class="text-[0.68rem] uppercase tracking-[0.2em] text-brand-gold font-medium">
+                            {{ __('Included With Stay', 'sage') }}
+                          </p>
+                        </div>
+                        <ul class="mt-3 space-y-2 text-xs sm:text-[13px] text-brand-ink/90">
+                          @foreach ($chapter['included'] as $inc)
+                            <li class="flex items-start gap-2.5">
+                              <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80" aria-hidden="true"></span>
+                              <span class="leading-relaxed">{{ $inc }}</span>
+                            </li>
+                          @endforeach
+                        </ul>
+                      </div>
+                    </div>
+
+                    {{-- View & Ideal For --}}
+                    <div class="mt-5 grid sm:grid-cols-2 gap-4 border-t border-brand-ink/10 pt-4 text-xs sm:text-[13px]">
+                      <div>
+                        <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">{{ __('The View', 'sage') }}</p>
+                        <p class="mt-1 font-light leading-relaxed text-brand-ink">{{ $chapter['view'] }}</p>
+                      </div>
+                      <div>
+                        <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">{{ __('Ideal For', 'sage') }}</p>
+                        <p class="mt-1 font-light leading-relaxed text-brand-ink">{{ $chapter['idealFor'] }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </article>
         @endforeach
@@ -734,7 +859,7 @@ Template Name: Stays
         </div>
 
         <p class="mt-10 text-center text-[0.7rem] uppercase tracking-[0.2em] text-brand-muted" data-reveal>
-          {{ __('Rates are per night for two guests, inclusive of breakfast. The Satori Estate is offered on enquiry.', 'sage') }}
+          {{ __('The Satori Estate is offered on enquiry.', 'sage') }}
         </p>
       </div>
     </section>

@@ -162,4 +162,65 @@
   color: #ffffff;
 }
 
+/* Stays Discover Drawer Accordion */
+[data-stay-drawer] {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-stay-card].is-open [data-stay-drawer] {
+  grid-template-rows: 1fr;
+}
+
+[data-stay-drawer] > div {
+  overflow: hidden;
+}
+
+[data-stay-card] [data-stay-drawer-chevron] {
+  transition: transform 0.3s ease;
+}
+
+[data-stay-card].is-open [data-stay-drawer-chevron] {
+  transform: rotate(180deg);
+}
+
+/* Read more clamp toggle */
+[data-read-more-clamp].is-expanded {
+  -webkit-line-clamp: unset !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+/* Custom luxury scrollbar for stay cards */
+.stay-scrollable::-webkit-scrollbar {
+  width: 5px;
+}
+.stay-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+.stay-scrollable::-webkit-scrollbar-thumb {
+  background: rgba(188, 161, 105, 0.4);
+  border-radius: 9999px;
+}
+.stay-scrollable::-webkit-scrollbar-thumb:hover {
+  background: rgba(188, 161, 105, 0.7);
+}
+.stay-scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(188, 161, 105, 0.4) transparent;
+}
+
+/* Center right content vertically by default, align to start when expanded */
+[data-stay-card] [data-stay-scrollable] {
+  justify-content: center;
+}
+
+[data-stay-card].is-open [data-stay-scrollable] {
+  justify-content: flex-start;
+}
+
+
+
+
 
