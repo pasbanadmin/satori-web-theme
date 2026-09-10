@@ -17,15 +17,15 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Perch', 'sage'),
+      'name' => __('Perch I & II', 'sage'),
       'description' => __('The estate\'s largest stays, and its longest views.', 'sage'),
-      'sleeps' => 6,
+      'sleeps' => '6–8',
       'price' => 38000,
       'image' => '/wp-content/uploads/2026/09/01-hero-terrace-lake.webp',
       'position' => 'object-center',
     ],
     [
-      'name' => __('Hornbill ', 'sage'),
+      'name' => __('Hornbill', 'sage'),
       'description' => __('The signature lakeside villa', 'sage'),
       'sleeps' => 4,
       'price' => 52000,
@@ -60,23 +60,25 @@
             class="absolute inset-0 h-full w-full object-cover {{ $home['position'] }} transition-transform duration-[1200ms] ease-out group-hover:scale-105"
             src="{{ $home['image'] }}" alt="{{ $home['name'] }}">
 
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/75 via-brand-primary/25 to-transparent"></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-brand-primary/95 via-brand-primary/40 to-transparent transition-opacity duration-300 group-hover:from-brand-primary/90">
+          </div>
 
-          <div class="relative z-10 flex h-full flex-col justify-end p-7 sm:p-8 lg:p-10">
-            <div class="flex items-end justify-between gap-6">
-              <div class="max-w-xs sm:max-w-sm">
-                <h3 class="font-heading text-3xl font-light text-brand-sand sm:text-4xl">
+          <div class="relative z-10 mt-auto p-6 sm:p-8">
+            <div class="flex items-end justify-between gap-4">
+              <div>
+                <h3 class="font-heading text-2xl font-light text-brand-sand sm:text-3xl">
                   {{ $home['name'] }}
                 </h3>
 
-                <p class="mt-2 text-sm leading-6 text-brand-sand/90">
+                <p class="mt-1 text-xs text-brand-sand/70 sm:text-sm">
                   {{ $home['description'] }}
                 </p>
               </div>
 
               <div class="flex shrink-0 flex-col items-end gap-2 text-right">
                 <p class="text-[0.7rem] uppercase tracking-[0.25em] text-brand-sand/80">
-                  {{ sprintf(__('Sleeps %d', 'sage'), $home['sleeps']) }}
+                  {{ sprintf(__('Sleeps %s', 'sage'), $home['sleeps']) }}
                 </p>
 
                 <a class="inline-flex items-center gap-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-sand"
