@@ -9,6 +9,8 @@
 
   @include('home.opening-statement')
 
+  @include('home.our-story')
+
   @include('home.the-homes')
 
   @include('home.dining-wellness')

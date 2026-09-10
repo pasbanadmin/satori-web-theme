@@ -43,7 +43,7 @@
       </p>
 
       <h2 class="mt-4 font-heading text-4xl font-light leading-tight text-brand-ink sm:text-4xl">
-        {{ __('Fourteen stays. No two alike.', 'sage') }}
+        {{ __('Twenty-one rooms. No two alike.', 'sage') }}
       </h2>
 
       <p class="mt-5 max-w-3xl text-base leading-7 text-brand-muted sm:text-[16px]">

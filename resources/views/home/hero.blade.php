@@ -69,7 +69,7 @@
         </h1>
 
         <p class="mt-7 max-w-2xl text-base lg:leading-8 leading-6 text-brand-sand sm:text-[16px]">
-          {{ __('Set above Mulshi Lake and held by the quiet rhythms of the Sahyadris, Satori is a private retreat of fourteen stays where nature, design and thoughtful hospitality come together in balance.', 'sage') }}
+          {{ __('Set above Mulshi Lake and held by the quiet rhythms of the Sahyadris, Satori is a private retreat of twenty-one rooms where nature, design and thoughtful hospitality come together in balance.', 'sage') }}
         </p>
 
         <div class="mt-10 flex flex-col lg:gap-4 gap-2 flex-row">

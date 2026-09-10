@@ -206,10 +206,10 @@ Template Name: Stays
       'category' => '—',
       'eyebrow' => __('Full Buyout', 'sage'),
       'heading' => __('The whole place. No other names in the register.', 'sage'),
-      'description' => __('Satori can be taken in its entirety - all fourteen stays, twenty bedrooms and every shared space, for up to forty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
-      'units' => 14,
-      'stays' => 14,
-      'bedrooms' => '20',
+      'description' => __('Satori can be taken in its entirety - all twenty-one rooms and every shared space, for up to forty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
+      'units' => __('7 (categories)', 'sage'),
+      'stays' => 21,
+      'bedrooms' => '21',
       'sleeps' => '40',
       'setting' => __('Entire property', 'sage'),
       'image' => '$estateImage',
@@ -242,7 +242,7 @@ Template Name: Stays
 
         <div class="mt-4 flex items-center gap-8">
           <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading">
-            {{ __('Fourteen private stays across a lakeside estate.', 'sage') }}
+            {{ __('Twenty-one rooms across a lakeside estate.', 'sage') }}
           </p>
         </div>
       </div>
@@ -575,7 +575,7 @@ Template Name: Stays
               <span>{{ sprintf(__('%d Homes', 'sage'), $estate['homes']) }}</span>
               <span aria-hidden="true">·</span>
             @endif
-            <span>{{ sprintf(__('%d Bedrooms', 'sage'), $estate['bedrooms']) }}</span>
+            <span>{{ sprintf(__('%d Rooms', 'sage'), $estate['bedrooms']) }}</span>
             <span aria-hidden="true">·</span>
             <span>{{ sprintf(__('Sleeps %d', 'sage'), $estate['sleeps']) }}</span>
           </div>

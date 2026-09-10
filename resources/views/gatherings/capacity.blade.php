@@ -1,20 +1,20 @@
 @php
   $specs = [
     [
-      'label' => __('Private Stays', 'sage'),
+      'label' => __('Rooms', 'sage'),
       'is_numeric' => true,
-      'target' => 14,
+      'target' => 21,
       'prefix' => '',
       'suffix' => '',
       'detail' => __('Across orchard, canopy & lakeside', 'sage')
     ],
     [
-      'label' => __('Bedrooms', 'sage'),
+      'label' => __('Stay Categories', 'sage'),
       'is_numeric' => true,
-      'target' => 20,
+      'target' => 7,
       'prefix' => '',
       'suffix' => '',
-      'detail' => __('Private verandahs & outdoor showers', 'sage')
+      'detail' => __('From garden cottages to signature lakeside villa', 'sage')
     ],
     [
       'label' => __('Sleeping Capacity', 'sage'),
