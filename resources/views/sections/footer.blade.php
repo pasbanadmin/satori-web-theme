@@ -30,7 +30,7 @@
             <img src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="Satori Logo" class="h-8 w-auto brightness-0 invert">
           </a>
           <p class="max-w-xs text-sm leading-6 text-brand-sand/70">
-            {{ __('A private estate of fourteen stays set across the hills and waters of Mulshi.', 'sage') }}
+            {{ __('A private estate of twenty-one rooms set across the hills and waters of Mulshi.', 'sage') }}
           </p>
 
           {{-- Social Icons --}}
