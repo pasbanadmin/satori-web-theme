@@ -67,11 +67,20 @@ Template Name: Stays
         'setting' => __('Secluded, garden-edged', 'sage'),
         'price' => 35000,
         'image' => '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
+        'image_mobile' => '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
         'position' => 'object-bottom',
         'span' => 'lg:col-span-5',
         'offset' => '',
         'ratio' => 'aspect-[4/5]',
         'gallery' => [
+          '/wp-content/uploads/2026/08/Cottages-and-the-Sahyadri-hills.webp',
+          '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
+          '/wp-content/uploads/2026/08/Bedroom-12-—-bed-and-garden-doors.webp',
+          '/wp-content/uploads/2026/08/Bedroom-10-—-bed-under-the-beamed-ceiling.webp',
+          '/wp-content/uploads/2026/08/Aves-—-cottage-lit-at-dusk.webp',
+          '/wp-content/uploads/2026/08/26_202309051441007901-8b93e724-cb2d-4bf1-9e19-12024a69006c.webp'
+        ],
+        'gallery_mobile' => [
           '/wp-content/uploads/2026/08/Cottages-and-the-Sahyadri-hills.webp',
           '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
           '/wp-content/uploads/2026/08/Bedroom-12-—-bed-and-garden-doors.webp',
@@ -91,15 +100,15 @@ Template Name: Stays
         'sleeps' => '4',
         'setting' => __('Machan, above lawns and lake', 'sage'),
         'price' => 46000,
-        'image' => '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp',
+        'image' => '/wp-content/uploads/2026/09/03-exterior-from-lawns.webp',
+        'image_mobile' => '/wp-content/uploads/2026/09/03-exterior-from-lawns-1.webp',
         'position' => 'object-center',
         'span' => 'lg:col-span-7',
         'offset' => 'lg:mt-24',
         'ratio' => 'aspect-[4/5] lg:aspect-[7/8]',
         'gallery' => [
-          '/wp-content/uploads/2026/09/01-hero-dusk-on-stilts.webp',
-          '/wp-content/uploads/2026/09/02-verandah-lake-ranges.webp',
           '/wp-content/uploads/2026/09/03-exterior-from-lawns.webp',
+          '/wp-content/uploads/2026/09/02-verandah-lake-ranges.webp',
           '/wp-content/uploads/2026/09/04-living-heart.webp',
           '/wp-content/uploads/2026/09/05-principal-bedroom.webp',
           '/wp-content/uploads/2026/09/06-verandah-swing-sahyadris.webp',
@@ -109,6 +118,19 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/10-verandah-dining-lake.webp',
           '/wp-content/uploads/2026/09/11-living-second.webp',
           '/wp-content/uploads/2026/09/12-exterior-blue-hour.webp'
+        ],
+        'gallery_mobile' => [
+          '/wp-content/uploads/2026/09/03-exterior-from-lawns-1.webp',
+          '/wp-content/uploads/2026/09/02-verandah-lake-ranges-1.webp',
+          '/wp-content/uploads/2026/09/04-living-heart-1.webp',
+          '/wp-content/uploads/2026/09/05-principal-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/06-verandah-swing-sahyadris-1.webp',
+          '/wp-content/uploads/2026/09/07-second-bedroom-2.webp',
+          '/wp-content/uploads/2026/09/08-bathroom-timber-stone-1.webp',
+          '/wp-content/uploads/2026/09/09-machan-undercroft-1.webp',
+          '/wp-content/uploads/2026/09/10-verandah-dining-lake-1.webp',
+          '/wp-content/uploads/2026/09/11-living-second-1.webp',
+          '/wp-content/uploads/2026/09/12-exterior-blue-hour-1.webp'
         ],
       ],
       [
@@ -122,6 +144,7 @@ Template Name: Stays
         'sleeps' => '8',
         'setting' => __('Elevated, commanding lake views', 'sage'),
         'price' => 40000,
+        'image_mobile' => '/wp-content/uploads/2026/09/01-hero-terrace-lake-2.webp',
         'position' => 'object-top',
         'span' => 'lg:col-span-5',
         'offset' => '',
@@ -137,6 +160,20 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/09-terrace-seating.webp',
           '/wp-content/uploads/2026/09/10-third-bedroom.webp'
         ],
+        'gallery_mobile' => [
+          '/wp-content/uploads/2026/09/01-hero-terrace-lake-2.webp',
+          '/wp-content/uploads/2026/09/02-bedroom-terrace-sunrise.webp',
+          '/wp-content/uploads/2026/09/03-exterior-elevated.webp',
+          '/wp-content/uploads/2026/09/04-living-doors-to-terrace-2.webp',
+          '/wp-content/uploads/2026/09/05-principal-bedroom-lake-1.webp',
+          '/wp-content/uploads/2026/09/06-terrace-panorama-1.webp',
+          '/wp-content/uploads/2026/09/07-dining-table-set-1.webp',
+          '/wp-content/uploads/2026/09/08-second-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/09-terrace-seating-1.webp',
+          '/wp-content/uploads/2026/09/10-third-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/11-bathroom-1.webp',
+          '/wp-content/uploads/2026/09/12-exterior-dusk-1.webp'
+        ],
       ],
       [
         'name' => __('Perch II', 'sage'),
@@ -149,6 +186,7 @@ Template Name: Stays
         'sleeps' => '6',
         'setting' => __('Elevated, commanding lake views', 'sage'),
         'price' => 45000,
+        'image_mobile' => '/wp-content/uploads/2026/09/01-hero-terrace-lake-3.webp',
         'position' => 'object-bottom',
         'span' => 'lg:col-span-7',
         'offset' => 'lg:mt-24',
@@ -166,6 +204,20 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/11-bathroom-three.webp',
           '/wp-content/uploads/2026/09/12-exterior-dusk.webp'
         ],
+        'gallery_mobile' => [
+          '/wp-content/uploads/2026/09/01-hero-terrace-lake-3.webp',
+          '/wp-content/uploads/2026/09/02-principal-bedroom-lake-1.webp',
+          '/wp-content/uploads/2026/09/03-exterior-elevated-1.webp',
+          '/wp-content/uploads/2026/09/04-living-doors-to-terrace-3.webp',
+          '/wp-content/uploads/2026/09/05-terrace-dining-1.webp',
+          '/wp-content/uploads/2026/09/06-bathroom-freestanding-tub-1.webp',
+          '/wp-content/uploads/2026/09/07-second-bedroom-3.webp',
+          '/wp-content/uploads/2026/09/08-dining-laid-1.webp',
+          '/wp-content/uploads/2026/09/09-third-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/10-bathroom-two-1.webp',
+          '/wp-content/uploads/2026/09/11-bathroom-three-1.webp',
+          '/wp-content/uploads/2026/09/12-exterior-dusk-2.webp'
+        ],
       ],
       [
         'name' => __('Hornbill', 'sage'),
@@ -179,6 +231,7 @@ Template Name: Stays
         'setting' => __('Lakeside, signature villa', 'sage'),
         'price' => 52000,
         'image' => '/wp-content/uploads/2026/08/36_202309051441007901-bcf6382f-142f-4570-85ee-9cdb14a05cc3-scaled.webp',
+        'image_mobile' => '/wp-content/uploads/2026/09/01-hero-verandah-lake-1.webp',
         'position' => 'object-center',
         'span' => 'lg:col-span-12',
         'offset' => '',
@@ -196,6 +249,20 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/10-second-bedroom.webp',
           '/wp-content/uploads/2026/09/11-shower-second-bath.webp',
           '/wp-content/uploads/2026/09/12-arrival-steps-dusk.webp'
+        ],
+        'gallery_mobile' => [
+          '/wp-content/uploads/2026/09/01-hero-verandah-lake-1.webp',
+          '/wp-content/uploads/2026/09/02-exterior-dusk-lit-1.webp',
+          '/wp-content/uploads/2026/09/03-first-light-lake-1.webp',
+          '/wp-content/uploads/2026/09/04-outdoor-bar-night-1.webp',
+          '/wp-content/uploads/2026/09/05-verandah-dining-lake-1.webp',
+          '/wp-content/uploads/2026/09/06-principal-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/07-bathroom-mediterranean-1.webp',
+          '/wp-content/uploads/2026/09/08-exterior-roof-1.webp',
+          '/wp-content/uploads/2026/09/09-verandah-daylight-1.webp',
+          '/wp-content/uploads/2026/09/10-second-bedroom-1.webp',
+          '/wp-content/uploads/2026/09/11-shower-second-bath-1.webp',
+          '/wp-content/uploads/2026/09/12-arrival-steps-dusk-1.webp'
         ],
       ],
     ];
@@ -474,30 +541,60 @@ Template Name: Stays
             $chapter = $chapters[$stay['name']];
             $isFlipped = $loop->index % 2 === 1;
 
+            // Desktop gallery list
             $galleryList = [];
             if (!empty($stay['gallery'])) {
               $galleryList = is_array($stay['gallery']) ? $stay['gallery'] : [$stay['gallery']];
             } elseif (!empty($stay['image'])) {
               $galleryList = is_array($stay['image']) ? $stay['image'] : [$stay['image']];
             }
+
+            // Mobile landscape gallery list (fallback to desktop gallery)
+            $galleryMobileList = [];
+            if (!empty($stay['gallery_mobile'])) {
+              $galleryMobileList = is_array($stay['gallery_mobile']) ? $stay['gallery_mobile'] : [$stay['gallery_mobile']];
+            } elseif (!empty($stay['image_mobile'])) {
+              $galleryMobileList = is_array($stay['image_mobile']) ? $stay['image_mobile'] : [$stay['image_mobile']];
+            } else {
+              $galleryMobileList = $galleryList;
+            }
+
+            $slideCount = max(count($galleryList), count($galleryMobileList));
           @endphp
 
-          <article
-            data-stay-card
+          <article data-stay-card
             class="group/card grid snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] lg:h-[600px] lg:max-h-[600px] {{ $loop->last ? 'border-b' : '' }}">
             <div
-              class="relative w-full aspect-[3/4] max-h-[600px] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto lg:h-full lg:max-h-[600px] {{ $isFlipped ? 'lg:order-last' : '' }}"
+              class="relative w-full aspect-[4/3] sm:aspect-[16/10] max-h-[600px] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto lg:h-full lg:max-h-[600px] {{ $isFlipped ? 'lg:order-last' : '' }}"
               data-reveal>
-              @if (count($galleryList) > 1)
+              @if ($slideCount > 1)
                 <div class="swiper h-full w-full" data-stay-gallery-swiper>
                   <div class="swiper-wrapper">
-                    @foreach ($galleryList as $slide)
-                      @php $slide = is_string($slide) ? ['src' => $slide, 'position' => $stay['position']] : $slide; @endphp
+                    @for ($i = 0; $i < $slideCount; $i++)
+                      @php
+                        $desktopItem = $galleryList[$i] ?? ($galleryList[0] ?? '');
+                        $mobileItem = $galleryMobileList[$i] ?? ($desktopItem);
+
+                        $desktopSrc = is_array($desktopItem) ? ($desktopItem['src'] ?? '') : $desktopItem;
+                        $mobileSrc = is_array($mobileItem) ? ($mobileItem['src'] ?? '') : $mobileItem;
+                        $desktopPos = is_array($desktopItem) ? ($desktopItem['position'] ?? $stay['position']) : $stay['position'];
+                        $mobilePos = is_array($mobileItem) ? ($mobileItem['position'] ?? 'object-center') : 'object-center';
+                      @endphp
                       <div class="swiper-slide h-full w-full">
-                        <img class="h-full w-full object-cover {{ $slide['position'] ?? $stay['position'] }}"
-                          src="{{ $slide['src'] ?? $slide }}" alt="{{ $stay['name'] }}">
+                        <picture class="block h-full w-full">
+                          {{-- Desktop Viewport (1024px+): Downloads ONLY desktop image --}}
+                          <source media="(min-width: 1024px)" srcset="{{ $desktopSrc }}">
+                          {{-- Mobile/Tablet Viewport (< 1024px): Downloads ONLY mobile image --}}
+                          <source media="(max-width: 1023px)" srcset="{{ $mobileSrc }}">
+                          <img
+                            class="h-full w-full object-cover {{ $mobilePos }} lg:{{ $desktopPos }}"
+                            src="{{ $desktopSrc }}"
+                            loading="lazy"
+                            decoding="async"
+                            alt="{{ $stay['name'] }}">
+                        </picture>
                       </div>
-                    @endforeach
+                    @endfor
                   </div>
 
                   <div class="swiper-pagination !bottom-4" data-stay-gallery-pagination></div>
@@ -524,16 +621,29 @@ Template Name: Stays
                 </div>
               @else
                 @php
-                  $single = $galleryList[0] ?? $stay['image'];
-                  $src = is_array($single) ? ($single['src'] ?? '') : $single;
-                  $pos = is_array($single) ? ($single['position'] ?? $stay['position']) : $stay['position'];
+                  $desktopItem = $galleryList[0] ?? $stay['image'];
+                  $mobileItem = $galleryMobileList[0] ?? ($stay['image_mobile'] ?? $desktopItem);
+                  $desktopSrc = is_array($desktopItem) ? ($desktopItem['src'] ?? '') : $desktopItem;
+                  $mobileSrc = is_array($mobileItem) ? ($mobileItem['src'] ?? '') : $mobileItem;
+                  $desktopPos = is_array($desktopItem) ? ($desktopItem['position'] ?? $stay['position']) : $stay['position'];
+                  $mobilePos = is_array($mobileItem) ? ($mobileItem['position'] ?? 'object-center') : 'object-center';
                 @endphp
-                <img class="absolute inset-0 h-full w-full object-cover {{ $pos }}" src="{{ $src }}" alt="{{ $stay['name'] }}">
+                <picture class="absolute inset-0 h-full w-full">
+                  {{-- Desktop Viewport (1024px+) --}}
+                  <source media="(min-width: 1024px)" srcset="{{ $desktopSrc }}">
+                  {{-- Mobile/Tablet Viewport (< 1024px) --}}
+                  <source media="(max-width: 1023px)" srcset="{{ $mobileSrc }}">
+                  <img
+                    class="h-full w-full object-cover {{ $mobilePos }} lg:{{ $desktopPos }}"
+                    src="{{ $desktopSrc }}"
+                    loading="lazy"
+                    decoding="async"
+                    alt="{{ $stay['name'] }}">
+                </picture>
               @endif
             </div>
 
-            <div
-              data-stay-scrollable
+            <div data-stay-scrollable
               class="flex flex-col justify-center group-[.is-open]/card:justify-start bg-brand-sand px-6 py-8 sm:px-8 lg:col-span-11 lg:px-10 lg:py-8 lg:h-full lg:max-h-[600px] lg:overflow-y-auto stay-scrollable {{ $isFlipped ? 'lg:order-first lg:border-r' : 'lg:border-l' }} lg:border-brand-ink/10"
               data-reveal>
               {{-- 1. Eyebrow: category · bedrooms · sleeps --}}
@@ -572,23 +682,31 @@ Template Name: Stays
               <div class="mt-5 border-y border-brand-ink/10 py-3">
                 <div class="grid grid-cols-4 divide-x divide-brand-ink/10 text-center">
                   <div class="px-1 sm:px-2">
-                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('Bedrooms', 'sage') }}</p>
-                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">{{ $chapter['specs']['bedrooms'] }}</p>
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">
+                      {{ __('Bedrooms', 'sage') }}</p>
+                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">
+                      {{ $chapter['specs']['bedrooms'] }}</p>
                   </div>
 
                   <div class="px-1 sm:px-2">
-                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('Bathrooms', 'sage') }}</p>
-                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">{{ $chapter['specs']['bathrooms'] }}</p>
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">
+                      {{ __('Bathrooms', 'sage') }}</p>
+                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">
+                      {{ $chapter['specs']['bathrooms'] }}</p>
                   </div>
 
                   <div class="px-1 sm:px-2">
-                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('Sleeps', 'sage') }}</p>
-                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">{{ $chapter['specs']['sleeps'] }}</p>
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">
+                      {{ __('Sleeps', 'sage') }}</p>
+                    <p class="mt-1 font-heading text-xs font-medium text-brand-ink sm:text-sm">
+                      {{ $chapter['specs']['sleeps'] }}</p>
                   </div>
 
                   <div class="px-1 sm:px-2">
-                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">{{ __('View', 'sage') }}</p>
-                    <p class="mt-1 text-[11px] leading-snug font-light text-brand-ink sm:text-sm">{{ $chapter['specs']['view'] }}</p>
+                    <p class="text-[0.6rem] uppercase tracking-[0.16em] text-brand-muted sm:text-[0.65rem]">
+                      {{ __('View', 'sage') }}</p>
+                    <p class="mt-1 text-[11px] leading-snug font-light text-brand-ink sm:text-sm">
+                      {{ $chapter['specs']['view'] }}</p>
                   </div>
                 </div>
               </div>
@@ -599,18 +717,17 @@ Template Name: Stays
                   href="{{ $chapter['booking_url'] ?? 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms' }}"
                   target="_blank" rel="noopener noreferrer">
                   <span>{{ __('Check Availability', 'sage') }}</span>
-                  <span class="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                  <span class="inline-block transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true">&rarr;</span>
                 </a>
 
                 <button
                   class="inline-flex cursor-pointer items-center gap-2 rounded-full border border-brand-ink/20 bg-brand-ink/[0.03] px-5 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-gold hover:bg-brand-sand hover:text-brand-gold font-medium"
-                  type="button"
-                  data-stay-drawer-toggle
-                  data-open-label="{{ __('Discover Details', 'sage') }}"
-                  data-close-label="{{ __('Hide Details', 'sage') }}"
-                  aria-expanded="false">
+                  type="button" data-stay-drawer-toggle data-open-label="{{ __('Discover Details', 'sage') }}"
+                  data-close-label="{{ __('Hide Details', 'sage') }}" aria-expanded="false">
                   <span data-stay-drawer-label>{{ __('Discover Details', 'sage') }}</span>
-                  <svg data-stay-drawer-chevron class="h-3.5 w-3.5 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg data-stay-drawer-chevron class="h-3.5 w-3.5 transition-transform duration-300" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
                 </button>
@@ -632,7 +749,8 @@ Template Name: Stays
                         <ul class="mt-3 space-y-2 text-xs sm:text-[13px] text-brand-ink/90">
                           @foreach ($chapter['layout'] as $bullet)
                             <li class="flex items-start gap-2.5">
-                              <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80" aria-hidden="true"></span>
+                              <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80"
+                                aria-hidden="true"></span>
                               <span class="leading-relaxed">{{ $bullet }}</span>
                             </li>
                           @endforeach
@@ -650,7 +768,8 @@ Template Name: Stays
                         <ul class="mt-3 space-y-2 text-xs sm:text-[13px] text-brand-ink/90">
                           @foreach ($chapter['included'] as $inc)
                             <li class="flex items-start gap-2.5">
-                              <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80" aria-hidden="true"></span>
+                              <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80"
+                                aria-hidden="true"></span>
                               <span class="leading-relaxed">{{ $inc }}</span>
                             </li>
                           @endforeach
@@ -661,11 +780,13 @@ Template Name: Stays
                     {{-- View & Ideal For --}}
                     <div class="mt-5 grid sm:grid-cols-2 gap-4 border-t border-brand-ink/10 pt-4 text-xs sm:text-[13px]">
                       <div>
-                        <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">{{ __('The View', 'sage') }}</p>
+                        <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">
+                          {{ __('The View', 'sage') }}</p>
                         <p class="mt-1 font-light leading-relaxed text-brand-ink">{{ $chapter['view'] }}</p>
                       </div>
                       <div>
-                        <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">{{ __('Ideal For', 'sage') }}</p>
+                        <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">
+                          {{ __('Ideal For', 'sage') }}</p>
                         <p class="mt-1 font-light leading-relaxed text-brand-ink">{{ $chapter['idealFor'] }}</p>
                       </div>
                     </div>
