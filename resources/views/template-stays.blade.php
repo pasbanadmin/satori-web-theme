@@ -486,7 +486,7 @@ Template Name: Stays
             data-stay-card
             class="group/card grid snap-start scroll-mt-16 items-stretch border-t border-brand-ink/10 lg:grid-cols-[repeat(20,minmax(0,1fr))] lg:h-[600px] lg:max-h-[600px] {{ $loop->last ? 'border-b' : '' }}">
             <div
-              class="relative w-full aspect-[4/3] max-h-[600px] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto lg:h-full lg:max-h-[600px] {{ $isFlipped ? 'lg:order-last' : '' }}"
+              class="relative w-full aspect-[3/4] max-h-[600px] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto lg:h-full lg:max-h-[600px] {{ $isFlipped ? 'lg:order-last' : '' }}"
               data-reveal>
               @if (count($galleryList) > 1)
                 <div class="swiper h-full w-full" data-stay-gallery-swiper>
