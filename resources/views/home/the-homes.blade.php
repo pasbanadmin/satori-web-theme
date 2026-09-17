@@ -9,11 +9,27 @@
       'position' => 'object-bottom',
     ],
     [
+      'name' => __('Garden View Cottage', 'sage'),
+      'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
+      'sleeps' => 2,
+      'price' => 32000,
+      'image' => '/wp-content/uploads/2026/09/01-hero-myna-bedroom-garden-window.webp',
+      'position' => 'object-center',
+    ],
+    [
       'name' => __('Woodhouse', 'sage'),
       'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
       'sleeps' => 4,
       'price' => 42000,
       'image' => '/wp-content/uploads/2026/09/01-hero-dusk-on-stilts.webp',
+      'position' => 'object-center',
+    ],
+    [
+      'name' => __('Junior Suite — Lake View', 'sage'),
+      'description' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
+      'sleeps' => 4,
+      'price' => 38000,
+      'image' => '/wp-content/uploads/2026/09/01-hero-robin-balcony-lake.webp',
       'position' => 'object-center',
     ],
     [
