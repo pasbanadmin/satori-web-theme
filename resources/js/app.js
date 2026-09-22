@@ -375,6 +375,8 @@ gsap.registerPlugin(ScrollTrigger);
       loop: true,
       speed: 700,
       grabCursor: true,
+      observer: true,
+      observeParents: true,
       pagination: {
         el: el.querySelector('[data-stay-gallery-pagination]'),
         clickable: true,
@@ -451,6 +453,8 @@ gsap.registerPlugin(ScrollTrigger);
       modules: [Navigation, Pagination, Keyboard],
       loop: true,
       speed: 600,
+      observer: true,
+      observeParents: true,
       keyboard: { enabled: true },
       navigation: {
         prevEl: prevBtn,

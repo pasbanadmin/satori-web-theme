@@ -239,7 +239,6 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/08-dining-laid.webp',
           '/wp-content/uploads/2026/09/09-third-bedroom.webp',
           '/wp-content/uploads/2026/09/10-bathroom-two.webp',
-          '/wp-content/uploads/2026/09/11-bathroom-three.webp',
           '/wp-content/uploads/2026/09/12-exterior-dusk.webp'
         ],
         'gallery_mobile' => [
@@ -598,7 +597,8 @@ Template Name: Stays
               $galleryMobileList = $galleryList;
             }
 
-            $slideCount = max(count($galleryList), count($galleryMobileList));
+            $desktopSlideCount = count($galleryList);
+            $mobileSlideCount = count($galleryMobileList);
           @endphp
 
           <article data-stay-card
@@ -606,80 +606,121 @@ Template Name: Stays
             <div
               class="relative w-full aspect-[4/3] sm:aspect-[16/10] max-h-[600px] overflow-hidden bg-brand-primary lg:col-span-9 lg:aspect-auto lg:h-full lg:max-h-[600px] {{ $isFlipped ? 'lg:order-last' : '' }}"
               data-reveal>
-              @if ($slideCount > 1)
-                <div class="swiper h-full w-full" data-stay-gallery-swiper>
-                  <div class="swiper-wrapper">
-                    @for ($i = 0; $i < $slideCount; $i++)
-                      @php
-                        $desktopItem = $galleryList[$i] ?? ($galleryList[0] ?? '');
-                        $mobileItem = $galleryMobileList[$i] ?? ($desktopItem);
-
-                        $desktopSrc = is_array($desktopItem) ? ($desktopItem['src'] ?? '') : $desktopItem;
-                        $mobileSrc = is_array($mobileItem) ? ($mobileItem['src'] ?? '') : $mobileItem;
-                        $desktopPos = is_array($desktopItem) ? ($desktopItem['position'] ?? $stay['position']) : $stay['position'];
-                        $mobilePos = is_array($mobileItem) ? ($mobileItem['position'] ?? 'object-center') : 'object-center';
-                      @endphp
-                      <div class="swiper-slide h-full w-full">
-                        <picture class="block h-full w-full">
-                          {{-- Desktop Viewport (1024px+): Downloads ONLY desktop image --}}
-                          <source media="(min-width: 1024px)" srcset="{{ $desktopSrc }}">
-                          {{-- Mobile/Tablet Viewport (< 1024px): Downloads ONLY mobile image --}}
-                          <source media="(max-width: 1023px)" srcset="{{ $mobileSrc }}">
+              {{-- Desktop Gallery (1024px+) --}}
+              <div class="hidden lg:block h-full w-full">
+                @if ($desktopSlideCount > 1)
+                  <div class="swiper h-full w-full" data-stay-gallery-swiper>
+                    <div class="swiper-wrapper">
+                      @foreach ($galleryList as $item)
+                        @php
+                          $src = is_array($item) ? ($item['src'] ?? '') : $item;
+                          $pos = is_array($item) ? ($item['position'] ?? $stay['position']) : $stay['position'];
+                        @endphp
+                        <div class="swiper-slide h-full w-full">
                           <img
-                            class="h-full w-full object-cover {{ $mobilePos }} lg:{{ $desktopPos }}"
-                            src="{{ $desktopSrc }}"
+                            class="h-full w-full object-cover lg:{{ $pos }}"
+                            src="{{ $src }}"
                             loading="lazy"
                             decoding="async"
                             alt="{{ $stay['name'] }}">
-                        </picture>
-                      </div>
-                    @endfor
+                        </div>
+                      @endforeach
+                    </div>
+
+                    <div class="swiper-pagination !bottom-4" data-stay-gallery-pagination></div>
+
+                    <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+                      <button
+                        class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
+                        type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M15 18l-6-6 6-6"></path>
+                        </svg>
+                      </button>
+
+                      <button
+                        class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
+                        type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M9 6l6 6-6 6"></path>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-
-                  <div class="swiper-pagination !bottom-4" data-stay-gallery-pagination></div>
-
-                  <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
-                    <button
-                      class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
-                      type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M15 18l-6-6 6-6"></path>
-                      </svg>
-                    </button>
-
-                    <button
-                      class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
-                      type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M9 6l6 6-6 6"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              @else
-                @php
-                  $desktopItem = $galleryList[0] ?? $stay['image'];
-                  $mobileItem = $galleryMobileList[0] ?? ($stay['image_mobile'] ?? $desktopItem);
-                  $desktopSrc = is_array($desktopItem) ? ($desktopItem['src'] ?? '') : $desktopItem;
-                  $mobileSrc = is_array($mobileItem) ? ($mobileItem['src'] ?? '') : $mobileItem;
-                  $desktopPos = is_array($desktopItem) ? ($desktopItem['position'] ?? $stay['position']) : $stay['position'];
-                  $mobilePos = is_array($mobileItem) ? ($mobileItem['position'] ?? 'object-center') : 'object-center';
-                @endphp
-                <picture class="absolute inset-0 h-full w-full">
-                  {{-- Desktop Viewport (1024px+) --}}
-                  <source media="(min-width: 1024px)" srcset="{{ $desktopSrc }}">
-                  {{-- Mobile/Tablet Viewport (< 1024px) --}}
-                  <source media="(max-width: 1023px)" srcset="{{ $mobileSrc }}">
+                @else
+                  @php
+                    $desktopItem = $galleryList[0] ?? $stay['image'];
+                    $src = is_array($desktopItem) ? ($desktopItem['src'] ?? '') : $desktopItem;
+                    $pos = is_array($desktopItem) ? ($desktopItem['position'] ?? $stay['position']) : $stay['position'];
+                  @endphp
                   <img
-                    class="h-full w-full object-cover {{ $mobilePos }} lg:{{ $desktopPos }}"
-                    src="{{ $desktopSrc }}"
+                    class="h-full w-full object-cover lg:{{ $pos }}"
+                    src="{{ $src }}"
                     loading="lazy"
                     decoding="async"
                     alt="{{ $stay['name'] }}">
-                </picture>
-              @endif
+                @endif
+              </div>
+
+              {{-- Mobile Gallery (< 1024px) --}}
+              <div class="block lg:hidden h-full w-full">
+                @if ($mobileSlideCount > 1)
+                  <div class="swiper h-full w-full" data-stay-gallery-swiper>
+                    <div class="swiper-wrapper">
+                      @foreach ($galleryMobileList as $item)
+                        @php
+                          $src = is_array($item) ? ($item['src'] ?? '') : $item;
+                          $pos = is_array($item) ? ($item['position'] ?? 'object-center') : 'object-center';
+                        @endphp
+                        <div class="swiper-slide h-full w-full">
+                          <img
+                            class="h-full w-full object-cover {{ $pos }}"
+                            src="{{ $src }}"
+                            loading="lazy"
+                            decoding="async"
+                            alt="{{ $stay['name'] }}">
+                        </div>
+                      @endforeach
+                    </div>
+
+                    <div class="swiper-pagination !bottom-4" data-stay-gallery-pagination></div>
+
+                    <div class="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+                      <button
+                        class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
+                        type="button" data-stay-gallery-prev aria-label="{{ __('Previous image', 'sage') }}">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M15 18l-6-6 6-6"></path>
+                        </svg>
+                      </button>
+
+                      <button
+                        class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-brand-sand/60 text-brand-sand transition-colors duration-300 hover:border-brand-sand hover:bg-brand-sand hover:text-brand-primary"
+                        type="button" data-stay-gallery-next aria-label="{{ __('Next image', 'sage') }}">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M9 6l6 6-6 6"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                @else
+                  @php
+                    $mobileItem = $galleryMobileList[0] ?? ($stay['image_mobile'] ?? ($galleryList[0] ?? $stay['image']));
+                    $src = is_array($mobileItem) ? ($mobileItem['src'] ?? '') : $mobileItem;
+                    $pos = is_array($mobileItem) ? ($mobileItem['position'] ?? 'object-center') : 'object-center';
+                  @endphp
+                  <img
+                    class="h-full w-full object-cover {{ $pos }}"
+                    src="{{ $src }}"
+                    loading="lazy"
+                    decoding="async"
+                    alt="{{ $stay['name'] }}">
+                @endif
+              </div>
             </div>
 
             <div data-stay-scrollable
