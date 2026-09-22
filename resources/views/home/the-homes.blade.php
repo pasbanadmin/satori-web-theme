@@ -9,7 +9,7 @@
       'position' => 'object-bottom',
     ],
     [
-      'name' => __('Garden View Cottage', 'sage'),
+      'name' => __('Garden Flock Cottage', 'sage'),
       'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
       'sleeps' => 2,
       'price' => 32000,
@@ -17,7 +17,7 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Woodhouse', 'sage'),
+      'name' => __('Woodhouse — Two-bedroom cottage', 'sage'),
       'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
       'sleeps' => 4,
       'price' => 42000,
@@ -25,9 +25,9 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Junior Suite — Lake View', 'sage'),
+      'name' => __('Junior Suite — Lake Wing', 'sage'),
       'description' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
-      'sleeps' => 4,
+      'sleeps' => 2,
       'price' => 38000,
       'image' => '/wp-content/uploads/2026/09/01-hero-robin-balcony-lake.webp',
       'position' => 'object-center',
@@ -41,7 +41,7 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Hornbill', 'sage'),
+      'name' => __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
       'description' => __('The signature lakeside villa', 'sage'),
       'sleeps' => 4,
       'price' => 52000,
@@ -83,7 +83,7 @@
           <div class="relative z-10 mt-auto p-6 sm:p-8">
             <div class="flex items-end justify-between gap-4">
               <div>
-                <h3 class="font-heading text-2xl font-light text-brand-sand sm:text-3xl">
+                <h3 class="font-heading text-2xl font-light text-brand-sand leading-6 sm:text-3xl sm:leading-8">
                   {{ $home['name'] }}
                 </h3>
 

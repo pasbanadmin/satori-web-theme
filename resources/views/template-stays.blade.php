@@ -50,8 +50,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Garden View Cottage', 'sage'),
-        'ota_name' => __('Garden View Cottage', 'sage'),
+        'name' => __('Garden Flock Cottage', 'sage'),
+        'ota_name' => __('Garden Flock Cottage', 'sage'),
         'category' => '1',
         'slug' => 'garden-view-cottage',
         'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
@@ -86,8 +86,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Woodhouse', 'sage'),
-        'ota_name' => __('Woodhouse', 'sage'),
+        'name' => __('Woodhouse — Two-bedroom cottage', 'sage'),
+        'ota_name' => __('Woodhouse — Two-bedroom cottage', 'sage'),
         'category' => '3',
         'slug' => 'woodhouse',
         'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
@@ -105,7 +105,6 @@ Template Name: Stays
         'gallery' => [
           '/wp-content/uploads/2026/09/03-exterior-from-lawns.webp',
           '/wp-content/uploads/2026/09/02-verandah-lake-ranges.webp',
-          '/wp-content/uploads/2026/09/04-living-heart.webp',
           '/wp-content/uploads/2026/09/05-principal-bedroom.webp',
           '/wp-content/uploads/2026/09/06-verandah-swing-sahyadris.webp',
           '/wp-content/uploads/2026/09/07-second-bedroom-1.webp',
@@ -118,7 +117,6 @@ Template Name: Stays
         'gallery_mobile' => [
           '/wp-content/uploads/2026/09/03-exterior-from-lawns-1.webp',
           '/wp-content/uploads/2026/09/02-verandah-lake-ranges-1.webp',
-          '/wp-content/uploads/2026/09/04-living-heart-1.webp',
           '/wp-content/uploads/2026/09/05-principal-bedroom-1.webp',
           '/wp-content/uploads/2026/09/06-verandah-swing-sahyadris-1.webp',
           '/wp-content/uploads/2026/09/07-second-bedroom-2.webp',
@@ -130,14 +128,14 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Junior Suite — Lake View', 'sage'),
-        'ota_name' => __('Junior Suite (Lake View)', 'sage'),
+        'name' => __('Junior Suite — Lake Wing', 'sage'),
+        'ota_name' => __('Junior Suite (Lake Wing)', 'sage'),
         'category' => '2',
         'slug' => 'junior-suite-lake-view',
         'description' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
         'units' => 4,
         'bedrooms' => '4',
-        'sleeps' => '4 each',
+        'sleeps' => '2 each',
         'setting' => __('Garden edge, lake view', 'sage'),
         'price' => 38000,
         'image' => '/wp-content/uploads/2026/09/01-hero-robin-balcony-lake.webp',
@@ -260,8 +258,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Hornbill', 'sage'),
-        'ota_name' => __('Hornbill', 'sage'),
+        'name' => __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
+        'ota_name' => __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
         'category' => '4',
         'slug' => 'hornbill',
         'description' => __('The signature villa. The best seat on the estate.', 'sage'),
@@ -387,18 +385,17 @@ Template Name: Stays
 
       @php
         $defaultIncluded = [
-          __('Estate breakfast every morning', 'sage'),
           __('Welcome drink on arrival', 'sage'),
           __('Access to pool, lawns, games and estate walks', 'sage'),
           __('Tea and coffee in the room', 'sage'),
         ];
 
         $chapters = [
-          __('Garden View Cottage', 'sage') => [
+          __('Garden Flock Cottage', 'sage') => [
             'eyebrow' => __('GARDEN VIEW ROOMS · ONE BEDROOM EACH · SLEEPS 2 EACH', 'sage'),
             'hook' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
             'paragraphs' => [
-              __('Garden View Cottage is Satori\'s most private way to stay on the ground: three individual rooms, each named for a songbird, set along the estate\'s gardens and a five-minute walk from The Nest. A king-size bed, a seating area and an en-suite bathroom are all the room carries; the gardens and the quiet do the rest.', 'sage'),
+              __('Garden Flock Cottage is Satori\'s most private way to stay on the ground: three individual rooms, each named for a songbird, set along the estate\'s gardens and a five-minute walk from The Nest. A king-size bed, a seating area and an en-suite bathroom are all the room carries; the gardens and the quiet do the rest.', 'sage'),
               __('Koyal is the only room in this category with a bathtub — a small distinction guests tend to remember when booking.', 'sage'),
             ],
             'specs' => [
@@ -413,33 +410,33 @@ Template Name: Stays
               __('En-suite bathroom (bathtub in Koyal)', 'sage'),
               __('Private seating area', 'sage'),
               __('Pantry with tea, coffee and fridge', 'sage'),
-              __('Three rooms: Koyal, Mayna, Bulbul', 'sage'),
+              __('Three rooms: Myna, Bulbul, Koel', 'sage'),
             ],
             'view' => __('The estate gardens in close frame — greenery, birdsong, and very little else.', 'sage'),
             'idealFor' => __('Couples, solo travellers, small families with a child, and anyone who wants a room to sleep in and an estate to live on.', 'sage'),
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Junior Suite — Lake View', 'sage') => [
-            'eyebrow' => __('LAKE VIEW SUITES · TWO BEDS EACH · SLEEPS 4 EACH', 'sage'),
+          __('Junior Suite — Lake Wing', 'sage') => [
+            'eyebrow' => __('LAKE VIEW SUITES · TWO BEDS EACH · SLEEPS 2 EACH', 'sage'),
             'hook' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
             'paragraphs' => [
-              __('The Junior Suites sit near the garden edge of the estate, each with a private balcony that opens directly onto Mulshi Lake. Two king-size beds share a generous room with an en-suite bathroom and a small pantry, so a family or a group of four settles in without splitting across the property.', 'sage'),
+              __('The Junior Suites sit near the garden edge of the estate, each with a private balcony that opens directly onto Mulshi Lake. Two queen-size beds share a generous room with an en-suite bathroom and a small pantry, so a family or a group of four settles in without splitting across the property.', 'sage'),
               __('The lake is the constant here — present from the balcony at first light, still there when the evening quiets down.', 'sage'),
             ],
             'specs' => [
               'size' => __('[___ sq ft]', 'sage'),
               'bedrooms' => __('1 per suite (2 beds each)', 'sage'),
               'bathrooms' => __('1 (en-suite)', 'sage'),
-              'sleeps' => __('4 each', 'sage'),
+              'sleeps' => __('2 each', 'sage'),
               'view' => __('Lake', 'sage'),
             ],
             'layout' => [
-              __('Two king-size double beds', 'sage'),
+              __('Two queen-size double beds', 'sage'),
               __('En-suite bathroom', 'sage'),
               __('Private balcony facing the lake', 'sage'),
               __('Pantry with tea, coffee and fridge', 'sage'),
-              __('Four suites: Magpie, Raven, Robin, Ibis', 'sage'),
+              __('Four suites: First floor — Raven, Robin. Ground floor — Magpie, Ibis', 'sage'),
             ],
             'view' => __('Mulshi Lake from a private balcony — the water visible from the room and from the open air alike.', 'sage'),
             'idealFor' => __('Families, two couples travelling together, and groups of friends who want the lake in sight and enough beds to stay comfortable.', 'sage'),
@@ -471,11 +468,11 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Woodhouse', 'sage') => [
+          __('Woodhouse — Two-bedroom cottage', 'sage') => [
             'eyebrow' => __('MACHAN STAY · TWO BEDROOMS · SLEEPS 4', 'sage'),
             'hook' => __('Timber-warm, raised, and the most atmospheric address on the estate.', 'sage'),
             'paragraphs' => [
-              __('Woodhouse is built in the spirit of a machan: raised, timber-framed, and open to the air on the side that faces the lawns and the lake. Two bedrooms sit either side of a shared living space, and a long verandah runs the length of the building.', 'sage'),
+              __('Woodhouse — Two-bedroom cottage is built in the spirit of a machan: raised, timber-framed, and open to the air on the side that faces the lawns and the lake. Two bedrooms sit either side of a shared living space, and a long verandah runs the length of the building.', 'sage'),
               __('It is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
             ],
             'specs' => [
@@ -548,12 +545,12 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Hornbill', 'sage') => [
+          __('Hornbill — Two-Bedroom Premium Suite', 'sage') => [
             'eyebrow' => __('THE SIGNATURE VILLA · TWO BEDROOMS · SLEEPS 4', 'sage'),
-            'hook' => __('The best seat on the estate.', 'sage'),
+            'hook' => __('A 3,000 sq ft private residence with the estate’s most direct lake frontage.', 'sage'),
             'paragraphs' => [
-              __('Hornbill is Satori at its most complete: two bedrooms, a private lounge, a pantry, indoor and outdoor living, its own outdoor bar, and a position that gives it the lake in full and near-total privacy. It is the only stay where the water is present from the moment you wake to the moment the light goes.', 'sage'),
-              __('Guests take Hornbill when the stay itself is the occasion: an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
+              __('Hornbill is Satori’s most complete private stay: a two-bedroom residence with a separate lounge, a private pantry, an outdoor bar and a wraparound patio facing Mulshi Lake. Each en-suite bedroom opens into a setting made for unhurried days, while the indoor and outdoor living spaces give four guests room to gather, retreat and take in the water from morning light to sunset.', 'sage'),
+              __('For anniversaries, intimate celebrations or simply a stay where the address is part of the occasion, Hornbill makes the estate feel entirely your own.', 'sage'),
             ],
             'specs' => [
               'size' => __('[___ sq ft]', 'sage'),
