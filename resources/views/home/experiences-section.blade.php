@@ -73,7 +73,7 @@
           <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/75 via-brand-primary/15 to-transparent"></div>
 
           <div class="relative z-10 flex h-full w-full flex-col justify-end p-7 sm:p-8">
-            <h3 class="font-heading text-2xl font-light text-brand-sand sm:text-3xl">
+            <h3 class="font-heading text-2xl font-light text-brand-sand leading-6 sm:text-3xl sm:leading-8">
               {{ $experience['name'] }}
             </h3>
 

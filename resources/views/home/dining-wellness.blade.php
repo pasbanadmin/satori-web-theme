@@ -3,7 +3,7 @@
     [
       'label' => __('Dining', 'sage'),
       'heading' => __('The garden is not a feature. It is the kitchen.', 'sage'),
-      'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruit are picked the morning they are served, and the menu follows what the beds are giving rather than what a printed card demands', 'sage'),
+      'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands', 'sage'),
       'cta' => __('Explore Dining', 'sage'),
       'anchor' => '/dining',
       'image' => '/wp-content/uploads/2026/08/Dining-split-section-—-dining-chefs-table.webp',
@@ -14,7 +14,7 @@
       'label' => __('Wellness & Spa', 'sage'),
       'heading' => __('A spa in a garden, not a basement.', 'sage'),
       'copy' => __('Satori’s spa block sits within the estate’s planted grounds, open to green on every side. Therapies draw on Ayurvedic and classical techniques, delivered without ceremony or upsell. Beyond the treatment rooms, wellness here is simply the shape of the day — yoga at sunrise, a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.
-                        ', 'sage'),
+                              ', 'sage'),
       'cta' => __('Discover Wellness', 'sage'),
       'anchor' => '/wellness',
       'image' => '/wp-content/uploads/2026/08/Wellness-split-section-—-wellness-yoga.webp',

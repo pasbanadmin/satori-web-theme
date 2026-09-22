@@ -3,7 +3,8 @@
     <div class="grid lg:grid-cols-12 min-h-[80vh]">
 
       {{-- ── LEFT: Contact info + map (4 cols) ── --}}
-      <div class="flex flex-col bg-brand-sand border-r border-brand-ink/10 px-6 py-14 sm:px-10 lg:col-span-4 lg:px-10 lg:py-20"
+      <div
+        class="flex flex-col bg-brand-sand border-r border-brand-ink/10 px-6 py-14 sm:px-10 lg:col-span-4 lg:px-10 lg:py-20"
         data-reveal>
 
         <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
@@ -157,9 +158,11 @@
               <input type="text" id="contact-dates" name="dates"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink placeholder:text-brand-muted/50 focus:outline-none focus:border-brand-gold transition-colors duration-200"
                 placeholder="{{ __('e.g. Oct 10–13 or flexible', 'sage') }}">
-              <label class="inline-flex items-center gap-2 px-3 py-3 bg-white border border-brand-ink/15 shrink-0 cursor-pointer">
+              <label
+                class="inline-flex items-center gap-2 px-3 py-3 bg-white border border-brand-ink/15 shrink-0 cursor-pointer">
                 <input type="checkbox" name="flexible_dates" value="1" class="accent-brand-gold">
-                <span class="text-xs uppercase tracking-wider text-brand-ink">{{ __('Dates are flexible', 'sage') }}</span>
+                <span
+                  class="text-xs uppercase tracking-wider text-brand-ink">{{ __('Dates are flexible', 'sage') }}</span>
               </label>
             </div>
           </div>
@@ -182,19 +185,20 @@
             </div>
 
             <div>
-              <label for="contact-preferred-home" class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
+              <label for="contact-preferred-home"
+                class="block text-[0.7rem] uppercase tracking-[0.2em] text-brand-ink mb-2">
                 {{ __('Preferred stay (optional)', 'sage') }}
               </label>
               <select id="contact-preferred-home" name="preferred_stay"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
                 <option value="">{{ __('Select stay…', 'sage') }}</option>
-                <option value="Garden View Cottages">{{ __('Garden View Cottages', 'sage') }}</option>
-                <option value="Junior Suites (Lake View)">{{ __('Junior Suites (Lake View)', 'sage') }}</option>
+                <option value="Garden Flock Cottages">{{ __('Garden Flock Cottages', 'sage') }}</option>
+                <option value="Junior Suites (Lake Wing)">{{ __('Junior Suites (Lake Wing)', 'sage') }}</option>
                 <option value="Aves">{{ __('Aves', 'sage') }}</option>
-                <option value="Woodhouse">{{ __('Woodhouse', 'sage') }}</option>
+                <option value="Woodhouse — Two-bedroom cottage">{{ __('Woodhouse — Two-bedroom cottage', 'sage') }}</option>
                 <option value="Perch I">{{ __('Perch I', 'sage') }}</option>
                 <option value="Perch II">{{ __('Perch II', 'sage') }}</option>
-                <option value="Hornbill">{{ __('Hornbill', 'sage') }}</option>
+                <option value="Hornbill — Two-Bedroom Premium Suite">{{ __('Hornbill — Two-Bedroom Premium Suite', 'sage') }}</option>
                 <option value="The Full Estate">{{ __('The full estate', 'sage') }}</option>
                 <option value="Help me choose">{{ __('Help me choose', 'sage') }}</option>
               </select>

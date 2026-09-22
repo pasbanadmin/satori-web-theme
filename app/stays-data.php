@@ -77,7 +77,12 @@ function stays_defaults()
             __('Wake up inside the garden that feeds the estate.', 'sage'),
             __('Three private cottages set low among Satori’s fruit trees and vegetable beds, each opening onto its own verandah.', 'sage'),
             __('Ideal for couples, solo travellers, and guests arriving at Satori for the first time.', 'sage'),
-            1, 2, __('The Orchard', 'sage'), 42000, $imgA, 'object-center',
+            1,
+            2,
+            __('The Orchard', 'sage'),
+            42000,
+            $imgA,
+            'object-center',
             [
                 $story(
                     __('The garden, at close range', 'sage'),
@@ -85,7 +90,8 @@ function stays_defaults()
                         __('The Orchard Cottages sit low among Satori’s fruit trees and vegetable beds, where the mornings smell of wet earth and citrus leaf. Each cottage opens directly onto the growing beds — close enough that the herbs on your breakfast plate were cut a few steps from where you slept.', 'sage'),
                         __('They are the most intimate homes at Satori, and deliberately so. What they trade in scale they return in immediacy: birdsong at close range, the gardeners moving through the rows at first light, fruit ripening within reach of the verandah rail.', 'sage'),
                     ],
-                    $imgA, 'object-center'
+                    $imgA,
+                    'object-center'
                 ),
                 $story(
                     __('The truest way in', 'sage'),
@@ -93,7 +99,8 @@ function stays_defaults()
                         __('The mornings are the loudest here — birds and the soft machinery of the garden — and the evenings fall early and quiet. For couples and solo travellers who want the estate at its most unguarded, this is the truest way in.', 'sage'),
                         __('By day the orchards become your common ground: long walks between the rows, lunch brought to your verandah, and the whole working estate moving around you at its own unhurried pace.', 'sage'),
                     ],
-                    $imgB, 'object-top'
+                    $imgB,
+                    'object-top'
                 ),
             ],
             [
@@ -122,7 +129,12 @@ function stays_defaults()
             __('An elevated hideaway above the fruit garden, with the lake beyond.', 'sage'),
             __('Four suites raised into the canopy, high enough to look out across the tops of the fruit trees to Mulshi Lake and the hills behind it.', 'sage'),
             __('Ideal for couples, honeymooners, and longer stays where the room itself becomes part of the retreat.', 'sage'),
-            1, 2, __('Above the Orchard', 'sage'), 38000, $imgB, 'object-top',
+            1,
+            2,
+            __('Above the Orchard', 'sage'),
+            38000,
+            $imgB,
+            'object-top',
             [
                 $story(
                     __('Life above the orchard', 'sage'),
@@ -130,7 +142,8 @@ function stays_defaults()
                         __('The Canopy Suites are raised above the same orchard the cottages sit within — high enough that you look out across the tops of the fruit trees to Mulshi Lake and the hills behind it. The garden is still directly below you; the view is simply longer.', 'sage'),
                         __('The suites are more generous and more finished: a larger bed, a deeper verandah, a bathroom that invites you to linger.', 'sage'),
                     ],
-                    $imgA, 'object-center'
+                    $imgA,
+                    'object-center'
                 ),
                 $story(
                     __('A longer view', 'sage'),
@@ -138,7 +151,8 @@ function stays_defaults()
                         __('Morning light comes in over the canopy, and the lake keeps its own schedule of change through the day — silver at noon, copper before dark. Your verandah is the best seat for all of it.', 'sage'),
                         __('They are made for guests who want the seclusion of a private home with the outlook of a lakeside one.', 'sage'),
                     ],
-                    $imgB, 'object-top'
+                    $imgB,
+                    'object-top'
                 ),
             ],
             [
@@ -167,7 +181,12 @@ function stays_defaults()
             __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
             __('Falcon, Macaw and Toucan — three single-bedroom cottages tucked into their own pockets of the estate, each with a wraparound verandah.', 'sage'),
             __('Ideal for couples, writers and readers, solo retreats, and anyone whose idea of luxury is being left alone.', 'sage'),
-            1, 2, __('Garden and Farm Outlooks', 'sage'), 35000, $imgA, 'object-bottom',
+            1,
+            2,
+            __('Garden and Farm Outlooks', 'sage'),
+            35000,
+            $imgA,
+            'object-bottom',
             [
                 $story(
                     __('Hidden in plain sight', 'sage'),
@@ -175,7 +194,8 @@ function stays_defaults()
                         __('Aves brings together Falcon, Macaw and Toucan — three single-bedroom cottages tucked into their own pockets of the estate. Each has a wraparound verandah and its own angle on the gardens and farms, positioned so that you can spend a whole day without seeing another guest, and then walk five minutes to dinner and be among everyone.', 'sage'),
                         __('They are the quietest homes on the property, positioned for seclusion and built for stillness.', 'sage'),
                     ],
-                    $imgA, 'object-bottom'
+                    $imgA,
+                    'object-bottom'
                 ),
                 $story(
                     __('The quietest homes on the property', 'sage'),
@@ -183,7 +203,8 @@ function stays_defaults()
                         __('Guests who book Aves tend to rebook Aves. The verandahs are where the hours go — a book, a long lunch, the farm working quietly beyond the hedge.', 'sage'),
                         __('Seclusion here is never isolation: dinner at The Nest is a five-minute walk, and the estate is always within reach.', 'sage'),
                     ],
-                    $imgB, 'object-center'
+                    $imgB,
+                    'object-center'
                 ),
             ],
             [
@@ -212,7 +233,12 @@ function stays_defaults()
             __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
             __('A raised, timber-framed home in the spirit of a machan, open to the air on the side that faces the lawns and the lake.', 'sage'),
             __('Ideal for two couples, small families, and guests who want warmth and texture over polish.', 'sage'),
-            2, 4, __('The Woods', 'sage'), 46000, $imgB, 'object-center',
+            2,
+            4,
+            __('The Woods', 'sage'),
+            46000,
+            $imgB,
+            'object-center',
             [
                 $story(
                     __('Built like a machan', 'sage'),
@@ -220,7 +246,8 @@ function stays_defaults()
                         __('Woodhouse is built in the spirit of a machan — raised, timber-framed, and open to the air on the side that faces the lawns and the lake. The shared verandah runs the length of it, and it is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
                         __('Timber-led and atmospheric, it is the most textured home on the property — warmth and craft over polish.', 'sage'),
                     ],
-                    $imgB, 'object-center'
+                    $imgB,
+                    'object-center'
                 ),
                 $story(
                     __('Two bedrooms around one living heart', 'sage'),
@@ -228,7 +255,8 @@ function stays_defaults()
                         __('Two bedrooms sit either side of a shared living heart, which makes it work equally for two couples travelling together or a family of four who want to be near each other without being on top of each other.', 'sage'),
                         __('The verandah runs the length of the house and gathers the whole day — morning coffee, a long lunch, dinner under the first rain.', 'sage'),
                     ],
-                    $imgA, 'object-bottom'
+                    $imgA,
+                    'object-bottom'
                 ),
             ],
             [
@@ -257,7 +285,12 @@ function stays_defaults()
             __('The estate’s largest homes, and its longest views.', 'sage'),
             __('A three-bedroom residence set high with commanding views over Mulshi Lake and the ranges beyond, with wide outdoor terraces.', 'sage'),
             __('Ideal for families, groups of friends, milestone celebrations, and small offsites.', 'sage'),
-            3, 7, __('Lake and Hill Views', 'sage'), 40000, $imgA, 'object-top',
+            3,
+            7,
+            __('Lake and Hill Views', 'sage'),
+            40000,
+            $imgA,
+            'object-top',
             [
                 $story(
                     __('A household over the lake', 'sage'),
@@ -265,7 +298,8 @@ function stays_defaults()
                         __('Perch I is one of Satori’s three-bedroom residences, set high with commanding views over Mulshi Lake and the ranges beyond. Generous shared living areas, wide outdoor terraces and three private bedrooms make it the natural choice when a group wants to stay together as one household rather than scatter across the estate.', 'sage'),
                         __('Long dinners on the terrace, the lake holding the view through every hour of the day.', 'sage'),
                     ],
-                    $imgA, 'object-top'
+                    $imgA,
+                    'object-top'
                 ),
                 $story(
                     __('Room for the whole group', 'sage'),
@@ -273,7 +307,8 @@ function stays_defaults()
                         __('Perch I carries an additional bed, taking it to seven guests — useful for families travelling with children or a group that refuses to split.', 'sage'),
                         __('The wide terraces face the water uninterrupted, and the hills beyond keep the view changing through the day.', 'sage'),
                     ],
-                    $imgB, 'object-center'
+                    $imgB,
+                    'object-center'
                 ),
             ],
             [
@@ -302,7 +337,12 @@ function stays_defaults()
             __('The estate’s largest homes, and its longest views.', 'sage'),
             __('A three-bedroom residence set high with commanding views over Mulshi Lake and the ranges beyond, with wide outdoor terraces.', 'sage'),
             __('Ideal for families, groups of friends, milestone celebrations, and small offsites.', 'sage'),
-            3, 6, __('Lake and Hill Views', 'sage'), 45000, $imgB, 'object-bottom',
+            3,
+            6,
+            __('Lake and Hill Views', 'sage'),
+            45000,
+            $imgB,
+            'object-bottom',
             [
                 $story(
                     __('A household over the lake', 'sage'),
@@ -310,7 +350,8 @@ function stays_defaults()
                         __('Perch II is one of Satori’s three-bedroom residences, set high with commanding views over Mulshi Lake and the ranges beyond. Generous shared living areas, wide outdoor terraces and three private bedrooms make it the natural choice when a group wants to stay together as one household rather than scatter across the estate.', 'sage'),
                         __('Long dinners on the terrace, the lake holding the view through every hour of the day.', 'sage'),
                     ],
-                    $imgB, 'object-bottom'
+                    $imgB,
+                    'object-bottom'
                 ),
                 $story(
                     __('Room for the whole group', 'sage'),
@@ -318,7 +359,8 @@ function stays_defaults()
                         __('Perch II sleeps six guests and can be booked alongside Perch I when a larger group wants the same long views and shared sense of place.', 'sage'),
                         __('The wide terraces face the water uninterrupted, and the hills beyond keep the view changing through the day.', 'sage'),
                     ],
-                    $imgA, 'object-top'
+                    $imgA,
+                    'object-top'
                 ),
             ],
             [
@@ -342,12 +384,17 @@ function stays_defaults()
         ), ['slug' => 'perch-ii']),
 
         'hornbill' => array_merge($base(
-            __('Hornbill', 'sage'),
+            __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
             __('Signature Villa', 'sage'),
             __('The signature villa. The best seat on the estate.', 'sage'),
             __('Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy.', 'sage'),
             __('Ideal for couples marking something, two couples travelling well, and guests for whom the view is the point.', 'sage'),
-            2, 4, __('The Lakeside', 'sage'), 52000, $imgB, 'object-center',
+            2,
+            4,
+            __('The Lakeside', 'sage'),
+            52000,
+            $imgB,
+            'object-center',
             [
                 $story(
                     __('Satori at its most complete', 'sage'),
@@ -355,7 +402,8 @@ function stays_defaults()
                         __('Hornbill is Satori at its most complete. Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy. It is the only home here where the water is present from the moment you wake to the moment the light goes.', 'sage'),
                         __('It is priced as the estate’s premier address because that is what it is.', 'sage'),
                     ],
-                    $imgB, 'object-center'
+                    $imgB,
+                    'object-center'
                 ),
                 $story(
                     __('Water from first light to last', 'sage'),
@@ -363,7 +411,8 @@ function stays_defaults()
                         __('Breakfast faces the lake, evening drinks come from the outdoor bar, and the whole day is given to the view — the water present from the moment you wake to the moment the light goes.', 'sage'),
                         __('Guests take Hornbill when the stay itself is the occasion — an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
                     ],
-                    $imgA, 'object-center'
+                    $imgA,
+                    'object-center'
                 ),
             ],
             [

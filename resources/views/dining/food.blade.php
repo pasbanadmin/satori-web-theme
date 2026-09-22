@@ -4,7 +4,7 @@
   $pillars = [
     [
       'title' => __('Estate-grown', 'sage'),
-      'description' => __('Vegetables, herbs, greens and fruit from the farm and orchards', 'sage'),
+      'description' => __('Vegetables, herbs, greens and fruits from the farm and orchards', 'sage'),
     ],
     [
       'title' => __('Maharashtrian at its heart', 'sage'),
