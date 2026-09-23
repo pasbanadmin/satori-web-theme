@@ -192,7 +192,7 @@
               <select id="contact-preferred-home" name="preferred_stay"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
                 <option value="">{{ __('Select stay…', 'sage') }}</option>
-                <option value="Garden Flock Cottages">{{ __('Garden Flock Cottages', 'sage') }}</option>
+                <option value="Garden Flock">{{ __('Garden Flock', 'sage') }}</option>
                 <option value="Junior Suites (Lake Wing)">{{ __('Junior Suites (Lake Wing)', 'sage') }}</option>
                 <option value="Aves">{{ __('Aves', 'sage') }}</option>
                 <option value="Woodhouse — Two-bedroom cottage">{{ __('Woodhouse — Two-bedroom cottage', 'sage') }}</option>

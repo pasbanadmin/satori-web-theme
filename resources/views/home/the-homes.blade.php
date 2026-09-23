@@ -9,7 +9,7 @@
       'position' => 'object-bottom',
     ],
     [
-      'name' => __('Garden Flock Cottage', 'sage'),
+      'name' => __('Garden Flock', 'sage'),
       'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
       'sleeps' => 2,
       'price' => 32000,
