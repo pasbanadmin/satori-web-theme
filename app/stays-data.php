@@ -72,7 +72,7 @@ function stays_defaults()
 
     return [
         'orchard-cottages' => array_merge($base(
-            __('Garden View Cottages', 'sage'),
+            __('Garden Flock', 'sage'),
             __('Garden Homes', 'sage'),
             __('Wake up inside the garden that feeds the estate.', 'sage'),
             __('Three private cottages set low among Satori’s fruit trees and vegetable beds, each opening onto its own verandah.', 'sage'),

@@ -50,8 +50,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Garden Flock Cottage', 'sage'),
-        'ota_name' => __('Garden Flock Cottage', 'sage'),
+        'name' => __('Garden Flock', 'sage'),
+        'ota_name' => __('Garden Flock', 'sage'),
         'category' => '1',
         'slug' => 'garden-view-cottage',
         'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
@@ -387,11 +387,11 @@ Template Name: Stays
         ];
 
         $chapters = [
-          __('Garden Flock Cottage', 'sage') => [
+          __('Garden Flock', 'sage') => [
             'eyebrow' => __('GARDEN VIEW ROOMS · ONE BEDROOM EACH · SLEEPS 2 EACH', 'sage'),
             'hook' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
             'paragraphs' => [
-              __('Garden Flock Cottage is Satori\'s most private way to stay on the ground: three individual rooms, each named for a songbird, set along the estate\'s gardens and a five-minute walk from The Nest. A king-size bed, a seating area and an en-suite bathroom are all the room carries; the gardens and the quiet do the rest.', 'sage'),
+              __('Garden Flock is Satori\'s most private way to stay on the ground: three individual cottages, each named after a songbird, set along the estate\'s gardens and a five-minute walk from The Nest. A king-size bed, a seating area and an en-suite bathroom are all the room carries; the gardens and the quiet do the rest.', 'sage'),
               __('Koyal is the only room in this category with a bathtub — a small distinction guests tend to remember when booking.', 'sage'),
             ],
             'specs' => [
