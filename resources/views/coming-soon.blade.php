@@ -134,7 +134,7 @@
       <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
         {{-- WhatsApp Direct --}}
         <a
-          href="https://wa.me/919218177261?text={{ rawurlencode('Hello, I would like to enquire about stays and bookings at Satori, Mulshi.') }}"
+          href="https://wa.me/918076510462?text={{ rawurlencode('Hello, I would like to enquire about stays and bookings at Satori, Mulshi.') }}"
           target="_blank"
           rel="noopener noreferrer"
           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#BCA169] text-[#16100c] text-xs font-medium uppercase tracking-[0.2em] shadow-lg shadow-[#BCA169]/15 transition-all duration-300 hover:bg-[#c9b27e] hover:shadow-xl hover:scale-[1.02] active:scale-[0.99]"
