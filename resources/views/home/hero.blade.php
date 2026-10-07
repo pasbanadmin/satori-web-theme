@@ -51,7 +51,7 @@
       class="absolute inset-0 h-full w-full object-cover z-0">
 
     <!-- Vimeo Background Video Embed -->
-    <iframe src="https://player.vimeo.com/video/1219155902?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+    <iframe src="{{ $vimeoUrl }}"
       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-[177.77777778vh] h-[56.25vw] min-w-[177.77777778vh] min-h-[56.25vw] object-cover pointer-events-none z-1"
       frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Satori Hero Video"></iframe>
 

@@ -15,8 +15,8 @@
       'heading' => __('A spa in a garden, not a basement.', 'sage'),
       'copy' => __('Satori’s spa block sits within the estate’s planted grounds, open to green on every side. Therapies draw on Ayurvedic and classical techniques, delivered without ceremony or upsell. Beyond the treatment rooms, wellness here is simply the shape of the day — yoga at sunrise, a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.
                               ', 'sage'),
-      'cta' => __('Discover Wellness', 'sage'),
-      'anchor' => '/wellness',
+      'cta' => __('Opening Soon', 'sage'),
+      'anchor' => null,
       'image' => '/wp-content/uploads/2026/08/Wellness-split-section-—-wellness-yoga.webp',
       'alt' => __('Wellness at Satori, calm and quiet retreat space', 'sage'),
       'reverse' => true,
@@ -58,11 +58,17 @@
             {{ $block['copy'] }}
           </p>
 
-          <a class="mt-9 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
-            href="{{ home_url($block['anchor']) }}">
-            {{ $block['cta'] }}
-            <span aria-hidden="true">→</span>
-          </a>
+          @if (!empty($block['anchor']))
+            <a class="mt-9 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
+              href="{{ home_url($block['anchor']) }}">
+              {{ $block['cta'] }}
+              <span aria-hidden="true">→</span>
+            </a>
+          @else
+            <span class="mt-9 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink/70">
+              {{ $block['cta'] }}
+            </span>
+          @endif
         </div>
       </div>
 

@@ -2,7 +2,7 @@
   $navLinks = [
     ['label' => __('Stays', 'sage'), 'url' => home_url('/stays')],
     ['label' => __('Dining', 'sage'), 'url' => home_url('/dining')],
-    ['label' => __('Wellness & Spa', 'sage'), 'url' => home_url('/wellness')],
+    // ['label' => __('Wellness & Spa', 'sage'), 'url' => home_url('/wellness')],
     ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences')],
     ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings')],
     ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way')],
@@ -80,16 +80,16 @@
             {{ __('Estate & Enquiries', 'sage') }}
           </p>
           <ul class="space-y-2 text-xs leading-6 text-brand-sand/70" role="list">
-            <li>{{ __('Satori Estate, Mulshi, Pune District', 'sage') }}</li>
+            <li>{{ $estateAddress ?: __('Satori Estate, Mulshi, Pune District', 'sage') }}</li>
             <li>
-              <a href="tel:+919218177261" class="hover:text-brand-gold transition-colors duration-300">
-                +91 92181 77261
+              <a href="tel:{{ $contactPhoneTel }}" class="hover:text-brand-gold transition-colors duration-300">
+                {{ $contactPhone }}
               </a>
             </li>
             <li>
-              <a href="mailto:satori.reservations@pasban.co"
+              <a href="mailto:{{ $contactEmail }}"
                 class="hover:text-brand-gold transition-colors duration-300">
-                satori.reservations@pasban.co
+                {{ $contactEmail }}
               </a>
             </li>
             <li>

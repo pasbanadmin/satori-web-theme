@@ -134,7 +134,7 @@
       <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
         {{-- WhatsApp Direct --}}
         <a
-          href="https://wa.me/918076510462?text={{ rawurlencode('Hello, I would like to enquire about stays and bookings at Satori, Mulshi.') }}"
+          href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Hello, I would like to enquire about stays and bookings at Satori, Mulshi.') }}"
           target="_blank"
           rel="noopener noreferrer"
           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#BCA169] text-[#16100c] text-xs font-medium uppercase tracking-[0.2em] shadow-lg shadow-[#BCA169]/15 transition-all duration-300 hover:bg-[#c9b27e] hover:shadow-xl hover:scale-[1.02] active:scale-[0.99]"
@@ -147,7 +147,7 @@
 
         {{-- Email Reservations --}}
         <a
-          href="mailto:satori.reservations@pasban.co"
+          href="mailto:{{ $contactEmail }}"
           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full border border-[#efe4d0]/30 bg-[#16100c]/40 text-[#efe4d0] text-xs font-medium uppercase tracking-[0.2em] backdrop-blur-sm transition-all duration-300 hover:border-[#BCA169] hover:text-[#BCA169] hover:bg-[#16100c]/70 hover:scale-[1.02] active:scale-[0.99]"
         >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
@@ -168,13 +168,13 @@
           </p>
           <div class="space-y-1.5 text-xs text-[#efe4d0]/85">
             <p>
-              <a href="tel:+919218177261" class="transition-colors duration-300 hover:text-[#BCA169] font-medium tracking-wide">
-                +91 92181 77261
+              <a href="tel:{{ $contactPhoneTel }}" class="transition-colors duration-300 hover:text-[#BCA169] font-medium tracking-wide">
+                {{ $contactPhone }}
               </a>
             </p>
             <p>
-              <a href="mailto:satori.reservations@pasban.co" class="transition-colors duration-300 hover:text-[#BCA169] break-all">
-                satori.reservations@pasban.co
+              <a href="mailto:{{ $contactEmail }}" class="transition-colors duration-300 hover:text-[#BCA169] break-all">
+                {{ $contactEmail }}
               </a>
             </p>
           </div>

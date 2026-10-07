@@ -2,7 +2,7 @@
   $headerNavItems = [
     ['label' => __('Stays', 'sage'), 'url' => '/stays'],
     ['label' => __('Dining', 'sage'), 'url' => '/dining'],
-    ['label' => __('Wellness', 'sage'), 'url' => '/wellness'],
+    // ['label' => __('Wellness', 'sage'), 'url' => '/wellness'],
     ['label' => __('Experiences', 'sage'), 'url' => '/experiences'],
     ['label' => __('Gatherings', 'sage'), 'url' => '/gatherings'],
     ['label' => __('The Satori Way', 'sage'), 'url' => '/the-satori-way'],
