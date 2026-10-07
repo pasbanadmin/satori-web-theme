@@ -26,8 +26,8 @@
       "name": "Satori, Mulshi",
       "description": "A private estate of twenty-one rooms set across the hills and waters of Mulshi.",
       "url": "{{ home_url('/') }}",
-      "email": "satori.reservations@pasban.co",
-      "telephone": "+919218177261",
+      "email": "{{ $contactEmail }}",
+      "telephone": "{{ $contactPhoneTel }}",
       "address": {
         "@@type": "PostalAddress",
         "streetAddress": "Satori Estate",

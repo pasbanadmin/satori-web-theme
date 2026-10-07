@@ -237,7 +237,6 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/08-dining-laid.webp',
           '/wp-content/uploads/2026/09/08-second-bedroom.webp',
           '/wp-content/uploads/2026/09/09-terrace-seating.webp',
-          '/wp-content/uploads/2026/09/09-third-bedroom.webp',
           '/wp-content/uploads/2026/09/11-bathroom.webp',
           '/wp-content/uploads/2026/09/12-exterior-dusk.webp'
         ],
@@ -248,7 +247,6 @@ Template Name: Stays
           '/wp-content/uploads/2026/09/08-dining-laid-1.webp',
           '/wp-content/uploads/2026/09/08-second-bedroom-1.webp',
           '/wp-content/uploads/2026/09/09-terrace-seating-1.webp',
-          '/wp-content/uploads/2026/09/09-third-bedroom-1.webp',
           '/wp-content/uploads/2026/09/11-bathroom-1.webp',
           '/wp-content/uploads/2026/09/12-exterior-dusk-1.webp'
         ],
