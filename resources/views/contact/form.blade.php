@@ -12,7 +12,7 @@
         </p>
 
         <h2 class="mt-4 font-heading text-3xl font-light leading-snug text-brand-ink">
-          {{ __('Satori, Mulshi', 'sage') }}
+          {{ __('Satori Mulshi', 'sage') }}
         </h2>
 
         <div class="mt-6 h-px w-16 bg-brand-gold" aria-hidden="true"></div>
@@ -192,12 +192,12 @@
               <select id="contact-preferred-home" name="preferred_stay"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
                 <option value="">{{ __('Select stay…', 'sage') }}</option>
-                <option value="Garden Flock">{{ __('Garden Flock', 'sage') }}</option>
-                <option value="Junior Suites (Lake Wing)">{{ __('Junior Suites (Lake Wing)', 'sage') }}</option>
-                <option value="Aves">{{ __('Aves', 'sage') }}</option>
-                <option value="Woodhouse — Two-bedroom cottage">{{ __('Woodhouse — Two-bedroom cottage', 'sage') }}</option>
-                <option value="Perch I">{{ __('Perch I', 'sage') }}</option>
-                <option value="Perch II">{{ __('Perch II', 'sage') }}</option>
+                <option value="Garden Flock — One-Bedroom Garden Room">{{ __('Garden Flock — One-Bedroom Garden Room', 'sage') }}</option>
+                <option value="Lake Wing — Junior Suite">{{ __('Lake Wing — Junior Suite', 'sage') }}</option>
+                <option value="Aves — One-Bedroom Cottage">{{ __('Aves — One-Bedroom Cottage', 'sage') }}</option>
+                <option value="WoodHouse — Two-Bedroom Cottage">{{ __('WoodHouse — Two-Bedroom Cottage', 'sage') }}</option>
+                <option value="Perch I — Four-Bedroom Lake Residence">{{ __('Perch I — Four-Bedroom Lake Residence', 'sage') }}</option>
+                <option value="Perch II — Three-Bedroom Lake Residence">{{ __('Perch II — Three-Bedroom Lake Residence', 'sage') }}</option>
                 <option value="Hornbill — Two-Bedroom Premium Suite">{{ __('Hornbill — Two-Bedroom Premium Suite', 'sage') }}</option>
                 <option value="The Full Estate">{{ __('The full estate', 'sage') }}</option>
                 <option value="Help me choose">{{ __('Help me choose', 'sage') }}</option>

@@ -72,7 +72,7 @@ function stays_defaults()
 
     return [
         'orchard-cottages' => array_merge($base(
-            __('Garden Flock', 'sage'),
+            __('Garden Flock — One-Bedroom Garden Room', 'sage'),
             __('Garden Homes', 'sage'),
             __('Wake up inside the garden that feeds the estate.', 'sage'),
             __('Three private cottages set low among Satori’s fruit trees and vegetable beds, each opening onto its own verandah.', 'sage'),
@@ -124,7 +124,7 @@ function stays_defaults()
         ), ['slug' => 'orchard-cottages']),
 
         'canopy-suites' => array_merge($base(
-            __('Junior Suites (Lake View)', 'sage'),
+            __('Lake Wing — Junior Suite', 'sage'),
             __('Canopy Homes', 'sage'),
             __('An elevated hideaway above the fruit garden, with the lake beyond.', 'sage'),
             __('Four suites raised into the canopy, high enough to look out across the tops of the fruit trees to Mulshi Lake and the hills behind it.', 'sage'),
@@ -176,7 +176,7 @@ function stays_defaults()
         ), ['slug' => 'canopy-suites']),
 
         'aves' => array_merge($base(
-            __('Aves', 'sage'),
+            __('Aves — One-Bedroom Cottage', 'sage'),
             __('Hidden Cottages', 'sage'),
             __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
             __('Falcon, Macaw and Toucan — three single-bedroom cottages tucked into their own pockets of the estate, each with a wraparound verandah.', 'sage'),
@@ -228,7 +228,7 @@ function stays_defaults()
         ), ['slug' => 'aves']),
 
         'woodhouse' => array_merge($base(
-            __('Woodhouse', 'sage'),
+            __('WoodHouse', 'sage'),
             __('Woodland Home', 'sage'),
             __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
             __('A raised, timber-framed home in the spirit of a machan, open to the air on the side that faces the lawns and the lake.', 'sage'),
@@ -243,7 +243,7 @@ function stays_defaults()
                 $story(
                     __('Built like a machan', 'sage'),
                     [
-                        __('Woodhouse is built in the spirit of a machan — raised, timber-framed, and open to the air on the side that faces the lawns and the lake. The shared verandah runs the length of it, and it is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
+                        __('WoodHouse is built in the spirit of a machan — raised, timber-framed, and open to the air on the side that faces the lawns and the lake. The shared verandah runs the length of it, and it is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
                         __('Timber-led and atmospheric, it is the most textured home on the property — warmth and craft over polish.', 'sage'),
                     ],
                     $imgB,
@@ -280,7 +280,7 @@ function stays_defaults()
         ), ['slug' => 'woodhouse']),
 
         'perch-i' => array_merge($base(
-            __('Perch I', 'sage'),
+            __('Perch I — Four-Bedroom Lake Residence', 'sage'),
             __('Lakeside Homes', 'sage'),
             __('The estate’s largest homes, and its longest views.', 'sage'),
             __('A three-bedroom residence set high with commanding views over Mulshi Lake and the ranges beyond, with wide outdoor terraces.', 'sage'),
@@ -332,7 +332,7 @@ function stays_defaults()
         ), ['slug' => 'perch-i']),
 
         'perch-ii' => array_merge($base(
-            __('Perch II', 'sage'),
+            __('Perch II — Three-Bedroom Lake Residence', 'sage'),
             __('Lakeside Homes', 'sage'),
             __('The estate’s largest homes, and its longest views.', 'sage'),
             __('A three-bedroom residence set high with commanding views over Mulshi Lake and the ranges beyond, with wide outdoor terraces.', 'sage'),

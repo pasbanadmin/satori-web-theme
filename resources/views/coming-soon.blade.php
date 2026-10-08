@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ __('Satori, Mulshi — A Luxury Retreat | Coming Soon', 'sage') }}</title>
+  <title>{{ __('Satori Mulshi — A Luxury Retreat | Coming Soon', 'sage') }}</title>
   <meta name="description" content="{{ __('A private estate of twenty-one rooms set across the hills and waters of Mulshi. Coming soon.', 'sage') }}">
 
   {{-- Fonts --}}
@@ -85,7 +85,7 @@
   {{-- Top Navigation / Brand Crest --}}
   <header class="relative z-10 w-full pt-8 pb-4 px-6 sm:px-10 lg:px-16">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <a href="{{ home_url('/') }}" class="inline-block transition-opacity duration-300 hover:opacity-85" aria-label="{{ __('Satori, Mulshi', 'sage') }}">
+      <a href="{{ home_url('/') }}" class="inline-block transition-opacity duration-300 hover:opacity-85" aria-label="{{ __('Satori Mulshi', 'sage') }}">
         <img
           src="/wp-content/uploads/2026/08/Satori_Logo.webp"
           alt="{{ __('Satori Logo', 'sage') }}"
@@ -134,7 +134,7 @@
       <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
         {{-- WhatsApp Direct --}}
         <a
-          href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Hello, I would like to enquire about stays and bookings at Satori, Mulshi.') }}"
+          href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode('Hello, I would like to enquire about stays and bookings at Satori Mulshi.') }}"
           target="_blank"
           rel="noopener noreferrer"
           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#BCA169] text-[#16100c] text-xs font-medium uppercase tracking-[0.2em] shadow-lg shadow-[#BCA169]/15 transition-all duration-300 hover:bg-[#c9b27e] hover:shadow-xl hover:scale-[1.02] active:scale-[0.99]"

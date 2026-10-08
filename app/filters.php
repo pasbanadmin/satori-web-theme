@@ -20,7 +20,7 @@ add_filter('excerpt_more', function () {
  */
 add_filter('pre_get_document_title', function ($title) {
     if (is_page('stays') || is_page_template('template-stays.blade.php')) {
-        return 'Villas & Cottages at Satori, Mulshi — 21 Rooms';
+        return 'Villas & Cottages at Satori Mulshi — 21 Rooms';
     }
 
     return $title;
@@ -28,7 +28,7 @@ add_filter('pre_get_document_title', function ($title) {
 
 add_filter('wpseo_title', function ($title) {
     if (is_page('stays') || is_page_template('template-stays.blade.php')) {
-        return 'Villas & Cottages at Satori, Mulshi — 21 Rooms';
+        return 'Villas & Cottages at Satori Mulshi — 21 Rooms';
     }
 
     return $title;
@@ -36,7 +36,7 @@ add_filter('wpseo_title', function ($title) {
 
 add_filter('rank_math/frontend/title', function ($title) {
     if (is_page('stays') || is_page_template('template-stays.blade.php')) {
-        return 'Villas & Cottages at Satori, Mulshi — 21 Rooms';
+        return 'Villas & Cottages at Satori Mulshi — 21 Rooms';
     }
 
     return $title;

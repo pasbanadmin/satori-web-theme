@@ -1,6 +1,6 @@
 @php
   $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-dining-chefs-table.webp';
-  $heroAlt = __('Farm-to-table dining at Satori, Mulshi', 'sage');
+  $heroAlt = __('Farm-to-table dining at Satori Mulshi', 'sage');
 @endphp
 
 <section class="relative flex min-h-[calc(100vh-7rem)] items-end overflow-hidden bg-brand-primary text-brand-sand"

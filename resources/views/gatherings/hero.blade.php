@@ -1,6 +1,6 @@
 @php
   $heroImage = '/wp-content/uploads/2026/08/Page-hero-—-gatherings-lawn.webp';
-  $heroAlt = __('Exclusive estate buyout at Satori, Mulshi', 'sage');
+  $heroAlt = __('Exclusive estate buyout at Satori Mulshi', 'sage');
 @endphp
 
 <section class="relative flex min-h-[calc(100vh-7rem)] items-end overflow-hidden bg-brand-primary text-brand-sand"

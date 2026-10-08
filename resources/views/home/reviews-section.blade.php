@@ -11,7 +11,7 @@
     [
       'name' => 'Victoria Budge',
       'rating' => '5.0',
-      'property' => 'SATORI ~ WoodHouse (2 bedroom Cottage)',
+      'property' => 'SATORI ~ WoodHouse (2 Bedroom Cottage)',
       'stay_dates' => '19 Sept – 21 Sept 2025',
       'sub_ratings' => 'Staff 5/5 · Safety 5/5 · Cleanliness 5/5 · Meals 5/5',
       'quote' => 'A magical stay at Satori We had a wonderful time - every detail was thoughtfully curated. The staff were warm and attentive, the food was unbelievably tasty and fresh (truly farm-to-table), and the villas were stunningly designed. Satori felt like a home away from home, and we’ll definitely be back to book again soon.',
@@ -27,7 +27,7 @@
     [
       'name' => 'Vaibhav Prakash',
       'rating' => '5.0',
-      'property' => 'SATORI ~ WoodHouse (2 bedroom Cottage)',
+      'property' => 'SATORI ~ WoodHouse (2 Bedroom Cottage)',
       'stay_dates' => '30 Aug – 31 Aug 2025',
       'sub_ratings' => 'Staff 5/5 · Safety 5/5 · Cleanliness 5/5 · Meals 5/5',
       'quote' => 'Monsoon is the time to traversrse in Sahyadris,we passed through bumpy roads winding turns through Andharbans & Pimpri to reach Ahirwadi and our destination Satori that stunns and enthralls.Glanced through the MTDC certificates at the reception and everything seems to be perfect and proper.Upon enquiry I was told the meaning of Satori, a Japanese word. True to its name the estate sends positive vibes. Satori Mulshi is an awakening with tranquility,calm,serenity alongside sprawling Mulshi lake.As soon as we checked in, started strolling and then took bicycles to cover 8 acres.The estate has a swimming pool overlooking the Cental Building-Nest.Very well maintained ,lush green landscape attracts.Nakshatra Garden brims with variety of plants.We saw Insulin plant first time.Avocado,Papaya and Bananas are in plenty.Efforts have been made to conserve rainwater in polythelene pond and harness solar energy.The wood,it seems obtained from th jungle clearance has been abundantly an judiciously used everywhere. Carefully crafted pieces,fixtures and antiques catch the eye and show the mindfulness of the owners.Every effort tells about thoughtful doing. The food is very tasty,fresh and prepared with love and care. All the staff is well behaved and cooperative.Live Station at the Nest,where Rotis,Parathas,Bhatures are prepared',
@@ -43,7 +43,7 @@
     [
       'name' => 'Raghvendra Sharma',
       'rating' => '5.0',
-      'property' => 'SATORI ~ Hornbill (2 bedroom Villa)',
+      'property' => 'SATORI ~ Hornbill (2 Bedroom Villa)',
       'stay_dates' => '21 Jun – 23 Jun 2025',
       'sub_ratings' => 'Staff 5/5 · Safety 5/5 · Cleanliness 5/5 · Meals 5/5',
       'quote' => 'Discovering Paradise: A Luxurious Escape Nestled in Nature\'s Embrace Imagine a haven where opulence meets the wild, where every breath is filled with the essence of lush forests and cool mountain air. I\'ve found such a place, and it\'s nothing short of magical. From the moment we arrived, we were enveloped in warmth and hospitality that defied even the persistent rain. This retreat isn\'t just a destination; it\'s an experience that nourishes the soul. Picture this: A serene lake mirroring the sky, the gentle whisper of wind through leaves, and the melodious orchestra of birds – nature\'s own symphony, playing just for you. Step into the villa, and prepare to be awestruck. Every detail, from the smallest ornament to the grandest piece of furniture, tells a story of thoughtful design and exquisite taste. It\'s as if you\'ve wandered into a royal chamber from a bygone era: • Majestic heritage-style beds fit for nobility • Timeless wooden structures that whisper tales of the past • Carefully curated antiques that catch the eye and spark the imagination • A color palette that marries regal charm with modern luxury The spacious balconies aren\'t just outdoor spaces; they\'re stages for creating memories. As evening falls, they transform into private sanctuaries perfect for intimate gatherings, heartfelt conversations, or impromptu musical soirées under the stars. This isn\'t just accommodation; it\'s a portal to a world where time slows down, where every moment is an invitation to indulge, relax, and reconnect with what truly matters. I left with my spirit rejuvenated and a promise to myself: This hidden gem has found a permanent place in my heart, and I\'ll be returning to its embrace time and time again.',
@@ -59,7 +59,7 @@
     [
       'name' => 'Krishna Ramaswami',
       'rating' => '5.0',
-      'property' => 'SATORI ~ Hornbill (2 bedroom Villa)',
+      'property' => 'SATORI ~ Hornbill (2 Bedroom Villa)',
       'stay_dates' => '26 Apr – 27 Apr 2025',
       'sub_ratings' => 'Staff 5/5 · Safety 5/5 · Cleanliness 5/5 · Meals 5/5',
       'quote' => 'What a lovely and exemplary weekend we spent at the Hornbill! My husband had a terrific birthday celebration amidst nature and the sound of birds. Amol Bhalerao has been a stellar host and he and the team prepared a delicious birthday cake and arranged a lovely celebration for him. The property is well-maintained. We would like to thank the entire team Tanaji, Sachin (esp the gardens and the variety of vegetables and fruits grown within the property), Vivek the chef who prepared choicest of meals, Vishal who ran all kinds of errands for us. Thank you so much!',
@@ -67,15 +67,15 @@
     [
       'name' => 'Anup Patil',
       'rating' => '5.0',
-      'property' => 'SATORI ~ WoodHouse (2 bedroom Cottage)',
+      'property' => 'SATORI ~ WoodHouse (2 Bedroom Cottage)',
       'stay_dates' => '12 Apr – 13 Apr 2025',
       'sub_ratings' => 'Staff 5/5 · Safety 5/5 · Cleanliness 5/5 · Meals 5/5',
-      'quote' => 'Satori Woodhouse in Mulshi is an absolute gem for anyone looking to unwind and reconnect with nature. Located amidst lush greenery and overlooking breathtaking views, the property is a perfect blend of comfort and rustic charm. The cottages are beautifully designed with wood accents, offering both coziness and elegance. What truly sets Satori apart is the peaceful atmosphere—it’s quiet, meditative, and rejuvenating. The staff is warm, attentive, and always ready to help with a smile. Whether you\'re enjoying a cup of chai on the balcony, exploring the nearby trails, or just soaking in the stillness, every moment here feels special. Highly recommended for couples, families, or solo travellers seeking tranquility and inspiration. I’ll definitely be returning!',
+      'quote' => 'Satori WoodHouse in Mulshi is an absolute gem for anyone looking to unwind and reconnect with nature. Located amidst lush greenery and overlooking breathtaking views, the property is a perfect blend of comfort and rustic charm. The cottages are beautifully designed with wood accents, offering both coziness and elegance. What truly sets Satori apart is the peaceful atmosphere—it’s quiet, meditative, and rejuvenating. The staff is warm, attentive, and always ready to help with a smile. Whether you\'re enjoying a cup of chai on the balcony, exploring the nearby trails, or just soaking in the stillness, every moment here feels special. Highly recommended for couples, families, or solo travellers seeking tranquility and inspiration. I’ll definitely be returning!',
     ],
     [
       'name' => 'PAWAR KUMAR S',
       'rating' => '5.0',
-      'property' => 'SATORI ~ Hornbill (2 bedroom Villa)',
+      'property' => 'SATORI ~ Hornbill (2 Bedroom Villa)',
       'stay_dates' => '12 Apr – 13 Apr 2025',
       'sub_ratings' => 'Staff 5/5 · Safety 5/5 · Cleanliness 5/5 · Meals 5/5',
       'quote' => 'This is first stay at Satori. Awesome place. Awasome staff. Nice hospitality. Perfect location, perfect place within Nature with surrounding Mulshi dam backwater. Organic food quality was delicious. Thanks to all staff for surprise cake and birthday celebration of my wife. Thank you so to Mr.Amol for arrangements and all hospitality. Thanks to Satori Owner to joined us for birthday cake cutting. We loved this place. Looking forward to visit again in Rainy season.',
