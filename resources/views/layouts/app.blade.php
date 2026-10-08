@@ -23,7 +23,7 @@
     {
       "@@context": "https://schema.org",
       "@@type": "Resort",
-      "name": "Satori, Mulshi",
+      "name": "Satori Mulshi",
       "description": "A private estate of twenty-one rooms set across the hills and waters of Mulshi.",
       "url": "{{ home_url('/') }}",
       "email": "{{ $contactEmail }}",

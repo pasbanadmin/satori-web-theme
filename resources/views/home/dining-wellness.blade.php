@@ -13,8 +13,7 @@
     [
       'label' => __('Wellness & Spa', 'sage'),
       'heading' => __('A spa in a garden, not a basement.', 'sage'),
-      'copy' => __('Satori’s spa block sits within the estate’s planted grounds, open to green on every side. Therapies draw on Ayurvedic and classical techniques, delivered without ceremony or upsell. Beyond the treatment rooms, wellness here is simply the shape of the day — yoga at sunrise, a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.
-                              ', 'sage'),
+      'copy' => __('Satori’s spa block sits within the estate’s planted grounds, open to green on every side. Treatments are simple and restorative, delivered without ceremony or upsell. Beyond the treatment rooms, wellness here is simply the shape of the day — yoga at sunrise, a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.', 'sage'),
       'cta' => __('Opening Soon', 'sage'),
       'anchor' => null,
       'image' => '/wp-content/uploads/2026/08/Wellness-split-section-—-wellness-yoga.webp',

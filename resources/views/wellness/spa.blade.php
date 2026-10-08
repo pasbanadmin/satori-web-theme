@@ -2,7 +2,7 @@
   $therapies = [
     [
       'title' => __('Massage & bodywork', 'sage'),
-      'description' => __('Ayurvedic and classical, without ceremony or upselling', 'sage'),
+      'description' => __('Simple and restorative, without ceremony or upselling', 'sage'),
     ],
     [
       'title' => __('Travel fatigue, sleep & tension', 'sage'),
@@ -36,7 +36,7 @@
         </h2>
         <div class="mt-4 sm:mt-5 h-px w-16 bg-brand-gold" aria-hidden="true"></div>
         <p class="mt-4 sm:mt-5 max-w-md text-sm leading-7 text-brand-sand/75 sm:text-[15px]">
-          {{ __('Open to green on every side — the sound of the estate through the windows, not piped music. Therapies built on Ayurvedic and classical technique. Book one treatment or let us thread them across your stay.', 'sage') }}
+          {{ __('Open to green on every side — the sound of the estate through the windows, not piped music. Treatments are simple and restorative. Book one treatment or let us thread them across your stay.', 'sage') }}
         </p>
       </div>
 

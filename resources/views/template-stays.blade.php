@@ -16,8 +16,8 @@ Template Name: Stays
 
     $stays = [
       [
-        'name' => __('Aves', 'sage'),
-        'ota_name' => __('Aves Cottage', 'sage'),
+        'name' => __('Aves — One-Bedroom Cottage', 'sage'),
+        'ota_name' => __('Aves — One-Bedroom Cottage', 'sage'),
         'category' => '2',
         'slug' => 'aves',
         'description' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
@@ -50,8 +50,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Garden Flock', 'sage'),
-        'ota_name' => __('Garden Flock', 'sage'),
+        'name' => __('Garden Flock — One-Bedroom Garden Room', 'sage'),
+        'ota_name' => __('Garden Flock — One-Bedroom Garden Room', 'sage'),
         'category' => '1',
         'slug' => 'garden-view-cottage',
         'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
@@ -86,8 +86,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Woodhouse — Two-bedroom cottage', 'sage'),
-        'ota_name' => __('Woodhouse — Two-bedroom cottage', 'sage'),
+        'name' => __('WoodHouse — Two-Bedroom Cottage', 'sage'),
+        'ota_name' => __('WoodHouse — Two-Bedroom Cottage', 'sage'),
         'category' => '3',
         'slug' => 'woodhouse',
         'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
@@ -128,8 +128,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Junior Suite — Lake Wing', 'sage'),
-        'ota_name' => __('Junior Suite (Lake Wing)', 'sage'),
+        'name' => __('Lake Wing — Junior Suite', 'sage'),
+        'ota_name' => __('Lake Wing — Junior Suite', 'sage'),
         'category' => '2',
         'slug' => 'junior-suite-lake-view',
         'description' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
@@ -172,8 +172,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Perch I', 'sage'),
-        'ota_name' => __('Perch 1', 'sage'),
+        'name' => __('Perch I — Four-Bedroom Lake Residence', 'sage'),
+        'ota_name' => __('Perch I — Four-Bedroom Lake Residence', 'sage'),
         'category' => '3',
         'slug' => 'perch-i',
         'description' => __('One of the estate\'s largest stays, with long views over Mulshi Lake.', 'sage'),
@@ -215,8 +215,8 @@ Template Name: Stays
         ],
       ],
       [
-        'name' => __('Perch II', 'sage'),
-        'ota_name' => __('Perch 2', 'sage'),
+        'name' => __('Perch II — Three-Bedroom Lake Residence', 'sage'),
+        'ota_name' => __('Perch II — Three-Bedroom Lake Residence', 'sage'),
         'category' => '3',
         'slug' => 'perch-ii',
         'description' => __('One of the estate\'s largest stays, with long views over Mulshi Lake.', 'sage'),
@@ -385,12 +385,12 @@ Template Name: Stays
         ];
 
         $chapters = [
-          __('Garden Flock', 'sage') => [
+          __('Garden Flock — One-Bedroom Garden Room', 'sage') => [
             'eyebrow' => __('GARDEN VIEW ROOMS · ONE BEDROOM EACH · SLEEPS 2 EACH', 'sage'),
             'hook' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
             'paragraphs' => [
               __('Garden Flock is Satori\'s most private way to stay on the ground: three individual cottages, each named after a songbird, set along the estate\'s gardens and a five-minute walk from The Nest. A king-size bed, a seating area and an en-suite bathroom are all the room carries; the gardens and the quiet do the rest.', 'sage'),
-              __('Koyal is the only room in this category with a bathtub — a small distinction guests tend to remember when booking.', 'sage'),
+              __('Koel is the only room in this category with a bathtub — a small distinction guests tend to remember when booking.', 'sage'),
             ],
             'specs' => [
               'size' => __('[___ sq ft]', 'sage'),
@@ -401,7 +401,7 @@ Template Name: Stays
             ],
             'layout' => [
               __('One king-size bedroom', 'sage'),
-              __('En-suite bathroom (bathtub in Koyal)', 'sage'),
+              __('En-suite bathroom (bathtub in Koel)', 'sage'),
               __('Private seating area', 'sage'),
               __('Pantry with tea, coffee and fridge', 'sage'),
               __('Three rooms: Myna, Bulbul, Koel', 'sage'),
@@ -411,7 +411,7 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Junior Suite — Lake Wing', 'sage') => [
+          __('Lake Wing — Junior Suite', 'sage') => [
             'eyebrow' => __('LAKE VIEW SUITES · TWO BEDS EACH · SLEEPS 2 EACH', 'sage'),
             'hook' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
             'paragraphs' => [
@@ -437,7 +437,7 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Aves', 'sage') => [
+          __('Aves — One-Bedroom Cottage', 'sage') => [
             'eyebrow' => __('GARDEN COTTAGES · ONE BEDROOM EACH · SLEEPS 2 EACH', 'sage'),
             'hook' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
             'paragraphs' => [
@@ -462,11 +462,11 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Woodhouse — Two-bedroom cottage', 'sage') => [
+          __('WoodHouse — Two-Bedroom Cottage', 'sage') => [
             'eyebrow' => __('MACHAN STAY · TWO BEDROOMS · SLEEPS 4', 'sage'),
             'hook' => __('Timber-warm, raised, and the most atmospheric address on the estate.', 'sage'),
             'paragraphs' => [
-              __('Woodhouse — Two-bedroom cottage is built in the spirit of a machan: raised, timber-framed, and open to the air on the side that faces the lawns and the lake. Two bedrooms sit either side of a shared living space, and a long verandah runs the length of the building.', 'sage'),
+              __('WoodHouse is built in the spirit of a machan: raised, timber-framed, and open to the air on the side that faces the lawns and the lake. Two bedrooms sit either side of a shared living space, and a long verandah runs the length of the building.', 'sage'),
               __('It is the single best place on the estate to sit through a monsoon afternoon and do absolutely nothing.', 'sage'),
             ],
             'specs' => [
@@ -487,7 +487,7 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Perch I', 'sage') => [
+          __('Perch I — Four-Bedroom Lake Residence', 'sage') => [
             'eyebrow' => __('LAKE RESIDENCE · FOUR BEDROOMS · SLEEPS 8', 'sage'),
             'hook' => __('The estate\'s largest stay, and its longest views.', 'sage'),
             'paragraphs' => [
@@ -513,7 +513,7 @@ Template Name: Stays
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
-          __('Perch II', 'sage') => [
+          __('Perch II — Three-Bedroom Lake Residence', 'sage') => [
             'eyebrow' => __('LAKE RESIDENCE · THREE BEDROOMS · SLEEPS 6', 'sage'),
             'hook' => __('The same long views, one bedroom fewer.', 'sage'),
             'paragraphs' => [

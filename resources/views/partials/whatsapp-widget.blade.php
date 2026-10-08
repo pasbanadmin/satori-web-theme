@@ -1,5 +1,5 @@
 @php
-  $siteTitle = 'Satori, Mulshi';
+  $siteTitle = 'Satori Mulshi';
   $waMessage = rawurlencode("Hello {$siteTitle}, I'd like to make an inquiry.");
 @endphp
 

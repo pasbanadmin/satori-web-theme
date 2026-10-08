@@ -1,7 +1,7 @@
 @php
   $homes = [
     [
-      'name' => __('Aves', 'sage'),
+      'name' => __('Aves — One-Bedroom Cottage', 'sage'),
       'description' => __('Three intimate one-bedroom cottages opening out to the gardens and farms.', 'sage'),
       'sleeps' => 2,
       'price' => 35000,
@@ -9,7 +9,7 @@
       'position' => 'object-bottom',
     ],
     [
-      'name' => __('Garden Flock', 'sage'),
+      'name' => __('Garden Flock — One-Bedroom Garden Room', 'sage'),
       'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
       'sleeps' => 2,
       'price' => 32000,
@@ -17,7 +17,7 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Woodhouse — Two-bedroom cottage', 'sage'),
+      'name' => __('WoodHouse — Two-Bedroom Cottage', 'sage'),
       'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
       'sleeps' => 4,
       'price' => 42000,
@@ -25,7 +25,7 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Junior Suite — Lake Wing', 'sage'),
+      'name' => __('Lake Wing — Junior Suite', 'sage'),
       'description' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
       'sleeps' => 2,
       'price' => 38000,
@@ -33,7 +33,7 @@
       'position' => 'object-center',
     ],
     [
-      'name' => __('Perch I & II', 'sage'),
+      'name' => __('Perch I & II — Lake Residences', 'sage'),
       'description' => __('The estate\'s largest stays, and its longest views.', 'sage'),
       'sleeps' => '6–8',
       'price' => 38000,
