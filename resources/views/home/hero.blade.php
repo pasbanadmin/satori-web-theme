@@ -47,16 +47,21 @@
   <!-- Background Video Container -->
   <div class="absolute inset-0 z-0 overflow-hidden bg-[#1a120b]">
     <!-- Fallback Poster Image for LCP & slow connections -->
-    <img src="{{ $posterImage }}" alt="Satori retreat hero dusk view" fetchpriority="high" decoding="async"
-      class="absolute inset-0 h-full w-full object-cover z-0">
+    <img src="{{ $posterImage }}" alt="Satori retreat hero aerial view" fetchpriority="high" decoding="async"
+      class="absolute inset-0 h-full w-full object-cover z-0 [filter:brightness(1.08)_saturate(1.15)]"
+      style="filter: brightness(1.08) saturate(1.15);">
 
     <!-- Vimeo Background Video Embed -->
     <iframe src="{{ $vimeoUrl }}"
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-[177.77777778vh] h-[56.25vw] min-w-[177.77777778vh] min-h-[56.25vw] object-cover pointer-events-none z-1"
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-[177.77777778vh] h-[56.25vw] min-w-[177.77777778vh] min-h-[56.25vw] object-cover pointer-events-none z-1 [filter:brightness(1.08)_saturate(1.15)]"
+      style="filter: brightness(1.08) saturate(1.15);"
       frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Satori Hero Video"></iframe>
 
-    <!-- Dark Overlay for Contrast & Readability -->
-    <div class="absolute inset-0 bg-brand-primary/60 z-2"></div>
+    <!-- Top Gradient Overlay (behind navigation bar for link readability) -->
+    <div class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-brand-primary/40 to-transparent z-2 pointer-events-none"></div>
+
+    <!-- Bottom-Up Gradient Overlay (darkens headline/button area, leaving top two-thirds clear) -->
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/85 via-brand-primary/25 via-45% to-transparent to-75% z-2 pointer-events-none"></div>
   </div>
 
   {{-- Content Container: Dynamic height fit for content on mobile with top/bottom padding, fullscreen flex-end on
