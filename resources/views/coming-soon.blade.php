@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ __('Satori Mulshi — A Luxury Retreat | Coming Soon', 'sage') }}</title>
-  <meta name="description" content="{{ __('A private estate of twenty-one rooms set across the hills and waters of Mulshi. Coming soon.', 'sage') }}">
+  <title>{{ __('Satori Mulshi — A Luxury Retreat', 'sage') }}</title>
+  <meta name="description" content="{{ __('A private estate of twenty-one rooms set across the hills and waters of Mulshi.', 'sage') }}">
 
   {{-- Fonts --}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
