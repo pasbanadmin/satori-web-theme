@@ -55,7 +55,7 @@ add_filter('pre_get_document_title', function ($title) {
     $isPreview = isset($_GET['preview_coming_soon']) && current_user_can('manage_options');
 
     if ($isPreview || ($isActive && !is_user_logged_in())) {
-        return 'Satori Mulshi — Coming Soon';
+        return 'Satori Mulshi — A Luxury Retreat';
     }
 
     return $title;
