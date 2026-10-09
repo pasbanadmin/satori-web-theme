@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="Cl5zKcIRMqj4gVCyAkerK7Okm1YHV60fzha9xK6TKEc" />
     @php(do_action('get_header'))
     @php(wp_head())
 
