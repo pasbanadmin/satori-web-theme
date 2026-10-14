@@ -52,11 +52,11 @@
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('Stays', 'sage') }}
           </a>
-          <span class="text-brand-sand/20" aria-hidden="true">•</span>
+          {{-- <span class="text-brand-sand/20" aria-hidden="true">•</span>
           <a href="{{ home_url('/dining') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('Dining', 'sage') }}
-          </a>
+          </a> --}}
           {{-- <span class="text-brand-sand/20" aria-hidden="true">•</span>
           <a href="{{ home_url('/wellness') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">

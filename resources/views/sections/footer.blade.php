@@ -1,7 +1,7 @@
 @php
   $navLinks = [
     ['label' => __('Stays', 'sage'), 'url' => home_url('/stays')],
-    ['label' => __('Dining', 'sage'), 'url' => home_url('/dining')],
+    // ['label' => __('Dining', 'sage'), 'url' => home_url('/dining')],
     // ['label' => __('Wellness & Spa', 'sage'), 'url' => home_url('/wellness')],
     ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences')],
     ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings')],
