@@ -4,8 +4,8 @@
       'label' => __('Dining', 'sage'),
       'heading' => __('The garden is not a feature. It is the kitchen.', 'sage'),
       'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands', 'sage'),
-      'cta' => __('Explore Dining', 'sage'),
-      'anchor' => '/dining',
+      'cta' => __('Book Your Stay', 'sage'),
+      'anchor' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
       'image' => '/wp-content/uploads/2026/08/Dining-split-section-—-dining-chefs-table.webp',
       'alt' => __('Dining at Satori, warm meal beside the lake', 'sage'),
       'reverse' => false,
@@ -23,7 +23,8 @@
   ];
 @endphp
 
-<section id="dining-wellness" class="bg-[#f7f3eb] pb-14 lg:pb-20">
+<section id="dining-wellness" class="relative bg-[#f7f3eb] pb-14 lg:pb-20">
+  <div id="dining" class="absolute -top-16" aria-hidden="true"></div>
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="mb-12 text-left lg:mb-14" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
@@ -58,8 +59,13 @@
           </p>
 
           @if (!empty($block['anchor']))
+            @php
+              $isExternal = str_starts_with($block['anchor'], 'http://') || str_starts_with($block['anchor'], 'https://');
+              $targetUrl = $isExternal ? $block['anchor'] : home_url($block['anchor']);
+            @endphp
             <a class="mt-9 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
-              href="{{ home_url($block['anchor']) }}">
+              href="{{ $targetUrl }}"
+              @if ($isExternal) target="_blank" rel="noopener noreferrer" @endif>
               {{ $block['cta'] }}
               <span aria-hidden="true">→</span>
             </a>
