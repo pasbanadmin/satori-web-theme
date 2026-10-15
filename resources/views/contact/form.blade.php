@@ -31,7 +31,7 @@
             <div>
               <p class="text-base font-medium text-brand-ink">{{ __('Address', 'sage') }}</p>
               <p class="mt-1 text-sm leading-6 text-brand-muted">
-                {{ __('Satori Estate, Mulshi, Pune District, Maharashtra — India', 'sage') }}
+                {{ ($estateAddress && $estateAddress !== 'Satori Estate, Mulshi, Pune District') ? $estateAddress : __('Satori Mulshi, Satori Estate, Pimpri, Tata Talav, Mulshi, Pune, Maharashtra 412108', 'sage') }}
               </p>
             </div>
           </li>
@@ -70,6 +70,36 @@
             </div>
           </li>
         </ul>
+
+        {{-- Google Map & Directions --}}
+        <div class="mt-8 pt-6 border-t border-brand-ink/10">
+          <p class="text-[0.6875rem] uppercase tracking-[0.25em] text-brand-gold mb-3 font-medium">
+            {{ __('Location & Directions', 'sage') }}
+          </p>
+          <div class="overflow-hidden rounded-md border border-brand-ink/15 shadow-sm bg-white aspect-[4/3] w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.88!2d73.45067!3d18.53419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be81f6e03d0ce17%3A0xb9f0940a05ab4acc!2sSatoriMulshi!5e0!3m2!1sen!2sin!4v1"
+              class="h-full w-full border-0"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="{{ __('Satori Mulshi Google Maps Location', 'sage') }}">
+            </iframe>
+          </div>
+
+          <div class="mt-4">
+            <a
+              href="https://maps.google.com/?cid=13398371662192921292"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/25 bg-transparent px-5 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary font-medium shadow-sm w-full sm:w-auto"
+            >
+              <span>{{ __('Get directions', 'sage') }}</span>
+              <span class="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
 
       </div>
 
@@ -192,13 +222,18 @@
               <select id="contact-preferred-home" name="preferred_stay"
                 class="w-full bg-white border border-brand-ink/15 px-4 py-3 text-sm text-brand-ink focus:outline-none focus:border-brand-gold transition-colors duration-200 appearance-none">
                 <option value="">{{ __('Select stay…', 'sage') }}</option>
-                <option value="Garden Flock — One-Bedroom Garden Room">{{ __('Garden Flock — One-Bedroom Garden Room', 'sage') }}</option>
+                <option value="Garden Flock — One-Bedroom Garden Room">
+                  {{ __('Garden Flock — One-Bedroom Garden Room', 'sage') }}</option>
                 <option value="Lake Wing — Junior Suite">{{ __('Lake Wing — Junior Suite', 'sage') }}</option>
                 <option value="Aves — One-Bedroom Cottage">{{ __('Aves — One-Bedroom Cottage', 'sage') }}</option>
-                <option value="WoodHouse — Two-Bedroom Cottage">{{ __('WoodHouse — Two-Bedroom Cottage', 'sage') }}</option>
-                <option value="Perch I — Four-Bedroom Lake Residence">{{ __('Perch I — Four-Bedroom Lake Residence', 'sage') }}</option>
-                <option value="Perch II — Three-Bedroom Lake Residence">{{ __('Perch II — Three-Bedroom Lake Residence', 'sage') }}</option>
-                <option value="Hornbill — Two-Bedroom Premium Suite">{{ __('Hornbill — Two-Bedroom Premium Suite', 'sage') }}</option>
+                <option value="WoodHouse — Two-Bedroom Cottage">{{ __('WoodHouse — Two-Bedroom Cottage', 'sage') }}
+                </option>
+                <option value="Perch I — Four-Bedroom Lake Residence">
+                  {{ __('Perch I — Four-Bedroom Lake Residence', 'sage') }}</option>
+                <option value="Perch II — Three-Bedroom Lake Residence">
+                  {{ __('Perch II — Three-Bedroom Lake Residence', 'sage') }}</option>
+                <option value="Hornbill — Two-Bedroom Premium Suite">
+                  {{ __('Hornbill — Two-Bedroom Premium Suite', 'sage') }}</option>
                 <option value="The Full Estate">{{ __('The full estate', 'sage') }}</option>
                 <option value="Help me choose">{{ __('Help me choose', 'sage') }}</option>
               </select>

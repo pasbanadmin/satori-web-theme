@@ -19,7 +19,7 @@
     [
       'name' => __('WoodHouse — Two-Bedroom Cottage', 'sage'),
       'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
-      'sleeps' => 4,
+      'sleeps' => __('up to 7', 'sage'),
       'price' => 42000,
       'image' => '/wp-content/uploads/2026/09/01-hero-dusk-on-stilts.webp',
       'position' => 'object-center',
@@ -35,7 +35,8 @@
     [
       'name' => __('Perch I & II — Lake Residences', 'sage'),
       'description' => __('The estate\'s largest stays, and its longest views.', 'sage'),
-      'sleeps' => '6–8',
+      'capacity' => __('7 Bedrooms · Sleeps up to 14', 'sage'),
+      'sleeps' => 'up to 14',
       'price' => 38000,
       'image' => '/wp-content/uploads/2026/09/01-hero-terrace-lake.webp',
       'position' => 'object-center',
@@ -94,7 +95,7 @@
 
               <div class="flex shrink-0 flex-col items-end gap-2 text-right">
                 <p class="text-[0.7rem] uppercase tracking-[0.25em] text-brand-sand/80">
-                  {{ sprintf(__('Sleeps %s', 'sage'), $home['sleeps']) }}
+                  {{ $home['capacity'] ?? sprintf(__('Sleeps %s', 'sage'), $home['sleeps']) }}
                 </p>
 
                 <a class="inline-flex items-center gap-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-sand"

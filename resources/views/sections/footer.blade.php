@@ -27,7 +27,8 @@
         <div>
           <a href="{{ home_url('/') }}"
             class="inline-block mb-3 font-heading text-2xl font-light uppercase tracking-[0.15em] text-brand-sand transition-colors duration-300 hover:text-brand-gold">
-            <img src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="Satori Logo" class="h-8 w-auto brightness-0 invert">
+            <img src="/wp-content/uploads/2026/08/Satori_Logo.webp" alt="Satori Logo"
+              class="h-8 w-auto brightness-0 invert">
           </a>
           <p class="max-w-xs text-sm leading-6 text-brand-sand/70">
             {{ __('A private estate of twenty-one rooms set across the hills and waters of Mulshi.', 'sage') }}
@@ -80,15 +81,16 @@
             {{ __('Estate & Enquiries', 'sage') }}
           </p>
           <ul class="space-y-2 text-xs leading-6 text-brand-sand/70" role="list">
-            <li>{{ $estateAddress ?: __('Satori Estate, Mulshi, Pune District', 'sage') }}</li>
+            <li>
+              {{ ($estateAddress && $estateAddress !== 'Satori Estate, Mulshi, Pune District') ? $estateAddress : __('Satori Mulshi, Satori Estate, Pimpri, Tata Talav, Mulshi, Pune, Maharashtra 412108', 'sage') }}
+            </li>
             <li>
               <a href="tel:{{ $contactPhoneTel }}" class="hover:text-brand-gold transition-colors duration-300">
                 {{ $contactPhone }}
               </a>
             </li>
             <li>
-              <a href="mailto:{{ $contactEmail }}"
-                class="hover:text-brand-gold transition-colors duration-300">
+              <a href="mailto:{{ $contactEmail }}" class="hover:text-brand-gold transition-colors duration-300">
                 {{ $contactEmail }}
               </a>
             </li>
