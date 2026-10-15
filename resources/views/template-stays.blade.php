@@ -93,7 +93,7 @@ Template Name: Stays
         'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
         'units' => 1,
         'bedrooms' => '2',
-        'sleeps' => '4',
+        'sleeps' => __('Up to 7', 'sage'),
         'setting' => __('Machan, above lawns and lake', 'sage'),
         'price' => 46000,
         'image' => '/wp-content/uploads/2026/09/03-exterior-from-lawns.webp',
@@ -463,7 +463,7 @@ Template Name: Stays
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
           __('WoodHouse — Two-Bedroom Cottage', 'sage') => [
-            'eyebrow' => __('MACHAN STAY · TWO BEDROOMS · SLEEPS 4', 'sage'),
+            'eyebrow' => __('MACHAN STAY · TWO BEDROOMS · SLEEPS UP TO 7', 'sage'),
             'hook' => __('Timber-warm, raised, and the most atmospheric address on the estate.', 'sage'),
             'paragraphs' => [
               __('WoodHouse is built in the spirit of a machan: raised, timber-framed, and open to the air on the side that faces the lawns and the lake. Two bedrooms sit either side of a shared living space, and a long verandah runs the length of the building.', 'sage'),
@@ -473,7 +473,7 @@ Template Name: Stays
               'size' => __('[___ sq ft]', 'sage'),
               'bedrooms' => '2',
               'bathrooms' => '2',
-              'sleeps' => '4',
+              'sleeps' => __('Up to 7', 'sage'),
               'view' => __('Lawns and lake', 'sage'),
             ],
             'layout' => [
@@ -483,7 +483,7 @@ Template Name: Stays
               __('Raised, timber-led architecture', 'sage'),
             ],
             'view' => __('Across the lawns to the lake, framed by timber and trees.', 'sage'),
-            'idealFor' => __('Two couples, small families, and guests who want warmth and texture over polish. Especially good in the monsoon.', 'sage'),
+            'idealFor' => __('Two couples, families and small groups of up to seven, and guests who want warmth and texture over polish. Especially good in the monsoon.', 'sage'),
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
@@ -509,7 +509,7 @@ Template Name: Stays
               __('Wide terraces facing the lake and hills', 'sage'),
             ],
             'view' => __('Elevated and expansive: the whole of Mulshi Lake and the Sahyadri ridgeline from the terrace and the living room.', 'sage'),
-            'idealFor' => __('Families, groups of friends, milestone celebrations and small offsites. Book with Perch II for larger parties.', 'sage'),
+            'idealFor' => __('Families, groups of friends, milestone celebrations and small offsites. Book with Perch II for larger parties: together, seven bedrooms for up to 14 guests.', 'sage'),
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
           ],
@@ -518,7 +518,7 @@ Template Name: Stays
             'hook' => __('The same long views, one bedroom fewer.', 'sage'),
             'paragraphs' => [
               __('Perch II is Satori\'s three-bedroom residence, set high on the estate beside Perch I with the same expansive view over Mulshi Lake. It has its own living room, a kitchenette and wide outdoor terraces, and works as one comfortable household for a family or a group of six.', 'sage'),
-              __('Perch II can be booked alongside Perch I when a larger group wants the same long views and shared sense of place.', 'sage'),
+              __('Perch II can be booked alongside Perch I when a larger group wants the same long views and shared sense of place. Together, the two residences offer seven bedrooms for up to 14 guests.', 'sage'),
             ],
             'specs' => [
               'size' => __('[___ sq ft]', 'sage'),
