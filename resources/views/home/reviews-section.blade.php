@@ -109,7 +109,8 @@
         </p>
       </div>
 
-      <!-- Rating Trust Badge & Nav Buttons -->
+      {{-- Rating Trust Badge & Nav Buttons (Commented out) --}}
+      {{--
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
         <!-- <div
           class="flex items-center gap-3 rounded-full border border-brand-ink/15 bg-brand-sand/40 px-4 py-2 sm:px-5 sm:py-2.5 backdrop-blur-sm">
@@ -140,85 +141,90 @@
           </button>
         </div>
       </div>
+      --}}
     </div>
 
-    <!-- Swiper Slider -->
+    <!-- Trustindex Google Reviews Widget -->
+    <div class="mt-6 lg:mt-8">
+      {!! do_shortcode('[trustindex no-registration=google]') !!}
+    </div>
+
+    {{-- Swiper Slider (Commented out)
     <div class="swiper !overflow-visible" data-reviews-swiper>
       <div class="swiper-wrapper items-stretch">
         @foreach ($reviews as $review)
-          <div class="swiper-slide flex h-auto">
-            <article
-              class="relative flex w-full flex-col justify-between rounded-2xl border border-brand-ink/10 bg-white/70 p-6 sm:p-9 shadow-sm backdrop-blur-sm transition-all duration-500 hover:border-brand-gold/40 hover:bg-white hover:shadow-xl">
-              <!-- Top Row: Verified Badge on Top, Ratings Below (Left-Aligned) -->
-              <div>
-                <div
-                  class="flex md:flex-row flex-col md:items-center md:justify-between justify-none items-start gap-2.5 border-b border-brand-ink/10 pb-4">
-                  <span
-                    class="inline-flex items-center gap-1.5 text-[0.7rem] uppercase tracking-[0.2em] text-brand-muted">
-                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>
-                    {{ __('Verified Stay', 'sage') }}
-                  </span>
+        <div class="swiper-slide flex h-auto">
+          <article
+            class="relative flex w-full flex-col justify-between rounded-2xl border border-brand-ink/10 bg-white/70 p-6 sm:p-9 shadow-sm backdrop-blur-sm transition-all duration-500 hover:border-brand-gold/40 hover:bg-white hover:shadow-xl">
+            <!-- Top Row: Verified Badge on Top, Ratings Below (Left-Aligned) -->
+            <div>
+              <div
+                class="flex md:flex-row flex-col md:items-center md:justify-between justify-none items-start gap-2.5 border-b border-brand-ink/10 pb-4">
+                <span
+                  class="inline-flex items-center gap-1.5 text-[0.7rem] uppercase tracking-[0.2em] text-brand-muted">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>
+                  {{ __('Verified Stay', 'sage') }}
+                </span>
 
-                  <div class="flex items-center gap-2.5">
-                    <div class="flex text-brand-gold text-base tracking-widest whitespace-nowrap">
-                      @for ($i = 0; $i < floor((float) $review['rating']); $i++)
-                        ★
-                      @endfor
-                      @if ((float) $review['rating'] - floor((float) $review['rating']) >= 0.5)
-                        <span class="text-xs self-center">½</span>
+                <div class="flex items-center gap-2.5">
+                  <div class="flex text-brand-gold text-base tracking-widest whitespace-nowrap">
+                    @for ($i = 0; $i < floor((float) $review['rating']); $i++) ★ @endfor @if ((float) $review['rating']
+                      - floor((float) $review['rating'])>= 0.5)
+                      <span class="text-xs self-center">½</span>
                       @endif
-                    </div>
-                    <!-- <span
+                  </div>
+                  <!-- <span
                         class="text-xs font-semibold tracking-wider text-brand-ink/80 bg-brand-sand/60 px-2.5 py-0.5 rounded-full whitespace-nowrap">
                         {{ $review['rating'] }} / 5
                       </span> -->
-                  </div>
-                </div>
-
-                <!-- Quote Text -->
-                <div class="mt-6 text-brand-ink/80" data-read-more>
-                  <p class="font-heading text-base sm:text-xl italic leading-relaxed text-brand-ink/90 line-clamp-4 transition-all duration-300"
-                    data-read-more-clamp>
-                    “{{ $review['quote'] }}”
-                  </p>
-                  @if (mb_strlen($review['quote']) > 220)
-                    <button type="button"
-                      class="mt-3 inline-flex items-center gap-1 text-[0.75rem] font-medium uppercase tracking-[0.2em] text-brand-gold hover:text-brand-ink transition-colors"
-                      data-read-more-toggle data-open-label="{{ __('Read full review', 'sage') }}"
-                      data-close-label="{{ __('Show less', 'sage') }}" aria-expanded="false">
-                      <span data-read-more-label>{{ __('Read full review', 'sage') }}</span>
-                      <span data-read-more-caret aria-hidden="true">↓</span>
-                    </button>
-                  @endif
                 </div>
               </div>
 
-              <!-- Footer Details -->
-              <div class="mt-4 md:mt-6 border-t border-brand-ink/10 pt-4 md:pt-5">
-                <div class="flex flex-col md:flex-row items-baseline justify-between gap-2">
-                  <h3 class="font-heading text-xl font-medium text-brand-ink">
-                    {{ $review['name'] }}
-                  </h3>
-                  <span class="text-[0.7rem] uppercase tracking-[0.15em] text-brand-muted md:mb-0 mb-1">
-                    {{ $review['stay_dates'] }}
-                  </span>
-                </div>
-
-                <p class="mt-1 text-xs text-brand-gold font-medium tracking-wide">
-                  {{ $review['property'] }}
+              <!-- Quote Text -->
+              <div class="mt-6 text-brand-ink/80" data-read-more>
+                <p class="font-heading text-base sm:text-xl italic leading-relaxed text-brand-ink/90 line-clamp-4 transition-all duration-300"
+                  data-read-more-clamp>
+                  “{{ $review['quote'] }}”
                 </p>
-
-                <p class="mt-2 text-[0.7rem] text-brand-muted/80 tracking-normal">
-                  {{ $review['sub_ratings'] }}
-                </p>
+                @if (mb_strlen($review['quote']) > 220)
+                <button type="button"
+                  class="mt-3 inline-flex items-center gap-1 text-[0.75rem] font-medium uppercase tracking-[0.2em] text-brand-gold hover:text-brand-ink transition-colors"
+                  data-read-more-toggle data-open-label="{{ __('Read full review', 'sage') }}"
+                  data-close-label="{{ __('Show less', 'sage') }}" aria-expanded="false">
+                  <span data-read-more-label>{{ __('Read full review', 'sage') }}</span>
+                  <span data-read-more-caret aria-hidden="true">↓</span>
+                </button>
+                @endif
               </div>
-            </article>
-          </div>
+            </div>
+
+            <!-- Footer Details -->
+            <div class="mt-4 md:mt-6 border-t border-brand-ink/10 pt-4 md:pt-5">
+              <div class="flex flex-col md:flex-row items-baseline justify-between gap-2">
+                <h3 class="font-heading text-xl font-medium text-brand-ink">
+                  {{ $review['name'] }}
+                </h3>
+                <span class="text-[0.7rem] uppercase tracking-[0.15em] text-brand-muted md:mb-0 mb-1">
+                  {{ $review['stay_dates'] }}
+                </span>
+              </div>
+
+              <p class="mt-1 text-xs text-brand-gold font-medium tracking-wide">
+                {{ $review['property'] }}
+              </p>
+
+              <p class="mt-2 text-[0.7rem] text-brand-muted/80 tracking-normal">
+                {{ $review['sub_ratings'] }}
+              </p>
+            </div>
+          </article>
+        </div>
         @endforeach
       </div>
 
       <!-- Swiper Pagination Dots -->
       <div class="mt-12 flex items-center justify-center gap-2" data-reviews-pagination></div>
     </div>
+    --}}
   </div>
 </section>
