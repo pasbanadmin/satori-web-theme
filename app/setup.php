@@ -158,6 +158,21 @@ add_action('init', function () {
         'supports' => ['title', 'editor', 'thumbnail', 'excerpt', 'revisions'],
         'rewrite' => ['slug' => 'stay', 'with_front' => false],
     ]);
+
+    // Ensure the Press page exists in WordPress
+    if (! get_page_by_path('press')) {
+        $press_id = wp_insert_post([
+            'post_title'   => 'Press',
+            'post_name'    => 'press',
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_content' => '',
+        ]);
+
+        if ($press_id && ! is_wp_error($press_id)) {
+            update_post_meta($press_id, '_wp_page_template', 'template-press.blade.php');
+        }
+    }
 });
 
 /**

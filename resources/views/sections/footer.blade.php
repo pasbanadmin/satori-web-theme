@@ -6,6 +6,7 @@
     ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences')],
     ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings')],
     ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way')],
+    ['label' => __('Press', 'sage'), 'url' => home_url('/press')],
     ['label' => __('Contact Us', 'sage'), 'url' => home_url('/contact-us')],
   ];
 
@@ -61,7 +62,7 @@
         {{-- Navigation Links --}}
         <div>
           <p class="mb-4 text-[0.75rem] uppercase tracking-[0.28em] text-brand-gold">
-            {{ __('Navigation', 'sage') }}
+            {{ __('The Estate', 'sage') }}
           </p>
           <ul class="grid grid-cols-2 gap-y-2.5 gap-x-4" role="list">
             @foreach ($navLinks as $item)

@@ -12,6 +12,14 @@
   --brand-gold: #BCA169;
   --brand-muted: #6f6a5c;
   --brand-ink: #16100c;
+  --background: #f7f3eb;
+  --foreground: #16100c;
+  --border: #d2cdc5;
+  --gold: #bca169;
+  --gold-ink: #7f5c25;
+  --earth: #66442c;
+  --accent: #a98649;
+  --secondary: #ddd7cd;
   --font-body: "Jost", "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   --font-heading: "Cormorant Garamond", Georgia, serif;
 }
@@ -22,7 +30,18 @@
   --color-brand-sand: var(--brand-sand);
   --color-brand-gold: var(--brand-gold);
   --color-brand-muted: var(--brand-muted);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-gold: var(--gold);
+  --color-gold-ink: var(--gold-ink);
+  --color-earth: var(--earth);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
   --font-heading: var(--font-heading);
+  --font-display: var(--font-heading);
+  --font-body: var(--font-body);
+  --font-label: var(--font-body);
 }
 
 @layer base {
@@ -219,6 +238,65 @@
 [data-stay-card].is-open [data-stay-scrollable] {
   justify-content: flex-start;
 }
+
+/* Typography utilities for Press & Editorial */
+.font-display {
+  font-family: var(--font-heading);
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+.font-label {
+  font-family: var(--font-body);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+
+
+/* On the Press page, the header starts solid/light since there is no dark hero image */
+body.page-press [data-header],
+body.page-template-template-press [data-header] {
+  background-color: rgba(247, 243, 235, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(22, 16, 12, 0.1);
+  color: var(--brand-primary);
+}
+
+body.page-press [data-header] [data-desktop-nav] a,
+body.page-template-template-press [data-header] [data-desktop-nav] a {
+  color: var(--brand-primary);
+}
+
+body.page-press [data-header] [data-header-logo],
+body.page-template-template-press [data-header] [data-header-logo] {
+  filter: none;
+}
+
+body.page-press [data-header-book-cta],
+body.page-template-template-press [data-header-book-cta] {
+  border-color: rgba(22, 16, 12, 0.4);
+  color: var(--brand-primary);
+}
+
+body.page-press [data-header-book-cta]:hover,
+body.page-template-template-press [data-header-book-cta]:hover {
+  border-color: var(--brand-gold);
+  background-color: var(--brand-gold);
+  color: #ffffff;
+}
+
+body.page-press [data-header-toggle],
+body.page-template-template-press [data-header-toggle] {
+  color: var(--brand-primary);
+  border-color: rgba(22, 16, 12, 0.3);
+}
+
 
 
 

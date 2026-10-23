@@ -6,6 +6,7 @@
     ['label' => __('Experiences', 'sage'), 'url' => '/experiences'],
     ['label' => __('Gatherings', 'sage'), 'url' => '/gatherings'],
     ['label' => __('The Satori Way', 'sage'), 'url' => '/the-satori-way'],
+    ['label' => __('Press', 'sage'), 'url' => '/press'],
     ['label' => __('Contact', 'sage'), 'url' => '/contact-us'],
   ];
 @endphp
