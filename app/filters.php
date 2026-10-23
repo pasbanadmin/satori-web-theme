@@ -23,6 +23,10 @@ add_filter('pre_get_document_title', function ($title) {
         return 'Villas & Cottages at Satori Mulshi — 21 Rooms';
     }
 
+    if (is_page('press') || is_page_template('template-press.blade.php')) {
+        return 'Press — Satori Mulshi';
+    }
+
     return $title;
 }, 99);
 
@@ -31,12 +35,20 @@ add_filter('wpseo_title', function ($title) {
         return 'Villas & Cottages at Satori Mulshi — 21 Rooms';
     }
 
+    if (is_page('press') || is_page_template('template-press.blade.php')) {
+        return 'Press — Satori Mulshi';
+    }
+
     return $title;
 }, 99);
 
 add_filter('rank_math/frontend/title', function ($title) {
     if (is_page('stays') || is_page_template('template-stays.blade.php')) {
         return 'Villas & Cottages at Satori Mulshi — 21 Rooms';
+    }
+
+    if (is_page('press') || is_page_template('template-press.blade.php')) {
+        return 'Press — Satori Mulshi';
     }
 
     return $title;
@@ -57,6 +69,10 @@ function get_custom_meta_description()
 
     if (is_page('gatherings') || is_page_template('template-gathering.blade.php')) {
         return 'Take all twenty-one rooms for up to forty guests';
+    }
+
+    if (is_page('press') || is_page_template('template-press.blade.php')) {
+        return 'What Condé Nast Traveller, Femina, Mumbai Mirror, Manifest Life and The Gourmet Edit saw at Satori, a private retreat of fourteen homes above Mulshi Lake, ninety minutes from Pune.';
     }
 
     return null;
