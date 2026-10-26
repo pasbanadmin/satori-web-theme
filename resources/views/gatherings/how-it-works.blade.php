@@ -18,35 +18,35 @@
   ];
 @endphp
 
-<section class="bg-brand-primary text-brand-sand py-14 lg:py-20">
+<section class="bg-brand-primary text-brand-sand py-14 lg:py-20" aria-labelledby="how-it-works-heading">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
     <div class="mb-10 lg:mb-14 text-center" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
         {{ __('Process', 'sage') }}
       </p>
-      <h2 class="mt-4 font-heading text-4xl font-light leading-tight text-brand-sand sm:text-5xl">
+      <h2 id="how-it-works-heading" class="mt-4 font-heading text-4xl font-light leading-tight text-brand-sand sm:text-5xl">
         {{ __('How it works', 'sage') }}
       </h2>
     </div>
 
-    <div class="grid gap-8 lg:grid-cols-3" data-reveal>
+    <ol class="grid gap-8 lg:grid-cols-3" role="list" data-reveal>
       @foreach ($steps as $item)
-        <div class="border border-brand-sand/15 bg-brand-sand/5 p-8 relative flex flex-col justify-between hover:border-brand-gold/50 transition-colors duration-300">
+        <li class="border border-brand-sand/15 bg-brand-sand/5 p-8 relative flex flex-col justify-between hover:border-brand-gold/50 transition-colors duration-300">
           <div>
-            <span class="font-heading text-5xl font-light text-brand-gold/40 block mb-6">
+            <span class="font-heading text-5xl font-light text-brand-gold/60 block mb-6" aria-hidden="true">
               {{ $item['step'] }}
             </span>
             <h3 class="font-heading text-2xl font-light text-brand-sand mb-3">
               {{ $item['title'] }}
             </h3>
-            <p class="text-sm leading-6 text-brand-sand/70">
+            <p class="text-sm leading-6 text-brand-sand/75">
               {{ $item['body'] }}
             </p>
           </div>
-        </div>
+        </li>
       @endforeach
-    </div>
+    </ol>
 
   </div>
 </section>
