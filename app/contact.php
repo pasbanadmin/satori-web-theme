@@ -21,13 +21,15 @@ function handle_contact_form(): void
     }
 
     // Sanitize fields
-    $name    = sanitize_text_field(wp_unslash($_POST['name'] ?? ''));
-    $email   = sanitize_email(wp_unslash($_POST['email'] ?? ''));
-    $phone   = sanitize_text_field(wp_unslash($_POST['phone'] ?? ''));
-    $subject = sanitize_text_field(wp_unslash($_POST['subject'] ?? ''));
-    $message = sanitize_textarea_field(wp_unslash($_POST['message'] ?? ''));
-    $guests  = sanitize_text_field(wp_unslash($_POST['guests'] ?? ''));
-    $dates   = sanitize_text_field(wp_unslash($_POST['dates'] ?? ''));
+    $name           = sanitize_text_field(wp_unslash($_POST['name'] ?? ''));
+    $email          = sanitize_email(wp_unslash($_POST['email'] ?? ''));
+    $phone          = sanitize_text_field(wp_unslash($_POST['phone'] ?? ''));
+    $guests         = sanitize_text_field(wp_unslash($_POST['guests'] ?? ''));
+    $dates          = sanitize_text_field(wp_unslash($_POST['dates'] ?? ''));
+    $flexible_dates = ! empty($_POST['flexible_dates']);
+    $planning       = sanitize_text_field(wp_unslash($_POST['planning'] ?? ''));
+    $preferred_stay = sanitize_text_field(wp_unslash($_POST['preferred_stay'] ?? ''));
+    $notes          = sanitize_textarea_field(wp_unslash($_POST['notes'] ?? $_POST['message'] ?? ''));
 
     // Server-side validation
     $errors = [];
@@ -40,28 +42,41 @@ function handle_contact_form(): void
         $errors['email'] = __('A valid email address is required.', 'sage');
     }
 
-    if (empty($message)) {
-        $errors['message'] = __('Please tell us a little about your enquiry.', 'sage');
-    }
-
     if (! empty($errors)) {
         wp_send_json_error(['fields' => $errors], 422);
     }
 
-    // Build email body
-    $to      = get_option('admin_email');
-    $subject_line = sprintf('[Satori Enquiry] %s — from %s', $subject ?: 'General Enquiry', $name);
+    // Recipient email: use Global Settings email (default: satori.reservations@pasban.co) with admin_email fallback
+    $recipient = function_exists(__NAMESPACE__ . '\\get_global_setting')
+        ? get_global_setting('contact_email', 'satori.reservations@pasban.co')
+        : 'satori.reservations@pasban.co';
+    $to = ! empty($recipient) ? $recipient : get_option('admin_email');
+    $to = apply_filters('satori_contact_recipient', $to);
 
+    // Build subject line
+    $subject_category = $planning ?: ($preferred_stay ?: 'Website Enquiry');
+    $subject_line     = sprintf('[Satori Enquiry] %s — from %s', $subject_category, $name);
+
+    // Build email body
     $body  = "New enquiry received from the Satori website.\n\n";
-    $body .= "---\n";
-    $body .= "Name:    {$name}\n";
-    $body .= "Email:   {$email}\n";
-    if ($phone)   $body .= "Phone:   {$phone}\n";
-    if ($guests)  $body .= "Guests:  {$guests}\n";
-    if ($dates)   $body .= "Dates:   {$dates}\n";
-    if ($subject) $body .= "Subject: {$subject}\n";
-    $body .= "---\n\n";
-    $body .= "Message:\n{$message}\n";
+    $body .= "--------------------------------------------------\n";
+    $body .= "Guest Name:     {$name}\n";
+    $body .= "Email:          {$email}\n";
+    if ($phone)          $body .= "Phone:          {$phone}\n";
+    if ($guests)         $body .= "Guests:         {$guests}\n";
+    if ($dates) {
+        $body .= "Dates:          {$dates}" . ($flexible_dates ? " (Flexible)\n" : "\n");
+    } elseif ($flexible_dates) {
+        $body .= "Dates:          Flexible\n";
+    }
+    if ($planning)       $body .= "Planning:       {$planning}\n";
+    if ($preferred_stay) $body .= "Preferred Stay: {$preferred_stay}\n";
+    $body .= "--------------------------------------------------\n\n";
+    if ($notes) {
+        $body .= "Notes / Message:\n{$notes}\n\n";
+    }
+    $body .= "Submitted at: " . current_time('mysql') . "\n";
+    $body .= "Page URL:     " . esc_url_raw(wp_get_referer() ?: home_url('/contact/')) . "\n";
 
     $headers = [
         'Content-Type: text/plain; charset=UTF-8',
