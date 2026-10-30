@@ -317,8 +317,7 @@
         valid = false;
       }
 
-      const message = form.querySelector('[name="message"]').value.trim();
-      if (!message) { showFieldError('message', 'Please tell us a little about your enquiry.'); valid = false; }
+
 
       return valid;
     }
