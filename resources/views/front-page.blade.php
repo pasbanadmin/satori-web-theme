@@ -21,6 +21,8 @@
 
   @include('home.gatherings-section')
 
+  @include('home.offsites-strip')
+
   @include('home.reviews-section')
 
   @include('home.location')

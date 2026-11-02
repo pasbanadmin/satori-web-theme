@@ -35,6 +35,13 @@
       'position' => 'object-bottom',
       'alt' => __("Chef's table dinner at Satori", 'sage'),
     ],
+    [
+      'name' => __('Birding at Dawn', 'sage'),
+      'line' => __('The estate wakes up before you do.', 'sage'),
+      'image' => '/wp-content/uploads/2026/11/bird-shrike-branch.webp',
+      'position' => 'object-center',
+      'alt' => __('Birding at dawn at Satori', 'sage'),
+    ],
   ];
 @endphp
 

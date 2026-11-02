@@ -17,5 +17,7 @@
 
   @include('about.hospitality')
 
+  @include('about.land-strip')
+
   @include('about.closing')
 @endsection

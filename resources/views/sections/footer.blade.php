@@ -6,6 +6,7 @@
     ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences')],
     ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings')],
     ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way')],
+    ['label' => __('The Land', 'sage'), 'url' => home_url('/the-land')],
     ['label' => __('Press', 'sage'), 'url' => home_url('/press')],
     ['label' => __('Contact Us', 'sage'), 'url' => home_url('/contact-us')],
   ];

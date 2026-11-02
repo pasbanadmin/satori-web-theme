@@ -91,7 +91,7 @@
   ];
 @endphp
 
-<section id="reviews" class="relative overflow-hidden bg-[#f7f3eb] pt-16 lg:pt-20" data-reviews-section>
+<section id="reviews" class="relative overflow-hidden bg-[#f7f3eb] pt-8 lg:pt-10" data-reviews-section>
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <!-- Header -->
     <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end mb-0 lg:mb-16" data-reveal>
@@ -148,6 +148,38 @@
     <div class="mt-6 lg:mt-8">
       {!! do_shortcode('[trustindex no-registration=google]') !!}
     </div>
+
+    <!-- Read all reviews on Google link -->
+    <div class="mt-8 mb-6 text-center">
+      <a href="https://maps.google.com/?cid=13398371662192921292" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-brand-ink/80 hover:text-brand-gold font-medium transition-colors">
+        <span>{{ __('Read all reviews on Google', 'sage') }}</span>
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        function relabelReviewButtons() {
+          const section = document.getElementById('reviews');
+          if (!section) return;
+          const candidates = section.querySelectorAll('a, button, .ti-btn, .ti-header-write-btn');
+          candidates.forEach(function (el) {
+            if (el.textContent && el.textContent.trim().toLowerCase() === 'write a review') {
+              el.textContent = 'Review us on Google';
+            }
+          });
+        }
+        relabelReviewButtons();
+        var section = document.getElementById('reviews');
+        if (section && window.MutationObserver) {
+          var observer = new MutationObserver(function () {
+            relabelReviewButtons();
+          });
+          observer.observe(section, { childList: true, subtree: true });
+        }
+      });
+    </script>
 
     {{-- Swiper Slider (Commented out)
     <div class="swiper !overflow-visible" data-reviews-swiper>

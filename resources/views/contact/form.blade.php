@@ -208,7 +208,7 @@
                 <option value="">{{ __('Select option…', 'sage') }}</option>
                 <option value="Leisure stay">{{ __('Leisure stay', 'sage') }}</option>
                 <option value="Celebration or wedding">{{ __('Celebration or wedding', 'sage') }}</option>
-                <option value="Offsite or team retreat">{{ __('Offsite or team retreat', 'sage') }}</option>
+                <option value="Offsite or team retreat" {{ in_array(strtolower(request()->query('planning', request()->query('occasion', request()->query('type', '')))), ['offsite', 'offsite-or-team-retreat', 'retreat', 'buyout']) ? 'selected' : '' }}>{{ __('Offsite or team retreat', 'sage') }}</option>
                 <option value="Hosted retreat">{{ __('Hosted retreat', 'sage') }}</option>
                 <option value="Not sure yet">{{ __('Not sure yet', 'sage') }}</option>
               </select>

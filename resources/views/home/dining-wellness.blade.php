@@ -3,7 +3,7 @@
     [
       'label' => __('Dining', 'sage'),
       'heading' => __('The garden is not a feature. It is the kitchen.', 'sage'),
-      'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands', 'sage'),
+      'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands. Cinnamon, nutmeg, clove, black pepper, kokum and curry leaf grow a few steps from the kitchen.', 'sage'),
       'cta' => __('Book Your Stay', 'sage'),
       'anchor' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
       'image' => '/wp-content/uploads/2026/08/Dining-split-section-—-dining-chefs-table.webp',
@@ -20,6 +20,17 @@
       'alt' => __('Wellness at Satori, calm and quiet retreat space', 'sage'),
       'reverse' => true,
     ],
+    [
+      'label' => __('The Land', 'sage'),
+      'heading' => __('First you hear the birds.', 'sage'),
+      'heading_italic' => __('Then you feel quiet inside.', 'sage'),
+      'copy' => __('The sun comes up over the lake. The birds start to sing. You walk out with a cup of tea. The grass is wet, and the trees are full of fruit. Two hundred kinds of plants grow here, and nothing is in a hurry. After one day, you feel slow and calm. After two, you feel like you again.', 'sage'),
+      'cta' => __('Walk the Land', 'sage'),
+      'anchor' => '/the-land',
+      'image' => '/wp-content/uploads/2026/11/land-lake-sunset.webp',
+      'alt' => __('Sunset over the lake at Satori', 'sage'),
+      'reverse' => false,
+    ],
   ];
 @endphp
 
@@ -28,7 +39,7 @@
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="mb-12 text-left lg:mb-14" data-reveal>
       <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
-        {{ __('Dining & Wellness', 'sage') }}
+        {{ __('Dining, Wellness & The Land', 'sage') }}
       </p>
 
       <h2 class="mt-4 max-w-4xl font-heading text-4xl font-light leading-tight text-brand-ink">
@@ -41,7 +52,8 @@
         <div class="group relative overflow-hidden {{ $block['reverse'] ? 'lg:order-2' : '' }}" data-reveal>
           <img
             class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-            src="{{ $block['image'] }}" alt="{{ $block['alt'] }}">
+            src="{{ $block['image'] }}" alt="{{ $block['alt'] }}"
+            style="aspect-ratio: 4/3; width: 100%; object-fit: cover;">
           <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/35 via-transparent to-transparent"></div>
         </div>
 
@@ -52,6 +64,9 @@
 
           <h3 class="mt-4 font-heading text-3xl font-light leading-tight text-brand-ink sm:text-4xl">
             {{ $block['heading'] }}
+            @if (!empty($block['heading_italic']))
+              <br><span class="italic font-normal">{{ $block['heading_italic'] }}</span>
+            @endif
           </h3>
 
           <p class="mt-6 max-w-lg text-base leading-8 text-brand-muted sm:text-[16px]">
