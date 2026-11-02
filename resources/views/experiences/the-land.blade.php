@@ -6,9 +6,18 @@
 <section class="bg-[#f7f3eb] pb-14 lg:pb-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      {{-- Photo Left on Desktop --}}
+      <div class="group relative overflow-hidden" data-reveal>
+        <img
+          class="aspect-[3/2] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          style="aspect-ratio: 3/2; width: 100%; object-fit: cover;"
+          src="{{ $landImage }}" alt="{{ $landAlt }}">
+      </div>
+
+      {{-- Text Right on Desktop --}}
       <div data-reveal>
         <p class="text-[0.75rem] uppercase tracking-[0.3em]">
-          <span class="text-brand-gold">02</span>
+          <span class="text-brand-gold">03</span>
           <span class="mx-2 text-brand-ink/30" aria-hidden="true">—</span>
           <span class="text-brand-muted">{{ __('The Land', 'sage') }}</span>
         </p>
@@ -20,12 +29,6 @@
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
           {{ __('Walk the Nakshatra garden, the herb and medicinal plots, the orchards and the flower-lined paths. Cycle the grounds. In season, join a plucking — fruit from the trees, vegetables from the beds — and then eat what you picked a few hours later. Explore trails and viewpoints around Mulshi with a guide who knows which ones are worth the climb.', 'sage') }}
         </p>
-      </div>
-
-      <div class="group relative overflow-hidden" data-reveal>
-        <img
-          class="aspect-[3/2] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-          src="{{ $landImage }}" alt="{{ $landAlt }}">
       </div>
     </div>
   </div>

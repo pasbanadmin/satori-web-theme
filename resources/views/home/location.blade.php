@@ -1,8 +1,8 @@
 @php
   $locationStats = [
-    ['value' => '1.5', 'unit' => __('hrs', 'sage'), 'label' => __('Pune', 'sage')],
-    ['value' => '3', 'unit' => __('hrs', 'sage'), 'label' => __('Mumbai', 'sage')],
-    ['value' => '45', 'unit' => __('min', 'sage'), 'label' => __('Pune Airport', 'sage')],
+    ['value' => '2', 'unit' => __('hrs', 'sage'), 'label' => __('Pune', 'sage')],
+    ['value' => '3.5', 'unit' => __('hrs', 'sage'), 'label' => __('Mumbai', 'sage')],
+    ['value' => '2.5', 'unit' => __('hrs', 'sage'), 'label' => __('Pune Airport', 'sage')],
   ];
 @endphp
 

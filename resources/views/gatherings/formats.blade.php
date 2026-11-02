@@ -19,6 +19,10 @@
       'number' => '04',
       'title' => __('Offsites & leadership retreats', 'sage'),
       'body' => __('For teams that need to think rather than present. Meeting space, full board, and evenings that actually build something.', 'sage'),
+      'link' => [
+        'label' => __('See who has held theirs here →', 'sage'),
+        'url' => '#offsites',
+      ],
     ],
     [
       'number' => '05',
@@ -53,9 +57,14 @@
             <h3 id="format-title-{{ $loop->index }}" class="font-heading text-xl sm:text-2xl font-light text-brand-primary mb-3">
               {{ $format['title'] }}
             </h3>
-            <p class="text-sm text-brand-primary/80 leading-6">
+            <p class="text-sm leading-6 text-[#16100C]/80" style="color: rgba(22, 16, 12, 0.8);">
               {{ $format['body'] }}
             </p>
+            @if (!empty($format['link']))
+              <a href="{{ $format['link']['url'] }}" class="mt-4 inline-flex items-center text-xs uppercase tracking-[0.2em] text-brand-primary hover:text-brand-gold font-medium transition-colors">
+                {{ $format['link']['label'] }}
+              </a>
+            @endif
           </div>
         </article>
       @endforeach

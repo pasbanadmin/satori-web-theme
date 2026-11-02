@@ -13,6 +13,8 @@
 
   @include('gatherings.formats')
 
+  @include('gatherings.offsites')
+
   @include('gatherings.how-it-works')
 
   @include('gatherings.closing')

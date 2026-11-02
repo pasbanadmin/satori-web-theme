@@ -60,7 +60,7 @@
         {{ __('Estate Capacity & Specifications', 'sage') }}
       </h2>
       <p class="mt-3 text-sm text-brand-sand/75">
-        {{ __('Nearest Airport: Pune — 2 hours drive', 'sage') }}
+        {{ __('Nearest Airport: Pune — 2.5 hours drive', 'sage') }}
       </p>
     </div>
 

@@ -6,15 +6,10 @@
 <section class="bg-[#f7f3eb] py-14 lg:py-20">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
     <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-      <div class="group relative overflow-hidden" data-reveal>
-        <img
-          class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-          src="{{ $eveningImage }}" alt="{{ $eveningAlt }}">
-      </div>
-
+      {{-- Text Left on Desktop --}}
       <div data-reveal>
         <p class="text-[0.75rem] uppercase tracking-[0.3em]">
-          <span class="text-brand-gold">05</span>
+          <span class="text-brand-gold">06</span>
           <span class="mx-2 text-brand-ink/30" aria-hidden="true">—</span>
           <span class="text-brand-muted">{{ __('Evening', 'sage') }}</span>
         </p>
@@ -30,6 +25,14 @@
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
           {{ __('This is the hour for slower dinners, warm conversation, and the sense that the day asked nothing of you.', 'sage') }}
         </p>
+      </div>
+
+      {{-- Photo Right on Desktop --}}
+      <div class="group relative overflow-hidden" data-reveal>
+        <img
+          class="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          style="aspect-ratio: 4/3; width: 100%; object-fit: cover;"
+          src="{{ $eveningImage }}" alt="{{ $eveningAlt }}">
       </div>
     </div>
   </div>
