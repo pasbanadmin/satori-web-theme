@@ -18,7 +18,7 @@
     <div data-animate="true" class="max-w-sm xl:max-w-[19rem]">
       <h2 id="offsites-band-heading"
         class="text-balance font-display italic leading-[1.2] text-foreground text-2xl md:text-[1.4rem] font-light">
-        {{ __('Offsites at Satori, Mulshi.', 'sage') }}
+        {{ __('Offsites at Satori Mulshi.', 'sage') }}
       </h2>
     </div>
 
@@ -28,22 +28,19 @@
         class="flex flex-wrap items-center gap-x-8 gap-y-6 md:gap-x-10 lg:gap-x-12">
         @foreach ($stripLogos as $logo)
           <li class="flex items-center" title="{{ $logo['name'] }}">
-            <div
-              class="transition-opacity duration-300 opacity-70 hover:opacity-100"
-              style="
-                width: {{ $logo['w'] }}px;
-                height: {{ $logo['h'] }}px;
-                background-color: #16100C;
-                -webkit-mask-image: url('{{ $logo['file'] }}');
-                mask-image: url('{{ $logo['file'] }}');
-                -webkit-mask-size: contain;
-                mask-size: contain;
-                -webkit-mask-repeat: no-repeat;
-                mask-repeat: no-repeat;
-                -webkit-mask-position: center;
-                mask-position: center;
-              "
-            ></div>
+            <div class="transition-opacity duration-300 opacity-70 hover:opacity-100" style="
+                  width: {{ $logo['w'] }}px;
+                  height: {{ $logo['h'] }}px;
+                  background-color: #16100C;
+                  -webkit-mask-image: url('{{ $logo['file'] }}');
+                  mask-image: url('{{ $logo['file'] }}');
+                  -webkit-mask-size: contain;
+                  mask-size: contain;
+                  -webkit-mask-repeat: no-repeat;
+                  mask-repeat: no-repeat;
+                  -webkit-mask-position: center;
+                  mask-position: center;
+                "></div>
           </li>
         @endforeach
       </ul>
@@ -60,4 +57,3 @@
 
   </div>
 </section>
-

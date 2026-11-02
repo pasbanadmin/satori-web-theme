@@ -27,10 +27,6 @@ add_filter('pre_get_document_title', function ($title) {
         return 'Press — Satori Mulshi';
     }
 
-    if (is_page('the-land') || is_page_template('template-the-land.blade.php') || is_page_template('page-the-land.blade.php')) {
-        return 'The Land: Flora and Fauna at Satori, Mulshi';
-    }
-
     return $title;
 }, 99);
 
@@ -43,10 +39,6 @@ add_filter('wpseo_title', function ($title) {
         return 'Press — Satori Mulshi';
     }
 
-    if (is_page('the-land') || is_page_template('template-the-land.blade.php') || is_page_template('page-the-land.blade.php')) {
-        return 'The Land: Flora and Fauna at Satori, Mulshi';
-    }
-
     return $title;
 }, 99);
 
@@ -57,10 +49,6 @@ add_filter('rank_math/frontend/title', function ($title) {
 
     if (is_page('press') || is_page_template('template-press.blade.php')) {
         return 'Press — Satori Mulshi';
-    }
-
-    if (is_page('the-land') || is_page_template('template-the-land.blade.php') || is_page_template('page-the-land.blade.php')) {
-        return 'The Land: Flora and Fauna at Satori, Mulshi';
     }
 
     return $title;
