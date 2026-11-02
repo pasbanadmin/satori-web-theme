@@ -144,6 +144,70 @@
       --}}
     </div>
 
+        {{-- S.2 Multi-Platform Rating Snapshot Strip --}}
+    <div class="mt-8 mb-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 py-3 px-6 rounded-full border border-brand-ink/10 bg-brand-sand/50 text-[0.72rem] uppercase tracking-[0.18em] text-brand-ink/80 max-w-4xl mx-auto shadow-sm">
+      <span class="inline-flex items-center gap-1.5 font-medium"><span class="text-brand-primary font-semibold">Google</span> <span class="text-brand-gold">4.8 ★</span></span>
+      <span class="text-brand-ink/25 hidden sm:inline" aria-hidden="true">·</span>
+      <span class="inline-flex items-center gap-1.5 font-medium"><span class="text-brand-primary font-semibold">SaffronStays</span> <span class="text-brand-gold">4.8 ★</span></span>
+      <span class="text-brand-ink/25 hidden sm:inline" aria-hidden="true">·</span>
+      <span class="inline-flex items-center gap-1.5 font-medium"><span class="text-brand-primary font-semibold">Goibibo</span> <span class="text-brand-gold">4.6 ★</span></span>
+      <span class="text-brand-ink/25 hidden sm:inline" aria-hidden="true">·</span>
+      <span class="inline-flex items-center gap-1.5 font-medium"><span class="text-brand-primary font-semibold">Booking.com</span> <span class="text-brand-gold">8.5/10</span></span>
+    </div>
+
+    {{-- S.3 Curated Quotes Block across Platforms --}}
+    @php
+      $curatedQuotes = [
+        [
+          'quote' => __('Every detail was thoughtfully curated. The staff were warm and attentive, the food was unbelievably tasty and fresh (truly farm-to-table), and the villas were stunningly designed.', 'sage'),
+          'author' => 'Victoria Budge',
+          'source' => 'Google Review',
+          'tag' => __('Farm-to-Table Dining', 'sage'),
+        ],
+        [
+          'quote' => __('Satori is truly a hidden gem in Mulshi — an amazing place that beautifully blends nature, comfort, and creativity. Each concept room feels like a new experience.', 'sage'),
+          'author' => 'Dharam Valia',
+          'source' => 'SaffronStays Guest',
+          'tag' => __('Concept Living', 'sage'),
+        ],
+        [
+          'quote' => __('We loved strolling and cycling across the 8-acre grounds, the pool overlooking The Nest, and the organic kitchen garden. Outstanding care and peaceful energy.', 'sage'),
+          'author' => 'Vaibhav Prakash',
+          'source' => 'Booking.com Verified',
+          'tag' => __('8-Acre Grounds', 'sage'),
+        ],
+        [
+          'quote' => __('From the moment we arrived, we were enveloped in warmth and hospitality. A serene lake mirroring the sky, forest air, and the melodious symphony of birds.', 'sage'),
+          'author' => 'Raghvendra Sharma',
+          'source' => 'Goibibo Verified',
+          'tag' => __('Hospitality & Nature', 'sage'),
+        ],
+      ];
+    @endphp
+
+    <div class="mb-14 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      @foreach ($curatedQuotes as $item)
+        <article class="p-6 sm:p-7 rounded-sm border border-brand-ink/10 bg-brand-sand/40 flex flex-col justify-between hover:border-brand-gold/50 transition-all duration-300">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span class="text-[0.62rem] uppercase tracking-[0.2em] text-brand-gold font-medium">
+                {{ $item['tag'] }}
+              </span>
+              <span class="text-xs text-brand-gold tracking-widest" aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="font-heading italic text-base sm:text-lg text-brand-ink/90 leading-relaxed mb-6">
+              &ldquo;{{ $item['quote'] }}&rdquo;
+            </blockquote>
+          </div>
+
+          <div class="pt-4 border-t border-brand-ink/10 flex items-center justify-between text-xs text-brand-muted">
+            <span class="font-medium text-brand-ink">{{ $item['author'] }}</span>
+            <span class="uppercase tracking-[0.16em] text-[0.65rem] text-brand-gold font-medium">{{ $item['source'] }}</span>
+          </div>
+        </article>
+      @endforeach
+    </div>
+
     <!-- Trustindex Google Reviews Widget -->
     <div class="mt-6 lg:mt-8">
       {!! do_shortcode('[trustindex no-registration=google]') !!}

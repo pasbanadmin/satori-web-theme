@@ -19,7 +19,7 @@
     [
       'label' => __('Sleeping Capacity', 'sage'),
       'is_numeric' => true,
-      'target' => 40,
+      'target' => 60,
       'prefix' => __('Up to ', 'sage'),
       'suffix' => '',
       'detail' => __('Full estate occupancy', 'sage')

@@ -36,7 +36,7 @@
 
     <div class="flex items-center gap-3">
       <a class="hidden items-center justify-center rounded-full border px-5 py-2 text-sm uppercase tracking-[0.02em] transition-all duration-300 sm:inline-flex"
-        href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+        href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms"
         target="_blank" rel="noopener noreferrer" data-header-book-cta>
         {{ __('Book Your Stay', 'sage') }}
       </a>
@@ -77,7 +77,7 @@
     </ul>
 
     <a class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-gold px-6 py-3 text-sm uppercase tracking-[0.02em] text-brand-primary transition-colors duration-300 hover:bg-brand-sand hover:text-white"
-      href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+      href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms"
       target="_blank" rel="noopener noreferrer">
       {{ __('Book Your Stay', 'sage') }}
     </a>

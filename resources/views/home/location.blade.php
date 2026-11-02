@@ -2,7 +2,7 @@
   $locationStats = [
     ['value' => '2', 'unit' => __('hrs', 'sage'), 'label' => __('Pune', 'sage')],
     ['value' => '3.5', 'unit' => __('hrs', 'sage'), 'label' => __('Mumbai', 'sage')],
-    ['value' => '2.5', 'unit' => __('hrs', 'sage'), 'label' => __('Pune Airport', 'sage')],
+    ['value' => '2', 'unit' => __('hrs', 'sage'), 'label' => __('Pune Airport', 'sage')],
   ];
 @endphp
 

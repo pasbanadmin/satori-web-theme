@@ -1,6 +1,6 @@
 @php
-  $gatheringsImage = '/wp-content/uploads/2026/08/Gatherings-band-—-gatherings-lawn.webp';
-  $gatheringsAlt = __('Gatherings at Satori, the whole estate to yourself', 'sage');
+  $gatheringsImage = '/wp-content/uploads/2026/11/01_gatherings-hero_nest-long-table.webp';
+  $gatheringsAlt = __('The long table in The Nest at Satori, set for a full-estate gathering', 'sage');
 @endphp
 
 <section id="gatherings"
@@ -8,7 +8,7 @@
   data-gatherings>
   <div class="absolute inset-0">
     <img class="h-full w-full object-cover" src="{{ $gatheringsImage }}" alt="{{ $gatheringsAlt }}"
-      data-gatherings-image>
+      style="object-position: center 60%;" data-gatherings-image>
   </div>
 
   <div class="absolute inset-0 bg-brand-primary/70"></div>
@@ -23,7 +23,7 @@
     </h2>
 
     <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-brand-sand/85 sm:text-lg" data-gatherings-item>
-      {{ __('Twenty-one rooms. Up to forty guests, one estate, no other names in the register. Satori takes buyouts for weddings, milestone celebrations, family reunions and offsites that deserve better than a ballroom.', 'sage') }}
+      {{ __('Twenty-one rooms. Up to sixty guests, one estate, no other names in the register. Satori takes buyouts for weddings, milestone celebrations, family reunions and offsites that deserve better than a ballroom.', 'sage') }}
     </p>
 
     <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-gold px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"

@@ -15,6 +15,12 @@
 
   @include('gatherings.offsites')
 
+  @include('gatherings.amenities')
+
+  @include('gatherings.packages')
+
+  @include('gatherings.quote')
+
   @include('gatherings.how-it-works')
 
   @include('gatherings.closing')

@@ -11,31 +11,55 @@
     <div data-animate="true" class="text-foreground/70">
       <ul role="list" aria-label="{{ __('Publications that have written about Satori', 'sage') }}"
         class="flex flex-wrap items-center gap-x-8 gap-y-6 md:gap-x-10 lg:gap-x-12">
-        <li class="flex items-center" title="Manifest Life">
-          <img src="{{ content_url('/uploads/2026/10/manifest-life.webp') }}" alt="Manifest Life"
-            class="h-6 md:h-7 lg:h-8 w-auto object-contain shrink-0 opacity-75 hover:opacity-100 transition-opacity"
-            loading="lazy" />
-        </li>
-        <li class="flex items-center" title="The Gourmet Edit">
-          <img src="{{ content_url('/uploads/2026/10/the-gourmet-edit.webp') }}" alt="The Gourmet Edit"
-            class="h-7 md:h-8 lg:h-9 w-auto object-contain shrink-0 opacity-75 hover:opacity-100 transition-opacity"
-            loading="lazy" />
-        </li>
-        <li class="flex items-center" title="Femina">
-          <img src="{{ content_url('/uploads/2026/10/femina.svg') }}" alt="Femina"
-            class="h-5 md:h-6 lg:h-6 w-auto object-contain shrink-0 opacity-75 hover:opacity-100 transition-opacity"
-            loading="lazy" />
-        </li>
-        <li class="flex items-center" title="Mumbai Mirror">
-          <img src="{{ content_url('/uploads/2026/10/mumbai-mirror.svg') }}" alt="Mumbai Mirror"
-            class="h-4 md:h-5 lg:h-5 w-auto object-contain shrink-0 opacity-75 hover:opacity-100 transition-opacity"
-            loading="lazy" />
-        </li>
+        
+        {{-- 1. Condé Nast Traveller India --}}
         <li class="flex items-center" title="Condé Nast Traveller India">
-          <img src="{{ content_url('/uploads/2026/10/conde-nast-traveller.svg') }}" alt="Condé Nast Traveller India"
-            class="h-6 md:h-7 lg:h-8 w-auto object-contain shrink-0 opacity-75 hover:opacity-100 transition-opacity"
-            loading="lazy" />
+          <a href="https://www.cntraveller.in/story/7-beautiful-new-hotels-in-the-mountains/" target="_blank" rel="noopener noreferrer" class="opacity-75 hover:opacity-100 transition-opacity">
+            <img src="{{ content_url('/uploads/2026/10/conde-nast-traveller.svg') }}" alt="Condé Nast Traveller India"
+              class="h-6 md:h-7 lg:h-8 w-auto object-contain shrink-0"
+              loading="lazy" />
+          </a>
         </li>
+
+        {{-- 2. Femina --}}
+        <li class="flex items-center" title="Femina">
+          <a href="https://www.femina.in/wellness/de-stress/looking-for-a-luxury-retreat-near-mumbai-this-one-is-worth-the-drive-289517.html" target="_blank" rel="noopener noreferrer" class="opacity-75 hover:opacity-100 transition-opacity">
+            <img src="{{ content_url('/uploads/2026/10/femina.svg') }}" alt="Femina"
+              class="h-5 md:h-6 lg:h-6 w-auto object-contain shrink-0"
+              loading="lazy" />
+          </a>
+        </li>
+
+        {{-- 3. Mumbai Mirror (In print) --}}
+        <li class="flex items-center gap-2" title="Mumbai Mirror (In print)">
+          <a href="{{ home_url('/press#pieces') }}" class="flex items-center gap-1.5 opacity-75 hover:opacity-100 transition-opacity">
+            <img src="{{ content_url('/uploads/2026/10/mumbai-mirror.svg') }}" alt="Mumbai Mirror"
+              class="h-4 md:h-5 lg:h-5 w-auto object-contain shrink-0"
+              loading="lazy" />
+            <span class="text-[0.55rem] uppercase tracking-[0.16em] text-brand-primary/60 border border-brand-ink/20 rounded px-1.5 py-0.5 whitespace-nowrap">
+              {{ __('In print', 'sage') }}
+            </span>
+          </a>
+        </li>
+
+        {{-- 4. The Gourmet Edit --}}
+        <li class="flex items-center" title="The Gourmet Edit">
+          <a href="https://thegourmetedit.com/review-satori-mulshi-sustainable-lakeside-retreat-near-mumbai/" target="_blank" rel="noopener noreferrer" class="opacity-75 hover:opacity-100 transition-opacity">
+            <img src="{{ content_url('/uploads/2026/10/the-gourmet-edit.webp') }}" alt="The Gourmet Edit"
+              class="h-7 md:h-8 lg:h-9 w-auto object-contain shrink-0"
+              loading="lazy" />
+          </a>
+        </li>
+
+        {{-- 5. Manifest Life --}}
+        <li class="flex items-center" title="Manifest Life">
+          <a href="https://www.manifestmagazine.in/trends-culture/travel/mahabaleshwar-to-mussoorie-where-to-book-your-boutique-destination-wedding" target="_blank" rel="noopener noreferrer" class="opacity-75 hover:opacity-100 transition-opacity">
+            <img src="{{ content_url('/uploads/2026/10/manifest-life.webp') }}" alt="Manifest Life"
+              class="h-6 md:h-7 lg:h-8 w-auto object-contain shrink-0"
+              loading="lazy" />
+          </a>
+        </li>
+
       </ul>
     </div>
 

@@ -111,12 +111,12 @@
     {{-- Bottom Bar --}}
     <div
       class="flex flex-col gap-3 border-t border-brand-sand/10 py-6 text-[0.6875rem] uppercase tracking-[0.18em] text-brand-sand/40 sm:flex-row sm:items-center sm:justify-between">
-      <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+      <div class="flex flex-col gap-1 text-left">
         <p>
           &copy; {{ date('Y') }} {{ __('Satori Living Pvt Ltd', 'sage') }}
         </p>
-        <span aria-hidden="true">·</span>
-        <p>
+
+        <p class="text-[11px] tracking-[0.14em] text-brand-sand/60">
           {{ __('Managed by Pasban — The Gatekeeper', 'sage') }}
         </p>
       </div>

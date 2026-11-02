@@ -68,11 +68,11 @@ function get_custom_meta_description()
     }
 
     if (is_page('gatherings') || is_page_template('template-gathering.blade.php')) {
-        return 'Take all twenty-one rooms for up to forty guests';
+        return 'Take all twenty-one rooms for up to sixty guests';
     }
 
     if (is_page('press') || is_page_template('template-press.blade.php')) {
-        return 'What Condé Nast Traveller, Femina, Mumbai Mirror, Manifest Life and The Gourmet Edit saw at Satori, a private retreat of fourteen homes above Mulshi Lake, two hours from Pune.';
+        return 'What Condé Nast Traveller, Femina, Mumbai Mirror, Manifest Life and The Gourmet Edit saw at Satori, a private estate of twenty-one rooms above Mulshi Lake, in the Sahyadris near Pune.';
     }
 
     if (is_page('the-land') || is_page_template('template-the-land.blade.php') || is_page_template('page-the-land.blade.php')) {

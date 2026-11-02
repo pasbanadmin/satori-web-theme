@@ -6,8 +6,8 @@ Template Name: Stays
 
 @section('content')
   @php
-    $heroImage = '/wp-content/uploads/2026/08/28-Movie-Night-and-Bonfire-on-the-Lawn-1.webp';
-    $heroAlt = __('Private homes above Mulshi Lake at Satori', 'sage');
+    $heroImage = '/wp-content/uploads/2026/11/07_stays-hero_dawn-over-mulshi-lake.webp';
+    $heroAlt = __('Dawn over Mulshi Lake from the Satori estate', 'sage');
     $estateImage = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
 
     $gallerySlide = function ($src, $position = 'object-center') {
@@ -33,7 +33,7 @@ Template Name: Stays
         'offset' => '',
         'ratio' => 'aspect-[4/5]',
         'gallery' => [
-          '/wp-content/uploads/2026/08/Cottages-and-the-Sahyadri-hills.webp',
+          '/wp-content/uploads/2026/11/08_aves-lead_bedroom-opening-to-verandah.webp',
           '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
           '/wp-content/uploads/2026/08/Bedroom-12-—-bed-and-garden-doors.webp',
           '/wp-content/uploads/2026/08/Bedroom-10-—-bed-under-the-beamed-ceiling.webp',
@@ -41,7 +41,7 @@ Template Name: Stays
           '/wp-content/uploads/2026/08/26_202309051441007901-8b93e724-cb2d-4bf1-9e19-12024a69006c.webp'
         ],
         'gallery_mobile' => [
-          '/wp-content/uploads/2026/08/Cottages-and-the-Sahyadri-hills.webp',
+          '/wp-content/uploads/2026/11/08_aves-lead_bedroom-opening-to-verandah.webp',
           '/wp-content/uploads/2026/08/21_202309051441007901-954db27c-675a-4c2e-801e-a217839b712f.webp',
           '/wp-content/uploads/2026/08/Bedroom-12-—-bed-and-garden-doors.webp',
           '/wp-content/uploads/2026/08/Bedroom-10-—-bed-under-the-beamed-ceiling.webp',
@@ -305,11 +305,11 @@ Template Name: Stays
       'category' => '—',
       'eyebrow' => __('Full Buyout', 'sage'),
       'heading' => __('The whole place. No other names in the register.', 'sage'),
-      'description' => __('Satori can be taken in its entirety - all twenty-one rooms and every shared space, for up to forty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
+      'description' => __('Satori can be taken in its entirety - all twenty-one rooms and every shared space, for up to sixty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
       'units' => __('7 (categories)', 'sage'),
       'stays' => 21,
       'bedrooms' => '21',
-      'sleeps' => '40',
+      'sleeps' => __('Up to 60', 'sage'),
       'setting' => __('Entire property', 'sage'),
       'image' => '$estateImage',
       'cta' => __('Enquire About the Estate', 'sage'),
@@ -329,18 +329,18 @@ Template Name: Stays
 
     <section class="relative flex min-h-[calc(100vh-7rem)] items-end overflow-hidden bg-brand-primary text-brand-sand"
       data-stays-hero>
-      <img class="absolute inset-0 h-full w-full object-cover object-bottom" src="{{ $heroImage }}" alt="{{ $heroAlt }}"
+      <img class="absolute inset-0 h-full w-full object-cover" style="object-position: center 45%;" src="{{ $heroImage }}" alt="{{ $heroAlt }}"
         data-stays-hero-image>
 
-      <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/85 via-brand-primary/50 to-transparent"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(16, 12, 9, 0.88) 0%, rgba(16, 12, 9, 0.65) 25%, rgba(16, 12, 9, 0.35) 45%, rgba(16, 12, 9, 0) 65%); pointer-events: none;"></div>
 
       <div class="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16 pb-14 lg:pb-20" data-stays-hero-item>
-        <h1 class="mt-4 font-heading text-5xl font-light leading-none text-brand-sand sm:text-6xl lg:text-7xl">
+        <h1 class="mt-4 font-heading text-5xl font-light leading-none text-brand-sand sm:text-6xl lg:text-7xl" style="text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);">
           {{ __('STAYS', 'sage') }}
         </h1>
 
         <div class="mt-4 flex items-center gap-8">
-          <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading">
+          <p class="max-w-2xl md:text-2xl text-lg leading-8 text-brand-sand font-heading" style="text-shadow: 0 1px 12px rgba(0, 0, 0, 0.85);">
             {{ __('Twenty-one rooms across a lakeside estate.', 'sage') }}
           </p>
         </div>
@@ -409,7 +409,7 @@ Template Name: Stays
             'view' => __('The estate gardens in close frame — greenery, birdsong, and very little else.', 'sage'),
             'idealFor' => __('Couples, solo travellers, small families with a child, and anyone who wants a room to sleep in and an estate to live on.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
           __('Lake Wing — Junior Suite', 'sage') => [
             'eyebrow' => __('LAKE VIEW SUITES · TWO BEDS EACH · SLEEPS 2 EACH', 'sage'),
@@ -435,7 +435,7 @@ Template Name: Stays
             'view' => __('Mulshi Lake from a private balcony — the water visible from the room and from the open air alike.', 'sage'),
             'idealFor' => __('Families, two couples travelling together, and groups of friends who want the lake in sight and enough beds to stay comfortable.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
           __('Aves — One-Bedroom Cottage', 'sage') => [
             'eyebrow' => __('GARDEN COTTAGES · ONE BEDROOM EACH · SLEEPS 2 EACH', 'sage'),
@@ -460,7 +460,7 @@ Template Name: Stays
             'view' => __('Gardens, orchards and the working farm; the greenest outlook on the estate.', 'sage'),
             'idealFor' => __('Couples, writers and readers, solo retreats, and anyone who values being left alone.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
           __('WoodHouse — Two-Bedroom Cottage', 'sage') => [
             'eyebrow' => __('MACHAN STAY · TWO BEDROOMS · SLEEPS UP TO 7', 'sage'),
@@ -485,7 +485,7 @@ Template Name: Stays
             'view' => __('Across the lawns to the lake, framed by timber and trees.', 'sage'),
             'idealFor' => __('Two couples, families and small groups of up to seven, and guests who want warmth and texture over polish. Especially good in the monsoon.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
           __('Perch I — Four-Bedroom Lake Residence', 'sage') => [
             'eyebrow' => __('LAKE RESIDENCE · FOUR BEDROOMS · SLEEPS 8', 'sage'),
@@ -511,7 +511,7 @@ Template Name: Stays
             'view' => __('Elevated and expansive: the whole of Mulshi Lake and the Sahyadri ridgeline from the terrace and the living room.', 'sage'),
             'idealFor' => __('Families, groups of friends, milestone celebrations and small offsites. Book with Perch II for larger parties: together, seven bedrooms for up to 14 guests.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
           __('Perch II — Three-Bedroom Lake Residence', 'sage') => [
             'eyebrow' => __('LAKE RESIDENCE · THREE BEDROOMS · SLEEPS 6', 'sage'),
@@ -537,7 +537,7 @@ Template Name: Stays
             'view' => __('Elevated and expansive: Mulshi Lake and the ranges beyond, from the terrace and the living room.', 'sage'),
             'idealFor' => __('Families, friends travelling together, and groups who want to be near each other without being on top of each other.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
           __('Hornbill — Two-Bedroom Premium Suite', 'sage') => [
             'eyebrow' => __('THE SIGNATURE VILLA · TWO BEDROOMS · SLEEPS 4', 'sage'),
@@ -563,7 +563,7 @@ Template Name: Stays
             'view' => __('The estate\'s most direct and uninterrupted lake frontage, from every room.', 'sage'),
             'idealFor' => __('Couples marking something, two couples travelling well, and guests for whom the view is the point.', 'sage'),
             'included' => $defaultIncluded,
-            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+            'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
         ];
       @endphp
@@ -788,8 +788,8 @@ Template Name: Stays
 
               {{-- Action Bar: Check Availability & Discover Details --}}
               <div class="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
-                <a class="group inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/25 bg-transparent px-6 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary font-medium shadow-sm"
-                  href="{{ $chapter['booking_url'] ?? 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms' }}"
+                <a class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-primary text-brand-sand px-6 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] font-medium transition-all duration-300 hover:bg-brand-gold hover:text-brand-primary shadow-sm"
+                  href="{{ $chapter['booking_url'] ?? 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms' }}"
                   target="_blank" rel="noopener noreferrer">
                   <span>{{ __('Check Availability', 'sage') }}</span>
                   <span class="inline-block transition-transform duration-300 group-hover:translate-x-1"
@@ -797,7 +797,7 @@ Template Name: Stays
                 </a>
 
                 <button
-                  class="inline-flex cursor-pointer items-center gap-2 rounded-full border border-brand-ink/20 bg-brand-ink/[0.03] px-5 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-gold hover:bg-brand-sand hover:text-brand-gold font-medium"
+                  class="inline-flex cursor-pointer items-center gap-2 rounded-full border border-brand-ink/30 bg-transparent px-5 py-2.5 text-[0.75rem] uppercase tracking-[0.18em] text-brand-ink transition-all duration-300 hover:border-brand-primary hover:bg-brand-ink/5 font-medium"
                   type="button" data-stay-drawer-toggle data-open-label="{{ __('Discover Details', 'sage') }}"
                   data-close-label="{{ __('Hide Details', 'sage') }}" aria-expanded="false">
                   <span data-stay-drawer-label>{{ __('Discover Details', 'sage') }}</span>
@@ -898,7 +898,7 @@ Template Name: Stays
             @endif
             <span>{{ sprintf(__('%d Rooms', 'sage'), $estate['bedrooms']) }}</span>
             <span aria-hidden="true">·</span>
-            <span>{{ sprintf(__('Sleeps %d', 'sage'), $estate['sleeps']) }}</span>
+            <span>{{ __('Sleeps up to 60', 'sage') }}</span>
           </div>
 
           <div class="mt-9 flex flex-wrap items-center justify-center gap-6">
@@ -1075,7 +1075,7 @@ Template Name: Stays
         </p>
 
         <a class="mt-10 inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
-          href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+          href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms"
           target="_blank" rel="noopener noreferrer" data-reveal>
           {{ __('Book Your Stay', 'sage') }}
         </a>

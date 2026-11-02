@@ -31,7 +31,7 @@
     {{-- Gold Book Your Stay CTA --}}
     <div class="mt-10" data-reveal>
       <a class="inline-flex items-center justify-center rounded-full bg-brand-gold px-8 py-3.5 text-[0.8125rem] font-medium uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-sand hover:text-brand-primary"
-        href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+        href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms"
         target="_blank" rel="noopener noreferrer">
         {{ __('Book Your Stay', 'sage') }}
       </a>

@@ -14,7 +14,7 @@
   ];
 @endphp
 
-<section id="young-forest" class="bg-[#f7f3eb] py-10 lg:py-14 border-t border-brand-ink/10" aria-labelledby="forest-heading">
+<section id="young-forest" class="bg-[#f7f3eb] py-7 lg:py-9 border-t border-brand-ink/10" aria-labelledby="forest-heading">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
     <div class="grid lg:grid-cols-12 gap-6 lg:gap-14 items-start" data-reveal>
