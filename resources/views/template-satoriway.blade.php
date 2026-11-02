@@ -17,6 +17,8 @@
 
   @include('about.hospitality')
 
+  @include('about.team')
+
   @include('about.land-strip')
 
   @include('about.closing')

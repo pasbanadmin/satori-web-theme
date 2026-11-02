@@ -4,9 +4,10 @@
 @endphp
 
 <a href="https://wa.me/{{ $whatsappNumber }}?text={{ $waMessage }}" target="_blank" rel="noopener noreferrer"
-  class="fixed bottom-4 lg:bottom-6 lg:right-6 right-4 z-50 transition-transform duration-300 hover:scale-110 focus:outline-none"
+  class="fixed lg:bottom-6 lg:right-6 right-4 z-50 transition-transform duration-300 hover:scale-110 focus:outline-none"
+  style="bottom: calc(16px + env(safe-area-inset-bottom, 0px));"
   aria-label="Chat on WhatsApp">
-  <svg class="md:w-14 w-12 md:h-14 h-12" width="56" height="56" viewBox="0 0 48 48" fill="none"
+  <svg class="w-11 h-11 md:w-14 md:h-14" width="56" height="56" viewBox="0 0 48 48" fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <circle class="color-element" cx="19.4395" cy="19.4395" r="19.4395" fill="#49E670"></circle>
     <path

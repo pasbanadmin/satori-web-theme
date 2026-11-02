@@ -15,7 +15,7 @@
   ];
 @endphp
 
-<section id="once-in-a-season" class="py-10 lg:py-16" style="background-color: #16100C; color: #efe4d0;" aria-labelledby="blooms-heading">
+<section id="once-in-a-season" class="py-8 lg:py-12" style="background-color: #16100C; color: #efe4d0;" aria-labelledby="blooms-heading">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
     <div class="max-w-3xl mb-8 lg:mb-10" data-reveal>
@@ -25,26 +25,27 @@
       </h2>
     </div>
 
-    {{-- Two entries side by side on desktop, stacked on mobile --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-start" data-reveal>
+    {{-- Clean, robust 2-column card grid across all viewport sizes --}}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start" data-reveal>
       @foreach ($blooms as $bloom)
-        <article class="bloom-item">
-          {{-- Fixed 3:4 portrait photo container --}}
-          <div class="bloom-image-box">
+        <article class="flex flex-col group">
+          {{-- Image container with fixed aspect ratio --}}
+          <div class="w-full overflow-hidden" style="aspect-ratio: 4/3; background-color: rgba(239, 228, 208, 0.08);">
             <img
               src="{{ $bloom['file'] }}"
               alt="{{ $bloom['alt'] }}"
-              class="bloom-img"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              style="width: 100%; height: 100%; object-fit: cover;"
               loading="lazy"
             >
           </div>
 
-          {{-- Description container --}}
-          <div class="bloom-content">
-            <h3 class="font-heading text-2xl font-light leading-snug" style="color: #efe4d0;">
+          {{-- Description container with full width below image --}}
+          <div class="mt-5 sm:mt-6">
+            <h3 class="font-heading text-2xl lg:text-3xl font-light leading-snug" style="color: #efe4d0;">
               {{ $bloom['name'] }}
             </h3>
-            <p class="mt-2 text-sm leading-6" style="color: rgba(239, 228, 208, 0.8);">
+            <p class="mt-2 text-sm sm:text-base leading-relaxed" style="color: rgba(239, 228, 208, 0.82);">
               {{ $bloom['description'] }}
             </p>
           </div>
@@ -54,55 +55,3 @@
 
   </div>
 </section>
-
-<style>
-  #once-in-a-season .bloom-item {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    align-items: flex-start;
-  }
-  @media (min-width: 640px) {
-    #once-in-a-season .bloom-item {
-      flex-direction: row;
-      gap: 1.5rem;
-    }
-  }
-  #once-in-a-season .bloom-image-box {
-    width: 220px;
-    height: 293px;
-    max-width: 100%;
-    flex-shrink: 0;
-    overflow: hidden;
-    background-color: rgba(239, 228, 208, 0.08);
-  }
-  @media (min-width: 640px) and (max-width: 1023px) {
-    #once-in-a-season .bloom-image-box {
-      width: 180px;
-      height: 240px;
-      flex-shrink: 0;
-    }
-  }
-  @media (min-width: 1024px) {
-    #once-in-a-season .bloom-image-box {
-      width: 224px;
-      height: 298px;
-      flex-shrink: 0;
-    }
-  }
-  #once-in-a-season .bloom-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.7s ease;
-  }
-  #once-in-a-season .bloom-item:hover .bloom-img {
-    transform: scale(1.05);
-  }
-  #once-in-a-season .bloom-content {
-    flex: 1 1 0%;
-    min-width: 0;
-    padding-top: 0.25rem;
-  }
-</style>

@@ -43,7 +43,7 @@
   ];
 @endphp
 
-<section id="birds" class="bg-[#f7f3eb] py-10 lg:py-14" aria-labelledby="birds-heading">
+<section id="birds" class="bg-[#f7f3eb] py-8 lg:py-10" aria-labelledby="birds-heading">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
     {{-- Section Header & Credit --}}
@@ -61,10 +61,10 @@
     </div>
 
     {{-- Birds Grid --}}
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5" role="list" data-reveal>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-7 sm:gap-x-6 sm:gap-y-9" role="list" data-reveal>
       @foreach ($birds as $bird)
         <article class="flex flex-col" role="listitem">
-          <div class="aspect-[4/5] overflow-hidden bg-brand-primary/10" style="aspect-ratio: 4/5;">
+          <div class="overflow-hidden bg-brand-primary/10" style="aspect-ratio: 4/5;">
             <img
               src="{{ $bird['file'] }}"
               alt="{{ $bird['alt'] }}"
@@ -72,8 +72,8 @@
               loading="lazy"
             >
           </div>
-          {{-- Added top padding/spacing for label --}}
-          <p class="mt-3 pt-1 text-[0.65rem] lg:text-[0.58rem] uppercase tracking-[0.2em] text-brand-primary/75">
+          {{-- Added explicit top padding for label --}}
+          <p class="text-[0.65rem] lg:text-[0.58rem] uppercase tracking-[0.2em] text-brand-primary/75" style="margin-top: 14px; padding-top: 2px;">
             {{ $bird['caption'] }}
           </p>
         </article>

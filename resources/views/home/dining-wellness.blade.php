@@ -5,7 +5,7 @@
       'heading' => __('The garden is not a feature. It is the kitchen.', 'sage'),
       'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands. Cinnamon, nutmeg, clove, black pepper, kokum and curry leaf grow a few steps from the kitchen.', 'sage'),
       'cta' => __('Book Your Stay', 'sage'),
-      'anchor' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms',
+      'anchor' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
       'image' => '/wp-content/uploads/2026/08/Dining-split-section-—-dining-chefs-table.webp',
       'alt' => __('Dining at Satori, warm meal beside the lake', 'sage'),
       'reverse' => false,

@@ -27,5 +27,7 @@
 
   @include('home.location')
 
+  @include('home.good-to-know')
+
   @include('home.closing-section')
 @endsection

@@ -29,7 +29,7 @@
         "url": "https://www.satorimulshi.com/",
         "telephone": "+91 92181 77261",
         "email": "satori.reservations@pasban.co",
-        "image": "https://www.satorimulshi.com/wp-content/uploads/2026/08/28-Movie-Night-and-Bonfire-on-the-Lawn-1.webp",
+        "image": "https://www.satorimulshi.com/wp-content/uploads/2026/09/01-hero-robin-balcony-lake.webp",
         "description": "A private lakeside estate of twenty-one rooms above Mulshi Lake in the Sahyadri foothills, with garden cottages, lake residences, farm-to-table dining and full-estate buyouts.",
         "numberOfRooms": 21,
         "address": {
@@ -49,7 +49,7 @@
         ],
         "potentialAction": {
           "@@type": "ReserveAction",
-          "target": "https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+          "target": "https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms"
         }
       }
       </script>
@@ -82,6 +82,24 @@
 
   @php(do_action('get_footer'))
   @php(wp_footer())
+
+  {{-- GA4 Booking Engine Event Tracker (T.2) --}}
+  <script>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href*="secure-booking-engine.com"]');
+      if (!link) return;
+      if (typeof window.gtag === 'function') {
+        var card = link.closest('[data-stay-card], article, section');
+        var heading = card ? card.querySelector('h2, h3') : null;
+        var stayName = heading ? heading.textContent.trim() : 'General';
+        var location = link.closest('header') ? 'header' : (link.closest('footer') ? 'footer' : 'stay-card');
+        window.gtag('event', 'begin_booking', {
+          link_location: location,
+          stay: stayName
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
         <em class="italic">{{ __('What they wrote about us.', 'sage') }}</em>
       </h1>
       <p data-hero="true" class="mt-6 max-w-xl text-pretty text-sm leading-[1.85] text-foreground/70 font-body">
-        {{ __('Satori is a private retreat of fourteen homes above Mulshi Lake, two hours from Pune. Manifest Life, The Gourmet Edit, Femina, Mumbai Mirror and Condé Nast Traveller India have all written about it. Below is one line from each piece, word for word, and a link to the full story where it is online.', 'sage') }}
+        {{ __('Satori is a private estate of twenty-one rooms above Mulshi Lake, in the Sahyadris near Pune. Manifest Life, The Gourmet Edit, Femina, Mumbai Mirror and Condé Nast Traveller India have all written about it. Below is one line from each piece, word for word, and a link to the full story where it is online.', 'sage') }}
       </p>
     </div>
 

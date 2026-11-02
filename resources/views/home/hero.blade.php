@@ -79,7 +79,7 @@
 
         <div class="mt-10 flex flex-col lg:gap-4 gap-2 flex-row">
           <a class="w-max inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-3 lg:text-[0.8125rem] text-[10px] uppercase tracking-[0.2em] text-brand-primary transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
-            href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/#!/rooms"
+            href="https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms"
             target="_blank" rel="noopener noreferrer">
             {{ __('Book Your Stay', 'sage') }}
           </a>
@@ -87,6 +87,16 @@
           <a class="w-max inline-flex items-center justify-center rounded-full border-2 border-brand-sand bg-brand-primary/30 px-6 py-3 lg:text-[0.8125rem] text-[10px] uppercase tracking-[0.2em] text-brand-sand backdrop-blur-sm transition-colors duration-300 hover:border-brand-gold hover:bg-brand-gold hover:text-brand-primary"
             href="{{ home_url('/stays') }}">
             {{ __('Explore Satori', 'sage') }}
+          </a>
+        </div>
+
+        {{-- S.1 Live Google Review Rating Line --}}
+        <div class="mt-4 flex items-center">
+          <a href="#reviews" class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-brand-sand/85 hover:text-brand-gold transition-colors duration-300"
+            style="text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);">
+            <span class="font-medium text-brand-gold">4.8 ★</span>
+            <span class="text-brand-sand/50" aria-hidden="true">·</span>
+            <span class="underline underline-offset-4 decoration-brand-sand/35 hover:decoration-brand-gold">{{ __('189 Google reviews', 'sage') }}</span>
           </a>
         </div>
       </div>

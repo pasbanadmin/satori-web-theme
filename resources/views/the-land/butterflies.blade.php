@@ -13,7 +13,7 @@
   ];
 @endphp
 
-<section id="butterflies" class="bg-[#f7f3eb] py-10 lg:py-14 border-t border-brand-ink/10" aria-labelledby="butterflies-heading">
+<section id="butterflies" class="bg-[#f7f3eb] py-8 lg:py-10 border-t border-brand-ink/10" aria-labelledby="butterflies-heading">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
     <div class="grid lg:grid-cols-12 gap-6 lg:gap-14 items-start" data-reveal>
@@ -28,10 +28,10 @@
       </div>
 
       {{-- Right: Two 5:4 frames side by side --}}
-      <div class="lg:col-span-7 grid grid-cols-2 gap-3 sm:gap-4">
+      <div class="lg:col-span-7 grid grid-cols-2 gap-4 sm:gap-6">
         @foreach ($butterflies as $butterfly)
           <article class="flex flex-col">
-            <div class="aspect-[5/4] overflow-hidden bg-brand-primary/10" style="aspect-ratio: 5/4;">
+            <div class="overflow-hidden bg-brand-primary/10" style="aspect-ratio: 5/4;">
               <img
                 src="{{ $butterfly['file'] }}"
                 alt="{{ $butterfly['alt'] }}"
@@ -39,8 +39,8 @@
                 loading="lazy"
               >
             </div>
-            {{-- Added top padding/spacing for label --}}
-            <p class="mt-3 pt-1 text-[0.65rem] lg:text-[0.58rem] uppercase tracking-[0.2em] text-brand-primary/75">
+            {{-- Added explicit top padding for label --}}
+            <p class="text-[0.65rem] lg:text-[0.58rem] uppercase tracking-[0.2em] text-brand-primary/75" style="margin-top: 14px; padding-top: 2px;">
               {{ $butterfly['caption'] }}
             </p>
           </article>

@@ -32,7 +32,7 @@
   ];
 @endphp
 
-<section id="orchard" class="bg-[#f7f3eb] py-10 lg:py-14 border-t border-brand-ink/10" aria-labelledby="orchard-heading">
+<section id="orchard" class="bg-[#f7f3eb] py-7 lg:py-9 border-t border-brand-ink/10" aria-labelledby="orchard-heading">
   <div class="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-16">
 
     <div class="max-w-3xl mb-6 lg:mb-8" data-reveal>

@@ -1,4 +1,4 @@
-<section class="bg-[#f7f3eb] py-10 lg:py-16" aria-label="{{ __('Introduction to The Land', 'sage') }}">
+<section class="bg-[#f7f3eb] py-8 lg:py-10" aria-label="{{ __('Introduction to The Land', 'sage') }}">
   <div class="mx-auto w-full max-w-4xl px-5 text-center sm:px-8" data-reveal>
     <p class="text-[0.75rem] uppercase tracking-[0.3em] text-brand-gold">
       {{ __('The Estate', 'sage') }}
