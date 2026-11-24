@@ -17,8 +17,6 @@ Template Name: Stays
     $stays = [
       [
         'name' => __('Aves — One-Bedroom Cottage', 'sage'),
-        'ota_name' => __('Aves — One-Bedroom Cottage', 'sage'),
-        'category' => '2',
         'slug' => 'aves',
         'description' => __('Three cottages, named for birds, hidden in plain sight.', 'sage'),
         'units' => 3,
@@ -51,8 +49,6 @@ Template Name: Stays
       ],
       [
         'name' => __('Garden Flock — One-Bedroom Garden Room', 'sage'),
-        'ota_name' => __('Garden Flock — One-Bedroom Garden Room', 'sage'),
-        'category' => '1',
         'slug' => 'garden-view-cottage',
         'description' => __('Three rooms, three songbirds, and the garden right at the door.', 'sage'),
         'units' => 3,
@@ -87,8 +83,6 @@ Template Name: Stays
       ],
       [
         'name' => __('WoodHouse — Two-Bedroom Cottage', 'sage'),
-        'ota_name' => __('WoodHouse — Two-Bedroom Cottage', 'sage'),
-        'category' => '3',
         'slug' => 'woodhouse',
         'description' => __('Machan-inspired, timber-warm, and the most atmospheric address on the estate.', 'sage'),
         'units' => 1,
@@ -129,8 +123,6 @@ Template Name: Stays
       ],
       [
         'name' => __('Lake Wing — Junior Suite', 'sage'),
-        'ota_name' => __('Lake Wing — Junior Suite', 'sage'),
-        'category' => '2',
         'slug' => 'junior-suite-lake-view',
         'description' => __('Four suites with the lake on the balcony and room enough to stay together.', 'sage'),
         'units' => 4,
@@ -173,8 +165,6 @@ Template Name: Stays
       ],
       [
         'name' => __('Perch I — Four-Bedroom Lake Residence', 'sage'),
-        'ota_name' => __('Perch I — Four-Bedroom Lake Residence', 'sage'),
-        'category' => '3',
         'slug' => 'perch-i',
         'description' => __('One of the estate\'s largest stays, with long views over Mulshi Lake.', 'sage'),
         'units' => 1,
@@ -210,8 +200,6 @@ Template Name: Stays
       ],
       [
         'name' => __('Perch II — Three-Bedroom Lake Residence', 'sage'),
-        'ota_name' => __('Perch II — Three-Bedroom Lake Residence', 'sage'),
-        'category' => '3',
         'slug' => 'perch-ii',
         'description' => __('One of the estate\'s largest stays, with long views over Mulshi Lake.', 'sage'),
         'units' => 1,
@@ -253,8 +241,6 @@ Template Name: Stays
       ],
       [
         'name' => __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
-        'ota_name' => __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
-        'category' => '4',
         'slug' => 'hornbill',
         'description' => __('The signature villa. The best seat on the estate.', 'sage'),
         'units' => 1,
@@ -301,12 +287,10 @@ Template Name: Stays
 
     $estate = [
       'name' => __('The Satori Estate', 'sage'),
-      'ota_name' => __('Full buyout', 'sage'),
-      'category' => '—',
       'eyebrow' => __('Full Buyout', 'sage'),
       'heading' => __('The whole place. No other names in the register.', 'sage'),
       'description' => __('Satori can be taken in its entirety - all twenty-one rooms and every shared space, for up to sixty guests. The Nest becomes your dining room, the lawns become your venue, the kitchen cooks to your menu, and the gates close behind your group.', 'sage'),
-      'units' => __('7 (categories)', 'sage'),
+      'units' => __('All 7 stays', 'sage'),
       'stays' => 21,
       'bedrooms' => '21',
       'sleeps' => __('Up to 60', 'sage'),
@@ -379,9 +363,15 @@ Template Name: Stays
 
       @php
         $defaultIncluded = [
-          __('Welcome drink on arrival', 'sage'),
-          __('Access to pool, lawns, games and estate walks', 'sage'),
+          __('Access to the pool, lawns, cycling and estate walks', 'sage'),
           __('Tea and coffee in the room', 'sage'),
+          __('Meals as per the plan you book: room only, with breakfast, with breakfast and one meal, or all meals', 'sage'),
+          __('Pickleball and billiards are chargeable', 'sage'),
+        ];
+
+        // Plain facts shared by every room, appended to "The Layout".
+        $roomFacts = [
+          __('The TV streams over Wi-Fi, so it is only as good as the signal', 'sage'),
         ];
 
         $chapters = [
@@ -408,6 +398,10 @@ Template Name: Stays
             ],
             'view' => __('The estate gardens in close frame — greenery, birdsong, and very little else.', 'sage'),
             'idealFor' => __('Couples, solo travellers, small families with a child, and anyone who wants a room to sleep in and an estate to live on.', 'sage'),
+            'idealForLink' => [
+              'label' => __('Travelling with children? Read this first.', 'sage'),
+              'anchor' => 'kids',
+            ],
             'included' => $defaultIncluded,
             'booking_url' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
           ],
@@ -543,7 +537,7 @@ Template Name: Stays
             'eyebrow' => __('THE SIGNATURE VILLA · TWO BEDROOMS · SLEEPS 4', 'sage'),
             'hook' => __('A 3,000 sq ft private residence with the estate’s most direct lake frontage.', 'sage'),
             'paragraphs' => [
-              __('Hornbill is Satori’s most complete private stay: a two-bedroom residence with a separate lounge, a private pantry, an outdoor bar and a wraparound patio facing Mulshi Lake. Each en-suite bedroom opens into a setting made for unhurried days, while the indoor and outdoor living spaces give four guests room to gather, retreat and take in the water from morning light to sunset.', 'sage'),
+              __('Hornbill is Satori’s most complete private stay: a two-bedroom residence with a separate lounge, a private pantry, an outdoor bar counter and a wraparound patio facing Mulshi Lake. Each en-suite bedroom opens into a setting made for unhurried days, while the indoor and outdoor living spaces give four guests room to gather, retreat and take in the water from morning light to sunset.', 'sage'),
               __('For anniversaries, intimate celebrations or simply a stay where the address is part of the occasion, Hornbill makes the estate feel entirely your own.', 'sage'),
             ],
             'specs' => [
@@ -557,7 +551,7 @@ Template Name: Stays
               __('Two en-suite bedrooms', 'sage'),
               __('Attached private lounge', 'sage'),
               __('Pantry with tea, coffee and fridge', 'sage'),
-              __('Private outdoor bar and deck', 'sage'),
+              __('Outdoor bar counter and deck (no bar service; you are welcome to bring your own)', 'sage'),
               __('Wraparound verandah facing the lake', 'sage'),
             ],
             'view' => __('The estate\'s most direct and uninterrupted lake frontage, from every room.', 'sage'),
@@ -822,7 +816,7 @@ Template Name: Stays
                           </p>
                         </div>
                         <ul class="mt-3 space-y-2 text-xs sm:text-[13px] text-brand-ink/90">
-                          @foreach ($chapter['layout'] as $bullet)
+                          @foreach (array_merge($chapter['layout'], $roomFacts) as $bullet)
                             <li class="flex items-start gap-2.5">
                               <span class="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-brand-gold/80"
                                 aria-hidden="true"></span>
@@ -863,6 +857,10 @@ Template Name: Stays
                         <p class="text-[0.65rem] uppercase tracking-[0.18em] text-brand-gold font-medium">
                           {{ __('Ideal For', 'sage') }}</p>
                         <p class="mt-1 font-light leading-relaxed text-brand-ink">{{ $chapter['idealFor'] }}</p>
+                        @if (!empty($chapter['idealForLink']) && ($idealForUrl = \App\know_before_you_go_url($chapter['idealForLink']['anchor'])))
+                          <a class="mt-2 inline-block text-brand-gold underline underline-offset-4 transition-colors duration-300 hover:text-brand-ink"
+                            href="{{ $idealForUrl }}">{{ $chapter['idealForLink']['label'] }}</a>
+                        @endif
                       </div>
                     </div>
                   </div>
@@ -931,44 +929,36 @@ Template Name: Stays
         <div class="hidden lg:block" data-reveal>
           <div
             class="grid grid-cols-12 gap-4 border-b border-brand-ink/15 pb-5 text-[0.7rem] uppercase tracking-[0.25em] text-brand-muted">
-            <p class="col-span-1">{{ __('Cat', 'sage') }}</p>
-            <p class="col-span-3">{{ __('Display name', 'sage') }}</p>
-            <p class="col-span-3">{{ __('Internal / OTA name', 'sage') }}</p>
+            <p class="col-span-4">{{ __('Stay', 'sage') }}</p>
             <p class="col-span-1 text-center">{{ __('Units', 'sage') }}</p>
-            <p class="col-span-1 text-center">{{ __('Bedrooms', 'sage') }}</p>
-            <p class="col-span-1 text-center">{{ __('Sleeps', 'sage') }}</p>
-            <p class="col-span-2">{{ __('Setting', 'sage') }}</p>
+            <p class="col-span-2 text-center">{{ __('Bedrooms', 'sage') }}</p>
+            <p class="col-span-2 text-center">{{ __('Sleeps', 'sage') }}</p>
+            <p class="col-span-3">{{ __('Setting', 'sage') }}</p>
           </div>
 
           @foreach ($stays as $stay)
             <div
               class="grid grid-cols-12 items-center gap-4 border-b border-brand-ink/15 py-5 transition-colors duration-300 hover:bg-brand-sand/50">
-              <p class="col-span-1 font-heading text-lg font-light text-brand-gold">{{ $stay['category'] }}</p>
-
-              <h3 class="col-span-3 font-heading text-xl font-light text-brand-ink">
+              <h3 class="col-span-4 font-heading text-xl font-light text-brand-ink">
                 {{ $stay['name'] }}
               </h3>
 
-              <p class="col-span-3 text-sm text-brand-muted">{{ $stay['ota_name'] }}</p>
               <p class="col-span-1 text-center text-sm text-brand-muted">{{ $stay['units'] }}</p>
-              <p class="col-span-1 text-center text-sm text-brand-muted">{{ $stay['bedrooms'] }}</p>
-              <p class="col-span-1 text-center text-sm text-brand-muted">{{ $stay['sleeps'] }}</p>
-              <p class="col-span-2 text-sm text-brand-muted">{{ $stay['setting'] }}</p>
+              <p class="col-span-2 text-center text-sm text-brand-muted">{{ $stay['bedrooms'] }}</p>
+              <p class="col-span-2 text-center text-sm text-brand-muted">{{ $stay['sleeps'] }}</p>
+              <p class="col-span-3 text-sm text-brand-muted">{{ $stay['setting'] }}</p>
             </div>
           @endforeach
 
           <div class="grid grid-cols-12 items-center gap-4 border-b border-brand-gold bg-brand-sand/40 py-5">
-            <p class="col-span-1 font-heading text-lg font-light text-brand-gold">{{ $estate['category'] }}</p>
-
-            <h3 class="col-span-3 font-heading text-xl font-light text-brand-ink">
+            <h3 class="col-span-4 font-heading text-xl font-light text-brand-ink">
               {{ $estate['name'] }}
             </h3>
 
-            <p class="col-span-3 text-sm text-brand-muted">{{ $estate['ota_name'] }}</p>
             <p class="col-span-1 text-center text-sm text-brand-muted">{{ $estate['units'] }}</p>
-            <p class="col-span-1 text-center text-sm text-brand-muted">{{ $estate['bedrooms'] }}</p>
-            <p class="col-span-1 text-center text-sm text-brand-muted">{{ $estate['sleeps'] }}</p>
-            <p class="col-span-2 text-sm text-brand-muted">{{ $estate['setting'] }}</p>
+            <p class="col-span-2 text-center text-sm text-brand-muted">{{ $estate['bedrooms'] }}</p>
+            <p class="col-span-2 text-center text-sm text-brand-muted">{{ $estate['sleeps'] }}</p>
+            <p class="col-span-3 text-sm text-brand-muted">{{ $estate['setting'] }}</p>
           </div>
         </div>
 
@@ -978,16 +968,13 @@ Template Name: Stays
               <div class="flex items-start justify-between gap-6">
                 <div>
                   <p class="text-[0.7rem] uppercase tracking-[0.25em] text-brand-gold">
-                    {{ __('Category', 'sage') }} {{ $stay['category'] }} · {{ $stay['setting'] }}
+                    {{ $stay['setting'] }}
                   </p>
 
                   <h3 class="mt-2 font-heading text-2xl font-light text-brand-ink">
                     {{ $stay['name'] }}
                   </h3>
 
-                  <p class="mt-1 text-xs uppercase tracking-wider text-brand-muted">
-                    {{ __('OTA Name:', 'sage') }} {{ $stay['ota_name'] }}
-                  </p>
                 </div>
 
                 <a class="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-ink"
@@ -1025,9 +1012,6 @@ Template Name: Stays
               {{ $estate['name'] }}
             </h3>
 
-            <p class="mt-1 text-xs uppercase tracking-wider text-brand-sand/70">
-              {{ __('OTA Name:', 'sage') }} {{ $estate['ota_name'] }}
-            </p>
 
             <div class="mt-6 grid grid-cols-3 gap-x-4 gap-y-4 border-t border-brand-sand/15 pt-6">
               <div>

@@ -19,7 +19,7 @@
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('As the light goes, Satori becomes stiller and more intimate. Bonfires are lit. The hills fall silent. The sky opens properly, in a way it no longer does near a city. In season, fireflies. Through the year, stargazing, open-air film nights and sunset setups by the pool.', 'sage') }}
+          {{ __('As the light goes, Satori becomes stiller and more intimate. Bonfires are lit. The hills fall silent. The sky opens properly, in a way it no longer does near a city. In season, fireflies. Through the year, stargazing, open-air film nights and sunset setups by the pool (on request, chargeable).', 'sage') }}
         </p>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">

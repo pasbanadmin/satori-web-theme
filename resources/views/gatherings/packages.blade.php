@@ -10,8 +10,8 @@
       'inclusions' => [
         __('Full estate buyout: all 21 rooms for up to 60 guests', 'sage'),
         __('All daily meals prepared by our executive chef in The Nest', 'sage'),
-        __('Sundowner cocktail setup & chef\'s table by the lawn', 'sage'),
-        __('Buggy service, swimming pool & pickleball access', 'sage'),
+        __('Sundowner setup & chef\'s table by the lawn (on request, chargeable)', 'sage'),
+        __('Buggy service and swimming pool (pickleball at a charge)', 'sage'),
       ],
     ],
     [
@@ -42,12 +42,12 @@
     [
       'day' => __('Day 01', 'sage'),
       'title' => __('Arrival & Sundowner Fire', 'sage'),
-      'description' => __('Check-in from 1:00 PM. Welcome herbal infusion, estate orientation, and late afternoon stroll by the lake. Sunset chef\'s table outdoors, followed by drinks around the central fire pit.', 'sage'),
+      'description' => __('Check-in from 2:00 PM. Welcome herbal infusion, estate orientation, and late afternoon stroll by the lake. Sunset chef\'s table outdoors (on request, chargeable), followed by an evening around the central fire pit.', 'sage'),
     ],
     [
       'day' => __('Day 02', 'sage'),
       'title' => __('Estate Life & Main Celebration', 'sage'),
-      'description' => __('Dawn bird-watching walk or sunrise yoga. Communal brunch in The Nest. Afternoon pickleball, pool lounge, or quiet reading on the verandahs. The main gathering dinner with live music under the open Sahyadri skies.', 'sage'),
+      'description' => __('Dawn bird-watching walk or sunrise yoga (on request, chargeable). Communal brunch in The Nest. Afternoon by the pool, a game of pickleball (chargeable), or quiet reading on the verandahs. The main gathering dinner with live music under the open Sahyadri skies.', 'sage'),
     ],
     [
       'day' => __('Day 03', 'sage'),

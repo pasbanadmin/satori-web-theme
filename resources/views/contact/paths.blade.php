@@ -101,7 +101,7 @@
             </svg>
           </div>
           <h4 class="font-heading text-lg font-light text-brand-ink">
-            {{ __('Flexible arrival and departure where calendar allows', 'sage') }}
+            {{ __('Check-in from 2 PM, check-out by 11 AM, with some flexibility where the calendar allows', 'sage') }}
           </h4>
         </div>
 

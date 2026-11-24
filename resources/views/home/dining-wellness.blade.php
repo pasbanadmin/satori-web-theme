@@ -3,7 +3,7 @@
     [
       'label' => __('Dining', 'sage'),
       'heading' => __('The garden is not a feature. It is the kitchen.', 'sage'),
-      'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands. Cinnamon, nutmeg, clove, black pepper, kokum and curry leaf grow a few steps from the kitchen.', 'sage'),
+      'copy' => __('Most retreats describe their food as farm-to-table. At Satori the farm is fifty steps from the pass. Vegetables, herbs and fruits are picked the morning they are served, and the menu follows what the farm is giving rather than what a printed card demands. The cooking is home-style and local. Meals are a set buffet, with an à la carte menu alongside, and because dishes are cooked to order, some take a little longer to reach the table.', 'sage'),
       'cta' => __('Book Your Stay', 'sage'),
       'anchor' => 'https://www.secure-booking-engine.com/accounts/HXm66tqenYOx-VZR46IBBQ/properties/P9JyVOBiPOXdUDFklZVpVA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/MdEkwhqgGd7N5zhKcIJ7Qw/?utm_source=satorimulshi.com&utm_medium=website&utm_campaign=book_button#!/rooms',
       'image' => '/wp-content/uploads/2026/08/Dining-split-section-—-dining-chefs-table.webp',
@@ -13,7 +13,7 @@
     [
       'label' => __('Wellness & Spa', 'sage'),
       'heading' => __('A spa in a garden, not a basement.', 'sage'),
-      'copy' => __('Satori’s spa block sits within the estate’s planted grounds, open to green on every side. Treatments are simple and restorative, delivered without ceremony or upsell. Beyond the treatment rooms, wellness here is simply the shape of the day — yoga at sunrise, a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.', 'sage'),
+      'copy' => __('Satori’s spa is still being finished. It will sit within the estate’s planted grounds, open to green on every side, and its treatments will be simple and restorative, offered without ceremony or upsell. Until it opens, wellness here is simply the shape of the day: a walk through the medicinal beds, a swim under open sky, and the relief of having nowhere urgent to be.', 'sage'),
       'cta' => __('Opening Soon', 'sage'),
       'anchor' => null,
       'image' => '/wp-content/uploads/2026/08/Wellness-split-section-—-wellness-yoga.webp',
