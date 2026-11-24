@@ -19,7 +19,7 @@
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Picnics by the water. Sunset viewpoints. Long afternoons by the pool. The lake is not simply scenic — it changes the feel of a day. It opens up the view, quiets things down, and gives every gathering a different quality.', 'sage') }}
+          {{ __('Mulshi Lake lies below the estate, a downhill walk away. The shore is rocky and left as it is, with nowhere to sit but the stones, and the water rises and falls with the seasons. Go for the walk and the light rather than a beach: late in the day the hills turn gold and the estate goes quiet behind you. When you would rather stay put, there are long afternoons by the pool.', 'sage') }}
         </p>
       </div>
 

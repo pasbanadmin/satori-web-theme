@@ -27,7 +27,7 @@
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Walk the Nakshatra garden, the herb and medicinal plots, the orchards and the flower-lined paths. Cycle the grounds. In season, join a plucking — fruit from the trees, vegetables from the beds — and then eat what you picked a few hours later. Explore trails and viewpoints around Mulshi with a guide who knows which ones are worth the climb.', 'sage') }}
+          {{ __('Walk the Nakshatra garden, the herb and medicinal plots, the orchards and the flower-lined paths. Cycle the grounds on the estate’s bicycles: simple ones, with only a few in children’s sizes. In season, join a plucking — fruit from the trees, vegetables from the beds — and then eat what you picked a few hours later. Explore trails and viewpoints around Mulshi with a guide who knows which ones are worth the climb.', 'sage') }}
         </p>
       </div>
     </div>

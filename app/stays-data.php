@@ -21,11 +21,11 @@ function stays_defaults()
     $imgB = '/wp-content/uploads/2026/08/SATORI-round-2-04-scaled.webp';
 
     $inclusions = [
-        __('Full breakfast from the estate kitchen', 'sage'),
-        __('Afternoon tea and evening coffee on the estate', 'sage'),
-        __('Access to the pool, spa and wellness grounds', 'sage'),
-        __('Daily housekeeping and evening turndown', 'sage'),
-        __('Estate experiences and dinners at The Nest, at a supplement', 'sage'),
+        __('Meals as per the plan you book: room only, with breakfast, with breakfast and one meal, or all meals', 'sage'),
+        __('Tea and coffee in the room', 'sage'),
+        __('Access to the pool, lawns, gardens, cycling and estate walks', 'sage'),
+        __('Daily housekeeping', 'sage'),
+        __('Pickleball, billiards and some estate experiences are chargeable', 'sage'),
         __('Transfers from the nearest station and airport, on request', 'sage'),
     ];
 
@@ -387,7 +387,7 @@ function stays_defaults()
             __('Hornbill — Two-Bedroom Premium Suite', 'sage'),
             __('Signature Villa', 'sage'),
             __('The signature villa. The best seat on the estate.', 'sage'),
-            __('Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy.', 'sage'),
+            __('Two bedrooms, indoor and outdoor living, an outdoor bar counter, and a position on the estate that gives it the lake in full and near-total privacy.', 'sage'),
             __('Ideal for couples marking something, two couples travelling well, and guests for whom the view is the point.', 'sage'),
             2,
             4,
@@ -399,7 +399,7 @@ function stays_defaults()
                 $story(
                     __('Satori at its most complete', 'sage'),
                     [
-                        __('Hornbill is Satori at its most complete. Two bedrooms, indoor and outdoor living, its own outdoor bar, and a position on the estate that gives it the lake in full and near-total privacy. It is the only home here where the water is present from the moment you wake to the moment the light goes.', 'sage'),
+                        __('Hornbill is Satori at its most complete. Two bedrooms, indoor and outdoor living, an outdoor bar counter, and a position on the estate that gives it the lake in full and near-total privacy. It is the only home here where the water is present from the moment you wake to the moment the light goes.', 'sage'),
                         __('It is priced as the estate’s premier address because that is what it is.', 'sage'),
                     ],
                     $imgB,
@@ -408,7 +408,7 @@ function stays_defaults()
                 $story(
                     __('Water from first light to last', 'sage'),
                     [
-                        __('Breakfast faces the lake, evening drinks come from the outdoor bar, and the whole day is given to the view — the water present from the moment you wake to the moment the light goes.', 'sage'),
+                        __('Breakfast faces the lake, evenings belong to the deck, and the whole day is given to the view — the water present from the moment you wake to the moment the light goes.', 'sage'),
                         __('Guests take Hornbill when the stay itself is the occasion — an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
                     ],
                     $imgA,
@@ -417,7 +417,7 @@ function stays_defaults()
             ],
             [
                 __('Two bedrooms, sleeps four', 'sage'),
-                __('Private outdoor bar and generous outdoor living', 'sage'),
+                __('Outdoor bar counter and generous outdoor living', 'sage'),
                 __('The estate’s most direct and uninterrupted lake frontage', 'sage'),
                 __('Highest specification on the property', 'sage'),
             ],
@@ -429,7 +429,7 @@ function stays_defaults()
             ]),
             __('The stay itself is the occasion', 'sage'),
             [
-                __('Hornbill is the only home here where the water is present from the moment you wake to the moment the light goes — breakfast facing the lake, evening drinks from the outdoor bar, the whole day given to the view.', 'sage'),
+                __('Hornbill is the only home here where the water is present from the moment you wake to the moment the light goes — breakfast facing the lake, evenings out on the deck, the whole day given to the view.', 'sage'),
                 __('It is priced as the estate’s premier address because that is what it is. Guests take Hornbill for an anniversary, a first trip after a long year, or simply the decision to do the thing properly.', 'sage'),
             ],
             $imgB

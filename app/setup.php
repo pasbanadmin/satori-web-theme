@@ -173,6 +173,21 @@ add_action('init', function () {
             update_post_meta($press_id, '_wp_page_template', 'template-press.blade.php');
         }
     }
+
+    // Ensure the Know Before You Go page exists in WordPress
+    if (! get_page_by_path('know-before-you-go')) {
+        $kbyg_id = wp_insert_post([
+            'post_title'   => 'Know Before You Go',
+            'post_name'    => 'know-before-you-go',
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_content' => '',
+        ]);
+
+        if ($kbyg_id && ! is_wp_error($kbyg_id)) {
+            update_post_meta($kbyg_id, '_wp_page_template', 'template-know-before-you-go.blade.php');
+        }
+    }
 });
 
 /**

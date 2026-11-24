@@ -16,6 +16,10 @@
     ['label' => __('Terms of Stay', 'sage'), 'url' => home_url('/terms')],
     ['label' => __('Cancellation Policy', 'sage'), 'url' => home_url('/cancellation-policy')],
   ];
+
+  if ($knowBeforeYouGoUrl = \App\know_before_you_go_url()) {
+    array_unshift($footerLegalItems, ['label' => __('Know Before You Go', 'sage'), 'url' => $knowBeforeYouGoUrl]);
+  }
 @endphp
 
 <footer class="bg-brand-primary text-brand-sand">

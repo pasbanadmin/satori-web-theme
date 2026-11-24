@@ -2,7 +2,7 @@
   $experiences = [
     [
       'name' => __('Lake & Sunset', 'sage'),
-      'line' => __("Golden hour from the water's edge.", 'sage'),
+      'line' => __('A walk down to the water as the light goes.', 'sage'),
       'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Lake-Sunset-—-lake-picnic.webp',
       'position' => 'object-center',
       'alt' => __('Sunset over the lake at Satori', 'sage'),
@@ -23,7 +23,7 @@
     ],
     [
       'name' => __('Pool & Games', 'sage'),
-      'line' => __('Unhurried afternoons by the water.', 'sage'),
+      'line' => __('Unhurried afternoons by the pool.', 'sage'),
       'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Pool-Games-—-games-pickleball.webp',
       'position' => 'object-center',
       'alt' => __('Pool and games at Satori', 'sage'),
@@ -34,6 +34,7 @@
       'image' => '/wp-content/uploads/2026/08/Experiences-rail-—-Chefs-Table-—-dining-chefs-table.webp',
       'position' => 'object-bottom',
       'alt' => __("Chef's table dinner at Satori", 'sage'),
+      'label' => __('On request · Chargeable', 'sage'),
     ],
     [
       'name' => __('Birding at Dawn', 'sage'),
@@ -57,8 +58,7 @@
       </h2>
 
       <p class="mx-auto mt-5 max-w-2xl text-base leading-7 text-brand-muted sm:text-[16px]">
-        {{ __('Cycle the estate. Pluck fruit in season. Picnic by the water. Play pickleball or lose an afternoon to the pool. Gather at the bonfire as the hills fall silent and the sky opens.Nothing here is compulsory. That is rather the point.
-', 'sage') }}
+        {{ __('Cycle the estate. Pluck fruit in season. Walk down to the lake. Lose an afternoon to the pool. Gather at the bonfire as the hills fall silent and the sky opens. Nothing here is compulsory. That is rather the point.', 'sage') }}
       </p>
 
       <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
@@ -80,6 +80,12 @@
           <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/75 via-brand-primary/15 to-transparent"></div>
 
           <div class="relative z-10 flex h-full w-full flex-col justify-end p-7 sm:p-8">
+            @if (!empty($experience['label']))
+              <p class="mb-2 text-[0.65rem] uppercase tracking-[0.2em] text-brand-gold">
+                {{ $experience['label'] }}
+              </p>
+            @endif
+
             <h3 class="font-heading text-2xl font-light text-brand-sand leading-6 sm:text-3xl sm:leading-8">
               {{ $experience['name'] }}
             </h3>

@@ -19,6 +19,9 @@
       'icon' => '<svg class="w-5 h-5 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>',
     ],
   ];
+
+  $knowBeforeYouGo = \App\know_before_you_go_items();
+  $knowBeforeYouGoUrl = \App\know_before_you_go_url();
 @endphp
 
 <section id="good-to-know" class="bg-[#f7f3eb] py-14 lg:py-20 border-t border-brand-ink/10" aria-labelledby="good-to-know-heading">
@@ -29,8 +32,11 @@
         {{ __('Estate Notes', 'sage') }}
       </p>
       <h2 id="good-to-know-heading" class="mt-2 font-heading text-3xl sm:text-4xl font-light text-brand-primary leading-tight">
-        {{ __('Good to know', 'sage') }}
+        {{ __('Know before you go', 'sage') }}
       </h2>
+      <p class="mt-4 max-w-2xl text-base leading-7 text-brand-muted">
+        {{ __('A few plain notes on how the estate works, so that nothing comes as a surprise.', 'sage') }}
+      </p>
     </div>
 
     {{-- 3-Column Strip --}}
@@ -58,6 +64,20 @@
         </article>
       @endforeach
     </div>
+
+    @if (!empty($knowBeforeYouGo))
+      <div class="mt-12 lg:mt-16" data-reveal>
+        @include('partials.know-before-you-go', ['items' => $knowBeforeYouGo])
+
+        @if ($knowBeforeYouGoUrl)
+        <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
+          href="{{ $knowBeforeYouGoUrl }}">
+          {{ __('All the details', 'sage') }}
+          <span aria-hidden="true">→</span>
+        </a>
+        @endif
+      </div>
+    @endif
 
   </div>
 </section>

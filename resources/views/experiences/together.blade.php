@@ -27,7 +27,7 @@
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Pickleball, table tennis, pool volleyball. Billiards and board games in The Nest. Films under the open sky. Long lunches that quietly become long afternoons.', 'sage') }}
+          {{ __('Table tennis, pool volleyball, board games in The Nest. Pickleball and billiards too, both chargeable. Films under the open sky (on request, chargeable). Long lunches that quietly become long afternoons.', 'sage') }}
         </p>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">

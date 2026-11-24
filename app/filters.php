@@ -60,7 +60,11 @@ add_filter('rank_math/frontend/title', function ($title) {
 function get_custom_meta_description()
 {
     if (is_front_page() || is_home()) {
-        return 'A 21-room luxury retreat above Mulshi Lake';
+        return 'A private estate of twenty-one rooms above Mulshi Lake in the Sahyadris, about two hours from Pune.';
+    }
+
+    if (is_page('experiences') || is_page_template('template-experiences.blade.php')) {
+        return 'Farm walks, the lake below the estate, bonfires, stargazing and long afternoons by the pool. Everything optional, nothing compulsory.';
     }
 
     if (is_page('stays') || is_page_template('template-stays.blade.php')) {
@@ -69,6 +73,10 @@ function get_custom_meta_description()
 
     if (is_page('gatherings') || is_page_template('template-gathering.blade.php')) {
         return 'Take all twenty-one rooms for up to sixty guests';
+    }
+
+    if (is_page('know-before-you-go') || is_page_template('template-know-before-you-go.blade.php')) {
+        return 'Meal plans, food, Wi-Fi, power, children, the lake walk and what costs extra: the plain facts about staying at Satori, so nothing comes as a surprise.';
     }
 
     if (is_page('press') || is_page_template('template-press.blade.php')) {
@@ -91,6 +99,22 @@ add_filter('rank_math/frontend/description', function ($desc) {
     $custom = get_custom_meta_description();
     return $custom ?: $desc;
 }, 99);
+
+/**
+ * Keep link previews (Open Graph / Twitter cards) in step with the meta
+ * descriptions above, so shared links never contradict the page.
+ */
+foreach ([
+    'wpseo_opengraph_desc',
+    'wpseo_twitter_description',
+    'rank_math/opengraph/facebook/og_description',
+    'rank_math/opengraph/twitter/twitter_description',
+] as $hook) {
+    add_filter($hook, function ($desc) {
+        $custom = get_custom_meta_description();
+        return $custom ?: $desc;
+    }, 99);
+}
 
 add_action('wp_head', function () {
     if (!defined('WPSEO_VERSION') && !defined('RANK_MATH_VERSION')) {

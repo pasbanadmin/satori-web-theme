@@ -19,7 +19,7 @@
         </h2>
 
         <p class="mt-6 max-w-2xl text-base leading-8 text-brand-muted sm:text-[16px]">
-          {{ __('Wake to lake light and birdsong. Stretch into a sunrise yoga session on the lawn. Take tea on your verandah while the mist is still on the water. Walk the estate before the day fully opens. Mornings at Satori are built to restore clarity before conversation begins.', 'sage') }}
+          {{ __('Wake to lake light and birdsong. Stretch into a sunrise yoga session on the lawn (on request, chargeable). Take tea on your verandah while the mist is still on the water. Walk the estate before the day fully opens. Mornings at Satori are built to restore clarity before conversation begins.', 'sage') }}
         </p>
       </div>
 
