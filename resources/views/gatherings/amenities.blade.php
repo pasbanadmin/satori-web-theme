@@ -8,11 +8,12 @@
     [
       'title' => __('Chef\'s table over open fire', 'sage'),
       'description' => __('Live wood-fired cooking outdoors on the lawn as the sun goes down behind the Mulshi hills.', 'sage'),
+      'label' => __('On request · Chargeable', 'sage'),
       'icon' => '<svg class="w-6 h-6 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>',
     ],
     [
       'title' => __('Bonfire & stargazing', 'sage'),
-      'description' => __('A dedicated fire pit under unpolluted dark skies, with blankets and evening drinks.', 'sage'),
+      'description' => __('A dedicated fire pit under unpolluted dark skies, with blankets and tea or coffee by the fire.', 'sage'),
       'icon' => '<svg class="w-6 h-6 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
     ],
     [
@@ -26,8 +27,8 @@
       'icon' => '<svg class="w-6 h-6 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c2 0 3-1 5-1s3 1 5 1 3-1 5-1 3 1 5 1"/><path d="M2 18c2 0 3-1 5-1s3 1 5 1 3-1 5-1 3 1 5 1"/></svg>',
     ],
     [
-      'title' => __('Pickleball & lawns', 'sage'),
-      'description' => __('Dedicated outdoor pickleball court, walking trails, and expansive lawns for games.', 'sage'),
+      'title' => __('Lawns & trails', 'sage'),
+      'description' => __('Expansive lawns for games, walking trails and bicycles. The pickleball court is available at a charge.', 'sage'),
       'icon' => '<svg class="w-6 h-6 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
     ],
   ];
@@ -59,6 +60,11 @@
             <p class="text-sm leading-6 text-brand-primary/80">
               {{ $item['description'] }}
             </p>
+            @if (!empty($item['label']))
+              <p class="mt-3 text-[0.65rem] uppercase tracking-[0.2em] text-gold-ink font-medium">
+                {{ $item['label'] }}
+              </p>
+            @endif
           </div>
         </div>
       @endforeach
