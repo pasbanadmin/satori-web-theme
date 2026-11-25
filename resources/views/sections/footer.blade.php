@@ -1,21 +1,22 @@
 @php
   $navLinks = [
-    ['label' => __('Stays', 'sage'), 'url' => home_url('/stays')],
-    // ['label' => __('Dining', 'sage'), 'url' => home_url('/dining')],
-    // ['label' => __('Wellness & Spa', 'sage'), 'url' => home_url('/wellness')],
-    ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences')],
-    ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings')],
-    ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way')],
-    ['label' => __('The Land', 'sage'), 'url' => home_url('/the-land')],
-    ['label' => __('Press', 'sage'), 'url' => home_url('/press')],
-    ['label' => __('Contact Us', 'sage'), 'url' => home_url('/contact-us')],
+    ['label' => __('Stays', 'sage'), 'url' => home_url('/stays/')],
+    // ['label' => __('Dining', 'sage'), 'url' => home_url('/dining/')],
+    // ['label' => __('Wellness & Spa', 'sage'), 'url' => home_url('/wellness/')],
+    ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences/')],
+    ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings/')],
+    ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way/')],
+    ['label' => __('The Land', 'sage'), 'url' => home_url('/the-land/')],
+    ['label' => __('Press', 'sage'), 'url' => home_url('/press/')],
+    ['label' => __('Contact Us', 'sage'), 'url' => home_url('/contact-us/')],
   ];
 
-  $footerLegalItems = [
-    ['label' => __('Privacy Policy', 'sage'), 'url' => home_url('/privacy-policy')],
-    ['label' => __('Terms of Stay', 'sage'), 'url' => home_url('/terms')],
-    ['label' => __('Cancellation Policy', 'sage'), 'url' => home_url('/cancellation-policy')],
-  ];
+  // Terms and Cancellation only show once a published page with that slug exists.
+  $footerLegalItems = array_values(array_filter([
+    ['label' => __('Privacy Policy', 'sage'), 'url' => home_url('/privacy-policy/')],
+    ['label' => __('Terms of Stay', 'sage'), 'url' => \App\published_page_url('terms')],
+    ['label' => __('Cancellation Policy', 'sage'), 'url' => \App\published_page_url('cancellation-policy')],
+  ], fn ($item) => !empty($item['url'])));
 
   if ($knowBeforeYouGoUrl = \App\know_before_you_go_url()) {
     array_unshift($footerLegalItems, ['label' => __('Know Before You Go', 'sage'), 'url' => $knowBeforeYouGoUrl]);

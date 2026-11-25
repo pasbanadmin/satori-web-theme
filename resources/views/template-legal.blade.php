@@ -90,7 +90,7 @@
 
               <p class="mb-4">
                 {{ __('If you have any questions regarding our terms, please feel free to ', 'sage') }}
-                <a href="{{ home_url('/contact-us') }}" class="text-brand-gold underline hover:text-brand-ink transition-colors duration-200">
+                <a href="{{ home_url('/contact-us/') }}" class="text-brand-gold underline hover:text-brand-ink transition-colors duration-200">
                   {{ __('contact our team directly', 'sage') }}
                 </a>.
               </p>

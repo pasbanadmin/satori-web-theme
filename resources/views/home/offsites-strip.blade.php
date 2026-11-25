@@ -49,7 +49,7 @@
     {{-- Right: Link to Gatherings #offsites --}}
     <div data-animate="true">
       <a class="group inline-flex min-h-11 items-center border-b border-foreground/30 pb-1 font-label text-[0.65rem] tracking-[0.2em] text-foreground transition-colors duration-300 hover:border-gold hover:text-earth"
-        href="{{ home_url('/gatherings#offsites') }}">
+        href="{{ home_url('/gatherings/#offsites') }}">
         {{ __('See who has held theirs here', 'sage') }}<span aria-hidden="true"
           class="ml-3 transition-transform duration-300 group-hover:translate-x-1">→</span>
       </a>

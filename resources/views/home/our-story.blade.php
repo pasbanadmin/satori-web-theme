@@ -41,7 +41,7 @@
 
         <div class="mt-6">
           <a class="group inline-flex items-center gap-2 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-ink"
-            href="{{ home_url('/the-satori-way') }}">
+            href="{{ home_url('/the-satori-way/') }}">
             {{ __('The Satori Way', 'sage') }}
             <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
               aria-hidden="true">→</span>

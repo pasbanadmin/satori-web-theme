@@ -26,7 +26,7 @@
       'heading_italic' => __('Then you feel quiet inside.', 'sage'),
       'copy' => __('The sun comes up over the lake. The birds start to sing. You walk out with a cup of tea. The grass is wet, and the trees are full of fruit. Two hundred kinds of plants grow here, and nothing is in a hurry. After one day, you feel slow and calm. After two, you feel like you again.', 'sage'),
       'cta' => __('Walk the Land', 'sage'),
-      'anchor' => '/the-land',
+      'anchor' => '/the-land/',
       'image' => '/wp-content/uploads/2026/11/land-lake-sunset.webp',
       'alt' => __('Sunset over the lake at Satori', 'sage'),
       'reverse' => false,

@@ -124,3 +124,40 @@ add_action('wp_head', function () {
         }
     }
 }, 1);
+
+/**
+ * Permalink of a published page, or null if no published page has that slug.
+ *
+ * Use this for links to pages that may not exist yet, so no link on the
+ * site ever points at a 404. Results are cached per slug for the request.
+ */
+function published_page_url(string $slug): ?string
+{
+    static $cache = [];
+
+    if (!array_key_exists($slug, $cache)) {
+        $page = get_page_by_path($slug);
+        $cache[$slug] = ($page && $page->post_status === 'publish') ? (get_permalink($page) ?: null) : null;
+    }
+
+    return $cache[$slug];
+}
+
+/**
+ * /dining has no page of its own; send old links to the homepage.
+ *
+ * Only fires on a 404, so a real Dining page published later is never
+ * hijacked.
+ */
+add_action('template_redirect', function () {
+    if (!is_404()) {
+        return;
+    }
+
+    $path = wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
+
+    if (in_array($path, ['/dining', '/dining/'], true)) {
+        wp_redirect(home_url('/'), 301);
+        exit;
+    }
+});

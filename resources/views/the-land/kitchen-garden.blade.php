@@ -35,7 +35,7 @@
         </p>
         <!-- <div class="mt-5">
           <a
-            href="{{ home_url('/dining') }}"
+            href="{{ home_url('/#dining-wellness') }}"
             class="inline-flex items-center text-xs uppercase tracking-[0.2em] text-brand-primary hover:text-brand-gold font-medium transition-colors"
           >
             {{ __('See how we cook →', 'sage') }}
