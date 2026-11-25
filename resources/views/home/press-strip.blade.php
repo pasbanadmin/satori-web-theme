@@ -32,7 +32,7 @@
 
         {{-- 3. Mumbai Mirror (In print) --}}
         <li class="flex items-center gap-2" title="Mumbai Mirror (In print)">
-          <a href="{{ home_url('/press#pieces') }}" class="flex items-center gap-1.5 opacity-75 hover:opacity-100 transition-opacity">
+          <a href="{{ home_url('/press/#pieces') }}" class="flex items-center gap-1.5 opacity-75 hover:opacity-100 transition-opacity">
             <img src="{{ content_url('/uploads/2026/10/mumbai-mirror.svg') }}" alt="Mumbai Mirror"
               class="h-4 md:h-5 lg:h-5 w-auto object-contain shrink-0"
               loading="lazy" />
@@ -65,7 +65,7 @@
 
     <div data-animate="true">
       <a class="group inline-flex min-h-11 items-center border-b border-foreground/30 pb-1 font-label text-[0.65rem] tracking-[0.2em] text-foreground transition-colors duration-300 hover:border-gold hover:text-earth"
-        href="{{ home_url('/press') }}">
+        href="{{ home_url('/press/') }}">
         {{ __('Read what they wrote', 'sage') }}<span aria-hidden="true"
           class="ml-3 transition-transform duration-300 group-hover:translate-x-1">→</span>
       </a>

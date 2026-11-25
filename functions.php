@@ -50,7 +50,7 @@ Application::configure()
 |
 */
 
-collect(['setup', 'filters', 'stays', 'contact', 'coming-soon', 'global-settings', 'know-before-you-go'])
+collect(['setup', 'filters', 'stays', 'contact', 'coming-soon', 'global-settings', 'know-before-you-go', 'legal-pages'])
     ->each(function ($file) {
         if (! locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(

@@ -99,12 +99,7 @@ function know_before_you_go_items(): array
  */
 function know_before_you_go_url(string $anchor = ''): ?string
 {
-    static $base = false;
-
-    if ($base === false) {
-        $page = get_page_by_path('know-before-you-go');
-        $base = ($page && $page->post_status === 'publish') ? get_permalink($page) : null;
-    }
+    $base = published_page_url('know-before-you-go');
 
     if (!$base) {
         return null;

@@ -36,7 +36,7 @@
           {{ __('Return Home', 'sage') }}
         </a>
 
-        <a href="{{ home_url('/contact-us') }}"
+        <a href="{{ home_url('/contact-us/') }}"
           class="inline-flex items-center justify-center rounded-full border border-brand-sand/30 px-8 py-3.5 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-sand transition-colors duration-300 hover:border-brand-gold hover:text-brand-gold">
           {{ __('Contact Us', 'sage') }}
         </a>
@@ -48,27 +48,27 @@
           {{ __('Or explore another area', 'sage') }}
         </p>
         <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.2em]">
-          <a href="{{ home_url('/stays') }}"
+          <a href="{{ home_url('/stays/') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('Stays', 'sage') }}
           </a>
           {{-- <span class="text-brand-sand/20" aria-hidden="true">•</span>
-          <a href="{{ home_url('/dining') }}"
+          <a href="{{ home_url('/#dining-wellness') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('Dining', 'sage') }}
           </a> --}}
           {{-- <span class="text-brand-sand/20" aria-hidden="true">•</span>
-          <a href="{{ home_url('/wellness') }}"
+          <a href="{{ home_url('/wellness/') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('Wellness', 'sage') }}
           </a> --}}
           <span class="text-brand-sand/20" aria-hidden="true">•</span>
-          <a href="{{ home_url('/gatherings') }}"
+          <a href="{{ home_url('/gatherings/') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('Gatherings', 'sage') }}
           </a>
           <span class="text-brand-sand/20" aria-hidden="true">•</span>
-          <a href="{{ home_url('/the-satori-way') }}"
+          <a href="{{ home_url('/the-satori-way/') }}"
             class="text-brand-sand/70 hover:text-brand-gold transition-colors duration-300">
             {{ __('The Satori Way', 'sage') }}
           </a>

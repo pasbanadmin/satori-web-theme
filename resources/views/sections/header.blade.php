@@ -1,13 +1,13 @@
 @php
   $headerNavItems = [
-    ['label' => __('Stays', 'sage'), 'url' => '/stays'],
-    // ['label' => __('Dining', 'sage'), 'url' => '/dining'],
-    // ['label' => __('Wellness', 'sage'), 'url' => '/wellness'],
-    ['label' => __('Experiences', 'sage'), 'url' => '/experiences'],
-    ['label' => __('Gatherings', 'sage'), 'url' => '/gatherings'],
-    ['label' => __('The Satori Way', 'sage'), 'url' => '/the-satori-way'],
-    ['label' => __('Press', 'sage'), 'url' => '/press'],
-    ['label' => __('Contact', 'sage'), 'url' => '/contact-us'],
+    ['label' => __('Stays', 'sage'), 'url' => home_url('/stays/')],
+    // ['label' => __('Dining', 'sage'), 'url' => home_url('/dining/')],
+    // ['label' => __('Wellness', 'sage'), 'url' => home_url('/wellness/')],
+    ['label' => __('Experiences', 'sage'), 'url' => home_url('/experiences/')],
+    ['label' => __('Gatherings', 'sage'), 'url' => home_url('/gatherings/')],
+    ['label' => __('The Satori Way', 'sage'), 'url' => home_url('/the-satori-way/')],
+    ['label' => __('Press', 'sage'), 'url' => home_url('/press/')],
+    ['label' => __('Contact', 'sage'), 'url' => home_url('/contact-us/')],
   ];
 @endphp
 
