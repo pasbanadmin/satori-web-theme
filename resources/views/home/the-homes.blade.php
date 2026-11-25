@@ -99,7 +99,7 @@
                 </p>
 
                 <a class="inline-flex items-center gap-1.5 text-[0.75rem] uppercase tracking-[0.25em] text-brand-gold transition-colors duration-300 hover:text-brand-sand"
-                  href="{{ home_url('/stays') }}">
+                  href="{{ home_url('/stays/') }}">
                   {{ __('Discover', 'sage') }}
                   <span class="inline-block transition-transform duration-300 group-hover:translate-x-1.5"
                     aria-hidden="true">→</span>
@@ -113,7 +113,7 @@
 
     <div class="mt-10 text-center lg:mt-14">
       <a class="inline-flex items-center justify-center gap-2 rounded-full border border-brand-ink/30 px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-ink transition-colors duration-300 hover:border-brand-ink hover:bg-brand-ink hover:text-brand-sand"
-        href="{{ home_url('/stays') }}">
+        href="{{ home_url('/stays/') }}">
         {{ __('See All Stays', 'sage') }}
         <span aria-hidden="true">→</span>
       </a>

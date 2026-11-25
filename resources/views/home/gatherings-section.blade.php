@@ -27,7 +27,7 @@
     </p>
 
     <a class="mt-10 inline-flex items-center justify-center gap-2 rounded-full border border-brand-gold px-6 py-3 text-[0.8125rem] uppercase tracking-[0.2em] text-brand-gold transition-colors duration-300 hover:bg-brand-gold hover:text-brand-primary"
-      href="{{ home_url('/gatherings') }}" data-gatherings-item>
+      href="{{ home_url('/gatherings/') }}" data-gatherings-item>
       {{ __('Plan a Gathering', 'sage') }}
       <span aria-hidden="true">→</span>
     </a>

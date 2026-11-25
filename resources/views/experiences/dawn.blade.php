@@ -32,7 +32,7 @@
 
         <div class="mt-8">
           <a
-            href="{{ home_url('/the-land') }}"
+            href="{{ home_url('/the-land/') }}"
             class="inline-flex items-center text-xs uppercase tracking-[0.2em] text-brand-primary hover:text-brand-gold font-medium transition-colors"
           >
             {{ __('Walk the land →', 'sage') }}

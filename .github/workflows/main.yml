@@ -40,4 +40,11 @@ jobs:
             --exclude /.git/ \
             --exclude /.github/ \
             --exclude /node_modules/ \
+            --exclude /llms.txt \
             ./ ${{env.dest}}
+
+      - name: Publish llms.txt to the web root
+        run: |
+          rsync -cv --chmod=F644 \
+            -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' \
+            ./llms.txt root@64.227.169.49:/var/www/html/llms.txt
