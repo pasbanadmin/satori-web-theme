@@ -42,7 +42,7 @@
 
           {{-- Social Icons --}}
           <div class="mt-5 flex items-center gap-4">
-            <a href="https://www.instagram.com/satorimulshi/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/visitsatorimulshi/" target="_blank" rel="noopener noreferrer"
               class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
               aria-label="{{ __('Satori on Instagram', 'sage') }}">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4"
