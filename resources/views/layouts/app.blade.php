@@ -43,8 +43,8 @@
         "geo": { "@@type": "GeoCoordinates", "latitude": 18.5323, "longitude": 73.4519 },
         "hasMap": "https://maps.google.com/?cid=13398371662192921292",
         "sameAs": [
-          "https://www.instagram.com/satorimulshi/",
-          "https://www.facebook.com/people/SatoriMulshi/61575644977898/",
+          "https://www.instagram.com/visitsatorimulshi/",
+          "https://www.facebook.com/visitsatorimulshi/",
           "https://maps.google.com/?cid=13398371662192921292"
         ],
         "potentialAction": {
