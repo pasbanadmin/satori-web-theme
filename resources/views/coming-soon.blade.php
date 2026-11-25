@@ -229,7 +229,7 @@
             <span class="text-[#efe4d0]/25">·</span>
 
             {{-- Facebook --}}
-            <a href="https://www.facebook.com/people/SatoriMulshi/61575644977898/" target="_blank"
+            <a href="https://www.facebook.com/visitsatorimulshi/" target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 text-xs text-[#efe4d0]/85 transition-colors duration-300 hover:text-[#BCA169]"
               aria-label="{{ __('Satori on Facebook', 'sage') }}">

@@ -168,7 +168,7 @@ function render_global_settings_meta_box($post)
             <label for="global_facebook_url"><?php esc_html_e('Facebook Profile URL', 'sage'); ?></label>
             <input type="url" id="global_facebook_url" name="global_facebook_url"
                 value="<?php echo esc_attr($facebookUrl); ?>"
-                placeholder="https://www.facebook.com/people/SatoriMulshi/61575644977898/" />
+                placeholder="https://www.facebook.com/visitsatorimulshi/" />
         </div>
 
         <div class="gs-field-group">
@@ -264,7 +264,7 @@ function get_global_settings(): array
         'contact_phone_tel' => '+919218177261',
         'whatsapp_number' => '918076510462',
         'instagram_url' => 'https://www.instagram.com/visitsatorimulshi/',
-        'facebook_url' => 'https://www.facebook.com/people/SatoriMulshi/61575644977898/',
+        'facebook_url' => 'https://www.facebook.com/visitsatorimulshi/',
         'address' => 'Satori Mulshi, Satori Estate, Pimpri, Tata Talav, Mulshi, Pune, Maharashtra 412108',
     ];
 

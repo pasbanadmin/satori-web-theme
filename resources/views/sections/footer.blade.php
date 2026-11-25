@@ -52,7 +52,7 @@
               </svg>
             </a>
 
-            <a href="https://www.facebook.com/people/SatoriMulshi/61575644977898/" target="_blank"
+            <a href="https://www.facebook.com/visitsatorimulshi/" target="_blank"
               rel="noopener noreferrer" class="text-brand-sand/50 transition-colors duration-300 hover:text-brand-gold"
               aria-label="{{ __('Satori on Facebook', 'sage') }}">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5"

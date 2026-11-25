@@ -44,7 +44,7 @@
         "hasMap": "https://maps.google.com/?cid=13398371662192921292",
         "sameAs": [
           "https://www.instagram.com/visitsatorimulshi/",
-          "https://www.facebook.com/people/SatoriMulshi/61575644977898/",
+          "https://www.facebook.com/visitsatorimulshi/",
           "https://maps.google.com/?cid=13398371662192921292"
         ],
         "potentialAction": {
