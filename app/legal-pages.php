@@ -8,9 +8,9 @@
  * ordinary WordPress pages: edit them in wp-admin, not here. Pages that
  * already exist (in any status) are never touched.
  *
- * Terms of Stay is created as a draft because the check-in and check-out
- * times are still to be confirmed. The footer only links to a page once it
- * is published (see published_page_url()).
+ * The footer only links to a page once it is published (see
+ * published_page_url()). Check-in and check-out times match the Know Before
+ * You Go page (app/know-before-you-go.php); keep the two in step.
  */
 
 namespace App;
@@ -110,7 +110,7 @@ HTML;
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Check-in from ___. Check-out by ___. Check-in closes at 6 PM. Early check-in and late check-out can be requested, are chargeable, and depend on availability.</p>
+<p>Check-in from 2 PM. Check-out by 11 AM. Check-in closes at 6 PM. Early check-in and late check-out can be requested, are chargeable, and depend on availability.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -208,7 +208,7 @@ HTML;
         ],
         'terms' => [
             'title' => 'Terms of Stay',
-            'status' => 'draft',
+            'status' => 'publish',
             'content' => $terms,
         ],
     ];
@@ -218,7 +218,7 @@ HTML;
  * Create any missing legal page once per seed version.
  */
 add_action('init', function () {
-    $version = '1';
+    $version = '2';
     $flag = 'satori_legal_pages_seeded';
 
     if (get_option($flag) === $version) {
@@ -259,6 +259,24 @@ add_action('init', function () {
         ], true);
 
         if (! is_wp_error($id) && $page['status'] === 'publish') {
+            $created = true;
+        }
+    }
+
+    // v2: Terms of Stay was first created as a draft with blank check-in and
+    // check-out times. Fill them in and publish, unless someone has already
+    // edited that line in wp-admin.
+    $terms = get_page_by_path('terms', OBJECT, 'page');
+    $placeholder = 'Check-in from ___. Check-out by ___.';
+
+    if ($terms && $terms->post_status === 'draft' && str_contains($terms->post_content, $placeholder)) {
+        $id = wp_update_post([
+            'ID' => $terms->ID,
+            'post_content' => str_replace($placeholder, 'Check-in from 2 PM. Check-out by 11 AM.', $terms->post_content),
+            'post_status' => 'publish',
+        ], true);
+
+        if (! is_wp_error($id)) {
             $created = true;
         }
     }
